@@ -21,7 +21,7 @@ const slides: Slide[] = [
     description: 'Découvrez notre gamme complète de véhicules équestres : camions, vans et remorques conçus pour le confort et la sécurité de vos chevaux.',
     ctaText: 'Voir nos Véhicules',
     ctaLink: '/camions',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop&crop=center'
+    image: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=1920&h=1080&fit=crop&crop=center'
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const slides: Slide[] = [
     description: 'Nos vans aménagés offrent une solution parfaite pour les déplacements équestres avec tout le confort nécessaire pour cavaliers et chevaux.',
     ctaText: 'Découvrir les Vans',
     ctaLink: '/van-amenage',
-    image: 'https://images.unsplash.com/photo-1554866585-cd94860890b7?w=1920&h=1080&fit=crop&crop=center'
+    image: 'https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=1920&h=1080&fit=crop&crop=center'
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const slides: Slide[] = [
     description: 'Fort de notre expertise allemande, nous proposons des véhicules équestres alliant innovation, sécurité et performance exceptionnelle.',
     ctaText: 'En Savoir Plus',
     ctaLink: '/about',
-    image: 'https://images.unsplash.com/photo-1516849677043-ef67c9557e16?w=1920&h=1080&fit=crop&crop=center'
+    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop&crop=center'
   }
 ];
 
