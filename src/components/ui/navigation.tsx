@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { LanguageSelector } from './language-selector';
-import horsemobilLogo from '@/assets/horsemobil-logo.png';
+const horsemobilLogo = '/lovable-uploads/dadae360-7534-4cd7-8a91-162550ab6830.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
