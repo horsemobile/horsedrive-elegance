@@ -104,22 +104,6 @@
     "whatsapp_message": "Hei, jeg er interessert i hestetransportkjøretøyene deres. Kan dere gi meg mer informasjon?"
   },
   "trucks": {
-    "hero": {
-      "badge": "Premium Kjøretøy",
-      "title": "Hestetransportbiler",
-      "description": "Oppdag vårt utvalg av high-end hestetransportbiler, designet for å tilby maksimal komfort og sikkerhet til hestene dine under profesjonelle eller fritidsreiser.",
-      "imageAlt": "Luksus hestetransportbil"
-    }
-  },
-  "vans": {
-    "hero": {
-      "badge": "Hestemobilitet",
-      "title": "Heste-varebiler",
-      "description": "Våre heste-varebiler kombinerer manøvrerbarhet og komfort for dine daglige reiser. Perfekt for fritidsutflukter, timer eller små konkurranser.",
-      "imageAlt": "Moderne heste-varebil"
-    }
-  },
-  "trucks": {
     "title": "Hestetransportbiler",
     "badge": "Premium kjøretøy",
     "description": "Oppdag vårt utvalg av høykvalitets hestetransportbiler som tilbyr maksimal komfort og sikkerhet for hestene dine under profesjonelle eller private turer.",

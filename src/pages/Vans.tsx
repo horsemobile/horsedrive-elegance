@@ -6,12 +6,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import { Truck, Zap, Shield, Heart, Star, ArrowRight } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 import categoryVans from '@/assets/category-vans.jpg';
 
 const Vans = () => {
-  const { t } = useTranslation();
-  
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -21,23 +18,24 @@ const Vans = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4">{t('vans.hero.badge')}</Badge>
+              <Badge className="mb-4">Mobilité Équestre</Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                {t('vans.hero.title')}
+                Vans Équestres
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                {t('vans.hero.description')}
+                Nos vans équestres allient maniabilité et confort pour vos déplacements 
+                quotidiens. Parfaits pour les sorties de loisir, les cours ou les petites compétitions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg">
                   <Link to="/devis">
                     <Truck className="mr-2 h-5 w-5" />
-                    {t('common.requestQuote')}
+                    Demander un Devis
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link to="/contact">
-                    {t('common.contactUs')}
+                    Nous Contacter
                   </Link>
                 </Button>
               </div>
@@ -45,7 +43,7 @@ const Vans = () => {
             <div className="relative">
               <img 
                 src={categoryVans} 
-                alt={t('vans.hero.imageAlt')} 
+                alt="Van équestre moderne" 
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
             </div>

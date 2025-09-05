@@ -6,12 +6,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import { Truck, Users, Shield, Wrench, Star, ArrowRight } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 import categoryTrucks from '@/assets/category-trucks.jpg';
 
 const Camions = () => {
-  const { t } = useTranslation();
-  
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -21,23 +18,25 @@ const Camions = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4">{t('trucks.hero.badge')}</Badge>
+              <Badge className="mb-4">Véhicules Premium</Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                {t('trucks.hero.title')}
+                Camions Équestres
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                {t('trucks.hero.description')}
+                Découvrez notre gamme de camions équestres haut de gamme, 
+                conçus pour offrir le maximum de confort et de sécurité à vos chevaux 
+                lors de vos déplacements professionnels ou de loisir.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg">
                   <Link to="/devis">
                     <Truck className="mr-2 h-5 w-5" />
-                    {t('common.requestQuote')}
+                    Demander un Devis
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link to="/contact">
-                    {t('common.contactUs')}
+                    Nous Contacter
                   </Link>
                 </Button>
               </div>
@@ -45,7 +44,7 @@ const Camions = () => {
             <div className="relative">
               <img 
                 src={categoryTrucks} 
-                alt={t('trucks.hero.imageAlt')} 
+                alt="Camion équestre de luxe" 
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
             </div>

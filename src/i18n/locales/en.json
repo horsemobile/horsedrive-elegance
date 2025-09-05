@@ -104,22 +104,6 @@
     "whatsapp_message": "Hello, I'm interested in your equestrian vehicles. Can you give me more information?"
   },
   "trucks": {
-    "hero": {
-      "badge": "Premium Vehicles",
-      "title": "Horse Trucks",
-      "description": "Discover our range of high-end horse trucks, designed to offer maximum comfort and safety to your horses during your professional or leisure travels.",
-      "imageAlt": "Luxury horse truck"
-    }
-  },
-  "vans": {
-    "hero": {
-      "badge": "Equestrian Mobility",
-      "title": "Horse Vans",
-      "description": "Our horse vans combine maneuverability and comfort for your daily travels. Perfect for leisure outings, lessons, or small competitions.",
-      "imageAlt": "Modern horse van"
-    }
-  },
-  "trucks": {
     "title": "Horse Trucks",
     "badge": "Premium Vehicles",
     "description": "Discover our range of high-end horse trucks, designed to offer maximum comfort and safety for your horses during professional or leisure travel.",
