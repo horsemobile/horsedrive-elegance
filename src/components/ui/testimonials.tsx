@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
@@ -58,6 +59,7 @@ const testimonials: Testimonial[] = [
 ];
 
 export const Testimonials = () => {
+  const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
 
@@ -89,7 +91,7 @@ export const Testimonials = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            Ce que disent nos <span className="gradient-text">Clients</span>
+            {t('testimonials.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Découvrez les témoignages de nos clients satisfaits qui nous font confiance 

@@ -1,5 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@/components/ui/card';
+
 import { Award, Users, Truck, ThumbsUp } from 'lucide-react';
 
 interface Stat {
@@ -11,40 +13,44 @@ interface Stat {
   description: string;
 }
 
-const stats: Stat[] = [
-  {
-    id: 'experience',
-    title: 'Années d\'Expérience',
-    value: 25,
-    suffix: '+',
-    icon: <Award className="h-8 w-8" />,
-    description: 'D\'expertise dans le transport équestre'
-  },
-  {
-    id: 'clients',
-    title: 'Clients Satisfaits',
-    value: 1200,
-    suffix: '+',
-    icon: <Users className="h-8 w-8" />,
-    description: 'Nous font confiance chaque année'
-  },
-  {
-    id: 'vehicles',
-    title: 'Véhicules Vendus',
-    value: 500,
-    suffix: '+',
-    icon: <Truck className="h-8 w-8" />,
-    description: 'Livrés avec succès'
-  },
-  {
-    id: 'satisfaction',
-    title: 'Satisfaction Client',
-    value: 98,
-    suffix: '%',
-    icon: <ThumbsUp className="h-8 w-8" />,
-    description: 'Taux de recommandation'
-  }
-];
+const useStatsData = () => {
+  const { t } = useTranslation();
+  
+  return [
+    {
+      id: 'experience',
+      title: t('stats.experience'),
+      value: 25,
+      suffix: '+',
+      icon: <Award className="h-8 w-8" />,
+      description: "D'expertise dans le transport équestre"
+    },
+    {
+      id: 'clients',
+      title: t('stats.customers'),
+      value: 1200,
+      suffix: '+',
+      icon: <Users className="h-8 w-8" />,
+      description: 'Nous font confiance chaque année'
+    },
+    {
+      id: 'vehicles',
+      title: t('stats.vehicles'),
+      value: 500,
+      suffix: '+',
+      icon: <Truck className="h-8 w-8" />,
+      description: 'Livrés avec succès'
+    },
+    {
+      id: 'satisfaction',
+      title: 'Satisfaction Client',
+      value: 98,
+      suffix: '%',
+      icon: <ThumbsUp className="h-8 w-8" />,
+      description: 'Taux de recommandation'
+    }
+  ];
+};
 
 // Hook pour animer les compteurs
 const useCountAnimation = (endValue: number, duration: number = 2000) => {
@@ -137,6 +143,9 @@ const StatCard = ({ stat }: { stat: Stat }) => {
 };
 
 export const StatsSection = () => {
+  const { t } = useTranslation();
+  const stats = useStatsData();
+  
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">

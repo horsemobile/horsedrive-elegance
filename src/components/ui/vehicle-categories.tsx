@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+
 import { ArrowRight, Truck, Car, Home } from 'lucide-react';
 
 interface Category {
@@ -14,46 +16,53 @@ interface Category {
   badge?: string;
 }
 
-const categories: Category[] = [
-  {
-    id: 'camions',
-    title: 'Camions Équestres',
-    description: 'Camions professionnels pour le transport de chevaux avec un maximum de sécurité et de confort.',
-    icon: <Truck className="h-8 w-8" />,
-    image: '/src/assets/category-trucks.jpg',
-    link: '/camions',
-    vehicleCount: 24,
-    badge: 'Bestseller'
-  },
-  {
-    id: 'vans',
-    title: 'Vans Équestres',
-    description: 'Vans compacts et maniables, parfaits pour les déplacements courts et moyens avec vos chevaux.',
-    icon: <Car className="h-8 w-8" />,
-    image: '/src/assets/category-vans.jpg',
-    link: '/vans',
-    vehicleCount: 18
-  },
-  {
-    id: 'van-amenage',
-    title: 'Vans Aménagés',
-    description: 'Solutions complètes avec espace de vie intégré pour les longs voyages et compétitions.',
-    icon: <Home className="h-8 w-8" />,
-    image: '/src/assets/category-van-amenage.jpg',
-    link: '/van-amenage',
-    vehicleCount: 12,
-    badge: 'Nouveau'
-  }
-];
+const useCategoriesData = () => {
+  const { t } = useTranslation();
+  
+  return [
+    {
+      id: 'camions',
+      title: t('categories.trucks.title'),
+      description: t('categories.trucks.description'),
+      icon: <Truck className="h-8 w-8" />,
+      image: '/src/assets/category-trucks.jpg',
+      link: '/camions',
+      vehicleCount: 24,
+      badge: 'Bestseller'
+    },
+    {
+      id: 'vans',
+      title: t('categories.vans.title'),
+      description: t('categories.vans.description'),
+      icon: <Car className="h-8 w-8" />,
+      image: '/src/assets/category-vans.jpg',
+      link: '/vans',
+      vehicleCount: 18
+    },
+    {
+      id: 'van-amenage',
+      title: t('categories.amenaged.title'),
+      description: t('categories.amenaged.description'),
+      icon: <Home className="h-8 w-8" />,
+      image: '/src/assets/category-van-amenage.jpg',
+      link: '/van-amenage',
+      vehicleCount: 12,
+      badge: 'Nouveau'
+    }
+  ];
+};
 
 export const VehicleCategories = () => {
+  const { t } = useTranslation();
+  const categories = useCategoriesData();
+  
   return (
     <section className="py-20 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            Nos <span className="gradient-text">Catégories</span> de Véhicules
+            {t('categories.title')} <span className="gradient-text">Catégories</span> de Véhicules
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Découvrez notre gamme complète de véhicules équestres, conçus avec l'expertise allemande 
@@ -111,7 +120,7 @@ export const VehicleCategories = () => {
 
                 <Button asChild className="w-full group/btn" size="sm">
                   <Link to={category.link}>
-                    Découvrir
+                    {t('common.discover')}
                     <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                   </Link>
                 </Button>
