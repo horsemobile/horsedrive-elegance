@@ -22,7 +22,6 @@ const Navigation = () => {
     { name: 'Camions', path: '/camions' },
     { name: 'Vans', path: '/vans' },
     { name: 'Vans Aménagés', path: '/van-amenage' },
-    { name: 'Remorques', path: '/remorques' },
     { name: 'À Propos', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];

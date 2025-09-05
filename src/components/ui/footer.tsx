@@ -85,9 +85,6 @@ const Footer = () => {
                 <Link to="/van-amenage" className="block text-muted-foreground hover:text-primary transition-colors">
                   Vans Aménagés
                 </Link>
-                <Link to="/remorques" className="block text-muted-foreground hover:text-primary transition-colors">
-                  Remorques
-                </Link>
               </nav>
             </div>
 

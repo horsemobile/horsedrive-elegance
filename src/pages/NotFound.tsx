@@ -71,12 +71,6 @@ const NotFound = () => {
                   Vans Aménagés
                 </Link>
                 <Link 
-                  to="/remorques" 
-                  className="text-primary hover:text-primary-light transition-colors underline underline-offset-4"
-                >
-                  Remorques
-                </Link>
-                <Link 
                   to="/contact" 
                   className="text-primary hover:text-primary-light transition-colors underline underline-offset-4"
                 >

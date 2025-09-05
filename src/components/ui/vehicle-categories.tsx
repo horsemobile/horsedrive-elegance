@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowRight, Truck, Car, Home, Truck as Trailer } from 'lucide-react';
+import { ArrowRight, Truck, Car, Home } from 'lucide-react';
 
 interface Category {
   id: string;
@@ -43,15 +43,6 @@ const categories: Category[] = [
     link: '/van-amenage',
     vehicleCount: 12,
     badge: 'Nouveau'
-  },
-  {
-    id: 'remorques',
-    title: 'Remorques',
-    description: 'Remorques de haute qualité pour tous types de véhicules tracteurs et toutes tailles de chevaux.',
-    icon: <Trailer className="h-8 w-8" />,
-    image: '/src/assets/category-trailers.jpg',
-    link: '/remorques',
-    vehicleCount: 36
   }
 ];
 
@@ -71,7 +62,7 @@ export const VehicleCategories = () => {
         </div>
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category, index) => (
             <Card 
               key={category.id} 
