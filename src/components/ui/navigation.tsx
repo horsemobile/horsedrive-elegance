@@ -93,7 +93,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden border-t border-border">
+          <div className="lg:hidden border-t border-border bg-background/95 backdrop-blur-sm">
             <div className="py-4 space-y-2">
               {navItems.map((item) => (
                 <Link
