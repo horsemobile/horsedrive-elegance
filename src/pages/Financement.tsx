@@ -23,15 +23,15 @@ const Financement = () => {
     {
       title: "Crédit classique",
       description: "Financement traditionnel avec apport personnel",
-      rate: "À partir de 3.5%",
+      rate: "0% sans intérêt",
       duration: "12 à 84 mois",
-      advantages: ["Taux préférentiel", "Remboursement flexible", "Assurance optionnelle"],
+      advantages: ["Taux 0%", "Remboursement flexible", "Assurance optionnelle"],
       icon: CreditCard
     },
     {
       title: "Leasing",
       description: "Location avec option d'achat",
-      rate: "À partir de 4.2%",
+      rate: "0% sans intérêt",
       duration: "24 à 60 mois",
       advantages: ["Pas d'apport", "Mensualités réduites", "Option rachat"],
       icon: FileText
@@ -39,9 +39,9 @@ const Financement = () => {
     {
       title: "Crédit ballon",
       description: "Mensualités réduites avec apport final",
-      rate: "À partir de 3.8%",
+      rate: "0% sans intérêt",
       duration: "24 à 48 mois",
-      advantages: ["Mensualités allégées", "Flexibilité finale", "Taux avantageux"],
+      advantages: ["Mensualités allégées", "Flexibilité finale", "Taux 0%"],
       icon: TrendingUp
     }
   ];
