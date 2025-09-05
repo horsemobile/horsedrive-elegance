@@ -165,17 +165,17 @@ const Devis = () => {
                       <SelectContent>
                         {vehicleType === 'remorque' ? (
                           <>
-                            <SelectItem value="4k-15k">4 000€ - 15 000€</SelectItem>
-                            <SelectItem value="15k-25k">15 000€ - 25 000€</SelectItem>
-                            <SelectItem value="25k-35k">25 000€ - 35 000€</SelectItem>
-                            <SelectItem value="35k+">35 000€+</SelectItem>
+                            <SelectItem value="4k-15k">{t('pages.quote.budget4k15k')}</SelectItem>
+                            <SelectItem value="15k-25k">{t('pages.quote.budget15k25k')}</SelectItem>
+                            <SelectItem value="25k-35k">{t('pages.quote.budget25k35k')}</SelectItem>
+                            <SelectItem value="35k+">{t('pages.quote.budget35kPlus')}</SelectItem>
                           </>
                         ) : (
                           <>
-                            <SelectItem value="35k-50k">35 000€ - 50 000€</SelectItem>
-                            <SelectItem value="50k-75k">50 000€ - 75 000€</SelectItem>
-                            <SelectItem value="75k-100k">75 000€ - 100 000€</SelectItem>
-                            <SelectItem value="100k+">100 000€+</SelectItem>
+                            <SelectItem value="35k-50k">{t('pages.quote.budget35k50k')}</SelectItem>
+                            <SelectItem value="50k-75k">{t('pages.quote.budget50k75k')}</SelectItem>
+                            <SelectItem value="75k-100k">{t('pages.quote.budget75k100k')}</SelectItem>
+                            <SelectItem value="100k+">{t('pages.quote.budget100kPlus')}</SelectItem>
                           </>
                         )}
                       </SelectContent>
