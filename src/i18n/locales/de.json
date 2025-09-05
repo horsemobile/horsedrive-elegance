@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "trucks": "LKWs",
+    "vans": "Transporter",
+    "amenaged_vans": "Ausgebaute Transporter", 
+    "financing": "Finanzierung",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "quote": "Angebot"
+  },
+  "hero": {
+    "title": "HorseMobil",
+    "subtitle": "Ihr Partner für Pferdetransport",
+    "description": "Entdecken Sie unser komplettes Sortiment an spezialisierten Fahrzeugen für den Pferdetransport. Qualität, Sicherheit und Komfort garantiert.",
+    "cta": "Unsere Fahrzeuge entdecken",
+    "quote_cta": "Angebot anfordern"
+  },
+  "categories": {
+    "title": "Unsere Fahrzeuge",
+    "trucks": {
+      "title": "Pferdetransporter",
+      "description": "Professionelle LKWs für den sicheren Transport Ihrer Pferde"
+    },
+    "vans": {
+      "title": "Pferde-Transporter",
+      "description": "Kompakte und wendige Lösungen für Ihre Fahrten"
+    },
+    "amenaged": {
+      "title": "Ausgebaute Transporter",
+      "description": "All-in-One Fahrzeuge mit integriertem Wohnbereich"
+    },
+    "trailers": {
+      "title": "Anhänger",
+      "description": "Hochwertige Anhänger für alle Pferdetypen"
+    }
+  },
+  "stats": {
+    "experience": "Jahre Erfahrung",
+    "vehicles": "Verkaufte Fahrzeuge",
+    "customers": "Zufriedene Kunden",
+    "workshops": "Werkstätten in Europa"
+  },
+  "testimonials": {
+    "title": "Was unsere Kunden sagen"
+  },
+  "footer": {
+    "company": "Unternehmen",
+    "products": "Produkte",
+    "support": "Support",
+    "legal": "Rechtliches",
+    "rights": "Alle Rechte vorbehalten",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "cookies": "Cookies",
+    "legal_notices": "Impressum"
+  },
+  "common": {
+    "learn_more": "Mehr erfahren",
+    "contact_us": "Kontaktieren Sie uns",
+    "back_home": "Zurück zur Startseite",
+    "coming_soon": "Inhalt folgt in Kürze",
+    "under_construction": "Diese Seite ist im Aufbau"
+  }
+}

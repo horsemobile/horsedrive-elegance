@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -21,44 +22,23 @@ const languages: Language[] = [
   { code: 'es', name: 'Español', flag: '🇪🇸' },
 ];
 
-declare global {
-  interface Window {
-    google: any;
-  }
-}
-
 export const LanguageSelector = () => {
+  const { i18n } = useTranslation();
   const [currentLanguage, setCurrentLanguage] = useState<Language>(languages[0]);
 
   useEffect(() => {
-    // Load saved language preference
-    const savedLang = localStorage.getItem('selectedLanguage');
-    if (savedLang) {
-      const lang = languages.find(l => l.code === savedLang);
-      if (lang) setCurrentLanguage(lang);
-    }
-  }, []);
+    // Set current language based on i18next
+    const currentLang = languages.find(lang => lang.code === i18n.language) || languages[0];
+    setCurrentLanguage(currentLang);
+  }, [i18n.language]);
 
   const changeLanguage = (language: Language) => {
     setCurrentLanguage(language);
-    localStorage.setItem('selectedLanguage', language.code);
-    
-    // Trigger Google Translate
-    if (window.google && window.google.translate) {
-      const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-      if (selectElement) {
-        selectElement.value = language.code;
-        selectElement.dispatchEvent(new Event('change'));
-      }
-    }
+    i18n.changeLanguage(language.code);
   };
 
   return (
-    <div className="flex items-center space-x-2">
-      {/* Hidden Google Translate Element */}
-      <div id="google_translate_element" className="hidden"></div>
-      
-      {/* Custom Language Selector */}
+    <div className="flex items-center space-x-2">{/* Custom Language Selector */}
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="ghost" size="sm" className="h-9 px-2">

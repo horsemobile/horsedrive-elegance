@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "trucks": "Camions",
+    "vans": "Vans",
+    "amenaged_vans": "Vans aménagés",
+    "financing": "Financement",
+    "about": "À propos",
+    "contact": "Contact",
+    "quote": "Devis"
+  },
+  "hero": {
+    "title": "HorseMobil",
+    "subtitle": "Votre partenaire pour le transport équestre",
+    "description": "Découvrez notre gamme complète de véhicules spécialisés pour le transport de chevaux. Qualité, sécurité et confort garantis.",
+    "cta": "Découvrir nos véhicules",
+    "quote_cta": "Demander un devis"
+  },
+  "categories": {
+    "title": "Nos véhicules",
+    "trucks": {
+      "title": "Camions équestres",
+      "description": "Camions professionnels pour le transport sécurisé de vos chevaux"
+    },
+    "vans": {
+      "title": "Vans équestres", 
+      "description": "Solutions compactes et maniables pour vos déplacements"
+    },
+    "amenaged": {
+      "title": "Vans aménagés",
+      "description": "Véhicules tout-en-un avec espace de vie intégré"
+    },
+    "trailers": {
+      "title": "Remorques",
+      "description": "Remorques haute qualité pour tous types de chevaux"
+    }
+  },
+  "stats": {
+    "experience": "Années d'expérience",
+    "vehicles": "Véhicules vendus",
+    "customers": "Clients satisfaits",
+    "workshops": "Ateliers en Europe"
+  },
+  "testimonials": {
+    "title": "Ce que disent nos clients"
+  },
+  "footer": {
+    "company": "Entreprise",
+    "products": "Produits", 
+    "support": "Support",
+    "legal": "Légal",
+    "rights": "Tous droits réservés",
+    "privacy": "Confidentialité",
+    "terms": "CGU",
+    "cookies": "Cookies",
+    "legal_notices": "Mentions légales"
+  },
+  "common": {
+    "learn_more": "En savoir plus",
+    "contact_us": "Nous contacter",
+    "back_home": "Retour à l'accueil",
+    "coming_soon": "Contenu à venir",
+    "under_construction": "Cette page est en cours de construction"
+  }
+}

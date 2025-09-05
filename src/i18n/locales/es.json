@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "trucks": "Camiones",
+    "vans": "Furgonetas",
+    "amenaged_vans": "Furgonetas acondicionadas",
+    "financing": "Financiación", 
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "quote": "Presupuesto"
+  },
+  "hero": {
+    "title": "HorseMobil",
+    "subtitle": "Su socio para el transporte ecuestre",
+    "description": "Descubra nuestra gama completa de vehículos especializados para el transporte de caballos. Calidad, seguridad y comodidad garantizadas.",
+    "cta": "Descubrir nuestros vehículos",
+    "quote_cta": "Solicitar presupuesto"
+  },
+  "categories": {
+    "title": "Nuestros vehículos",
+    "trucks": {
+      "title": "Camiones ecuestres",
+      "description": "Camiones profesionales para el transporte seguro de sus caballos"
+    },
+    "vans": {
+      "title": "Furgonetas ecuestres",
+      "description": "Soluciones compactas y manejables para sus desplazamientos"
+    },
+    "amenaged": {
+      "title": "Furgonetas acondicionadas",
+      "description": "Vehículos todo en uno con espacio de vida integrado"
+    },
+    "trailers": {
+      "title": "Remolques",
+      "description": "Remolques de alta calidad para todos los tipos de caballos"
+    }
+  },
+  "stats": {
+    "experience": "Años de experiencia",
+    "vehicles": "Vehículos vendidos",
+    "customers": "Clientes satisfechos",
+    "workshops": "Talleres en Europa"
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestros clientes"
+  },
+  "footer": {
+    "company": "Empresa",
+    "products": "Productos",
+    "support": "Soporte",
+    "legal": "Legal",
+    "rights": "Todos los derechos reservados",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "cookies": "Cookies",
+    "legal_notices": "Avisos legales"
+  },
+  "common": {
+    "learn_more": "Saber más",
+    "contact_us": "Contáctanos",
+    "back_home": "Volver al inicio",
+    "coming_soon": "Contenido próximamente",
+    "under_construction": "Esta página está en construcción"
+  }
+}

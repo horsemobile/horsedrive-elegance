@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Home",
+    "trucks": "Trucks",
+    "vans": "Vans", 
+    "amenaged_vans": "Converted Vans",
+    "financing": "Financing",
+    "about": "About",
+    "contact": "Contact",
+    "quote": "Quote"
+  },
+  "hero": {
+    "title": "HorseMobil",
+    "subtitle": "Your partner for equestrian transport",
+    "description": "Discover our complete range of specialized vehicles for horse transportation. Quality, safety and comfort guaranteed.",
+    "cta": "Discover our vehicles",
+    "quote_cta": "Request a quote"
+  },
+  "categories": {
+    "title": "Our vehicles",
+    "trucks": {
+      "title": "Horse trucks",
+      "description": "Professional trucks for safe transportation of your horses"
+    },
+    "vans": {
+      "title": "Horse vans",
+      "description": "Compact and maneuverable solutions for your travels"
+    },
+    "amenaged": {
+      "title": "Converted vans",
+      "description": "All-in-one vehicles with integrated living space"
+    },
+    "trailers": {
+      "title": "Trailers",
+      "description": "High quality trailers for all types of horses"
+    }
+  },
+  "stats": {
+    "experience": "Years of experience",
+    "vehicles": "Vehicles sold",
+    "customers": "Satisfied customers",
+    "workshops": "Workshops in Europe"
+  },
+  "testimonials": {
+    "title": "What our customers say"
+  },
+  "footer": {
+    "company": "Company",
+    "products": "Products",
+    "support": "Support", 
+    "legal": "Legal",
+    "rights": "All rights reserved",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies",
+    "legal_notices": "Legal notices"
+  },
+  "common": {
+    "learn_more": "Learn more",
+    "contact_us": "Contact us",
+    "back_home": "Back to home",
+    "coming_soon": "Content coming soon",
+    "under_construction": "This page is under construction"
+  }
+}
