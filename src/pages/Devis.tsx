@@ -125,31 +125,17 @@ const Devis = () => {
                     <>
                       <div className="space-y-2">
                         <Label htmlFor="passengers">{t('pages.quote.passengersNumber')}</Label>
-                        <Select>
-                          <SelectTrigger>
-                            <SelectValue placeholder={t('pages.quote.selectPassengers')} />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="2">{t('pages.quote.twoPassengers')}</SelectItem>
-                            <SelectItem value="4">{t('pages.quote.fourPassengers')}</SelectItem>
-                            <SelectItem value="6">{t('pages.quote.sixPassengers')}</SelectItem>
-                            <SelectItem value="8+">{t('pages.quote.eightOrMorePassengers')}</SelectItem>
-                          </SelectContent>
-                        </Select>
+                        <Input 
+                          id="passengers" 
+                          placeholder={t('pages.quote.selectPassengers')} 
+                        />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="usage">{t('pages.quote.vanUsage')}</Label>
-                        <Select>
-                          <SelectTrigger>
-                            <SelectValue placeholder={t('pages.quote.selectUsage')} />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="weekend">{t('pages.quote.weekendTrips')}</SelectItem>
-                            <SelectItem value="vacation">{t('pages.quote.longVacations')}</SelectItem>
-                            <SelectItem value="nomadic">{t('pages.quote.nomadicLife')}</SelectItem>
-                            <SelectItem value="business">{t('pages.quote.businessTravel')}</SelectItem>
-                          </SelectContent>
-                        </Select>
+                        <Input 
+                          id="usage" 
+                          placeholder={t('pages.quote.selectUsage')} 
+                        />
                       </div>
                     </>
                   ) : (
