@@ -71,7 +71,7 @@ export const HeroCarousel = () => {
 
   return (
     <div 
-      className="relative h-screen w-full overflow-hidden"
+      className="relative h-[calc(100vh-4rem)] w-full overflow-hidden"
       onMouseEnter={() => setIsAutoPlay(false)}
       onMouseLeave={() => setIsAutoPlay(true)}
     >
