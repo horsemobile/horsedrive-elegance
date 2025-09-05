@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import heroTruckRed from '@/assets/hero-truck-red.jpg';
 import heroVanInterior from '@/assets/hero-van-interior.jpg';
 import heroVanSunset from '@/assets/hero-van-sunset.jpg';
@@ -16,39 +17,41 @@ interface Slide {
   image: string;
 }
 
-const slides: Slide[] = [
-  {
-    id: 1,
-    title: 'Véhicules Équestres Premium',
-    subtitle: 'Transport de Chevaux Haut de Gamme',
-    description: 'Découvrez notre gamme complète de véhicules équestres : camions, vans et remorques conçus pour le confort et la sécurité de vos chevaux.',
-    ctaText: 'Voir nos Véhicules',
-    ctaLink: '/camions',
-    image: heroTruckRed
-  },
-  {
-    id: 2,
-    title: 'Vans Aménagés sur Mesure',
-    subtitle: 'Personnalisation Complète',
-    description: 'Nos vans aménagés offrent une solution parfaite pour les déplacements équestres avec tout le confort nécessaire pour cavaliers et chevaux.',
-    ctaText: 'Découvrir les Vans',
-    ctaLink: '/van-amenage',
-    image: heroVanInterior
-  },
-  {
-    id: 3,
-    title: 'Expertise Allemande',
-    subtitle: 'Qualité et Fiabilité',
-    description: 'Fort de notre expertise allemande, nous proposons des véhicules équestres alliant innovation, sécurité et performance exceptionnelle.',
-    ctaText: 'En Savoir Plus',
-    ctaLink: '/about',
-    image: heroVanSunset
-  }
-];
 
 export const HeroCarousel = () => {
+  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
+
+  const slides: Slide[] = [
+    {
+      id: 1,
+      title: t('hero.slides.premium.title'),
+      subtitle: t('hero.slides.premium.subtitle'),
+      description: t('hero.slides.premium.description'),
+      ctaText: t('hero.slides.premium.cta'),
+      ctaLink: '/camions',
+      image: heroTruckRed
+    },
+    {
+      id: 2,
+      title: t('hero.slides.customVans.title'),
+      subtitle: t('hero.slides.customVans.subtitle'),
+      description: t('hero.slides.customVans.description'),
+      ctaText: t('hero.slides.customVans.cta'),
+      ctaLink: '/van-amenage',
+      image: heroVanInterior
+    },
+    {
+      id: 3,
+      title: t('hero.slides.expertise.title'),
+      subtitle: t('hero.slides.expertise.subtitle'),
+      description: t('hero.slides.expertise.description'),
+      ctaText: t('hero.slides.expertise.cta'),
+      ctaLink: '/about',
+      image: heroVanSunset
+    }
+  ];
 
   useEffect(() => {
     if (!isAutoPlay) return;
@@ -117,7 +120,7 @@ export const HeroCarousel = () => {
                     </Button>
                     <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
                       <Link to="/contact">
-                        Nous Contacter
+                        {t('hero.slides.contact_cta')}
                       </Link>
                     </Button>
                   </div>

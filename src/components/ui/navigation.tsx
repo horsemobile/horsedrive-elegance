@@ -3,9 +3,11 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { LanguageSelector } from './language-selector';
+import { useTranslation } from 'react-i18next';
 const horsemobilLogo = '/lovable-uploads/f869f300-720d-4cf2-99ba-4ef11507f810.png';
 
 const Navigation = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
@@ -19,12 +21,12 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: 'Accueil', path: '/' },
-    { name: 'Camions', path: '/camions' },
-    { name: 'Vans', path: '/vans' },
-    { name: 'Vans Aménagés', path: '/van-amenage' },
-    { name: 'À Propos', path: '/about' },
-    { name: 'Contact', path: '/contact' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.trucks'), path: '/camions' },
+    { name: t('nav.vans'), path: '/vans' },
+    { name: t('nav.amenaged_vans'), path: '/van-amenage' },
+    { name: t('nav.about'), path: '/about' },
+    { name: t('nav.contact'), path: '/contact' },
   ];
 
   return (
@@ -76,7 +78,7 @@ const Navigation = () => {
             </div>
 
             <Button asChild variant="outline" size="sm" className="hidden md:inline-flex">
-              <Link to="/devis">Demander un Devis</Link>
+              <Link to="/devis">{t('nav.quote')}</Link>
             </Button>
 
             {/* Mobile Menu Button */}
@@ -111,7 +113,7 @@ const Navigation = () => {
               ))}
               <div className="px-4 py-2">
                 <Button asChild className="w-full" size="sm">
-                  <Link to="/devis">Demander un Devis</Link>
+                  <Link to="/devis">{t('nav.quote')}</Link>
                 </Button>
               </div>
             </div>

@@ -2,12 +2,14 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { MessageCircle, FileText, X, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export const FloatingCTA = () => {
+  const { t } = useTranslation();
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent("Bonjour, je suis intéressé par vos véhicules équestres. Pouvez-vous me donner plus d'informations ?");
+    const message = encodeURIComponent(t('floating_cta.whatsapp_message'));
     window.open(`https://wa.me/49123456789?text=${message}`, '_blank');
   };
 
@@ -23,14 +25,14 @@ export const FloatingCTA = () => {
             size="lg"
           >
             <MessageCircle className="h-5 w-5 mr-3 group-hover:scale-110 transition-transform" />
-            WhatsApp
+            {t('floating_cta.whatsapp')}
           </Button>
 
           {/* Devis */}
           <Button asChild className="w-full justify-start shadow-premium group" size="lg">
             <Link to="/devis">
               <FileText className="h-5 w-5 mr-3 group-hover:scale-110 transition-transform" />
-              Demander un Devis
+              {t('floating_cta.quote')}
             </Link>
           </Button>
 
@@ -43,7 +45,7 @@ export const FloatingCTA = () => {
           >
             <Link to="/contact">
               <Phone className="h-5 w-5 mr-3 group-hover:scale-110 transition-transform" />
-              Nous Appeler
+              {t('floating_cta.call')}
             </Link>
           </Button>
         </div>

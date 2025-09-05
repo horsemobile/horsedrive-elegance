@@ -14,7 +14,28 @@
     "subtitle": "Votre partenaire pour le transport équestre",
     "description": "Découvrez notre gamme complète de véhicules spécialisés pour le transport de chevaux. Qualité, sécurité et confort garantis.",
     "cta": "Découvrir nos véhicules",
-    "quote_cta": "Demander un devis"
+    "quote_cta": "Demander un devis",
+    "slides": {
+      "premium": {
+        "title": "Véhicules Équestres Premium",
+        "subtitle": "Transport de Chevaux Haut de Gamme",
+        "description": "Découvrez notre gamme complète de véhicules équestres : camions, vans et remorques conçus pour le confort et la sécurité de vos chevaux.",
+        "cta": "Voir nos Véhicules"
+      },
+      "customVans": {
+        "title": "Vans Aménagés sur Mesure",
+        "subtitle": "Personnalisation Complète",
+        "description": "Nos vans aménagés offrent une solution parfaite pour les déplacements équestres avec tout le confort nécessaire pour cavaliers et chevaux.",
+        "cta": "Découvrir les Vans"
+      },
+      "expertise": {
+        "title": "Expertise Allemande",
+        "subtitle": "Qualité et Fiabilité",
+        "description": "Fort de notre expertise allemande, nous proposons des véhicules équestres alliant innovation, sécurité et performance exceptionnelle.",
+        "cta": "En Savoir Plus"
+      },
+      "contact_cta": "Nous Contacter"
+    }
   },
   "categories": {
     "title": "Nos véhicules",
@@ -53,13 +74,222 @@
     "privacy": "Confidentialité",
     "terms": "CGU",
     "cookies": "Cookies",
-    "legal_notices": "Mentions légales"
+    "legal_notices": "Mentions légales",
+    "description": "Spécialiste allemand en véhicules équestres haut de gamme. Nous offrons des solutions complètes pour le transport de vos chevaux avec la qualité et la fiabilité allemandes.",
+    "vehicles_title": "Nos Véhicules",
+    "trucks": "Camions Équestres",
+    "vans": "Vans Équestres",
+    "amenaged_vans": "Vans Aménagés",
+    "company_title": "Entreprise",
+    "about": "À Propos",
+    "contact": "Contact",
+    "quote": "Demander un Devis",
+    "financing": "Financement",
+    "newsletter_title": "Restons en Contact",
+    "newsletter_description": "Recevez nos dernières actualités et offres spéciales.",
+    "newsletter_placeholder": "Votre email",
+    "newsletter_submit": "S'inscrire",
+    "newsletter_success_title": "Inscription réussie !",
+    "newsletter_success_description": "Vous recevrez bientôt nos dernières actualités.",
+    "phone": "+49 123 456 789",
+    "email": "info@horsemobil.de",
+    "address": "Musterstraße 123",
+    "address_city": "12345 Berlin, Deutschland",
+    "hours": "Lun-Ven: 8h-18h"
+  },
+  "floating_cta": {
+    "whatsapp": "WhatsApp",
+    "quote": "Demander un Devis",
+    "call": "Nous Appeler",
+    "whatsapp_message": "Bonjour, je suis intéressé par vos véhicules équestres. Pouvez-vous me donner plus d'informations ?"
+  },
+  "trucks": {
+    "title": "Camions Équestres",
+    "badge": "Véhicules Premium",
+    "description": "Découvrez notre gamme de camions équestres haut de gamme, conçus pour offrir le maximum de confort et de sécurité à vos chevaux lors de vos déplacements professionnels ou de loisir.",
+    "quote_cta": "Demander un Devis",
+    "contact_cta": "Nous Contacter",
+    "alt_image": "Camion équestre de luxe",
+    "features": {
+      "title": "Pourquoi choisir nos camions équestres ?",
+      "description": "Nos camions équestres combinent innovation, confort et sécurité pour offrir la meilleure expérience de transport à vos chevaux.",
+      "safety": {
+        "title": "Sécurité Maximale",
+        "description": "Systèmes de sécurité avancés et aménagements anti-stress pour vos chevaux"
+      },
+      "capacity": {
+        "title": "Capacité Élevée",
+        "description": "De 2 à 8 chevaux selon vos besoins, avec espaces de vie intégrés"
+      },
+      "custom": {
+        "title": "Sur Mesure",
+        "description": "Personnalisation complète selon vos besoins et préférences"
+      },
+      "quality": {
+        "title": "Qualité Premium",
+        "description": "Matériaux haut de gamme et finitions exceptionnelles"
+      }
+    },
+    "models": {
+      "title": "Nos Modèles de Camions",
+      "description": "Une gamme complète pour tous vos besoins de transport équestre",
+      "2_horses": {
+        "title": "Camion 2 Chevaux",
+        "description": "Idéal pour les sorties locales",
+        "features": [
+          "Capacité : 2 chevaux",
+          "Compartiment sellerie",
+          "Système de ventilation",
+          "Sol antidérapant"
+        ]
+      },
+      "4_horses": {
+        "title": "Camion 4 Chevaux",
+        "description": "Pour les équipes et clubs",
+        "features": [
+          "Capacité : 4 chevaux",
+          "Espace de vie intégré",
+          "Cuisine équipée",
+          "Toilettes et douche"
+        ]
+      },
+      "6_horses": {
+        "title": "Camion 6+ Chevaux",
+        "description": "Solution professionnelle",
+        "features": [
+          "Capacité : 6 à 8 chevaux",
+          "Appartement complet",
+          "Garage pour matériel",
+          "Options premium"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Prêt à découvrir votre camion équestre idéal ?",
+      "description": "Contactez nos experts pour une consultation personnalisée",
+      "quote_cta": "Demander un Devis Gratuit",
+      "appointment_cta": "Prendre Rendez-vous"
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Notre équipe d'experts est à votre disposition pour répondre à toutes vos questions et vous accompagner dans votre projet de véhicule équestre.",
+    "form": {
+      "title": "Envoyez-nous un message",
+      "description": "Remplissez ce formulaire et nous vous répondrons dans les plus brefs délais",
+      "first_name": "Prénom",
+      "last_name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "subject": "Sujet",
+      "subject_placeholder": "Objet de votre demande",
+      "message": "Message",
+      "message_placeholder": "Décrivez votre projet ou votre demande...",
+      "submit": "Envoyer le message"
+    },
+    "info": {
+      "phone": {
+        "title": "Téléphone",
+        "value": "+33 1 23 45 67 89",
+        "schedule": "Du lundi au vendredi, 9h-18h"
+      },
+      "email": {
+        "title": "Email",
+        "value": "contact@horsemobil.fr",
+        "response": "Réponse sous 24h"
+      },
+      "address": {
+        "title": "Adresse",
+        "street": "123 Avenue des Chevaux",
+        "city": "75000 Paris, France"
+      },
+      "hours": {
+        "title": "Horaires d'ouverture",
+        "weekdays": "Lundi - Vendredi",
+        "weekdays_hours": "9h - 18h",
+        "saturday": "Samedi",
+        "saturday_hours": "9h - 12h",
+        "sunday": "Dimanche",
+        "sunday_status": "Fermé"
+      }
+    }
+  },
+  "quote": {
+    "title": "Demander un Devis",
+    "description": "Obtenez un devis personnalisé pour votre projet de véhicule équestre. Notre équipe vous propose les meilleures solutions adaptées à vos besoins.",
+    "benefits": {
+      "free": {
+        "title": "Devis Gratuit",
+        "description": "Estimation personnalisée sans engagement"
+      },
+      "fast": {
+        "title": "Réponse Rapide", 
+        "description": "Réponse sous 24h maximum"
+      },
+      "detailed": {
+        "title": "Devis Détaillé",
+        "description": "Tous les détails et options inclus"
+      }
+    },
+    "form": {
+      "title": "Formulaire de demande de devis",
+      "description": "Plus vos informations sont précises, plus notre devis sera adapté à vos besoins",
+      "contact_info": "Informations de contact",
+      "first_name": "Prénom",
+      "last_name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "vehicle_type": "Type de véhicule souhaité",
+      "category": "Catégorie",
+      "category_placeholder": "Sélectionnez le type de véhicule",
+      "specifications": "Spécifications",
+      "horses_number": "Nombre de chevaux",
+      "horses_placeholder": "Sélectionnez",
+      "budget": "Budget approximatif",
+      "budget_placeholder": "Sélectionnez votre budget",
+      "options": "Options souhaitées",
+      "project_description": "Description de votre projet",
+      "project_description_label": "Décrivez-nous votre projet, vos besoins spécifiques et vos contraintes",
+      "project_description_placeholder": "Exemple: Je recherche un van 2 chevaux pour des concours le weekend, avec un petit espace de vie pour les déplacements de plusieurs jours...",
+      "submit": "Demander mon devis gratuit",
+      "vehicle_types": {
+        "truck": "Camion Équestre",
+        "van": "Van Équestre", 
+        "amenaged_van": "Van Aménagé",
+        "trailer": "Remorque"
+      },
+      "horses_options": {
+        "1": "1 cheval",
+        "2": "2 chevaux",
+        "3": "3 chevaux",
+        "4": "4 chevaux",
+        "5": "5 chevaux ou plus"
+      },
+      "budget_options": {
+        "50k-100k": "50 000€ - 100 000€",
+        "100k-150k": "100 000€ - 150 000€",
+        "150k-200k": "150 000€ - 200 000€",
+        "200k": "Plus de 200 000€"
+      },
+      "options_list": {
+        "tack_room": "Compartiment sellerie",
+        "water_tank": "Réservoir d'eau",
+        "sleeping_area": "Espace couchage",
+        "kitchen": "Coin cuisine",
+        "air_conditioning": "Climatisation",
+        "led_lighting": "Éclairage LED"
+      }
+    }
   },
   "common": {
     "learn_more": "En savoir plus",
     "contact_us": "Nous contacter",
     "back_home": "Retour à l'accueil",
     "coming_soon": "Contenu à venir",
-    "under_construction": "Cette page est en cours de construction"
+    "under_construction": "Cette page est en cours de construction",
+    "discover": "Découvrir",
+    "discover_more": "Découvrir plus",
+    "see_vehicles": "Voir nos véhicules",
+    "request_quote": "Demander un devis"
   }
 }

@@ -14,7 +14,28 @@
     "subtitle": "Your partner for equestrian transport",
     "description": "Discover our complete range of specialized vehicles for horse transportation. Quality, safety and comfort guaranteed.",
     "cta": "Discover our vehicles",
-    "quote_cta": "Request a quote"
+    "quote_cta": "Request a quote",
+    "slides": {
+      "premium": {
+        "title": "Premium Equestrian Vehicles",
+        "subtitle": "High-End Horse Transportation",
+        "description": "Discover our complete range of equestrian vehicles: trucks, vans and trailers designed for the comfort and safety of your horses.",
+        "cta": "See our Vehicles"
+      },
+      "customVans": {
+        "title": "Custom-Built Vans",
+        "subtitle": "Complete Customization",
+        "description": "Our converted vans offer a perfect solution for equestrian travel with all the necessary comfort for riders and horses.",
+        "cta": "Discover the Vans"
+      },
+      "expertise": {
+        "title": "German Expertise",
+        "subtitle": "Quality and Reliability",
+        "description": "With our German expertise, we offer equestrian vehicles combining innovation, safety and exceptional performance.",
+        "cta": "Learn More"
+      },
+      "contact_cta": "Contact Us"
+    }
   },
   "categories": {
     "title": "Our vehicles",
@@ -53,13 +74,222 @@
     "privacy": "Privacy",
     "terms": "Terms",
     "cookies": "Cookies",
-    "legal_notices": "Legal notices"
+    "legal_notices": "Legal notices",
+    "description": "German specialist in high-end equestrian vehicles. We offer complete solutions for transporting your horses with German quality and reliability.",
+    "vehicles_title": "Our Vehicles",
+    "trucks": "Horse Trucks",
+    "vans": "Horse Vans",
+    "amenaged_vans": "Converted Vans",
+    "company_title": "Company",
+    "about": "About",
+    "contact": "Contact",
+    "quote": "Request Quote",
+    "financing": "Financing",
+    "newsletter_title": "Stay in Touch",
+    "newsletter_description": "Receive our latest news and special offers.",
+    "newsletter_placeholder": "Your email",
+    "newsletter_submit": "Subscribe",
+    "newsletter_success_title": "Successfully subscribed!",
+    "newsletter_success_description": "You will soon receive our latest news.",
+    "phone": "+49 123 456 789",
+    "email": "info@horsemobil.de",
+    "address": "Musterstraße 123",
+    "address_city": "12345 Berlin, Deutschland",
+    "hours": "Mon-Fri: 8am-6pm"
+  },
+  "floating_cta": {
+    "whatsapp": "WhatsApp",
+    "quote": "Request Quote",
+    "call": "Call Us",
+    "whatsapp_message": "Hello, I'm interested in your equestrian vehicles. Can you give me more information?"
+  },
+  "trucks": {
+    "title": "Horse Trucks",
+    "badge": "Premium Vehicles",
+    "description": "Discover our range of high-end horse trucks, designed to offer maximum comfort and safety for your horses during professional or leisure travel.",
+    "quote_cta": "Request Quote",
+    "contact_cta": "Contact Us",
+    "alt_image": "Luxury horse truck",
+    "features": {
+      "title": "Why choose our horse trucks?",
+      "description": "Our horse trucks combine innovation, comfort and safety to provide the best transport experience for your horses.",
+      "safety": {
+        "title": "Maximum Safety",
+        "description": "Advanced safety systems and anti-stress arrangements for your horses"
+      },
+      "capacity": {
+        "title": "High Capacity",
+        "description": "From 2 to 8 horses according to your needs, with integrated living spaces"
+      },
+      "custom": {
+        "title": "Custom Made",
+        "description": "Complete customization according to your needs and preferences"
+      },
+      "quality": {
+        "title": "Premium Quality",
+        "description": "High-end materials and exceptional finishes"
+      }
+    },
+    "models": {
+      "title": "Our Truck Models",
+      "description": "A complete range for all your equestrian transport needs",
+      "2_horses": {
+        "title": "2-Horse Truck",
+        "description": "Ideal for local outings",
+        "features": [
+          "Capacity: 2 horses",
+          "Tack compartment",
+          "Ventilation system",
+          "Non-slip floor"
+        ]
+      },
+      "4_horses": {
+        "title": "4-Horse Truck",
+        "description": "For teams and clubs",
+        "features": [
+          "Capacity: 4 horses",
+          "Integrated living space",
+          "Equipped kitchen",
+          "Toilet and shower"
+        ]
+      },
+      "6_horses": {
+        "title": "6+ Horse Truck",
+        "description": "Professional solution",
+        "features": [
+          "Capacity: 6 to 8 horses",
+          "Complete apartment",
+          "Equipment garage",
+          "Premium options"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to discover your ideal horse truck?",
+      "description": "Contact our experts for a personalized consultation",
+      "quote_cta": "Request Free Quote",
+      "appointment_cta": "Schedule Appointment"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Our team of experts is at your disposal to answer all your questions and support you in your equestrian vehicle project.",
+    "form": {
+      "title": "Send us a message",
+      "description": "Fill out this form and we will respond to you as soon as possible",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "subject_placeholder": "Subject of your request",
+      "message": "Message",
+      "message_placeholder": "Describe your project or request...",
+      "submit": "Send message"
+    },
+    "info": {
+      "phone": {
+        "title": "Phone",
+        "value": "+33 1 23 45 67 89",
+        "schedule": "Monday to Friday, 9am-6pm"
+      },
+      "email": {
+        "title": "Email",
+        "value": "contact@horsemobil.fr",
+        "response": "Response within 24h"
+      },
+      "address": {
+        "title": "Address",
+        "street": "123 Avenue des Chevaux",
+        "city": "75000 Paris, France"
+      },
+      "hours": {
+        "title": "Opening Hours",
+        "weekdays": "Monday - Friday",
+        "weekdays_hours": "9am - 6pm",
+        "saturday": "Saturday",
+        "saturday_hours": "9am - 12pm",
+        "sunday": "Sunday",
+        "sunday_status": "Closed"
+      }
+    }
+  },
+  "quote": {
+    "title": "Request a Quote",
+    "description": "Get a personalized quote for your equestrian vehicle project. Our team offers you the best solutions adapted to your needs.",
+    "benefits": {
+      "free": {
+        "title": "Free Quote",
+        "description": "Personalized estimate without obligation"
+      },
+      "fast": {
+        "title": "Quick Response",
+        "description": "Response within 24h maximum"
+      },
+      "detailed": {
+        "title": "Detailed Quote",
+        "description": "All details and options included"
+      }
+    },
+    "form": {
+      "title": "Quote request form",
+      "description": "The more precise your information, the more our quote will be adapted to your needs",
+      "contact_info": "Contact information",
+      "first_name": "First Name",
+      "last_name": "Last Name", 
+      "email": "Email",
+      "phone": "Phone",
+      "vehicle_type": "Desired vehicle type",
+      "category": "Category",
+      "category_placeholder": "Select vehicle type",
+      "specifications": "Specifications",
+      "horses_number": "Number of horses",
+      "horses_placeholder": "Select",
+      "budget": "Approximate budget",
+      "budget_placeholder": "Select your budget",
+      "options": "Desired options",
+      "project_description": "Project description",
+      "project_description_label": "Tell us about your project, your specific needs and constraints",
+      "project_description_placeholder": "Example: I'm looking for a 2-horse van for weekend competitions, with a small living space for multi-day trips...",
+      "submit": "Request my free quote",
+      "vehicle_types": {
+        "truck": "Horse Truck",
+        "van": "Horse Van",
+        "amenaged_van": "Converted Van", 
+        "trailer": "Trailer"
+      },
+      "horses_options": {
+        "1": "1 horse",
+        "2": "2 horses",
+        "3": "3 horses",
+        "4": "4 horses",
+        "5": "5 horses or more"
+      },
+      "budget_options": {
+        "50k-100k": "€50,000 - €100,000",
+        "100k-150k": "€100,000 - €150,000",
+        "150k-200k": "€150,000 - €200,000",
+        "200k": "More than €200,000"
+      },
+      "options_list": {
+        "tack_room": "Tack compartment",
+        "water_tank": "Water tank",
+        "sleeping_area": "Sleeping area",
+        "kitchen": "Kitchen area",
+        "air_conditioning": "Air conditioning",
+        "led_lighting": "LED lighting"
+      }
+    }
   },
   "common": {
     "learn_more": "Learn more",
     "contact_us": "Contact us",
     "back_home": "Back to home",
     "coming_soon": "Content coming soon",
-    "under_construction": "This page is under construction"
+    "under_construction": "This page is under construction",
+    "discover": "Discover",
+    "discover_more": "Discover more",
+    "see_vehicles": "See our vehicles",
+    "request_quote": "Request quote"
   }
 }
