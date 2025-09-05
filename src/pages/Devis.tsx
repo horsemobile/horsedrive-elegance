@@ -192,28 +192,28 @@ const Devis = () => {
                 <h3 className="text-lg font-semibold mb-4">{t('pages.quote.desiredOptions')}</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="flex items-center space-x-2">
-                    <Checkbox id="sellerie" />
-                    <Label htmlFor="sellerie">{t('pages.quote.tackCompartment')}</Label>
+                    <Checkbox id="tack-compartment" />
+                    <Label htmlFor="tack-compartment">{t('pages.quote.tackCompartment')}</Label>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Checkbox id="eau" />
-                    <Label htmlFor="eau">{t('pages.quote.waterTank')}</Label>
+                    <Checkbox id="water-tank" />
+                    <Label htmlFor="water-tank">{t('pages.quote.waterTank')}</Label>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Checkbox id="couchage" />
-                    <Label htmlFor="couchage">{t('pages.quote.sleepingArea')}</Label>
+                    <Checkbox id="sleeping-area" />
+                    <Label htmlFor="sleeping-area">{t('pages.quote.sleepingArea')}</Label>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Checkbox id="cuisine" />
-                    <Label htmlFor="cuisine">{t('pages.quote.kitchenArea')}</Label>
+                    <Checkbox id="kitchen-area" />
+                    <Label htmlFor="kitchen-area">{t('pages.quote.kitchenArea')}</Label>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Checkbox id="climatisation" />
-                    <Label htmlFor="climatisation">{t('pages.quote.airConditioning')}</Label>
+                    <Checkbox id="air-conditioning" />
+                    <Label htmlFor="air-conditioning">{t('pages.quote.airConditioning')}</Label>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Checkbox id="eclairage" />
-                    <Label htmlFor="eclairage">{t('pages.quote.ledLighting')}</Label>
+                    <Checkbox id="led-lighting" />
+                    <Label htmlFor="led-lighting">{t('pages.quote.ledLighting')}</Label>
                   </div>
                 </div>
               </div>
