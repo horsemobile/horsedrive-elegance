@@ -163,10 +163,21 @@ const Devis = () => {
                         <SelectValue placeholder={t('pages.quote.selectBudget')} />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="50k-100k">{t('pages.quote.budget50k100k')}</SelectItem>
-                        <SelectItem value="100k-150k">{t('pages.quote.budget100k150k')}</SelectItem>
-                        <SelectItem value="150k-200k">{t('pages.quote.budget150k200k')}</SelectItem>
-                        <SelectItem value="200k+">{t('pages.quote.budgetOver200k')}</SelectItem>
+                        {vehicleType === 'van-amenage' ? (
+                          <>
+                            <SelectItem value="4k-15k">€4,000 - €15,000</SelectItem>
+                            <SelectItem value="15k-30k">€15,000 - €30,000</SelectItem>
+                            <SelectItem value="30k-50k">€30,000 - €50,000</SelectItem>
+                            <SelectItem value="50k+">€50,000+</SelectItem>
+                          </>
+                        ) : (
+                          <>
+                            <SelectItem value="35k-60k">€35,000 - €60,000</SelectItem>
+                            <SelectItem value="60k-100k">€60,000 - €100,000</SelectItem>
+                            <SelectItem value="100k-150k">€100,000 - €150,000</SelectItem>
+                            <SelectItem value="150k+">€150,000+</SelectItem>
+                          </>
+                        )}
                       </SelectContent>
                     </Select>
                   </div>
