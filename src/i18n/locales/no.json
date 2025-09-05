@@ -324,6 +324,109 @@
       }
     }
   },
+  "vans": {
+    "title": "Heste-varebiler",
+    "badge": "Hestesport mobilitet",
+    "description": "Våre heste-varebiler kombinerer manøvrerbarhet og komfort for dine daglige reiser. Perfekt for fritidsutflukter, timer eller små konkurranser.",
+    "quote_cta": "Be om tilbud",
+    "contact_cta": "Kontakt oss",
+    "alt_image": "Moderne heste-varebil",
+    "features": {
+      "title": "Fordelene med våre heste-varebiler",
+      "description": "Designet for daglig praktisk bruk samtidig som de bevarer hestenes velvære.",
+      "maneuverability": {
+        "title": "Manøvrerbarhet",
+        "description": "Lett å kjøre og manøvrere, ideell for alle typer reiser"
+      },
+      "safety": {
+        "title": "Sikkerhet",
+        "description": "Tilpasset sikkerhetsutstyr for å beskytte hestene dine"
+      },
+      "comfort": {
+        "title": "Komfort",
+        "description": "Layout designet for velvære og ro"
+      },
+      "versatility": {
+        "title": "Allsidighet",
+        "description": "Tilpasset alle dine behov, fra daglig bruk til spesielle utflukter"
+      }
+    },
+    "models": {
+      "title": "Vårt varebil-utvalg",
+      "description": "Løsninger tilpasset alle ryttere og alle budsjetter",
+      "1_horse": {
+        "title": "1-hest varebil",
+        "description": "Perfekt for den individuelle rytteren",
+        "price": "Fra 45.000€",
+        "features": [
+          "Kapasitet: 1 hest",
+          "Sadelkammer",
+          "Lett å kjøre",
+          "Økonomisk i bruk"
+        ]
+      },
+      "2_horses": {
+        "title": "2-hest varebil",
+        "description": "Det allsidige valget par excellence",
+        "badge": "Mest populære",
+        "price": "Fra 65.000€",
+        "features": [
+          "Kapasitet: 2 hester",
+          "Stort sadelrom",
+          "Komfortalternativer",
+          "Optimal modularitet"
+        ]
+      },
+      "3_horses": {
+        "title": "3-hest varebil",
+        "description": "For grupper og profesjonelle",
+        "price": "Fra 85.000€",
+        "features": [
+          "Kapasitet: 3 hester",
+          "XXL lagringsplass",
+          "Premium alternativer tilgjengelig",
+          "Ideell for undervisning"
+        ]
+      }
+    },
+    "options": {
+      "title": "Alternativer og utstyr",
+      "description": "Tilpass varebilen din i henhold til dine spesifikke behov",
+      "horse_comfort": {
+        "title": "Hestekomfort",
+        "features": [
+          "Sklisikkert gummigulv",
+          "Naturlig eller tvungen ventilasjon",
+          "LED-belysning",
+          "Polstrete laststenger"
+        ]
+      },
+      "tack_storage": {
+        "title": "Sadel & lagring",
+        "features": [
+          "Svingbare sadelstativer",
+          "Vanntette lagrings bokser",
+          "Nett- og grimsholdere",
+          "Integrert vannpunkt"
+        ]
+      },
+      "safety_practical": {
+        "title": "Sikkerhet & praktisk",
+        "features": [
+          "Overvåkningskamera",
+          "Elektrisk tilgangsrampe",
+          "Forsterkede dekk",
+          "Automatiske stabilisatorer"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Finn heste-varebilen som passer deg",
+      "description": "Våre eksperter følger deg i valg av ditt ideelle kjøretøy",
+      "quote_cta": "Be om gratis tilbud",
+      "models_cta": "Se våre modeller"
+    }
+  },
   "common": {
     "learn_more": "Lær mer",
     "contact_us": "Kontakt oss",

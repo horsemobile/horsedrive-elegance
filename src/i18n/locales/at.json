@@ -392,6 +392,109 @@
       }
     }
   },
+  "vans": {
+    "title": "Pferde-Transporter",
+    "badge": "Reitsport Mobilität",
+    "description": "Unsere Pferde-Transporter vereinen Wendigkeit und Komfort für Ihre täglichen Fahrten. Perfekt für Freizeitausflüge, Unterricht oder kleine Wettkämpfe.",
+    "quote_cta": "Angebot anfordern",
+    "contact_cta": "Kontakt aufnehmen",
+    "alt_image": "Moderner Pferde-Transporter",
+    "features": {
+      "title": "Die Vorteile unserer Pferde-Transporter",
+      "description": "Für den täglichen praktischen Einsatz konzipiert und dabei das Wohlbefinden Ihrer Pferde bewahrend.",
+      "maneuverability": {
+        "title": "Wendigkeit",
+        "description": "Einfach zu fahren und zu manövrieren, ideal für alle Arten von Fahrten"
+      },
+      "safety": {
+        "title": "Sicherheit",
+        "description": "Angepasste Sicherheitsausrüstung zum Schutz Ihrer Pferde"
+      },
+      "comfort": {
+        "title": "Komfort",
+        "description": "Layout für Wohlbefinden und Ruhe konzipiert"
+      },
+      "versatility": {
+        "title": "Vielseitigkeit",
+        "description": "Angepasst an alle Ihre Bedürfnisse, vom täglichen Gebrauch bis zu besonderen Ausflügen"
+      }
+    },
+    "models": {
+      "title": "Unser Transporter-Sortiment",
+      "description": "Lösungen für jeden Reiter und jedes Budget",
+      "1_horse": {
+        "title": "1-Pferde Transporter",
+        "description": "Perfekt für den Einzelreiter",
+        "price": "Ab 45.000€",
+        "features": [
+          "Kapazität: 1 Pferd",
+          "Sattelkammer",
+          "Einfach zu fahren",
+          "Wirtschaftlich im Gebrauch"
+        ]
+      },
+      "2_horses": {
+        "title": "2-Pferde Transporter",
+        "description": "Die vielseitige Wahl schlechthin",
+        "badge": "Am beliebtesten",
+        "price": "Ab 65.000€",
+        "features": [
+          "Kapazität: 2 Pferde",
+          "Große Sattelkammer",
+          "Komfortoptionen",
+          "Optimale Modularität"
+        ]
+      },
+      "3_horses": {
+        "title": "3-Pferde Transporter",
+        "description": "Für Gruppen und Profis",
+        "price": "Ab 85.000€",
+        "features": [
+          "Kapazität: 3 Pferde",
+          "XXL Stauraum",
+          "Premium-Optionen verfügbar",
+          "Ideal für den Unterricht"
+        ]
+      }
+    },
+    "options": {
+      "title": "Optionen und Ausstattung",
+      "description": "Passen Sie Ihren Transporter nach Ihren spezifischen Bedürfnissen an",
+      "horse_comfort": {
+        "title": "Pferde-Komfort",
+        "features": [
+          "Rutschfester Gummiboden",
+          "Natürliche oder erzwungene Belüftung",
+          "LED-Beleuchtung",
+          "Gepolsterte Ladestangen"
+        ]
+      },
+      "tack_storage": {
+        "title": "Sattel & Lagerung",
+        "features": [
+          "Schwenkbare Sattelhalter",
+          "Wasserdichte Aufbewahrungsboxen",
+          "Netz- und Halfterhalter",
+          "Integrierte Wasserstelle"
+        ]
+      },
+      "safety_practical": {
+        "title": "Sicherheit & Praktisch",
+        "features": [
+          "Überwachungskamera",
+          "Elektrische Zugangsrampe",
+          "Verstärkte Reifen",
+          "Automatische Stabilisatoren"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Finden Sie den Pferde-Transporter, der zu Ihnen passt",
+      "description": "Unsere Experten begleiten Sie bei der Wahl Ihres idealen Fahrzeugs",
+      "quote_cta": "Kostenloses Angebot anfordern",
+      "models_cta": "Unsere Modelle ansehen"
+    }
+  },
   "common": {
     "learn_more": "Mehr erfahren",
     "contact_us": "Kontaktieren Sie uns",

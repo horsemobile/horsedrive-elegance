@@ -214,6 +214,109 @@
       "appointment_cta": "Programar Cita"
     }
   },
+  "vans": {
+    "title": "Furgonetas Ecuestres",
+    "badge": "Movilidad Ecuestre",
+    "description": "Nuestras furgonetas ecuestres combinan maniobrabilidad y comodidad para sus viajes diarios. Perfectas para salidas de ocio, clases o pequeñas competiciones.",
+    "quote_cta": "Solicitar Presupuesto",
+    "contact_cta": "Contactarnos",
+    "alt_image": "Furgoneta ecuestre moderna",
+    "features": {
+      "title": "Las ventajas de nuestras furgonetas ecuestres",
+      "description": "Diseñadas para la practicidad diaria mientras preservan el bienestar de sus caballos.",
+      "maneuverability": {
+        "title": "Maniobrabilidad",
+        "description": "Fácil de conducir y maniobrar, ideal para todo tipo de viajes"
+      },
+      "safety": {
+        "title": "Seguridad",
+        "description": "Equipamiento de seguridad adaptado para proteger a sus caballos"
+      },
+      "comfort": {
+        "title": "Comodidad",
+        "description": "Diseño pensado para el bienestar y la tranquilidad"
+      },
+      "versatility": {
+        "title": "Versatilidad",
+        "description": "Adaptado a todas sus necesidades, desde el uso diario hasta salidas especiales"
+      }
+    },
+    "models": {
+      "title": "Nuestra Gama de Furgonetas",
+      "description": "Soluciones adaptadas a cada jinete y cada presupuesto",
+      "1_horse": {
+        "title": "Furgoneta 1 Caballo",
+        "description": "Perfecta para el jinete individual",
+        "price": "Desde 45.000€",
+        "features": [
+          "Capacidad: 1 caballo",
+          "Compartimento de arneses",
+          "Fácil de conducir",
+          "Económica de usar"
+        ]
+      },
+      "2_horses": {
+        "title": "Furgoneta 2 Caballos",
+        "description": "La elección versátil por excelencia",
+        "badge": "Más Popular",
+        "price": "Desde 65.000€",
+        "features": [
+          "Capacidad: 2 caballos",
+          "Gran compartimento de arneses",
+          "Opciones de comodidad",
+          "Modularidad óptima"
+        ]
+      },
+      "3_horses": {
+        "title": "Furgoneta 3 Caballos",
+        "description": "Para grupos y profesionales",
+        "price": "Desde 85.000€",
+        "features": [
+          "Capacidad: 3 caballos",
+          "Espacio de almacenamiento XXL",
+          "Opciones premium disponibles",
+          "Ideal para la enseñanza"
+        ]
+      }
+    },
+    "options": {
+      "title": "Opciones y Equipamiento",
+      "description": "Personalice su furgoneta según sus necesidades específicas",
+      "horse_comfort": {
+        "title": "Comodidad del Caballo",
+        "features": [
+          "Suelo de goma antideslizante",
+          "Ventilación natural o forzada",
+          "Iluminación LED",
+          "Barras de carga acolchadas"
+        ]
+      },
+      "tack_storage": {
+        "title": "Arneses y Almacenamiento",
+        "features": [
+          "Portasillas pivotantes",
+          "Cajas de almacenamiento impermeables",
+          "Portaredes y cabezadas",
+          "Punto de agua integrado"
+        ]
+      },
+      "safety_practical": {
+        "title": "Seguridad y Práctico",
+        "features": [
+          "Cámara de vigilancia",
+          "Rampa de acceso eléctrica",
+          "Neumáticos reforzados",
+          "Estabilizadores automáticos"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Encuentre la furgoneta ecuestre que le convenga",
+      "description": "Nuestros expertos le acompañan en la elección de su vehículo ideal",
+      "quote_cta": "Solicitar Presupuesto Gratuito",
+      "models_cta": "Ver nuestros Modelos"
+    }
+  },
   "common": {
     "learn_more": "Saber más",
     "contact_us": "Contáctanos",

@@ -392,6 +392,109 @@
       }
     }
   },
+  "vans": {
+    "title": "Hevos-pakettiautot",
+    "badge": "Ratsastus liikkuvuus",
+    "description": "Hevos-pakettiautomme yhdistävät liikkuvuuden ja mukavuuden päivittäisiin matkoihinne. Täydellisiä vapaa-ajan retkiin, oppitunneille tai pieniin kilpailuihin.",
+    "quote_cta": "Pyydä tarjous",
+    "contact_cta": "Ota yhteyttä",
+    "alt_image": "Moderni hevos-pakettiauto",
+    "features": {
+      "title": "Hevos-pakettiautojemme edut",
+      "description": "Suunniteltu päivittäiseen käytännöllisyyteen säilyttäen samalla hevosten hyvinvoinnin.",
+      "maneuverability": {
+        "title": "Liikkuvuus",
+        "description": "Helppo ajaa ja ohjata, ihanteellinen kaikenlaisiin matkoihin"
+      },
+      "safety": {
+        "title": "Turvallisuus",
+        "description": "Sopeutettu turvallisuusvarustus hevostesi suojaamiseksi"
+      },
+      "comfort": {
+        "title": "Mukavuus",
+        "description": "Sisustus suunniteltu hyvinvointia ja rauhaa varten"
+      },
+      "versatility": {
+        "title": "Monipuolisuus",
+        "description": "Sopii kaikkiin tarpeisiisi, päivittäisestä käytöstä erikoisretkiin"
+      }
+    },
+    "models": {
+      "title": "Pakettiauto-valikoimamme",
+      "description": "Ratkaisuja jokaiselle ratsastajalle ja jokaiseen budjettiin",
+      "1_horse": {
+        "title": "1-hevonen pakettiauto",
+        "description": "Täydellinen yksittäiselle ratsastajalle",
+        "price": "Alkaen 45.000€",
+        "features": [
+          "Kapasiteetti: 1 hevonen",
+          "Satulaosasto",
+          "Helppo ajaa",
+          "Taloudellinen käyttää"
+        ]
+      },
+      "2_horses": {
+        "title": "2-hevonen pakettiauto",
+        "description": "Monipuolinen valinta par excellence",
+        "badge": "Suosituin",
+        "price": "Alkaen 65.000€",
+        "features": [
+          "Kapasiteetti: 2 hevosta",
+          "Iso satulahuone",
+          "Mukavuusvaihtoehdot",
+          "Optimaalinen modulaarisuus"
+        ]
+      },
+      "3_horses": {
+        "title": "3-hevonen pakettiauto",
+        "description": "Ryhmille ja ammattilaisille",
+        "price": "Alkaen 85.000€",
+        "features": [
+          "Kapasiteetti: 3 hevosta",
+          "XXL säilytystila",
+          "Premium vaihtoehdot saatavilla",
+          "Ihanteellinen opetukseen"
+        ]
+      }
+    },
+    "options": {
+      "title": "Vaihtoehdot ja varusteet",
+      "description": "Mukauta pakettiautosi erityistarpeidesi mukaan",
+      "horse_comfort": {
+        "title": "Hevosen mukavuus",
+        "features": [
+          "Liukumaton kumilattiaa",
+          "Luonnollinen tai pakotettu tuuletus",
+          "LED-valaistus",
+          "Pehmustetut kuormatangot"
+        ]
+      },
+      "tack_storage": {
+        "title": "Satula & säilytys",
+        "features": [
+          "Kääntyvät satulateline",
+          "Vedenpitävät säilytyslaatikot",
+          "Verkko- ja riimupidikkeet",
+          "Integroitu vesipiste"
+        ]
+      },
+      "safety_practical": {
+        "title": "Turvallisuus & käytännöllinen",
+        "features": [
+          "Valvontakamera",
+          "Sähköinen pääsyluiska",
+          "Vahvistetut renkaat",
+          "Automaattiset vakauttajat"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Löydä sinulle sopiva hevos-pakettiauto",
+      "description": "Asiantuntijamme auttavat sinua valitsemaan ihanteellisen ajoneuvon",
+      "quote_cta": "Pyydä ilmainen tarjous",
+      "models_cta": "Katso mallejamme"
+    }
+  },
   "common": {
     "learn_more": "Lue lisää",
     "contact_us": "Ota yhteyttä",

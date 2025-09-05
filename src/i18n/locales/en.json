@@ -324,6 +324,109 @@
       }
     }
   },
+  "vans": {
+    "title": "Horse Vans",
+    "badge": "Equestrian Mobility",
+    "description": "Our horse vans combine maneuverability and comfort for your daily travels. Perfect for leisure outings, lessons or small competitions.",
+    "quote_cta": "Request Quote",
+    "contact_cta": "Contact Us",
+    "alt_image": "Modern horse van",
+    "features": {
+      "title": "The advantages of our horse vans",
+      "description": "Designed for daily practicality while preserving the well-being of your horses.",
+      "maneuverability": {
+        "title": "Maneuverability",
+        "description": "Easy to drive and maneuver, ideal for all types of journeys"
+      },
+      "safety": {
+        "title": "Safety",
+        "description": "Adapted safety equipment to protect your horses"
+      },
+      "comfort": {
+        "title": "Comfort",
+        "description": "Layout designed for well-being and tranquility"
+      },
+      "versatility": {
+        "title": "Versatility",
+        "description": "Adapted to all your needs, from daily use to special outings"
+      }
+    },
+    "models": {
+      "title": "Our Van Range",
+      "description": "Solutions adapted to every rider and every budget",
+      "1_horse": {
+        "title": "1-Horse Van",
+        "description": "Perfect for the individual rider",
+        "price": "From €45,000",
+        "features": [
+          "Capacity: 1 horse",
+          "Tack compartment",
+          "Easy to drive",
+          "Economical to use"
+        ]
+      },
+      "2_horses": {
+        "title": "2-Horse Van",
+        "description": "The versatile choice par excellence",
+        "badge": "Most Popular",
+        "price": "From €65,000",
+        "features": [
+          "Capacity: 2 horses",
+          "Large tack room",
+          "Comfort options",
+          "Optimal modularity"
+        ]
+      },
+      "3_horses": {
+        "title": "3-Horse Van",
+        "description": "For groups and professionals",
+        "price": "From €85,000",
+        "features": [
+          "Capacity: 3 horses",
+          "XXL storage space",
+          "Premium options available",
+          "Ideal for teaching"
+        ]
+      }
+    },
+    "options": {
+      "title": "Options and Equipment",
+      "description": "Customize your van according to your specific needs",
+      "horse_comfort": {
+        "title": "Horse Comfort",
+        "features": [
+          "Non-slip rubber flooring",
+          "Natural or forced ventilation",
+          "LED lighting",
+          "Padded load bars"
+        ]
+      },
+      "tack_storage": {
+        "title": "Tack & Storage",
+        "features": [
+          "Pivoting saddle racks",
+          "Waterproof storage boxes",
+          "Net and halter holders",
+          "Integrated water point"
+        ]
+      },
+      "safety_practical": {
+        "title": "Safety & Practical",
+        "features": [
+          "Surveillance camera",
+          "Electric access ramp",
+          "Reinforced tires",
+          "Automatic stabilizers"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Find the horse van that suits you",
+      "description": "Our experts accompany you in choosing your ideal vehicle",
+      "quote_cta": "Request Free Quote",
+      "models_cta": "See our Models"
+    }
+  },
   "common": {
     "learn_more": "Learn more",
     "contact_us": "Contact us",

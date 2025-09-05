@@ -425,6 +425,109 @@
       "submitQuote": "Demander mon devis gratuit"
     }
   },
+  "vans": {
+    "title": "Vans Équestres",
+    "badge": "Mobilité Équestre",
+    "description": "Nos vans équestres allient maniabilité et confort pour vos déplacements quotidiens. Parfaits pour les sorties de loisir, les cours ou les petites compétitions.",
+    "quote_cta": "Demander un Devis",
+    "contact_cta": "Nous Contacter",
+    "alt_image": "Van équestre moderne",
+    "features": {
+      "title": "Les avantages de nos vans équestres",
+      "description": "Conçus pour la praticité quotidienne tout en préservant le bien-être de vos chevaux.",
+      "maneuverability": {
+        "title": "Maniabilité",
+        "description": "Facile à conduire et à manœuvrer, idéal pour tous types de trajets"
+      },
+      "safety": {
+        "title": "Sécurité",
+        "description": "Équipements de sécurité adaptés pour protéger vos chevaux"
+      },
+      "comfort": {
+        "title": "Confort",
+        "description": "Aménagement pensé pour le bien-être et la tranquillité"
+      },
+      "versatility": {
+        "title": "Polyvalence",
+        "description": "Adapté à tous vos besoins, du quotidien aux sorties spéciales"
+      }
+    },
+    "models": {
+      "title": "Notre Gamme de Vans",
+      "description": "Des solutions adaptées à chaque cavalier et chaque budget",
+      "1_horse": {
+        "title": "Van 1 Cheval",
+        "description": "Parfait pour le cavalier individuel",
+        "price": "À partir de 45 000€",
+        "features": [
+          "Capacité : 1 cheval",
+          "Compartiment sellerie",
+          "Facilité de conduite",
+          "Économique à l'usage"
+        ]
+      },
+      "2_horses": {
+        "title": "Van 2 Chevaux",
+        "description": "Le choix polyvalent par excellence",
+        "badge": "Le Plus Populaire",
+        "price": "À partir de 65 000€",
+        "features": [
+          "Capacité : 2 chevaux",
+          "Grande sellerie",
+          "Options de confort",
+          "Modularité optimale"
+        ]
+      },
+      "3_horses": {
+        "title": "Van 3 Chevaux",
+        "description": "Pour les groupes et professionnels",
+        "price": "À partir de 85 000€",
+        "features": [
+          "Capacité : 3 chevaux",
+          "Espace de rangement XXL",
+          "Options premium disponibles",
+          "Idéal pour l'enseignement"
+        ]
+      }
+    },
+    "options": {
+      "title": "Options et Équipements",
+      "description": "Personnalisez votre van selon vos besoins spécifiques",
+      "horse_comfort": {
+        "title": "Confort Chevaux",
+        "features": [
+          "Sol en caoutchouc antidérapant",
+          "Ventilation naturelle ou forcée",
+          "Éclairage LED",
+          "Barres de charge rembourrées"
+        ]
+      },
+      "tack_storage": {
+        "title": "Sellerie & Rangement",
+        "features": [
+          "Porte-selles pivotants",
+          "Coffres de rangement étanches",
+          "Porte-filets et licols",
+          "Point d'eau intégré"
+        ]
+      },
+      "safety_practical": {
+        "title": "Sécurité & Pratique",
+        "features": [
+          "Caméra de surveillance",
+          "Rampe d'accès électrique",
+          "Pneus renforcés",
+          "Stabilisateurs automatiques"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Trouvez le van équestre qui vous correspond",
+      "description": "Nos experts vous accompagnent dans le choix de votre véhicule idéal",
+      "quote_cta": "Demander un Devis Gratuit",
+      "models_cta": "Voir nos Modèles"
+    }
+  },
   "common": {
     "learn_more": "En savoir plus",
     "contact_us": "Nous contacter",
