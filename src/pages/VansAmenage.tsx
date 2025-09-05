@@ -11,7 +11,7 @@ import {
   Zap, 
   Wifi, 
   Coffee, 
-  Shower, 
+  Droplets, 
   Wind,
   Shield,
   Star,
@@ -75,7 +75,7 @@ const VansAmenage = () => {
       description: "Réfrigérateur, plaques de cuisson, évier et rangements optimisés"
     },
     {
-      icon: Shower,
+      icon: Droplets,
       title: "Salle d'eau",
       description: "Douche, lavabo et WC avec système d'évacuation adapté"
     },

@@ -17,14 +17,14 @@ import {
   CheckCircle,
   Star,
   Clock,
-  Tools
+  Wrench
 } from 'lucide-react';
 
 const APropos = () => {
   const stats = [
     { icon: Calendar, label: "Années d'expérience", value: "15+" },
     { icon: Users, label: "Clients satisfaits", value: "500+" },
-    { icon: Tools, label: "Véhicules livrés", value: "1000+" },
+    { icon: Wrench, label: "Véhicules livrés", value: "1000+" },
     { icon: Award, label: "Certifications", value: "5" }
   ];
 
