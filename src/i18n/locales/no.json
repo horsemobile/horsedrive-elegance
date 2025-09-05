@@ -727,6 +727,16 @@
       "projectDescription": "Prosjektbeskrivelse",
       "projectDescriptionLabel": "Beskriv prosjektet ditt, spesifikke behov og begrensninger",
       "projectDescriptionPlaceholder": "Eksempel: Jeg leter etter en 2-heste van for helgekonkurranser, med et lite oppholdsområde for flerdagsturer...",
+      "passengersPlaceholder": "Velg antall",
+      "vanUsagePlaceholder": "Velg bruk",
+      "budget4k15k": "4 000€ - 15 000€",
+      "budget15k25k": "15 000€ - 25 000€",
+      "budget25k35k": "25 000€ - 35 000€",
+      "budget35kPlus": "35 000€+",
+      "budget35k50k": "35 000€ - 50 000€",
+      "budget50k75k": "50 000€ - 75 000€",
+      "budget75k100k": "75 000€ - 100 000€",
+      "budget100kPlus": "100 000€+",
       "submitQuote": "Send Tilbudsforespørsel"
     }
   }

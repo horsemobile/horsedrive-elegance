@@ -795,6 +795,16 @@
       "projectDescription": "Projektbeschreibung",
       "projectDescriptionLabel": "Beschreiben Sie Ihr Projekt, spezifische Bedürfnisse und Einschränkungen",
       "projectDescriptionPlaceholder": "Beispiel: Ich suche einen 2-Pferde-Van für Wochenendturniere, mit einem kleinen Wohnbereich für mehrtägige Reisen...",
+      "passengersPlaceholder": "Anzahl wählen",
+      "vanUsagePlaceholder": "Verwendung wählen",
+      "budget4k15k": "4.000€ - 15.000€",
+      "budget15k25k": "15.000€ - 25.000€",
+      "budget25k35k": "25.000€ - 35.000€",
+      "budget35kPlus": "35.000€+",
+      "budget35k50k": "35.000€ - 50.000€",
+      "budget50k75k": "50.000€ - 75.000€",
+      "budget75k100k": "75.000€ - 100.000€",
+      "budget100kPlus": "100.000€+",
       "submitQuote": "Angebot Anfordern"
     }
   }
