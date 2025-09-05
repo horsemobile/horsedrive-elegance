@@ -38,10 +38,15 @@
     }
   },
   "categories": {
-    "title": "Unsere Fahrzeuge",
+    "title": "Unsere Fahrzeugkategorien",
+    "description": "Entdecken Sie unser komplettes Sortiment an Pferdetransportfahrzeugen, entwickelt mit österreichischer Expertise für alle Ihre Transportbedürfnisse.",
+    "vehiclesAvailable": "Fahrzeuge verfügbar",
+    "notFound": "Finden Sie nicht, wonach Sie suchen?",
+    "contactExperts": "Kontaktieren Sie unsere Experten",
     "trucks": {
       "title": "Pferdetransporter",
-      "description": "Professionelle LKWs für den sicheren Transport Ihrer Pferde"
+      "description": "Professionelle LKWs für den sicheren Transport Ihrer Pferde",
+      "badge": "Bestseller"
     },
     "vans": {
       "title": "Pferde-Transporter",
@@ -49,7 +54,8 @@
     },
     "amenaged": {
       "title": "Ausgebaute Transporter",
-      "description": "All-in-One Fahrzeuge mit integriertem Wohnbereich"
+      "description": "All-in-One Fahrzeuge mit integriertem Wohnbereich",
+      "badge": "Neu"
     },
     "trailers": {
       "title": "Anhänger",
@@ -57,13 +63,50 @@
     }
   },
   "stats": {
+    "title": "HorseMobil in Zahlen",
+    "subtitle": "Jahre der Exzellenz im Pferdetransport, mit Kundenzufriedenheit, die unser Engagement bezeugt.",
+    "conclusion": "Diese Zahlen spiegeln unsere Leidenschaft für Exzellenz und unser Engagement wider, die besten Pferdetransportfahrzeuge auf dem Markt zu liefern.",
     "experience": "Jahre Erfahrung",
     "vehicles": "Verkaufte Fahrzeuge",
     "customers": "Zufriedene Kunden",
-    "workshops": "Werkstätten in Europa"
+    "workshops": "Werkstätten in Europa",
+    "experienceDesc": "An Expertise im Pferdetransport",
+    "customersDesc": "Vertrauen uns jedes Jahr",
+    "vehiclesDesc": "Erfolgreich ausgeliefert",
+    "satisfactionTitle": "Kundenzufriedenheit",
+    "satisfactionDesc": "Weiterempfehlungsrate"
   },
   "testimonials": {
-    "title": "Was unsere Kunden sagen"
+    "title": "Was unsere Kunden sagen",
+    "description": "Entdecken Sie Erfahrungsberichte unserer zufriedenen Kunden, die uns für ihre Pferdetransportbedürfnisse vertrauen.",
+    "testimonial1": {
+      "name": "Marie Dubois",
+      "role": "Professionelle Reiterin",
+      "company": "Écurie des Chênes",
+      "content": "Ausgezeichnete Qualität und außergewöhnlicher Service. Mein HorseMobil Transporter ermöglicht es mir, mit völliger Ruhe mit meinen Pferden zu reisen. Die deutsche Verarbeitung macht den ganzen Unterschied.",
+      "vehicle": "Prestige Ausgebauter Transporter"
+    },
+    "testimonial2": {
+      "name": "Pierre Martin",
+      "role": "Züchter",
+      "company": "Haras de la Vallée",
+      "content": "Eine perfekte Investition für unsere Aktivität. Der Pferdetransporter, den wir gekauft haben, erfüllt perfekt unsere professionellen Transportbedürfnisse.",
+      "vehicle": "Pro Pferdetransporter"
+    },
+    "testimonial3": {
+      "name": "Sophie Laurent",
+      "role": "Springreit-Wettkämpferin",
+      "company": "Sport Équestre Elite",
+      "content": "Bemerkenswerte Kundenbetreuung und sehr hochwertige Fahrzeuge. Ich empfehle HorseMobil wärmstens für alle Ihre Pferdetransportbedürfnisse.",
+      "vehicle": "Wettkampf Sport Transporter"
+    },
+    "testimonial4": {
+      "name": "Thomas Weber",
+      "role": "Ausbilder",
+      "company": "Centre Équestre Alpin",
+      "content": "Außergewöhnliche Zuverlässigkeit und Komfort. Unsere Wettkampfreisen sind jetzt ein Vergnügen dank unserem neuen HorseMobil Transporter.",
+      "vehicle": "Komfort Plus Transporter"
+    }
   },
   "footer": {
     "company": "Unternehmen",

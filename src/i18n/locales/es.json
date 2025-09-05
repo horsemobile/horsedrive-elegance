@@ -38,10 +38,15 @@
     }
   },
   "categories": {
-    "title": "Nuestros vehículos",
+    "title": "Nuestras Categorías de Vehículos",
+    "description": "Descubra nuestra gama completa de vehículos ecuestres, diseñados con experiencia alemana para satisfacer todas sus necesidades de transporte.",
+    "vehiclesAvailable": "vehículos disponibles",
+    "notFound": "¿No encuentra lo que busca?",
+    "contactExperts": "Contacte a nuestros Expertos",
     "trucks": {
       "title": "Camiones ecuestres",
-      "description": "Camiones profesionales para el transporte seguro de sus caballos"
+      "description": "Camiones profesionales para el transporte seguro de sus caballos",
+      "badge": "Bestseller"
     },
     "vans": {
       "title": "Furgonetas ecuestres",
@@ -49,7 +54,8 @@
     },
     "amenaged": {
       "title": "Furgonetas acondicionadas",
-      "description": "Vehículos todo en uno con espacio de vida integrado"
+      "description": "Vehículos todo en uno con espacio de vida integrado",
+      "badge": "Nuevo"
     },
     "trailers": {
       "title": "Remolques",
@@ -57,13 +63,50 @@
     }
   },
   "stats": {
+    "title": "HorseMobil en Cifras",
+    "subtitle": "Años de excelencia en transporte ecuestre, con satisfacción del cliente que testimonia nuestro compromiso.",
+    "conclusion": "Estas cifras reflejan nuestra pasión por la excelencia y nuestro compromiso de brindar los mejores vehículos ecuestres del mercado.",
     "experience": "Años de experiencia",
     "vehicles": "Vehículos vendidos",
     "customers": "Clientes satisfechos",
-    "workshops": "Talleres en Europa"
+    "workshops": "Talleres en Europa",
+    "experienceDesc": "De experiencia en transporte ecuestre",
+    "customersDesc": "Confían en nosotros cada año",
+    "vehiclesDesc": "Entregados exitosamente",
+    "satisfactionTitle": "Satisfacción del Cliente",
+    "satisfactionDesc": "Tasa de recomendación"
   },
   "testimonials": {
-    "title": "Lo que dicen nuestros clientes"
+    "title": "Lo que dicen nuestros Clientes",
+    "description": "Descubra testimonios de nuestros clientes satisfechos que confían en nosotros para sus necesidades de transporte ecuestre.",
+    "testimonial1": {
+      "name": "Marie Dubois",
+      "role": "Jinete Profesional",
+      "company": "Écurie des Chênes",
+      "content": "Excelente calidad y servicio excepcional. Mi furgoneta HorseMobil me permite viajar con total tranquilidad con mis caballos. El acabado alemán marca toda la diferencia.",
+      "vehicle": "Furgoneta Acondicionada Prestige"
+    },
+    "testimonial2": {
+      "name": "Pierre Martin",
+      "role": "Criador",
+      "company": "Haras de la Vallée",
+      "content": "Una inversión perfecta para nuestra actividad. El camión ecuestre que compramos satisface perfectamente nuestras necesidades de transporte profesional.",
+      "vehicle": "Camión Ecuestre Pro"
+    },
+    "testimonial3": {
+      "name": "Sophie Laurent",
+      "role": "Competidora de Salto",
+      "company": "Sport Équestre Elite",
+      "content": "Servicio al cliente destacable y vehículos de muy alta calidad. Recomiendo encarecidamente HorseMobil para todas sus necesidades de transporte ecuestre.",
+      "vehicle": "Furgoneta Sport Competición"
+    },
+    "testimonial4": {
+      "name": "Thomas Weber",
+      "role": "Instructor",
+      "company": "Centre Équestre Alpin",
+      "content": "Confiabilidad y comodidad excepcionales. Nuestros viajes de competición ahora son un placer gracias a nuestra nueva furgoneta HorseMobil.",
+      "vehicle": "Furgoneta Confort Plus"
+    }
   },
   "footer": {
     "company": "Empresa",
@@ -102,184 +145,6 @@
     "quote": "Solicitar Presupuesto",
     "call": "Llamarnos",
     "whatsapp_message": "Hola, estoy interesado en sus vehículos ecuestres. ¿Pueden darme más información?"
-  },
-  "trucks": {
-    "title": "Camiones Ecuestres",
-    "badge": "Vehículos Premium",
-    "description": "Descubra nuestra gama de camiones ecuestres de alta gama, diseñados para ofrecer el máximo confort y seguridad a sus caballos durante viajes profesionales o de ocio.",
-    "quote_cta": "Solicitar Presupuesto",
-    "contact_cta": "Contáctanos",
-    "alt_image": "Camión ecuestre de lujo",
-    "features": {
-      "title": "¿Por qué elegir nuestros camiones ecuestres?",
-      "description": "Nuestros camiones ecuestres combinan innovación, confort y seguridad para ofrecer la mejor experiencia de transporte a sus caballos.",
-      "safety": {
-        "title": "Seguridad Máxima",
-        "description": "Sistemas de seguridad avanzados y equipamiento anti-estrés para sus caballos"
-      },
-      "capacity": {
-        "title": "Alta Capacidad",
-        "description": "De 2 a 8 caballos según sus necesidades, con espacios de vida integrados"
-      },
-      "custom": {
-        "title": "A Medida",
-        "description": "Personalización completa según sus necesidades y preferencias"
-      },
-      "quality": {
-        "title": "Calidad Premium",
-        "description": "Materiales de alta gama y acabados excepcionales"
-      }
-    },
-    "models": {
-      "title": "Nuestros Modelos de Camiones",
-      "description": "Una gama completa para todas sus necesidades de transporte ecuestre",
-      "2_horses": {
-        "title": "Camión 2 Caballos",
-        "description": "Ideal para salidas locales",
-        "features": [
-          "Capacidad: 2 caballos",
-          "Compartimento de guarnicionería",
-          "Sistema de ventilación",
-          "Suelo antideslizante"
-        ]
-      },
-      "4_horses": {
-        "title": "Camión 4 Caballos",
-        "description": "Para equipos y clubes",
-        "features": [
-          "Capacidad: 4 caballos",
-          "Espacio de vida integrado",
-          "Cocina equipada",
-          "Aseo y ducha"
-        ]
-      },
-      "6_horses": {
-        "title": "Camión 6+ Caballos",
-        "description": "Solución profesional",
-        "features": [
-          "Capacidad: 6 a 8 caballos",
-          "Apartamento completo",
-          "Garaje para material",
-          "Opciones premium"
-        ]
-      }
-    },
-    "cta": {
-      "title": "¿Listo para descubrir su camión ecuestre ideal?",
-      "description": "Contacte con nuestros expertos para una consulta personalizada",
-      "quote_cta": "Solicitar Presupuesto Gratuito",
-      "appointment_cta": "Concertar Cita"
-    }
-  },
-  "contact": {
-    "title": "Contáctanos",
-    "description": "Nuestro equipo de expertos está a su disposición para responder todas sus preguntas y acompañarle en su proyecto de vehículo ecuestre.",
-    "form": {
-      "title": "Envíanos un mensaje",
-      "description": "Complete este formulario y le responderemos lo antes posible",
-      "first_name": "Nombre",
-      "last_name": "Apellidos",
-      "email": "Email",
-      "phone": "Teléfono",
-      "subject": "Asunto",
-      "subject_placeholder": "Asunto de su solicitud",
-      "message": "Mensaje",
-      "message_placeholder": "Describa su proyecto o solicitud...",
-      "submit": "Enviar mensaje"
-    },
-    "info": {
-      "phone": {
-        "title": "Teléfono",
-        "value": "+33 1 23 45 67 89",
-        "schedule": "Lunes a viernes, 9h-18h"
-      },
-      "email": {
-        "title": "Email",
-        "value": "contact@horsemobil.fr",
-        "response": "Respuesta en 24h"
-      },
-      "address": {
-        "title": "Dirección",
-        "street": "123 Avenue des Chevaux",
-        "city": "75000 París, Francia"
-      },
-      "hours": {
-        "title": "Horarios de apertura",
-        "weekdays": "Lunes - Viernes",
-        "weekdays_hours": "9h - 18h",
-        "saturday": "Sábado",
-        "saturday_hours": "9h - 12h",
-        "sunday": "Domingo",
-        "sunday_status": "Cerrado"
-      }
-    }
-  },
-  "quote": {
-    "title": "Solicitar Presupuesto",
-    "description": "Obtenga un presupuesto personalizado para su proyecto de vehículo ecuestre. Nuestro equipo le propone las mejores soluciones adaptadas a sus necesidades.",
-    "benefits": {
-      "free": {
-        "title": "Presupuesto Gratuito",
-        "description": "Estimación personalizada sin compromiso"
-      },
-      "fast": {
-        "title": "Respuesta Rápida",
-        "description": "Respuesta en máximo 24h"
-      },
-      "detailed": {
-        "title": "Presupuesto Detallado",
-        "description": "Todos los detalles y opciones incluidos"
-      }
-    },
-    "form": {
-      "title": "Formulario de solicitud de presupuesto",
-      "description": "Cuanto más precisas sean sus informaciones, más adaptado será nuestro presupuesto a sus necesidades",
-      "contact_info": "Información de contacto",
-      "first_name": "Nombre",
-      "last_name": "Apellidos",
-      "email": "Email",
-      "phone": "Teléfono",
-      "vehicle_type": "Tipo de vehículo deseado",
-      "category": "Categoría",
-      "category_placeholder": "Seleccione el tipo de vehículo",
-      "specifications": "Especificaciones",
-      "horses_number": "Número de caballos",
-      "horses_placeholder": "Seleccionar",
-      "budget": "Presupuesto aproximado",
-      "budget_placeholder": "Seleccione su presupuesto",
-      "options": "Opciones deseadas",
-      "project_description": "Descripción de su proyecto",
-      "project_description_label": "Descríbanos su proyecto, sus necesidades específicas y limitaciones",
-      "project_description_placeholder": "Ejemplo: Busco una furgoneta para 2 caballos para concursos de fin de semana, con un pequeño espacio de vida para desplazamientos de varios días...",
-      "submit": "Solicitar mi presupuesto gratuito",
-      "vehicle_types": {
-        "truck": "Camión Ecuestre",
-        "van": "Furgoneta Ecuestre",
-        "amenaged_van": "Furgoneta Acondicionada",
-        "trailer": "Remolque"
-      },
-      "horses_options": {
-        "1": "1 caballo",
-        "2": "2 caballos",
-        "3": "3 caballos",
-        "4": "4 caballos",
-        "5": "5 caballos o más"
-      },
-      "budget_options": {
-        "50k-100k": "50.000€ - 100.000€",
-        "100k-150k": "100.000€ - 150.000€",
-        "150k-200k": "150.000€ - 200.000€",
-        "200k": "Más de 200.000€"
-      },
-      "options_list": {
-        "tack_room": "Compartimento de guarnicionería",
-        "water_tank": "Depósito de agua",
-        "sleeping_area": "Área de descanso",
-        "kitchen": "Área de cocina",
-        "air_conditioning": "Aire acondicionado",
-        "led_lighting": "Iluminación LED"
-      }
-    }
   },
   "common": {
     "learn_more": "Saber más",

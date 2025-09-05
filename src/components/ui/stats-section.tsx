@@ -152,11 +152,10 @@ export const StatsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            HorseMobil en <span className="gradient-text">Chiffres</span>
+            {t('stats.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Des années d'excellence dans le domaine du transport équestre, 
-            avec une satisfaction client qui témoigne de notre engagement.
+            {t('stats.subtitle')}
           </p>
         </div>
 
@@ -176,8 +175,7 @@ export const StatsSection = () => {
         {/* Bottom Text */}
         <div className="text-center mt-16">
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Ces chiffres reflètent notre passion pour l'excellence et notre engagement 
-            à fournir les meilleurs véhicules équestres du marché.
+            {t('stats.conclusion')}
           </p>
         </div>
       </div>

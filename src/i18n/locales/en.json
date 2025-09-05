@@ -38,10 +38,15 @@
     }
   },
   "categories": {
-    "title": "Our vehicles",
+    "title": "Our Vehicle Categories",
+    "description": "Discover our complete range of equestrian vehicles, designed with German expertise to meet all your transport needs.",
+    "vehiclesAvailable": "vehicles available",
+    "notFound": "Can't find what you're looking for?",
+    "contactExperts": "Contact our Experts",
     "trucks": {
       "title": "Horse trucks",
-      "description": "Professional trucks for safe transportation of your horses"
+      "description": "Professional trucks for safe transportation of your horses",
+      "badge": "Bestseller"
     },
     "vans": {
       "title": "Horse vans",
@@ -49,7 +54,8 @@
     },
     "amenaged": {
       "title": "Converted vans",
-      "description": "All-in-one vehicles with integrated living space"
+      "description": "All-in-one vehicles with integrated living space",
+      "badge": "New"
     },
     "trailers": {
       "title": "Trailers",
@@ -57,13 +63,50 @@
     }
   },
   "stats": {
+    "title": "HorseMobil in Numbers",
+    "subtitle": "Years of excellence in equestrian transport, with customer satisfaction that testifies to our commitment.",
+    "conclusion": "These figures reflect our passion for excellence and our commitment to providing the best equestrian vehicles on the market.",
     "experience": "Years of experience",
     "vehicles": "Vehicles sold",
     "customers": "Satisfied customers",
-    "workshops": "Workshops in Europe"
+    "workshops": "Workshops in Europe",
+    "experienceDesc": "Of expertise in equestrian transport",
+    "customersDesc": "Trust us every year",
+    "vehiclesDesc": "Successfully delivered",
+    "satisfactionTitle": "Customer Satisfaction",
+    "satisfactionDesc": "Recommendation rate"
   },
   "testimonials": {
-    "title": "What our customers say"
+    "title": "What Our Customers Say",
+    "description": "Discover testimonials from our satisfied customers who trust us for their equestrian transport needs.",
+    "testimonial1": {
+      "name": "Marie Dubois",
+      "role": "Professional Rider",
+      "company": "Écurie des Chênes",
+      "content": "Excellent quality and exceptional service. My HorseMobil van allows me to travel with complete peace of mind with my horses. The German finish makes all the difference.",
+      "vehicle": "Prestige Fitted Van"
+    },
+    "testimonial2": {
+      "name": "Pierre Martin",
+      "role": "Breeder",
+      "company": "Haras de la Vallée",
+      "content": "A perfect investment for our activity. The horse truck we bought perfectly meets our professional transport needs.",
+      "vehicle": "Pro Horse Truck"
+    },
+    "testimonial3": {
+      "name": "Sophie Laurent",
+      "role": "Show Jumping Competitor",
+      "company": "Sport Équestre Elite",
+      "content": "Remarkable customer service and very high quality vehicles. I highly recommend HorseMobil for all your equestrian transport needs.",
+      "vehicle": "Competition Sport Van"
+    },
+    "testimonial4": {
+      "name": "Thomas Weber",
+      "role": "Instructor",
+      "company": "Centre Équestre Alpin",
+      "content": "Exceptional reliability and comfort. Our competition trips are now a pleasure thanks to our new HorseMobil van.",
+      "vehicle": "Comfort Plus Van"
+    }
   },
   "footer": {
     "company": "Company",

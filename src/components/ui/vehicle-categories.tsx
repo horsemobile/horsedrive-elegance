@@ -28,7 +28,7 @@ const useCategoriesData = () => {
       image: '/src/assets/category-trucks.jpg',
       link: '/camions',
       vehicleCount: 24,
-      badge: 'Bestseller'
+      badge: t('categories.trucks.badge')
     },
     {
       id: 'vans',
@@ -47,7 +47,7 @@ const useCategoriesData = () => {
       image: '/src/assets/category-van-amenage.jpg',
       link: '/van-amenage',
       vehicleCount: 12,
-      badge: 'Nouveau'
+      badge: t('categories.amenaged.badge')
     }
   ];
 };
@@ -62,11 +62,10 @@ export const VehicleCategories = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            {t('categories.title')} <span className="gradient-text">Catégories</span> de Véhicules
+            {t('categories.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Découvrez notre gamme complète de véhicules équestres, conçus avec l'expertise allemande 
-            pour répondre à tous vos besoins de transport.
+            {t('categories.description')}
           </p>
         </div>
 
@@ -114,7 +113,7 @@ export const VehicleCategories = () => {
 
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-xs text-muted-foreground">
-                    {category.vehicleCount} véhicules disponibles
+                    {category.vehicleCount} {t('categories.vehiclesAvailable')}
                   </span>
                 </div>
 
@@ -132,11 +131,11 @@ export const VehicleCategories = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-muted-foreground mb-6">
-            Vous ne trouvez pas ce que vous cherchez ?
+            {t('categories.notFound')}
           </p>
           <Button asChild variant="outline" size="lg" className="text-lg px-8">
             <Link to="/contact">
-              Contactez nos Experts
+              {t('categories.contactExperts')}
             </Link>
           </Button>
         </div>

@@ -38,10 +38,15 @@
     }
   },
   "categories": {
-    "title": "Ajoneuvomme",
+    "title": "Ajoneuvokategoriat",
+    "description": "Tutustu täydelliseen valikoimaamme hevoskuljetusajoneuvoja, suunniteltu suomalaisella osaamisella kaikkiin kuljetustarpeisiisi.",
+    "vehiclesAvailable": "ajoneuvoa saatavilla",
+    "notFound": "Etkö löydä etsimääsi?",
+    "contactExperts": "Ota yhteyttä asiantuntijoihimme",
     "trucks": {
       "title": "Hevoskuljetusautot",
-      "description": "Ammattimaiset kuorma-autot hevostesi turvalliseen kuljetukseen"
+      "description": "Ammattimaiset kuorma-autot hevostesi turvalliseen kuljetukseen",
+      "badge": "Myyntimenestys"
     },
     "vans": {
       "title": "Hevos-pakettiautot",
@@ -49,7 +54,8 @@
     },
     "amenaged": {
       "title": "Sisustetut pakettiautot",
-      "description": "Kaikki-yhdessä ajoneuvot integroidulla asuinalueella"
+      "description": "Kaikki-yhdessä ajoneuvot integroidulla asuinalueella",
+      "badge": "Uusi"
     },
     "trailers": {
       "title": "Perävaunut",
@@ -57,13 +63,50 @@
     }
   },
   "stats": {
+    "title": "HorseMobil numeroina",
+    "subtitle": "Vuosia huippuosaamista hevoskuljetuksessa, asiakastyytyväisyys todistaa sitoutumisestamme.",
+    "conclusion": "Nämä luvut heijastavat intohimoamme huippuosaamiseen ja sitoutumistamme tarjota markkinoiden parhaat hevoskuljetusajoneuvot.",
     "experience": "Vuotta kokemusta",
     "vehicles": "Myytyjä ajoneuvoja",
     "customers": "Tyytyväistä asiakasta",
-    "workshops": "Työpajoja Euroopassa"
+    "workshops": "Työpajoja Euroopassa",
+    "experienceDesc": "Osaamista hevoskuljetuksessa",
+    "customersDesc": "Luottaa meihin joka vuosi",
+    "vehiclesDesc": "Onnistuneesti toimitettu",
+    "satisfactionTitle": "Asiakastyytyväisyys",
+    "satisfactionDesc": "Suositteluaste"
   },
   "testimonials": {
-    "title": "Mitä asiakkaamme sanovat"
+    "title": "Mitä asiakkaamme sanovat",
+    "description": "Tutustu tyytyväisten asiakkaidemme kokemuksiin, jotka luottavat meihin hevoskuljetustarpeissaan.",
+    "testimonial1": {
+      "name": "Marie Dubois",
+      "role": "Ammattiratsastaja",
+      "company": "Écurie des Chênes",
+      "content": "Erinomainen laatu ja poikkeuksellinen palvelu. HorseMobil pakettiautooni ansiosta voin matkustaa täydellisessä mielenrauhassa hevosteni kanssa. Saksalainen viimeistely tekee kaiken eron.",
+      "vehicle": "Prestige sisustettu pakettiauto"
+    },
+    "testimonial2": {
+      "name": "Pierre Martin",
+      "role": "Kasvattaja",
+      "company": "Haras de la Vallée",
+      "content": "Täydellinen sijoitus toiminnallemme. Ostamamme hevoskuljetusauto vastaa täydellisesti ammatillisiin kuljetustarpeisiimme.",
+      "vehicle": "Pro hevoskuljetusauto"
+    },
+    "testimonial3": {
+      "name": "Sophie Laurent",
+      "role": "Esteratsastuskilpailija",
+      "company": "Sport Équestre Elite",
+      "content": "Huomattava asiakaspalvelu ja erittäin korkealaatuiset ajoneuvot. Suosittelen lämpimästi HorseMobilia kaikkiin hevoskuljetustarpeisiinne.",
+      "vehicle": "Kilpailu sport pakettiauto"
+    },
+    "testimonial4": {
+      "name": "Thomas Weber",
+      "role": "Opettaja",
+      "company": "Centre Équestre Alpin",
+      "content": "Poikkeuksellinen luotettavuus ja mukavuus. Kilpailumatkamme ovat nyt nautinto uuden HorseMobil pakettiautonamme ansiosta.",
+      "vehicle": "Mukavuus Plus pakettiauto"
+    }
   },
   "footer": {
     "company": "Yritys",

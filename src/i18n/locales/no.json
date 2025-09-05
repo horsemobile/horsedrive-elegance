@@ -38,10 +38,15 @@
     }
   },
   "categories": {
-    "title": "Våre kjøretøy",
+    "title": "Våre kjøretøykategorier",
+    "description": "Oppdag vårt komplette utvalg av hestetransportkjøretøy, designet med norsk ekspertise for å møte alle dine transportbehov.",
+    "vehiclesAvailable": "kjøretøy tilgjengelig",
+    "notFound": "Finner du ikke det du leter etter?",
+    "contactExperts": "Kontakt våre eksperter",
     "trucks": {
       "title": "Hestetransportbiler",
-      "description": "Profesjonelle lastebiler for sikker transport av hestene dine"
+      "description": "Profesjonelle lastebiler for sikker transport av hestene dine",
+      "badge": "Bestselger"
     },
     "vans": {
       "title": "Heste-varebiler",
@@ -49,7 +54,8 @@
     },
     "amenaged": {
       "title": "Innredede varebiler",
-      "description": "Alt-i-ett kjøretøy med integrert oppholdsområde"
+      "description": "Alt-i-ett kjøretøy med integrert oppholdsområde",
+      "badge": "Ny"
     },
     "trailers": {
       "title": "Tilhengere",
@@ -57,13 +63,50 @@
     }
   },
   "stats": {
+    "title": "HorseMobil i tall",
+    "subtitle": "År med ekspertise innen hestetransport, med kundetilfredshet som vitner om vårt engasjement.",
+    "conclusion": "These tallene reflekterer vår lidenskap for ekspertise og vårt engasjement for å levere de beste hestetransportkjøretøyene på markedet.",
     "experience": "År med erfaring",
     "vehicles": "Solgte kjøretøy",
     "customers": "Fornøyde kunder",
-    "workshops": "Verksteder i Europa"
+    "workshops": "Verksteder i Europa",
+    "experienceDesc": "Med ekspertise innen hestetransport",
+    "customersDesc": "Stoler på oss hvert år",
+    "vehiclesDesc": "Vellykket levert",
+    "satisfactionTitle": "Kundetilfredshet",
+    "satisfactionDesc": "Anbefalingsgrad"
   },
   "testimonials": {
-    "title": "Hva kundene våre sier"
+    "title": "Hva kundene våre sier",
+    "description": "Oppdag anbefalinger fra våre fornøyde kunder som stoler på oss for sine hestetransportbehov.",
+    "testimonial1": {
+      "name": "Marie Dubois",
+      "role": "Profesjonell rytter",
+      "company": "Écurie des Chênes",
+      "content": "Utmerket kvalitet og eksepsjonell service. Min HorseMobil varebil lar meg reise med fullstendig ro med hestene mine. Den tyske finishen gjør all forskjellen.",
+      "vehicle": "Prestige innredet varebil"
+    },
+    "testimonial2": {
+      "name": "Pierre Martin",
+      "role": "Oppdetter",
+      "company": "Haras de la Vallée",
+      "content": "En perfekt investering for vår aktivitet. Hestetransportbilen vi kjøpte møter perfekt våre profesjonelle transportbehov.",
+      "vehicle": "Pro hestetransportbil"
+    },
+    "testimonial3": {
+      "name": "Sophie Laurent",
+      "role": "Springkonkurranse konkurrent",
+      "company": "Sport Équestre Elite",
+      "content": "Bemerkelsesverdig kundeservice og svært høy kvalitet kjøretøy. Jeg anbefaler sterkt HorseMobil for alle dine hestetransportbehov.",
+      "vehicle": "Konkurranse sport varebil"
+    },
+    "testimonial4": {
+      "name": "Thomas Weber",
+      "role": "Instruktør",
+      "company": "Centre Équestre Alpin",
+      "content": "Eksepsjonell pålitelighet og komfort. Våre konkurranseturer er nå en glede takket være vår nye HorseMobil varebil.",
+      "vehicle": "Komfort Plus varebil"
+    }
   },
   "footer": {
     "company": "Selskap",
