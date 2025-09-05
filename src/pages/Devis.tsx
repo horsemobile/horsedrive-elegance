@@ -120,41 +120,21 @@ const Devis = () => {
               <div>
                 <h3 className="text-lg font-semibold mb-4">{t('pages.quote.specifications')}</h3>
                 <div className="grid md:grid-cols-2 gap-4">
-                  {/* Conditional field based on vehicle type */}
-                  {vehicleType === 'van-amenage' ? (
-                    <>
-                      <div className="space-y-2">
-                        <Label htmlFor="passengers">{t('pages.quote.passengersNumber')}</Label>
-                        <Input 
-                          id="passengers" 
-                          placeholder={t('pages.quote.selectPassengers')}
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="usage">{t('pages.quote.vanUsage')}</Label>
-                        <Input 
-                          id="usage" 
-                          placeholder={t('pages.quote.selectUsage')}
-                        />
-                      </div>
-                    </>
-                  ) : (
-                    <div className="space-y-2">
-                      <Label htmlFor="horsesNumber">{t('pages.quote.horsesNumber')}</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder={t('pages.quote.selectNumber')} />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="1">{t('pages.quote.oneHorse')}</SelectItem>
-                          <SelectItem value="2">{t('pages.quote.twoHorses')}</SelectItem>
-                          <SelectItem value="3">{t('pages.quote.threeHorses')}</SelectItem>
-                          <SelectItem value="4">{t('pages.quote.fourHorses')}</SelectItem>
-                          <SelectItem value="5+">{t('pages.quote.fiveOrMoreHorses')}</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                  )}
+                  <div className="space-y-2">
+                    <Label htmlFor="horsesNumber">{t('pages.quote.horsesNumber')}</Label>
+                    <Select>
+                      <SelectTrigger>
+                        <SelectValue placeholder={t('pages.quote.selectNumber')} />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="1">{t('pages.quote.oneHorse')}</SelectItem>
+                        <SelectItem value="2">{t('pages.quote.twoHorses')}</SelectItem>
+                        <SelectItem value="3">{t('pages.quote.threeHorses')}</SelectItem>
+                        <SelectItem value="4">{t('pages.quote.fourHorses')}</SelectItem>
+                        <SelectItem value="5+">{t('pages.quote.fiveOrMoreHorses')}</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
                   
                   <div className="space-y-2">
                     <Label htmlFor="budget">{t('pages.quote.approximateBudget')}</Label>
