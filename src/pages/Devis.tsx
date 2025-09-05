@@ -127,14 +127,14 @@ const Devis = () => {
                         <Label htmlFor="passengers">{t('pages.quote.passengersNumber')}</Label>
                         <Input 
                           id="passengers" 
-                          placeholder={t('pages.quote.selectPassengers')} 
+                          placeholder={t('pages.quote.passengersPlaceholder')} 
                         />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="usage">{t('pages.quote.vanUsage')}</Label>
                         <Input 
                           id="usage" 
-                          placeholder={t('pages.quote.selectUsage')} 
+                          placeholder={t('pages.quote.vanUsagePlaceholder')} 
                         />
                       </div>
                     </>
