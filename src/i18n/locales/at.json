@@ -104,6 +104,22 @@
     "whatsapp_message": "Servus, ich interessiere mich für Ihre Pferdetransportfahrzeuge. Können Sie mir weitere Informationen geben?"
   },
   "trucks": {
+    "hero": {
+      "badge": "Premium Fahrzeuge",
+      "title": "Pferdetransporter",
+      "description": "Entdecken Sie unser Sortiment an hochwertigen Pferdetransportern, die maximalen Komfort und Sicherheit für Ihre Pferde bei beruflichen oder Freizeitreisen bieten.",
+      "imageAlt": "Luxus Pferdetransporter"
+    }
+  },
+  "vans": {
+    "hero": {
+      "badge": "Pferdemobilität",
+      "title": "Pferdetransporter-Vans",
+      "description": "Unsere Pferdetransporter-Vans verbinden Wendigkeit und Komfort für Ihre täglichen Fahrten. Perfekt für Freizeitausflüge, Unterricht oder kleine Wettkämpfe.",
+      "imageAlt": "Moderner Pferdetransporter-Van"
+    }
+  },
+  "trucks": {
     "title": "Pferdetransporter",
     "badge": "Premium-Fahrzeuge",
     "description": "Entdecken Sie unser Sortiment hochwertiger Pferdetransporter, die maximalen Komfort und Sicherheit für Ihre Pferde bei beruflichen oder privaten Fahrten bieten.",

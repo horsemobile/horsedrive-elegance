@@ -74,41 +74,41 @@ const Devis = () => {
             <CardContent className="space-y-8">
               {/* Informations personnelles */}
               <div>
-                <h3 className="text-lg font-semibold mb-4">Informations de contact</h3>
+                <h3 className="text-lg font-semibold mb-4">{t('pages.quote.contactInfo')}</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName">Prénom *</Label>
-                    <Input id="firstName" placeholder="Votre prénom" required />
+                    <Label htmlFor="firstName">{t('pages.quote.firstName')} *</Label>
+                    <Input id="firstName" placeholder={t('pages.quote.firstNamePlaceholder')} required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="lastName">Nom *</Label>
-                    <Input id="lastName" placeholder="Votre nom" required />
+                    <Label htmlFor="lastName">{t('pages.quote.lastName')} *</Label>
+                    <Input id="lastName" placeholder={t('pages.quote.lastNamePlaceholder')} required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email *</Label>
-                    <Input id="email" type="email" placeholder="votre@email.com" required />
+                    <Label htmlFor="email">{t('pages.quote.email')} *</Label>
+                    <Input id="email" type="email" placeholder={t('pages.quote.emailPlaceholder')} required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Téléphone *</Label>
-                    <Input id="phone" type="tel" placeholder="06 12 34 56 78" required />
+                    <Label htmlFor="phone">{t('pages.quote.phone')} *</Label>
+                    <Input id="phone" type="tel" placeholder={t('pages.quote.phonePlaceholder')} required />
                   </div>
                 </div>
               </div>
 
               {/* Type de véhicule */}
               <div>
-                <h3 className="text-lg font-semibold mb-4">Type de véhicule souhaité</h3>
+                <h3 className="text-lg font-semibold mb-4">{t('pages.quote.vehicleType')}</h3>
                 <div className="space-y-2">
-                  <Label htmlFor="vehicleType">Catégorie *</Label>
+                  <Label htmlFor="vehicleType">{t('pages.quote.category')} *</Label>
                   <Select>
                     <SelectTrigger>
-                      <SelectValue placeholder="Sélectionnez le type de véhicule" />
+                      <SelectValue placeholder={t('pages.quote.selectVehicleType')} />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="camion-equestre">Camion Équestre</SelectItem>
-                      <SelectItem value="van-equestre">Van Équestre</SelectItem>
-                      <SelectItem value="van-amenage">Van Aménagé</SelectItem>
-                      <SelectItem value="remorque">Remorque</SelectItem>
+                      <SelectItem value="camion-equestre">{t('pages.quote.horseTruck')}</SelectItem>
+                      <SelectItem value="van-equestre">{t('pages.quote.horseVan')}</SelectItem>
+                      <SelectItem value="van-amenage">{t('pages.quote.convertedVan')}</SelectItem>
+                      <SelectItem value="remorque">{t('pages.quote.trailer')}</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -116,34 +116,34 @@ const Devis = () => {
 
               {/* Spécifications */}
               <div>
-                <h3 className="text-lg font-semibold mb-4">Spécifications</h3>
+                <h3 className="text-lg font-semibold mb-4">{t('pages.quote.specifications')}</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="horsesNumber">Nombre de chevaux</Label>
+                    <Label htmlFor="horsesNumber">{t('pages.quote.horsesNumber')}</Label>
                     <Select>
                       <SelectTrigger>
-                        <SelectValue placeholder="Sélectionnez" />
+                        <SelectValue placeholder={t('pages.quote.select')} />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="1">1 cheval</SelectItem>
-                        <SelectItem value="2">2 chevaux</SelectItem>
-                        <SelectItem value="3">3 chevaux</SelectItem>
-                        <SelectItem value="4">4 chevaux</SelectItem>
-                        <SelectItem value="5+">5 chevaux ou plus</SelectItem>
+                        <SelectItem value="1">{t('pages.quote.oneHorse')}</SelectItem>
+                        <SelectItem value="2">{t('pages.quote.twoHorses')}</SelectItem>
+                        <SelectItem value="3">{t('pages.quote.threeHorses')}</SelectItem>
+                        <SelectItem value="4">{t('pages.quote.fourHorses')}</SelectItem>
+                        <SelectItem value="5+">{t('pages.quote.fivePlusHorses')}</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="budget">Budget approximatif</Label>
+                    <Label htmlFor="budget">{t('pages.quote.budget')}</Label>
                     <Select>
                       <SelectTrigger>
-                        <SelectValue placeholder="Sélectionnez votre budget" />
+                        <SelectValue placeholder={t('pages.quote.selectBudget')} />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="50k-100k">50 000€ - 100 000€</SelectItem>
-                        <SelectItem value="100k-150k">100 000€ - 150 000€</SelectItem>
-                        <SelectItem value="150k-200k">150 000€ - 200 000€</SelectItem>
-                        <SelectItem value="200k+">Plus de 200 000€</SelectItem>
+                        <SelectItem value="50k-100k">{t('pages.quote.budget50k100k')}</SelectItem>
+                        <SelectItem value="100k-150k">{t('pages.quote.budget100k150k')}</SelectItem>
+                        <SelectItem value="150k-200k">{t('pages.quote.budget150k200k')}</SelectItem>
+                        <SelectItem value="200k+">{t('pages.quote.budget200kPlus')}</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -152,45 +152,45 @@ const Devis = () => {
 
               {/* Options */}
               <div>
-                <h3 className="text-lg font-semibold mb-4">Options souhaitées</h3>
+                <h3 className="text-lg font-semibold mb-4">{t('pages.quote.desiredOptions')}</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="flex items-center space-x-2">
                     <Checkbox id="sellerie" />
-                    <Label htmlFor="sellerie">Compartiment sellerie</Label>
+                    <Label htmlFor="sellerie">{t('pages.quote.tackCompartment')}</Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Checkbox id="eau" />
-                    <Label htmlFor="eau">Réservoir d'eau</Label>
+                    <Label htmlFor="eau">{t('pages.quote.waterTank')}</Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Checkbox id="couchage" />
-                    <Label htmlFor="couchage">Espace couchage</Label>
+                    <Label htmlFor="couchage">{t('pages.quote.sleepingArea')}</Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Checkbox id="cuisine" />
-                    <Label htmlFor="cuisine">Coin cuisine</Label>
+                    <Label htmlFor="cuisine">{t('pages.quote.kitchenArea')}</Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Checkbox id="climatisation" />
-                    <Label htmlFor="climatisation">Climatisation</Label>
+                    <Label htmlFor="climatisation">{t('pages.quote.airConditioning')}</Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Checkbox id="eclairage" />
-                    <Label htmlFor="eclairage">Éclairage LED</Label>
+                    <Label htmlFor="eclairage">{t('pages.quote.ledLighting')}</Label>
                   </div>
                 </div>
               </div>
 
               {/* Description du projet */}
               <div>
-                <h3 className="text-lg font-semibold mb-4">Description de votre projet</h3>
+                <h3 className="text-lg font-semibold mb-4">{t('pages.quote.projectDescription')}</h3>
                 <div className="space-y-2">
                   <Label htmlFor="projectDescription">
-                    Décrivez-nous votre projet, vos besoins spécifiques et vos contraintes
+                    {t('pages.quote.projectDescriptionLabel')}
                   </Label>
                   <Textarea 
                     id="projectDescription" 
-                    placeholder="Exemple: Je recherche un van 2 chevaux pour des concours le weekend, avec un petit espace de vie pour les déplacements de plusieurs jours..."
+                    placeholder={t('pages.quote.projectDescriptionPlaceholder')}
                     className="min-h-32"
                   />
                 </div>

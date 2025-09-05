@@ -104,6 +104,22 @@
     "whatsapp_message": "Hei, olen kiinnostunut hevoskuljetusajoneuvoistanne. Voitteko antaa minulle lisätietoja?"
   },
   "trucks": {
+    "hero": {
+      "badge": "Premium Ajoneuvot",
+      "title": "Hevoskuljetusautot",
+      "description": "Tutustu korkealaatuisten hevoskuljetusautojemme valikoimaan, jotka on suunniteltu tarjoamaan maksimaalista mukavuutta ja turvallisuutta hevosillesi ammatillisilla tai vapaa-ajan matkoilla.",
+      "imageAlt": "Luksus hevoskuljetusauto"
+    }
+  },
+  "vans": {
+    "hero": {
+      "badge": "Ratsastusliikkuvuus",
+      "title": "Hevospakettiauto",
+      "description": "Hevospakettiatumme yhdistävät ohjattavuuden ja mukavuuden päivittäisiin matkoihisi. Täydellisiä vapaa-ajan retkille, tunneille tai pieniin kilpailuihin.",
+      "imageAlt": "Moderni hevospakettiauto"
+    }
+  },
+  "trucks": {
     "title": "Hevoskuljetusautot",
     "badge": "Premium ajoneuvot",
     "description": "Tutustu valikoimaamme korkealaatuisia hevoskuljetusautoja, jotka tarjoavat maksimaalisen mukavuuden ja turvallisuuden hevosillesi ammattimaisissa tai yksityisissä matkoissa.",

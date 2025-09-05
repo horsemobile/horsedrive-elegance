@@ -104,6 +104,22 @@
     "whatsapp_message": "Hola, estoy interesado en sus vehículos ecuestres. ¿Pueden darme más información?"
   },
   "trucks": {
+    "hero": {
+      "badge": "Vehículos Premium",
+      "title": "Camiones Ecuestres",
+      "description": "Descubre nuestra gama de camiones ecuestres de alta gama, diseñados para ofrecer el máximo confort y seguridad a tus caballos durante tus viajes profesionales o de ocio.",
+      "imageAlt": "Camión ecuestre de lujo"
+    }
+  },
+  "vans": {
+    "hero": {
+      "badge": "Movilidad Ecuestre",
+      "title": "Furgonetas Ecuestres",
+      "description": "Nuestras furgonetas ecuestres combinan maniobrabilidad y comodidad para tus desplazamientos diarios. Perfectas para salidas de ocio, clases o pequeñas competiciones.",
+      "imageAlt": "Furgoneta ecuestre moderna"
+    }
+  },
+  "trucks": {
     "title": "Camiones Ecuestres",
     "badge": "Vehículos Premium",
     "description": "Descubra nuestra gama de camiones ecuestres de alta gama, diseñados para ofrecer el máximo confort y seguridad a sus caballos durante viajes profesionales o de ocio.",

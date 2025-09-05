@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { 
   Bed, 
   Car, 
@@ -21,6 +22,8 @@ import {
 } from 'lucide-react';
 
 const VansAmenage = () => {
+  const { t } = useTranslation();
+  
   const vanModels = [
     {
       id: 1,
