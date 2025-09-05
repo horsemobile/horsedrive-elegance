@@ -1,0 +1,295 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "trucks": "LKWs",
+    "vans": "Transporter",
+    "amenaged_vans": "Ausgebaute Transporter", 
+    "financing": "Finanzierung",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "quote": "Angebot"
+  },
+  "hero": {
+    "title": "HorseMobil",
+    "subtitle": "Ihr Partner für Pferdetransport",
+    "description": "Entdecken Sie unser komplettes Sortiment an spezialisierten Fahrzeugen für den Pferdetransport. Qualität, Sicherheit und Komfort garantiert.",
+    "cta": "Unsere Fahrzeuge entdecken",
+    "quote_cta": "Angebot anfordern",
+    "slides": {
+      "premium": {
+        "title": "Premium Pferdetransportfahrzeuge",
+        "subtitle": "Hochwertiger Pferdetransport",
+        "description": "Entdecken Sie unser komplettes Sortiment an Pferdetransportfahrzeugen: LKWs, Transporter und Anhänger für Komfort und Sicherheit Ihrer Pferde.",
+        "cta": "Unsere Fahrzeuge ansehen"
+      },
+      "customVans": {
+        "title": "Maßgeschneiderte Transporter",
+        "subtitle": "Komplette Anpassung",
+        "description": "Unsere ausgebauten Transporter bieten eine perfekte Lösung für Pferdetransporte mit allem nötigen Komfort für Reiter und Pferde.",
+        "cta": "Transporter entdecken"
+      },
+      "expertise": {
+        "title": "Deutsche Expertise",
+        "subtitle": "Qualität und Zuverlässigkeit",
+        "description": "Mit unserer deutschen Expertise bieten wir Pferdetransportfahrzeuge, die Innovation, Sicherheit und außergewöhnliche Leistung vereinen.",
+        "cta": "Mehr erfahren"
+      },
+      "contact_cta": "Kontaktieren Sie uns"
+    }
+  },
+  "categories": {
+    "title": "Unsere Fahrzeuge",
+    "trucks": {
+      "title": "Pferdetransporter",
+      "description": "Professionelle LKWs für den sicheren Transport Ihrer Pferde"
+    },
+    "vans": {
+      "title": "Pferde-Transporter",
+      "description": "Kompakte und wendige Lösungen für Ihre Fahrten"
+    },
+    "amenaged": {
+      "title": "Ausgebaute Transporter",
+      "description": "All-in-One Fahrzeuge mit integriertem Wohnbereich"
+    },
+    "trailers": {
+      "title": "Anhänger",
+      "description": "Hochwertige Anhänger für alle Pferdetypen"
+    }
+  },
+  "stats": {
+    "experience": "Jahre Erfahrung",
+    "vehicles": "Verkaufte Fahrzeuge",
+    "customers": "Zufriedene Kunden",
+    "workshops": "Werkstätten in Europa"
+  },
+  "testimonials": {
+    "title": "Was unsere Kunden sagen"
+  },
+  "footer": {
+    "company": "Unternehmen",
+    "products": "Produkte",
+    "support": "Support",
+    "legal": "Rechtliches",
+    "rights": "Alle Rechte vorbehalten",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "cookies": "Cookies",
+    "legal_notices": "Impressum",
+    "description": "Deutscher Spezialist für hochwertige Pferdetransportfahrzeuge. Wir bieten komplette Lösungen für den Transport Ihrer Pferde mit deutscher Qualität und Zuverlässigkeit.",
+    "vehicles_title": "Unsere Fahrzeuge",
+    "trucks": "Pferdetransporter",
+    "vans": "Pferde-Transporter",
+    "amenaged_vans": "Ausgebaute Transporter",
+    "company_title": "Unternehmen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "quote": "Angebot anfordern",
+    "financing": "Finanzierung",
+    "newsletter_title": "Bleiben Sie in Kontakt",
+    "newsletter_description": "Erhalten Sie unsere neuesten Nachrichten und Sonderangebote.",
+    "newsletter_placeholder": "Ihre E-Mail",
+    "newsletter_submit": "Anmelden",
+    "newsletter_success_title": "Erfolgreich angemeldet!",
+    "newsletter_success_description": "Sie erhalten bald unsere neuesten Nachrichten.",
+    "phone": "+49 123 456 789",
+    "email": "info@horsemobil.de",
+    "address": "Musterstraße 123",
+    "address_city": "12345 Berlin, Deutschland",
+    "hours": "Mo-Fr: 8-18 Uhr"
+  },
+  "floating_cta": {
+    "whatsapp": "WhatsApp",
+    "quote": "Angebot anfordern",
+    "call": "Anrufen",
+    "whatsapp_message": "Hallo, ich interessiere mich für Ihre Pferdetransportfahrzeuge. Können Sie mir weitere Informationen geben?"
+  },
+  "trucks": {
+    "title": "Pferdetransporter",
+    "badge": "Premium-Fahrzeuge",
+    "description": "Entdecken Sie unser Sortiment hochwertiger Pferdetransporter, die maximalen Komfort und Sicherheit für Ihre Pferde bei beruflichen oder privaten Fahrten bieten.",
+    "quote_cta": "Angebot anfordern",
+    "contact_cta": "Kontakt aufnehmen",
+    "alt_image": "Luxus-Pferdetransporter",
+    "features": {
+      "title": "Warum unsere Pferdetransporter wählen?",
+      "description": "Unsere Pferdetransporter kombinieren Innovation, Komfort und Sicherheit für das beste Transporterlebnis Ihrer Pferde.",
+      "safety": {
+        "title": "Maximale Sicherheit",
+        "description": "Fortschrittliche Sicherheitssysteme und Anti-Stress-Ausstattung für Ihre Pferde"
+      },
+      "capacity": {
+        "title": "Hohe Kapazität",
+        "description": "Von 2 bis 8 Pferden je nach Bedarf, mit integrierten Wohnbereichen"
+      },
+      "custom": {
+        "title": "Maßgeschneidert",
+        "description": "Komplette Anpassung nach Ihren Bedürfnissen und Vorlieben"
+      },
+      "quality": {
+        "title": "Premium-Qualität",
+        "description": "Hochwertige Materialien und außergewöhnliche Verarbeitung"
+      }
+    },
+    "models": {
+      "title": "Unsere LKW-Modelle",
+      "description": "Ein komplettes Sortiment für alle Ihre Pferdetransportbedürfnisse",
+      "2_horses": {
+        "title": "2-Pferde-LKW",
+        "description": "Ideal für lokale Ausflüge",
+        "features": [
+          "Kapazität: 2 Pferde",
+          "Sattelkammer",
+          "Belüftungssystem",
+          "Rutschfester Boden"
+        ]
+      },
+      "4_horses": {
+        "title": "4-Pferde-LKW",
+        "description": "Für Teams und Vereine",
+        "features": [
+          "Kapazität: 4 Pferde",
+          "Integrierter Wohnbereich",
+          "Ausgestattete Küche",
+          "Toilette und Dusche"
+        ]
+      },
+      "6_horses": {
+        "title": "6+ Pferde-LKW",
+        "description": "Professionelle Lösung",
+        "features": [
+          "Kapazität: 6 bis 8 Pferde",
+          "Komplette Wohnung",
+          "Garage für Ausrüstung",
+          "Premium-Optionen"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihren idealen Pferdetransporter zu entdecken?",
+      "description": "Kontaktieren Sie unsere Experten für eine persönliche Beratung",
+      "quote_cta": "Kostenloses Angebot anfordern",
+      "appointment_cta": "Termin vereinbaren"
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "description": "Unser Expertenteam steht Ihnen zur Verfügung, um alle Ihre Fragen zu beantworten und Sie bei Ihrem Pferdetransportfahrzeug-Projekt zu unterstützen.",
+    "form": {
+      "title": "Senden Sie uns eine Nachricht",
+      "description": "Füllen Sie dieses Formular aus und wir antworten Ihnen so schnell wie möglich",
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "subject": "Betreff",
+      "subject_placeholder": "Betreff Ihrer Anfrage",
+      "message": "Nachricht",
+      "message_placeholder": "Beschreiben Sie Ihr Projekt oder Ihre Anfrage...",
+      "submit": "Nachricht senden"
+    },
+    "info": {
+      "phone": {
+        "title": "Telefon",
+        "value": "+33 1 23 45 67 89",
+        "schedule": "Montag bis Freitag, 9-18 Uhr"
+      },
+      "email": {
+        "title": "E-Mail",
+        "value": "contact@horsemobil.fr",
+        "response": "Antwort innerhalb von 24h"
+      },
+      "address": {
+        "title": "Adresse",
+        "street": "123 Avenue des Chevaux",
+        "city": "75000 Paris, Frankreich"
+      },
+      "hours": {
+        "title": "Öffnungszeiten",
+        "weekdays": "Montag - Freitag",
+        "weekdays_hours": "9 - 18 Uhr",
+        "saturday": "Samstag",
+        "saturday_hours": "9 - 12 Uhr",
+        "sunday": "Sonntag",
+        "sunday_status": "Geschlossen"
+      }
+    }
+  },
+  "quote": {
+    "title": "Angebot anfordern",
+    "description": "Erhalten Sie ein personalisiertes Angebot für Ihr Pferdetransportfahrzeug-Projekt. Unser Team bietet Ihnen die besten, an Ihre Bedürfnisse angepassten Lösungen.",
+    "benefits": {
+      "free": {
+        "title": "Kostenloses Angebot",
+        "description": "Personalisierte Schätzung ohne Verpflichtung"
+      },
+      "fast": {
+        "title": "Schnelle Antwort",
+        "description": "Antwort innerhalb von maximal 24h"
+      },
+      "detailed": {
+        "title": "Detailliertes Angebot",
+        "description": "Alle Details und Optionen enthalten"
+      }
+    },
+    "form": {
+      "title": "Angebotsanfrage-Formular",
+      "description": "Je genauer Ihre Informationen sind, desto besser wird unser Angebot an Ihre Bedürfnisse angepasst",
+      "contact_info": "Kontaktinformationen",
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "vehicle_type": "Gewünschter Fahrzeugtyp",
+      "category": "Kategorie",
+      "category_placeholder": "Fahrzeugtyp auswählen",
+      "specifications": "Spezifikationen",
+      "horses_number": "Anzahl der Pferde",
+      "horses_placeholder": "Auswählen",
+      "budget": "Ungefähriges Budget",
+      "budget_placeholder": "Budget auswählen",
+      "options": "Gewünschte Optionen",
+      "project_description": "Projektbeschreibung",
+      "project_description_label": "Beschreiben Sie uns Ihr Projekt, Ihre spezifischen Bedürfnisse und Einschränkungen",
+      "project_description_placeholder": "Beispiel: Ich suche einen 2-Pferde-Transporter für Wochenend-Turniere, mit kleinem Wohnbereich für mehrtägige Reisen...",
+      "submit": "Mein kostenloses Angebot anfordern",
+      "vehicle_types": {
+        "truck": "Pferdetransporter",
+        "van": "Pferde-Transporter",
+        "amenaged_van": "Ausgebauter Transporter",
+        "trailer": "Anhänger"
+      },
+      "horses_options": {
+        "1": "1 Pferd",
+        "2": "2 Pferde",
+        "3": "3 Pferde",
+        "4": "4 Pferde",
+        "5": "5 Pferde oder mehr"
+      },
+      "budget_options": {
+        "50k-100k": "50.000€ - 100.000€",
+        "100k-150k": "100.000€ - 150.000€",
+        "150k-200k": "150.000€ - 200.000€",
+        "200k": "Mehr als 200.000€"
+      },
+      "options_list": {
+        "tack_room": "Sattelkammer",
+        "water_tank": "Wassertank",
+        "sleeping_area": "Schlafbereich",
+        "kitchen": "Küchenbereich",
+        "air_conditioning": "Klimaanlage",
+        "led_lighting": "LED-Beleuchtung"
+      }
+    }
+  },
+  "common": {
+    "learn_more": "Mehr erfahren",
+    "contact_us": "Kontaktieren Sie uns",
+    "back_home": "Zurück zur Startseite",
+    "coming_soon": "Inhalt folgt in Kürze",
+    "under_construction": "Diese Seite ist im Aufbau",
+    "discover": "Entdecken",
+    "discover_more": "Mehr entdecken",
+    "see_vehicles": "Unsere Fahrzeuge ansehen",
+    "request_quote": "Angebot anfordern"
+  }
+}
