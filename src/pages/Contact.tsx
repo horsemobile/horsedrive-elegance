@@ -18,9 +18,9 @@ const Contact = () => {
       <main className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('pages.contact.title')}</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('contact.title')}</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              {t('pages.contact.description')}
+              {t('contact.description')}
             </p>
           </div>
 
@@ -28,44 +28,44 @@ const Contact = () => {
             {/* Contact Form */}
             <Card>
               <CardHeader>
-                <CardTitle>{t('pages.contact.formTitle')}</CardTitle>
+                <CardTitle>{t('contact.form.title')}</CardTitle>
                 <CardDescription>
-                  {t('pages.contact.formDescription')}
+                  {t('contact.form.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName">{t('pages.contact.firstName')}</Label>
-                    <Input id="firstName" placeholder={t('contact.firstName_placeholder')} />
+                    <Label htmlFor="firstName">{t('contact.form.first_name')}</Label>
+                    <Input id="firstName" placeholder={t('contact.form.first_name')} />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="lastName">{t('pages.contact.lastName')}</Label>
-                    <Input id="lastName" placeholder={t('contact.name_placeholder')} />
+                    <Label htmlFor="lastName">{t('contact.form.last_name')}</Label>
+                    <Input id="lastName" placeholder={t('contact.form.last_name')} />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email">{t('contact.email')}</Label>
-                  <Input id="email" type="email" placeholder={t('contact.email_placeholder')} />
+                  <Label htmlFor="email">{t('contact.form.email')}</Label>
+                  <Input id="email" type="email" placeholder={t('contact.form.email')} />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="phone">{t('contact.phone')}</Label>
-                  <Input id="phone" type="tel" placeholder={t('contact.phone_placeholder')} />
+                  <Label htmlFor="phone">{t('contact.form.phone')}</Label>
+                  <Input id="phone" type="tel" placeholder={t('contact.form.phone')} />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="subject">{t('pages.contact.subject')}</Label>
-                  <Input id="subject" placeholder={t('contact.subject_placeholder')} />
+                  <Label htmlFor="subject">{t('contact.form.subject')}</Label>
+                  <Input id="subject" placeholder={t('contact.form.subject_placeholder')} />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="message">{t('pages.contact.message')}</Label>
+                  <Label htmlFor="message">{t('contact.form.message')}</Label>
                   <Textarea 
                     id="message" 
-                    placeholder={t('contact.message_placeholder')}
+                    placeholder={t('contact.form.message_placeholder')}
                     className="min-h-32"
                   />
                 </div>
                 <Button className="w-full" size="lg">
-                  {t('pages.contact.sendMessage')}
+                  {t('contact.form.submit')}
                 </Button>
               </CardContent>
             </Card>
@@ -76,12 +76,12 @@ const Contact = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Phone className="h-5 w-5" />
-                    {t('contact.phone')}
+                    {t('contact.info.phone.title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-semibold">{t('pages.contact.phoneNumber')}</p>
-                  <p className="text-muted-foreground">{t('pages.contact.phoneHours')}</p>
+                  <p className="text-lg font-semibold">{t('contact.info.phone.value')}</p>
+                  <p className="text-muted-foreground">{t('contact.info.phone.schedule')}</p>
                 </CardContent>
               </Card>
 
@@ -89,12 +89,12 @@ const Contact = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Mail className="h-5 w-5" />
-                    {t('contact.email')}
+                    {t('contact.info.email.title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-semibold">{t('pages.contact.email')}</p>
-                  <p className="text-muted-foreground">{t('pages.contact.responseTime')}</p>
+                  <p className="text-lg font-semibold">{t('contact.info.email.value')}</p>
+                  <p className="text-muted-foreground">{t('contact.info.email.response')}</p>
                 </CardContent>
               </Card>
 
@@ -102,12 +102,12 @@ const Contact = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <MapPin className="h-5 w-5" />
-                    {t('contact.address')}
+                    {t('contact.info.address.title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-semibold">{t('pages.contact.address')}</p>
-                  <p className="text-muted-foreground">{t('pages.contact.city')}</p>
+                  <p className="text-lg font-semibold">{t('contact.info.address.street')}</p>
+                  <p className="text-muted-foreground">{t('contact.info.address.city')}</p>
                 </CardContent>
               </Card>
 
@@ -115,22 +115,22 @@ const Contact = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Clock className="h-5 w-5" />
-                    {t('pages.contact.hours')}
+                    {t('contact.info.hours.title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span>{t('pages.contact.mondayFriday')}</span>
-                      <span className="font-semibold">{t('pages.contact.timeWeekdays')}</span>
+                      <span>{t('contact.info.hours.weekdays')}</span>
+                      <span className="font-semibold">{t('contact.info.hours.weekdays_hours')}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>{t('pages.contact.saturday')}</span>
-                      <span className="font-semibold">{t('pages.contact.timeSaturday')}</span>
+                      <span>{t('contact.info.hours.saturday')}</span>
+                      <span className="font-semibold">{t('contact.info.hours.saturday_hours')}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>{t('pages.contact.sunday')}</span>
-                      <span className="text-muted-foreground">{t('pages.contact.closed')}</span>
+                      <span>{t('contact.info.hours.sunday')}</span>
+                      <span className="text-muted-foreground">{t('contact.info.hours.sunday_status')}</span>
                     </div>
                   </div>
                 </CardContent>

@@ -146,6 +146,49 @@
     "call": "Llamarnos",
     "whatsapp_message": "Hola, estoy interesado en sus vehículos ecuestres. ¿Pueden darme más información?"
   },
+  "contact": {
+    "title": "Contáctanos",
+    "description": "Nuestro equipo de expertos está a su disposición para responder a todas sus preguntas y acompañarle en su proyecto de vehículo ecuestre.",
+    "form": {
+      "title": "Envíanos un mensaje",
+      "description": "Complete este formulario y le responderemos lo antes posible",
+      "first_name": "Nombre",
+      "last_name": "Apellido",
+      "email": "Email",
+      "phone": "Teléfono",
+      "subject": "Asunto",
+      "subject_placeholder": "Asunto de su solicitud",
+      "message": "Mensaje",
+      "message_placeholder": "Describa su proyecto o solicitud...",
+      "submit": "Enviar mensaje"
+    },
+    "info": {
+      "phone": {
+        "title": "Teléfono",
+        "value": "+34 91 234 56 78",
+        "schedule": "Lunes a viernes, 9h-18h"
+      },
+      "email": {
+        "title": "Email",
+        "value": "contacto@horsemobil.es",
+        "response": "Respuesta en 24h"
+      },
+      "address": {
+        "title": "Dirección",
+        "street": "123 Avenida de los Caballos",
+        "city": "28000 Madrid, España"
+      },
+      "hours": {
+        "title": "Horarios de apertura",
+        "weekdays": "Lunes - Viernes",
+        "weekdays_hours": "9h - 18h",
+        "saturday": "Sábado",
+        "saturday_hours": "9h - 12h",
+        "sunday": "Domingo",
+        "sunday_status": "Cerrado"
+      }
+    }
+  },
   "trucks": {
     "title": "Camiones Ecuestres",
     "badge": "Vehículos Premium",
