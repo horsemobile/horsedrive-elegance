@@ -124,17 +124,17 @@ const Devis = () => {
                   {vehicleType === 'van-amenage' ? (
                     <>
                       <div className="space-y-2">
-                        <Label htmlFor="passengers">{t('quote.form.passengersNumber')}</Label>
-                        <Input 
-                          id="passengers" 
-                          placeholder={t('quote.form.selectPassengers')}
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="usage">{t('quote.form.vanUsage')}</Label>
-                        <Input 
-                          id="usage" 
-                          placeholder={t('quote.form.selectUsage')}
+                         <Label htmlFor="passengers">{t('pages.quote.passengersNumber')}</Label>
+                         <Input 
+                           id="passengers" 
+                           placeholder={t('pages.quote.selectPassengers')}
+                         />
+                       </div>
+                       <div className="space-y-2">
+                         <Label htmlFor="usage">{t('pages.quote.vanUsage')}</Label>
+                         <Input 
+                           id="usage" 
+                           placeholder={t('pages.quote.selectUsage')}
                         />
                       </div>
                     </>
