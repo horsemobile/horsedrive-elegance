@@ -5,6 +5,11 @@ import { Card, CardContent } from '@/components/ui/card';
 
 import { ArrowRight, Truck, Car, Home } from 'lucide-react';
 
+// Import images
+import categoryTrucks from '@/assets/category-trucks.jpg';
+import categoryVans from '@/assets/category-vans.jpg';
+import categoryVanAmenage from '@/assets/category-van-amenage.jpg';
+
 interface Category {
   id: string;
   title: string;
@@ -25,7 +30,7 @@ const useCategoriesData = () => {
       title: t('categories.trucks.title'),
       description: t('categories.trucks.description'),
       icon: <Truck className="h-8 w-8" />,
-      image: '/src/assets/category-trucks.jpg',
+      image: categoryTrucks,
       link: '/camions',
       vehicleCount: 24,
       badge: t('categories.trucks.badge')
@@ -35,7 +40,7 @@ const useCategoriesData = () => {
       title: t('categories.vans.title'),
       description: t('categories.vans.description'),
       icon: <Car className="h-8 w-8" />,
-      image: '/src/assets/category-vans.jpg',
+      image: categoryVans,
       link: '/vans',
       vehicleCount: 18
     },
@@ -44,7 +49,7 @@ const useCategoriesData = () => {
       title: t('categories.amenaged.title'),
       description: t('categories.amenaged.description'),
       icon: <Home className="h-8 w-8" />,
-      image: '/src/assets/category-van-amenage.jpg',
+      image: categoryVanAmenage,
       link: '/van-amenage',
       vehicleCount: 12,
       badge: t('categories.amenaged.badge')
