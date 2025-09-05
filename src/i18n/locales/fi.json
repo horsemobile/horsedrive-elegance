@@ -495,6 +495,78 @@
       "models_cta": "Katso mallejamme"
     }
   },
+  "vansAmenage": {
+    "title": "Sisustetut pakettiautot",
+    "badge": "Räätälöidyt sisustukset",
+    "description": "Tutustu sisustettuihin pakettiautoimme matkustaa vapaudessa. Mukavuus, autonomia ja laatu tieseikkailuillesi.",
+    "quote_cta": "Pyydä tarjous",
+    "contact_cta": "Ota yhteyttä",
+    "equipment": {
+      "title": "Sisältyvät varusteet",
+      "description": "Kaikki pakettiautomme on varustettu parhailla sisustuksilla mukavuutesi varmistamiseksi"
+    },
+    "features": {
+      "sleeping": {
+        "title": "Makuualue",
+        "description": "Mukava sänky korkealaatuisella patjalla ja integroidulla säilytyksellä"
+      },
+      "kitchen": {
+        "title": "Varustettu keittiö",
+        "description": "Jääkaappi, keittotaso, pesuallas ja optimoitu säilytys"
+      },
+      "bathroom": {
+        "title": "Kylpyhuone",
+        "description": "Suihku, pesuallas ja WC mukautetulla viemäröintijärjestelmällä"
+      },
+      "electricity": {
+        "title": "Sähkö",
+        "description": "Apuakku, aurinkopaneeli ja 220V muuntaja"
+      },
+      "ventilation": {
+        "title": "Ilmanvaihto",
+        "description": "Kattoikkuna ja tuuletusaukot optimaalista mukavuutta varten"
+      },
+      "insulation": {
+        "title": "Eristys",
+        "description": "Lämpö- ja ääneneristys kaikille vuodenajoille"
+      }
+    },
+    "models": {
+      "title": "Mallejamme",
+      "description": "Valitse sisustettu pakettiauto, joka vastaa tarpeitasi",
+      "equipment_label": "Varusteet",
+      "comfort": {
+        "title": "Mukavuus pakettiauto",
+        "price": "Alkaen 45.000€",
+        "features": ["Parisänky", "Varustettu keittiö", "Suihku", "WC"],
+        "specs": {
+          "couchages": "2 henkilöä"
+        }
+      },
+      "family": {
+        "title": "Perhe pakettiauto",
+        "price": "Alkaen 65.000€",
+        "features": ["Parisänky + kerrossänky", "Iso keittiö", "Erillinen suihku", "WC", "Olohuone"],
+        "specs": {
+          "couchages": "4 henkilöä"
+        }
+      },
+      "premium": {
+        "title": "Premium pakettiauto",
+        "price": "Alkaen 85.000€",
+        "features": ["King size sänky", "Korkealaatuinen keittiö", "Täydellinen kylpyhuone", "Tilava olohuone", "Ilmastointi"],
+        "specs": {
+          "couchages": "2-4 henkilöä"
+        }
+      }
+    },
+    "cta": {
+      "title": "Valmis seikkailuun?",
+      "description": "Ota yhteyttä keskustellaksesi sisustusprojektistasi tai tutustu saatavilla oleviin pakettiautoimme",
+      "quote_cta": "Saa ilmainen tarjous",
+      "contact_cta": "Ota yhteyttä"
+    }
+  },
   "common": {
     "learn_more": "Lue lisää",
     "contact_us": "Ota yhteyttä",

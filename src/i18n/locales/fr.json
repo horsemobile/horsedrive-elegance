@@ -528,6 +528,78 @@
       "models_cta": "Voir nos Modèles"
     }
   },
+  "vansAmenage": {
+    "title": "Vans Aménagés",
+    "badge": "Aménagements sur mesure",
+    "description": "Découvrez nos vans aménagés pour voyager en liberté. Confort, autonomie et qualité pour vos aventures sur les routes.",
+    "quote_cta": "Demander un devis",
+    "contact_cta": "Nous contacter",
+    "equipment": {
+      "title": "Équipements inclus",
+      "description": "Tous nos vans sont équipés des meilleurs aménagements pour votre confort"
+    },
+    "features": {
+      "sleeping": {
+        "title": "Espace nuit",
+        "description": "Lit confortable avec matelas haute qualité et rangements intégrés"
+      },
+      "kitchen": {
+        "title": "Cuisine équipée",
+        "description": "Réfrigérateur, plaques de cuisson, évier et rangements optimisés"
+      },
+      "bathroom": {
+        "title": "Salle d'eau",
+        "description": "Douche, lavabo et WC avec système d'évacuation adapté"
+      },
+      "electricity": {
+        "title": "Électricité",
+        "description": "Batterie auxiliaire, panneau solaire et convertisseur 220V"
+      },
+      "ventilation": {
+        "title": "Ventilation",
+        "description": "Lanterneau et aérations pour un confort optimal"
+      },
+      "insulation": {
+        "title": "Isolation",
+        "description": "Isolation thermique et phonique pour toutes saisons"
+      }
+    },
+    "models": {
+      "title": "Nos modèles",
+      "description": "Choisissez le van aménagé qui correspond à vos besoins",
+      "equipment_label": "Équipements",
+      "comfort": {
+        "title": "Van Confort",
+        "price": "À partir de 45 000€",
+        "features": ["Lit double", "Cuisine équipée", "Douche", "WC"],
+        "specs": {
+          "couchages": "2 personnes"
+        }
+      },
+      "family": {
+        "title": "Van Famille",
+        "price": "À partir de 65 000€",
+        "features": ["Lit double + lit superposé", "Grande cuisine", "Douche séparée", "WC", "Salon"],
+        "specs": {
+          "couchages": "4 personnes"
+        }
+      },
+      "premium": {
+        "title": "Van Premium",
+        "price": "À partir de 85 000€",
+        "features": ["Lit king size", "Cuisine haut de gamme", "Salle de bain complète", "Salon spacieux", "Climatisation"],
+        "specs": {
+          "couchages": "2-4 personnes"
+        }
+      }
+    },
+    "cta": {
+      "title": "Prêt pour l'aventure ?",
+      "description": "Contactez-nous pour discuter de votre projet d'aménagement ou découvrir nos vans disponibles",
+      "quote_cta": "Obtenir un devis gratuit",
+      "contact_cta": "Nous contacter"
+    }
+  },
   "common": {
     "learn_more": "En savoir plus",
     "contact_us": "Nous contacter",

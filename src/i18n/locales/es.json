@@ -317,6 +317,78 @@
       "models_cta": "Ver nuestros Modelos"
     }
   },
+  "vansAmenage": {
+    "title": "Furgonetas Acondicionadas",
+    "badge": "Acondicionamientos personalizados",
+    "description": "Descubra nuestras furgonetas acondicionadas para viajar en libertad. Comodidad, autonomía y calidad para sus aventuras en las carreteras.",
+    "quote_cta": "Solicitar presupuesto",
+    "contact_cta": "Contactarnos",
+    "equipment": {
+      "title": "Equipamiento incluido",
+      "description": "Todas nuestras furgonetas están equipadas con los mejores acondicionamientos para su comodidad"
+    },
+    "features": {
+      "sleeping": {
+        "title": "Área de descanso",
+        "description": "Cama cómoda con colchón de alta calidad y almacenamiento integrado"
+      },
+      "kitchen": {
+        "title": "Cocina equipada",
+        "description": "Refrigerador, placa de cocción, fregadero y almacenamiento optimizado"
+      },
+      "bathroom": {
+        "title": "Baño",
+        "description": "Ducha, lavabo e inodoro con sistema de evacuación adaptado"
+      },
+      "electricity": {
+        "title": "Electricidad",
+        "description": "Batería auxiliar, panel solar y convertidor 220V"
+      },
+      "ventilation": {
+        "title": "Ventilación",
+        "description": "Claraboya y ventilaciones para un confort óptimo"
+      },
+      "insulation": {
+        "title": "Aislamiento",
+        "description": "Aislamiento térmico y acústico para todas las estaciones"
+      }
+    },
+    "models": {
+      "title": "Nuestros modelos",
+      "description": "Elija la furgoneta acondicionada que corresponde a sus necesidades",
+      "equipment_label": "Equipamiento",
+      "comfort": {
+        "title": "Furgoneta Confort",
+        "price": "Desde 45.000€",
+        "features": ["Cama doble", "Cocina equipada", "Ducha", "Inodoro"],
+        "specs": {
+          "couchages": "2 personas"
+        }
+      },
+      "family": {
+        "title": "Furgoneta Familia",
+        "price": "Desde 65.000€",
+        "features": ["Cama doble + litera", "Cocina grande", "Ducha separada", "Inodoro", "Salón"],
+        "specs": {
+          "couchages": "4 personas"
+        }
+      },
+      "premium": {
+        "title": "Furgoneta Premium",
+        "price": "Desde 85.000€",
+        "features": ["Cama king size", "Cocina de alta gama", "Baño completo", "Salón espacioso", "Aire acondicionado"],
+        "specs": {
+          "couchages": "2-4 personas"
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Listo para la aventura?",
+      "description": "Contáctenos para discutir su proyecto de acondicionamiento o descubrir nuestras furgonetas disponibles",
+      "quote_cta": "Obtener un presupuesto gratuito",
+      "contact_cta": "Contactarnos"
+    }
+  },
   "common": {
     "learn_more": "Saber más",
     "contact_us": "Contáctanos",

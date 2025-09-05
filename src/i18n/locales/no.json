@@ -427,6 +427,78 @@
       "models_cta": "Se våre modeller"
     }
   },
+  "vansAmenage": {
+    "title": "Innredede varebiler",
+    "badge": "Skreddersydde innredninger",
+    "description": "Oppdag våre innredede varebiler for å reise i frihet. Komfort, autonomi og kvalitet for eventyrene dine på veiene.",
+    "quote_cta": "Be om tilbud",
+    "contact_cta": "Kontakt oss",
+    "equipment": {
+      "title": "Inkludert utstyr",
+      "description": "Alle våre varebiler er utstyrt med de beste innredningene for din komfort"
+    },
+    "features": {
+      "sleeping": {
+        "title": "Soveområde",
+        "description": "Komfortabel seng med høykvalitets madrass og integrert oppbevaring"
+      },
+      "kitchen": {
+        "title": "Utstyrt kjøkken",
+        "description": "Kjøleskap, koketopp, vask og optimalisert oppbevaring"
+      },
+      "bathroom": {
+        "title": "Bad",
+        "description": "Dusj, servant og toalett med tilpasset dreneringssystem"
+      },
+      "electricity": {
+        "title": "Elektrisitet",
+        "description": "Hjelpebatteri, solpanel og 220V omformer"
+      },
+      "ventilation": {
+        "title": "Ventilasjon",
+        "description": "Takvindu og luftekanaler for optimal komfort"
+      },
+      "insulation": {
+        "title": "Isolering",
+        "description": "Termisk og akustisk isolering for alle årstider"
+      }
+    },
+    "models": {
+      "title": "Våre modeller",
+      "description": "Velg den innredede varebilen som passer dine behov",
+      "equipment_label": "Utstyr",
+      "comfort": {
+        "title": "Komfort varebil",
+        "price": "Fra 45.000€",
+        "features": ["Dobbeltseng", "Utstyrt kjøkken", "Dusj", "Toalett"],
+        "specs": {
+          "couchages": "2 personer"
+        }
+      },
+      "family": {
+        "title": "Familie varebil",
+        "price": "Fra 65.000€",
+        "features": ["Dobbeltseng + køyeseng", "Stort kjøkken", "Separat dusj", "Toalett", "Stue"],
+        "specs": {
+          "couchages": "4 personer"
+        }
+      },
+      "premium": {
+        "title": "Premium varebil",
+        "price": "Fra 85.000€",
+        "features": ["King size seng", "Høykvalitets kjøkken", "Komplett bad", "Romslig stue", "Klimaanlegg"],
+        "specs": {
+          "couchages": "2-4 personer"
+        }
+      }
+    },
+    "cta": {
+      "title": "Klar for eventyr?",
+      "description": "Kontakt oss for å diskutere ditt innredningsprosjekt eller oppdage våre tilgjengelige varebiler",
+      "quote_cta": "Få et gratis tilbud",
+      "contact_cta": "Kontakt oss"
+    }
+  },
   "common": {
     "learn_more": "Lær mer",
     "contact_us": "Kontakt oss",

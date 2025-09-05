@@ -495,6 +495,78 @@
       "models_cta": "Unsere Modelle ansehen"
     }
   },
+  "vansAmenage": {
+    "title": "Ausgebaute Transporter",
+    "badge": "Maßgeschneiderte Ausbauten",
+    "description": "Entdecken Sie unsere ausgebauten Transporter für Reisen in Freiheit. Komfort, Autonomie und Qualität für Ihre Abenteuer auf den Straßen.",
+    "quote_cta": "Angebot anfordern",
+    "contact_cta": "Kontakt aufnehmen",
+    "equipment": {
+      "title": "Enthaltene Ausstattung",
+      "description": "Alle unsere Transporter sind mit den besten Einrichtungen für Ihren Komfort ausgestattet"
+    },
+    "features": {
+      "sleeping": {
+        "title": "Schlafbereich",
+        "description": "Komfortables Bett mit hochwertiger Matratze und integriertem Stauraum"
+      },
+      "kitchen": {
+        "title": "Ausgestattete Küche",
+        "description": "Kühlschrank, Kochfeld, Spüle und optimierter Stauraum"
+      },
+      "bathroom": {
+        "title": "Badezimmer",
+        "description": "Dusche, Waschbecken und WC mit angepasstem Abflusssystem"
+      },
+      "electricity": {
+        "title": "Elektrizität",
+        "description": "Hilfsbatterie, Solarpanel und 220V Wechselrichter"
+      },
+      "ventilation": {
+        "title": "Belüftung",
+        "description": "Dachluke und Lüftungen für optimalen Komfort"
+      },
+      "insulation": {
+        "title": "Isolierung",
+        "description": "Wärme- und Schalldämmung für alle Jahreszeiten"
+      }
+    },
+    "models": {
+      "title": "Unsere Modelle",
+      "description": "Wählen Sie den ausgebauten Transporter, der Ihren Bedürfnissen entspricht",
+      "equipment_label": "Ausstattung",
+      "comfort": {
+        "title": "Komfort Transporter",
+        "price": "Ab 45.000€",
+        "features": ["Doppelbett", "Ausgestattete Küche", "Dusche", "WC"],
+        "specs": {
+          "couchages": "2 Personen"
+        }
+      },
+      "family": {
+        "title": "Familien Transporter",
+        "price": "Ab 65.000€",
+        "features": ["Doppelbett + Etagenbett", "Große Küche", "Separate Dusche", "WC", "Wohnzimmer"],
+        "specs": {
+          "couchages": "4 Personen"
+        }
+      },
+      "premium": {
+        "title": "Premium Transporter",
+        "price": "Ab 85.000€",
+        "features": ["King-Size-Bett", "Hochwertige Küche", "Komplettes Badezimmer", "Geräumiges Wohnzimmer", "Klimaanlage"],
+        "specs": {
+          "couchages": "2-4 Personen"
+        }
+      }
+    },
+    "cta": {
+      "title": "Bereit für das Abenteuer?",
+      "description": "Kontaktieren Sie uns, um Ihr Ausbauprojekt zu besprechen oder unsere verfügbaren Transporter zu entdecken",
+      "quote_cta": "Kostenloses Angebot erhalten",
+      "contact_cta": "Kontakt aufnehmen"
+    }
+  },
   "common": {
     "learn_more": "Mehr erfahren",
     "contact_us": "Kontaktieren Sie uns",

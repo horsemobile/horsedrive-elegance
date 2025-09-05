@@ -427,6 +427,78 @@
       "models_cta": "See our Models"
     }
   },
+  "vansAmenage": {
+    "title": "Converted Vans",
+    "badge": "Custom conversions",
+    "description": "Discover our converted vans to travel in freedom. Comfort, autonomy and quality for your road adventures.",
+    "quote_cta": "Request a quote",
+    "contact_cta": "Contact us",
+    "equipment": {
+      "title": "Included equipment",
+      "description": "All our vans are equipped with the best fittings for your comfort"
+    },
+    "features": {
+      "sleeping": {
+        "title": "Sleeping area",
+        "description": "Comfortable bed with high quality mattress and integrated storage"
+      },
+      "kitchen": {
+        "title": "Equipped kitchen",
+        "description": "Refrigerator, hob, sink and optimized storage"
+      },
+      "bathroom": {
+        "title": "Bathroom",
+        "description": "Shower, sink and toilet with adapted drainage system"
+      },
+      "electricity": {
+        "title": "Electricity",
+        "description": "Auxiliary battery, solar panel and 220V converter"
+      },
+      "ventilation": {
+        "title": "Ventilation",
+        "description": "Skylight and vents for optimal comfort"
+      },
+      "insulation": {
+        "title": "Insulation",
+        "description": "Thermal and acoustic insulation for all seasons"
+      }
+    },
+    "models": {
+      "title": "Our models",
+      "description": "Choose the converted van that matches your needs",
+      "equipment_label": "Equipment",
+      "comfort": {
+        "title": "Comfort Van",
+        "price": "From €45,000",
+        "features": ["Double bed", "Equipped kitchen", "Shower", "Toilet"],
+        "specs": {
+          "couchages": "2 people"
+        }
+      },
+      "family": {
+        "title": "Family Van",
+        "price": "From €65,000",
+        "features": ["Double bed + bunk bed", "Large kitchen", "Separate shower", "Toilet", "Living room"],
+        "specs": {
+          "couchages": "4 people"
+        }
+      },
+      "premium": {
+        "title": "Premium Van",
+        "price": "From €85,000",
+        "features": ["King size bed", "High-end kitchen", "Complete bathroom", "Spacious living room", "Air conditioning"],
+        "specs": {
+          "couchages": "2-4 people"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready for adventure?",
+      "description": "Contact us to discuss your conversion project or discover our available vans",
+      "quote_cta": "Get a free quote",
+      "contact_cta": "Contact us"
+    }
+  },
   "common": {
     "learn_more": "Learn more",
     "contact_us": "Contact us",

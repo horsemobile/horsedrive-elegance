@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { 
   Bed, 
   Car, 
@@ -21,44 +22,46 @@ import {
 } from 'lucide-react';
 
 const VansAmenage = () => {
+  const { t } = useTranslation();
+
   const vanModels = [
     {
       id: 1,
-      name: "Van Confort",
-      price: "À partir de 45 000€",
+      name: t('vansAmenage.models.comfort.title'),
+      price: t('vansAmenage.models.comfort.price'),
       image: "/src/assets/category-van-amenage.jpg",
-      features: ["Lit double", "Cuisine équipée", "Douche", "WC"],
+      features: t('vansAmenage.models.comfort.features', { returnObjects: true }) as string[],
       specs: {
         longueur: "5.4m",
         largeur: "2.05m",
         hauteur: "2.7m",
-        couchages: "2 personnes"
+        couchages: t('vansAmenage.models.comfort.specs.couchages')
       }
     },
     {
       id: 2,
-      name: "Van Famille",
-      price: "À partir de 65 000€",
+      name: t('vansAmenage.models.family.title'),
+      price: t('vansAmenage.models.family.price'),
       image: "/src/assets/hero-van-interior.jpg",
-      features: ["Lit double + lit superposé", "Grande cuisine", "Douche séparée", "WC", "Salon"],
+      features: t('vansAmenage.models.family.features', { returnObjects: true }) as string[],
       specs: {
         longueur: "6.4m",
         largeur: "2.05m",
         hauteur: "2.8m",
-        couchages: "4 personnes"
+        couchages: t('vansAmenage.models.family.specs.couchages')
       }
     },
     {
       id: 3,
-      name: "Van Premium",
-      price: "À partir de 85 000€",
+      name: t('vansAmenage.models.premium.title'),
+      price: t('vansAmenage.models.premium.price'),
       image: "/src/assets/hero-van-sunset.jpg",
-      features: ["Lit king size", "Cuisine haut de gamme", "Salle de bain complète", "Salon spacieux", "Climatisation"],
+      features: t('vansAmenage.models.premium.features', { returnObjects: true }) as string[],
       specs: {
         longueur: "7.2m",
         largeur: "2.3m",
         hauteur: "2.9m",
-        couchages: "2-4 personnes"
+        couchages: t('vansAmenage.models.premium.specs.couchages')
       }
     }
   ];
@@ -66,33 +69,33 @@ const VansAmenage = () => {
   const amenagementFeatures = [
     {
       icon: Bed,
-      title: "Espace nuit",
-      description: "Lit confortable avec matelas haute qualité et rangements intégrés"
+      title: t('vansAmenage.features.sleeping.title'),
+      description: t('vansAmenage.features.sleeping.description')
     },
     {
       icon: Coffee,
-      title: "Cuisine équipée",
-      description: "Réfrigérateur, plaques de cuisson, évier et rangements optimisés"
+      title: t('vansAmenage.features.kitchen.title'),
+      description: t('vansAmenage.features.kitchen.description')
     },
     {
       icon: Droplets,
-      title: "Salle d'eau",
-      description: "Douche, lavabo et WC avec système d'évacuation adapté"
+      title: t('vansAmenage.features.bathroom.title'),
+      description: t('vansAmenage.features.bathroom.description')
     },
     {
       icon: Zap,
-      title: "Électricité",
-      description: "Batterie auxiliaire, panneau solaire et convertisseur 220V"
+      title: t('vansAmenage.features.electricity.title'),
+      description: t('vansAmenage.features.electricity.description')
     },
     {
       icon: Wind,
-      title: "Ventilation",
-      description: "Lanterneau et aérations pour un confort optimal"
+      title: t('vansAmenage.features.ventilation.title'),
+      description: t('vansAmenage.features.ventilation.description')
     },
     {
       icon: Shield,
-      title: "Isolation",
-      description: "Isolation thermique et phonique pour toutes saisons"
+      title: t('vansAmenage.features.insulation.title'),
+      description: t('vansAmenage.features.insulation.description')
     }
   ];
 
@@ -107,21 +110,20 @@ const VansAmenage = () => {
             <div className="text-center max-w-4xl mx-auto">
               <Badge variant="outline" className="mb-4">
                 <Star className="w-4 h-4 mr-2" />
-                Aménagements sur mesure
+                {t('vansAmenage.badge')}
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Vans Aménagés
+                {t('vansAmenage.title')}
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Découvrez nos vans aménagés pour voyager en liberté. Confort, autonomie et qualité 
-                pour vos aventures sur les routes.
+                {t('vansAmenage.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                  <Link to="/devis">Demander un devis</Link>
+                  <Link to="/devis">{t('vansAmenage.quote_cta')}</Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link to="/contact">Nous contacter</Link>
+                  <Link to="/contact">{t('vansAmenage.contact_cta')}</Link>
                 </Button>
               </div>
             </div>
@@ -132,9 +134,9 @@ const VansAmenage = () => {
         <section className="py-16 bg-muted/50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Équipements inclus</h2>
+              <h2 className="text-3xl font-bold mb-4">{t('vansAmenage.equipment.title')}</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Tous nos vans sont équipés des meilleurs aménagements pour votre confort
+                {t('vansAmenage.equipment.description')}
               </p>
             </div>
             
@@ -162,9 +164,9 @@ const VansAmenage = () => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Nos modèles</h2>
+              <h2 className="text-3xl font-bold mb-4">{t('vansAmenage.models.title')}</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Choisissez le van aménagé qui correspond à vos besoins
+                {t('vansAmenage.models.description')}
               </p>
             </div>
 
@@ -207,7 +209,7 @@ const VansAmenage = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <h4 className="font-semibold">Équipements:</h4>
+                      <h4 className="font-semibold">{t('vansAmenage.models.equipment_label')}:</h4>
                       <div className="flex flex-wrap gap-1">
                         {van.features.map((feature, index) => (
                           <Badge key={index} variant="secondary" className="text-xs">
@@ -219,7 +221,7 @@ const VansAmenage = () => {
 
                     <div className="flex gap-2 pt-4">
                       <Button className="flex-1" asChild>
-                        <Link to="/devis">Demander un devis</Link>
+                        <Link to="/devis">{t('vansAmenage.quote_cta')}</Link>
                       </Button>
                       <Button variant="outline" size="icon" asChild>
                         <Link to="/contact">
@@ -237,16 +239,16 @@ const VansAmenage = () => {
         {/* CTA Section */}
         <section className="py-16 bg-gradient-to-r from-primary to-secondary text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Prêt pour l'aventure ?</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('vansAmenage.cta.title')}</h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Contactez-nous pour discuter de votre projet d'aménagement ou découvrir nos vans disponibles
+              {t('vansAmenage.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>
-                <Link to="/devis">Obtenir un devis gratuit</Link>
+                <Link to="/devis">{t('vansAmenage.cta.quote_cta')}</Link>
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
-                <Link to="/contact">Nous contacter</Link>
+                <Link to="/contact">{t('vansAmenage.cta.contact_cta')}</Link>
               </Button>
             </div>
           </div>
