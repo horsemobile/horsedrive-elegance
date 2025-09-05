@@ -499,6 +499,119 @@
       "contact_cta": "Kontakt oss"
     }
   },
+  "about": {
+    "hero": {
+      "badge": "Vår historie",
+      "title": "Om Oss",
+      "description": "I 15 år har vi støttet hestesport- og reiseentusiaster i å realisere sine tilpassede kjøretøyprosjekter."
+    },
+    "stats": {
+      "experience": {
+        "label": "År med erfaring",
+        "value": "15+"
+      },
+      "clients": {
+        "label": "Fornøyde kunder",
+        "value": "500+"
+      },
+      "vehicles": {
+        "label": "Leverte kjøretøy",
+        "value": "1000+"
+      },
+      "certifications": {
+        "label": "Sertifiseringer",
+        "value": "5"
+      }
+    },
+    "mission": {
+      "badge": "Vårt oppdrag",
+      "title": "Ditt prosjekt, vår ekspertise",
+      "description1": "Hos HORSEMOBIL tror vi at enhver entusiast fortjener et kjøretøy som matcher deres ambisjoner. Enten du er en profesjonell rytter, opplyst amatør eller eventyrere som søker frihet, setter vi vår kunnskap til din tjeneste.",
+      "description2": "Vårt team av eksperter kombinerer tradisjonelt håndverk og teknologiske innovasjoner for å skape unike kjøretøy, perfekt tilpasset dine spesifikke behov.",
+      "cta": "Oppdag våre prestasjoner"
+    },
+    "values": {
+      "passion": {
+        "title": "Lidenskap",
+        "description": "Et team lidenskapelig opptatt av biler og spesialisert kjøretøykonvertering"
+      },
+      "quality": {
+        "title": "Kvalitet",
+        "description": "Høye kvalitetsstandarder for hvert kjøretøy vi leverer"
+      },
+      "precision": {
+        "title": "Presisjon",
+        "description": "Spesiell oppmerksomhet på detaljer for å møte dine behov perfekt"
+      },
+      "innovation": {
+        "title": "Innovasjon",
+        "description": "I forkant av de nyeste teknologiene og markedstrendene"
+      }
+    },
+    "timeline": {
+      "title": "Vår reise",
+      "description": "15 år med innovasjon og lidenskap som tjener våre kunder",
+      "2009": {
+        "title": "Bedriftsetablering",
+        "description": "Begynnelsen på eventyret med en lidenskap for hestetransportkjøretøy"
+      },
+      "2012": {
+        "title": "Første verksted",
+        "description": "Åpning av vårt første konverteringsverksted"
+      },
+      "2016": {
+        "title": "Ekspansjon",
+        "description": "Utvidelse og diversifisering mot innredede varebiler"
+      },
+      "2020": {
+        "title": "Innovasjon",
+        "description": "Integrering av de nyeste konverteringsteknologiene"
+      },
+      "2024": {
+        "title": "Fortreffelighet",
+        "description": "Regional leder innen hestetransportkjøretøy og innredede varebiler"
+      }
+    },
+    "team": {
+      "title": "Vårt team",
+      "description": "Lidenskapelige fagfolk til din tjeneste",
+      "director": {
+        "name": "Jean Dubois",
+        "role": "Daglig leder",
+        "experience": "20 års erfaring",
+        "description": "Ekspert på hestetransportkjøretøy og spesialiserte konverteringer"
+      },
+      "commercial": {
+        "name": "Marie Martin",
+        "role": "Salgssjef",
+        "experience": "12 års erfaring",
+        "description": "Spesialist i kundeservice og tilpassede løsninger"
+      },
+      "workshop": {
+        "name": "Pierre Durand",
+        "role": "Verkstedsjef",
+        "experience": "15 års erfaring",
+        "description": "Mesterhåndverker i kjøretøykonvertering og modifikasjon"
+      }
+    },
+    "certifications": {
+      "title": "Våre sertifiseringer",
+      "description": "Kvalitets- og tillitsgaranti for alle våre kunder",
+      "list": [
+        "ISO 9001 Sertifisering",
+        "FFEMA Godkjenning",
+        "RGE Kvalifikasjon",
+        "QUALIBAT Sertifisering",
+        "Pålitelig Håndverker Merke"
+      ]
+    },
+    "cta": {
+      "title": "Klar til å starte prosjektet ditt?",
+      "description": "Kontakt vårt team for å diskutere prosjektet ditt og oppdage hvordan vi kan hjelpe deg",
+      "contact": "Kontakt oss",
+      "quote": "Be om tilbud"
+    }
+  },
   "common": {
     "learn_more": "Lær mer",
     "contact_us": "Kontakt oss",

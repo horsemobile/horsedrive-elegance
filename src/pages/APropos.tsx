@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { 
   Award, 
   Users, 
@@ -21,92 +22,88 @@ import {
 } from 'lucide-react';
 
 const APropos = () => {
+  const { t } = useTranslation();
+
   const stats = [
-    { icon: Calendar, label: "Années d'expérience", value: "15+" },
-    { icon: Users, label: "Clients satisfaits", value: "500+" },
-    { icon: Wrench, label: "Véhicules livrés", value: "1000+" },
-    { icon: Award, label: "Certifications", value: "5" }
+    { icon: Calendar, label: t('about.stats.experience.label'), value: t('about.stats.experience.value') },
+    { icon: Users, label: t('about.stats.clients.label'), value: t('about.stats.clients.value') },
+    { icon: Wrench, label: t('about.stats.vehicles.label'), value: t('about.stats.vehicles.value') },
+    { icon: Award, label: t('about.stats.certifications.label'), value: t('about.stats.certifications.value') }
   ];
 
   const values = [
     {
       icon: Heart,
-      title: "Passion",
-      description: "Une équipe passionnée par l'automobile et l'aménagement de véhicules spécialisés"
+      title: t('about.values.passion.title'),
+      description: t('about.values.passion.description')
     },
     {
       icon: Shield,
-      title: "Qualité",
-      description: "Des standards de qualité élevés pour chaque véhicule que nous livrons"
+      title: t('about.values.quality.title'),
+      description: t('about.values.quality.description')
     },
     {
       icon: Target,
-      title: "Précision",
-      description: "Une attention particulière aux détails pour répondre parfaitement à vos besoins"
+      title: t('about.values.precision.title'),
+      description: t('about.values.precision.description')
     },
     {
       icon: Zap,
-      title: "Innovation",
-      description: "À la pointe des dernières technologies et tendances du marché"
+      title: t('about.values.innovation.title'),
+      description: t('about.values.innovation.description')
     }
   ];
 
   const team = [
     {
-      name: "Jean Dubois",
-      role: "Directeur Général",
-      experience: "20 ans d'expérience",
-      description: "Expert en véhicules équestres et aménagements spécialisés"
+      name: t('about.team.director.name'),
+      role: t('about.team.director.role'),
+      experience: t('about.team.director.experience'),
+      description: t('about.team.director.description')
     },
     {
-      name: "Marie Martin",
-      role: "Responsable Commercial",
-      experience: "12 ans d'expérience", 
-      description: "Spécialiste en conseil client et solutions sur mesure"
+      name: t('about.team.commercial.name'),
+      role: t('about.team.commercial.role'),
+      experience: t('about.team.commercial.experience'), 
+      description: t('about.team.commercial.description')
     },
     {
-      name: "Pierre Durand",
-      role: "Chef d'Atelier",
-      experience: "15 ans d'expérience",
-      description: "Maître artisan en aménagement et modification de véhicules"
+      name: t('about.team.workshop.name'),
+      role: t('about.team.workshop.role'),
+      experience: t('about.team.workshop.experience'),
+      description: t('about.team.workshop.description')
     }
   ];
 
   const milestones = [
     {
       year: "2009",
-      title: "Création de l'entreprise",
-      description: "Début de l'aventure avec une passion pour les véhicules équestres"
+      title: t('about.timeline.2009.title'),
+      description: t('about.timeline.2009.description')
     },
     {
       year: "2012",
-      title: "Premier atelier",
-      description: "Ouverture de notre premier atelier d'aménagement"
+      title: t('about.timeline.2012.title'),
+      description: t('about.timeline.2012.description')
     },
     {
       year: "2016",
-      title: "Expansion",
-      description: "Agrandissement et diversification vers les vans aménagés"
+      title: t('about.timeline.2016.title'),
+      description: t('about.timeline.2016.description')
     },
     {
       year: "2020",
-      title: "Innovation",
-      description: "Intégration des dernières technologies d'aménagement"
+      title: t('about.timeline.2020.title'),
+      description: t('about.timeline.2020.description')
     },
     {
       year: "2024",
-      title: "Excellence",
-      description: "Leader régional en véhicules équestres et vans aménagés"
+      title: t('about.timeline.2024.title'),
+      description: t('about.timeline.2024.description')
     }
   ];
 
-  const certifications = [
-    "Certification ISO 9001",
-    "Agrément FFEMA",
-    "Qualification RGE",
-    "Certification QUALIBAT",
-    "Label Artisan de Confiance"
-  ];
+  const certifications = t('about.certifications.list', { returnObjects: true }) as string[];
 
   return (
     <div className="min-h-screen bg-background">
@@ -119,14 +116,13 @@ const APropos = () => {
             <div className="text-center max-w-4xl mx-auto">
               <Badge variant="outline" className="mb-4">
                 <Heart className="w-4 h-4 mr-2" />
-                Notre histoire
+                {t('about.hero.badge')}
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                À Propos de Nous
+                {t('about.hero.title')}
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Depuis 15 ans, nous accompagnons les passionnés d'équitation et de voyage dans la 
-                réalisation de leurs projets de véhicules sur mesure.
+                {t('about.hero.description')}
               </p>
             </div>
           </div>
@@ -156,20 +152,17 @@ const APropos = () => {
               <div>
                 <Badge variant="outline" className="mb-4">
                   <Target className="w-4 h-4 mr-2" />
-                  Notre mission
+                  {t('about.mission.badge')}
                 </Badge>
-                <h2 className="text-3xl font-bold mb-6">Votre projet, notre expertise</h2>
+                <h2 className="text-3xl font-bold mb-6">{t('about.mission.title')}</h2>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Chez HORSEMOBIL, nous croyons que chaque passionné mérite un véhicule à la hauteur 
-                  de ses ambitions. Que vous soyez cavalier professionnel, amateur éclairé ou 
-                  aventurier en quête de liberté, nous mettons notre savoir-faire à votre service.
+                  {t('about.mission.description1')}
                 </p>
                 <p className="text-muted-foreground mb-8 leading-relaxed">
-                  Notre équipe d'experts combine tradition artisanale et innovations technologiques 
-                  pour créer des véhicules uniques, parfaitement adaptés à vos besoins spécifiques.
+                  {t('about.mission.description2')}
                 </p>
                 <Button asChild>
-                  <Link to="/contact">Découvrir nos réalisations</Link>
+                  <Link to="/contact">{t('about.mission.cta')}</Link>
                 </Button>
               </div>
 
@@ -196,9 +189,9 @@ const APropos = () => {
         <section className="py-16 bg-muted/50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Notre parcours</h2>
+              <h2 className="text-3xl font-bold mb-4">{t('about.timeline.title')}</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                15 années d'innovation et de passion au service de nos clients
+                {t('about.timeline.description')}
               </p>
             </div>
 
@@ -236,9 +229,9 @@ const APropos = () => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Notre équipe</h2>
+              <h2 className="text-3xl font-bold mb-4">{t('about.team.title')}</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Des professionnels passionnés à votre écoute
+                {t('about.team.description')}
               </p>
             </div>
 
@@ -273,9 +266,9 @@ const APropos = () => {
         <section className="py-16 bg-muted/50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Nos certifications</h2>
+              <h2 className="text-3xl font-bold mb-4">{t('about.certifications.title')}</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Gage de qualité et de confiance pour tous nos clients
+                {t('about.certifications.description')}
               </p>
             </div>
 
@@ -295,16 +288,16 @@ const APropos = () => {
         {/* Contact CTA */}
         <section className="py-16 bg-gradient-to-r from-primary to-secondary text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Prêt à démarrer votre projet ?</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('about.cta.title')}</h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Contactez notre équipe pour discuter de votre projet et découvrir comment nous pouvons vous aider
+              {t('about.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>
-                <Link to="/contact">Nous contacter</Link>
+                <Link to="/contact">{t('about.cta.contact')}</Link>
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
-                <Link to="/devis">Demander un devis</Link>
+                <Link to="/devis">{t('about.cta.quote')}</Link>
               </Button>
             </div>
           </div>

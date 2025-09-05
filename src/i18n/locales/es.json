@@ -389,6 +389,119 @@
       "contact_cta": "Contactarnos"
     }
   },
+  "about": {
+    "hero": {
+      "badge": "Nuestra historia",
+      "title": "Acerca de Nosotros",
+      "description": "Durante 15 años, hemos apoyado a los entusiastas ecuestres y de viajes en la realización de sus proyectos de vehículos personalizados."
+    },
+    "stats": {
+      "experience": {
+        "label": "Años de experiencia",
+        "value": "15+"
+      },
+      "clients": {
+        "label": "Clientes satisfechos",
+        "value": "500+"
+      },
+      "vehicles": {
+        "label": "Vehículos entregados",
+        "value": "1000+"
+      },
+      "certifications": {
+        "label": "Certificaciones",
+        "value": "5"
+      }
+    },
+    "mission": {
+      "badge": "Nuestra misión",
+      "title": "Su proyecto, nuestra experiencia",
+      "description1": "En HORSEMOBIL, creemos que cada entusiasta merece un vehículo a la altura de sus ambiciones. Ya sea jinete profesional, aficionado ilustrado o aventurero en busca de libertad, ponemos nuestro saber hacer a su servicio.",
+      "description2": "Nuestro equipo de expertos combina artesanía tradicional e innovaciones tecnológicas para crear vehículos únicos, perfectamente adaptados a sus necesidades específicas.",
+      "cta": "Descubra nuestros logros"
+    },
+    "values": {
+      "passion": {
+        "title": "Pasión",
+        "description": "Un equipo apasionado por el automóvil y el acondicionamiento de vehículos especializados"
+      },
+      "quality": {
+        "title": "Calidad",
+        "description": "Estándares de calidad elevados para cada vehículo que entregamos"
+      },
+      "precision": {
+        "title": "Precisión",
+        "description": "Atención particular a los detalles para responder perfectamente a sus necesidades"
+      },
+      "innovation": {
+        "title": "Innovación",
+        "description": "A la vanguardia de las últimas tecnologías y tendencias del mercado"
+      }
+    },
+    "timeline": {
+      "title": "Nuestro recorrido",
+      "description": "15 años de innovación y pasión al servicio de nuestros clientes",
+      "2009": {
+        "title": "Creación de la empresa",
+        "description": "Inicio de la aventura con una pasión por los vehículos ecuestres"
+      },
+      "2012": {
+        "title": "Primer taller",
+        "description": "Apertura de nuestro primer taller de acondicionamiento"
+      },
+      "2016": {
+        "title": "Expansión",
+        "description": "Ampliación y diversificación hacia furgonetas acondicionadas"
+      },
+      "2020": {
+        "title": "Innovación",
+        "description": "Integración de las últimas tecnologías de acondicionamiento"
+      },
+      "2024": {
+        "title": "Excelencia",
+        "description": "Líder regional en vehículos ecuestres y furgonetas acondicionadas"
+      }
+    },
+    "team": {
+      "title": "Nuestro equipo",
+      "description": "Profesionales apasionados a su servicio",
+      "director": {
+        "name": "Jean Dubois",
+        "role": "Director General",
+        "experience": "20 años de experiencia",
+        "description": "Experto en vehículos ecuestres y acondicionamientos especializados"
+      },
+      "commercial": {
+        "name": "Marie Martin",
+        "role": "Responsable Comercial",
+        "experience": "12 años de experiencia",
+        "description": "Especialista en asesoramiento al cliente y soluciones a medida"
+      },
+      "workshop": {
+        "name": "Pierre Durand",
+        "role": "Jefe de Taller",
+        "experience": "15 años de experiencia",
+        "description": "Maestro artesano en acondicionamiento y modificación de vehículos"
+      }
+    },
+    "certifications": {
+      "title": "Nuestras certificaciones",
+      "description": "Garantía de calidad y confianza para todos nuestros clientes",
+      "list": [
+        "Certificación ISO 9001",
+        "Aprobación FFEMA",
+        "Calificación RGE",
+        "Certificación QUALIBAT",
+        "Etiqueta Artesano de Confianza"
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para iniciar su proyecto?",
+      "description": "Contacte a nuestro equipo para discutir su proyecto y descubrir cómo podemos ayudarle",
+      "contact": "Contáctanos",
+      "quote": "Solicitar presupuesto"
+    }
+  },
   "common": {
     "learn_more": "Saber más",
     "contact_us": "Contáctanos",

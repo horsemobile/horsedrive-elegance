@@ -567,6 +567,119 @@
       "contact_cta": "Ota yhteyttä"
     }
   },
+  "about": {
+    "hero": {
+      "badge": "Tarinaamme",
+      "title": "Tietoa Meistä",
+      "description": "15 vuoden ajan olemme tukeneet ratsastus- ja matkaharrastajia heidän räätälöityjen ajoneuvoprojektiensa toteuttamisessa."
+    },
+    "stats": {
+      "experience": {
+        "label": "Vuotta kokemusta",
+        "value": "15+"
+      },
+      "clients": {
+        "label": "Tyytyväisiä asiakkaita",
+        "value": "500+"
+      },
+      "vehicles": {
+        "label": "Toimitettuja ajoneuvoja",
+        "value": "1000+"
+      },
+      "certifications": {
+        "label": "Sertifiointeja",
+        "value": "5"
+      }
+    },
+    "mission": {
+      "badge": "Tehtävämme",
+      "title": "Projektisi, asiantuntemuksemme",
+      "description1": "HORSEMOBILissa uskomme, että jokainen harrastaja ansaitsee ajoneuvon, joka vastaa heidän kunnianhimojaan. Olitpa ammattiratastaja, valistunut harrastaja tai seikkailija, joka etsii vapautta, laitamme osaamisemme palvelukseesi.",
+      "description2": "Asiantuntijatiimimme yhdistää perinteisen käsityötaidon ja teknologiset innovaatiot luodakseen ainutlaatuisia ajoneuvoja, jotka on täydellisesti mukautettu erityistarpeisiisi.",
+      "cta": "Tutustu saavutuksiimme"
+    },
+    "values": {
+      "passion": {
+        "title": "Intohimo",
+        "description": "Tiimi, joka on intohimoinen autoista ja erikoistuneista ajoneuvon muutoksista"
+      },
+      "quality": {
+        "title": "Laatu",
+        "description": "Korkeat laatustandardit jokaiselle toimittamallemme ajoneuvolle"
+      },
+      "precision": {
+        "title": "Tarkkuus",
+        "description": "Erityistä huomiota yksityiskohtiin täyttääksemme tarpeesi täydellisesti"
+      },
+      "innovation": {
+        "title": "Innovaatio",
+        "description": "Uusimpien teknologioiden ja markkinatrendien kärjessä"
+      }
+    },
+    "timeline": {
+      "title": "Matkamme",
+      "description": "15 vuotta innovaatiota ja intohimoa asiakkaidemme palveluksessa",
+      "2009": {
+        "title": "Yrityksen perustaminen",
+        "description": "Seikkailun alku intohimolla hevoskuljetusajoneuvoja kohtaan"
+      },
+      "2012": {
+        "title": "Ensimmäinen työpaja",
+        "description": "Ensimmäisen muutostyöpajamme avaaminen"
+      },
+      "2016": {
+        "title": "Laajentuminen",
+        "description": "Laajentuminen ja monipuolistaminen sisustettuihin pakettiautoihin"
+      },
+      "2020": {
+        "title": "Innovaatio",
+        "description": "Uusimpien muutosteknologioiden integrointi"
+      },
+      "2024": {
+        "title": "Huippuosaaminen",
+        "description": "Alueellinen johtaja hevoskuljetusajoneuvoissa ja sisustettuissa pakettiautossa"
+      }
+    },
+    "team": {
+      "title": "Tiimimme",
+      "description": "Intohimoiset ammattilaiset palveluksessasi",
+      "director": {
+        "name": "Jean Dubois",
+        "role": "Toimitusjohtaja",
+        "experience": "20 vuoden kokemus",
+        "description": "Asiantuntija hevoskuljetusajoneuvoissa ja erikoismuutoksissa"
+      },
+      "commercial": {
+        "name": "Marie Martin",
+        "role": "Myyntipäällikkö",
+        "experience": "12 vuoden kokemus",
+        "description": "Asiantuntija asiakasneuvonnassa ja räätälöidyissä ratkaisuissa"
+      },
+      "workshop": {
+        "name": "Pierre Durand",
+        "role": "Työpajapäällikkö",
+        "experience": "15 vuoden kokemus",
+        "description": "Mestari käsityöläinen ajoneuvon muutoksessa ja modifioinnissa"
+      }
+    },
+    "certifications": {
+      "title": "Sertifiointimme",
+      "description": "Laatu- ja luottamustakuu kaikille asiakkaillemme",
+      "list": [
+        "ISO 9001 Sertifiointi",
+        "FFEMA Hyväksyntä",
+        "RGE Pätevyys",
+        "QUALIBAT Sertifiointi",
+        "Luotettava Käsityöläinen Merkki"
+      ]
+    },
+    "cta": {
+      "title": "Valmis aloittamaan projektisi?",
+      "description": "Ota yhteyttä tiimiimme keskustellaksesi projektistasi ja saadaksesi selville, kuinka voimme auttaa sinua",
+      "contact": "Ota yhteyttä",
+      "quote": "Pyydä tarjous"
+    }
+  },
   "common": {
     "learn_more": "Lue lisää",
     "contact_us": "Ota yhteyttä",

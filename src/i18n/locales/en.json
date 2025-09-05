@@ -499,6 +499,119 @@
       "contact_cta": "Contact us"
     }
   },
+  "about": {
+    "hero": {
+      "badge": "Our story",
+      "title": "About Us",
+      "description": "For 15 years, we have been supporting equestrian and travel enthusiasts in realizing their custom vehicle projects."
+    },
+    "stats": {
+      "experience": {
+        "label": "Years of experience",
+        "value": "15+"
+      },
+      "clients": {
+        "label": "Satisfied customers",
+        "value": "500+"
+      },
+      "vehicles": {
+        "label": "Vehicles delivered",
+        "value": "1000+"
+      },
+      "certifications": {
+        "label": "Certifications",
+        "value": "5"
+      }
+    },
+    "mission": {
+      "badge": "Our mission",
+      "title": "Your project, our expertise",
+      "description1": "At HORSEMOBIL, we believe that every enthusiast deserves a vehicle that matches their ambitions. Whether you are a professional rider, enlightened amateur or adventurer seeking freedom, we put our know-how at your service.",
+      "description2": "Our team of experts combines traditional craftsmanship and technological innovations to create unique vehicles, perfectly adapted to your specific needs.",
+      "cta": "Discover our achievements"
+    },
+    "values": {
+      "passion": {
+        "title": "Passion",
+        "description": "A team passionate about automobiles and specialized vehicle conversion"
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "High quality standards for every vehicle we deliver"
+      },
+      "precision": {
+        "title": "Precision",
+        "description": "Special attention to detail to perfectly meet your needs"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "At the forefront of the latest technologies and market trends"
+      }
+    },
+    "timeline": {
+      "title": "Our journey",
+      "description": "15 years of innovation and passion serving our customers",
+      "2009": {
+        "title": "Company creation",
+        "description": "Beginning of the adventure with a passion for equestrian vehicles"
+      },
+      "2012": {
+        "title": "First workshop",
+        "description": "Opening of our first conversion workshop"
+      },
+      "2016": {
+        "title": "Expansion",
+        "description": "Expansion and diversification towards converted vans"
+      },
+      "2020": {
+        "title": "Innovation",
+        "description": "Integration of the latest conversion technologies"
+      },
+      "2024": {
+        "title": "Excellence",
+        "description": "Regional leader in equestrian vehicles and converted vans"
+      }
+    },
+    "team": {
+      "title": "Our team",
+      "description": "Passionate professionals at your service",
+      "director": {
+        "name": "Jean Dubois",
+        "role": "General Manager",
+        "experience": "20 years of experience",
+        "description": "Expert in equestrian vehicles and specialized conversions"
+      },
+      "commercial": {
+        "name": "Marie Martin",
+        "role": "Sales Manager",
+        "experience": "12 years of experience",
+        "description": "Specialist in customer advice and custom solutions"
+      },
+      "workshop": {
+        "name": "Pierre Durand",
+        "role": "Workshop Manager",
+        "experience": "15 years of experience",
+        "description": "Master craftsman in vehicle conversion and modification"
+      }
+    },
+    "certifications": {
+      "title": "Our certifications",
+      "description": "Quality and trust guarantee for all our customers",
+      "list": [
+        "ISO 9001 Certification",
+        "FFEMA Approval",
+        "RGE Qualification",
+        "QUALIBAT Certification",
+        "Trusted Craftsman Label"
+      ]
+    },
+    "cta": {
+      "title": "Ready to start your project?",
+      "description": "Contact our team to discuss your project and discover how we can help you",
+      "contact": "Contact us",
+      "quote": "Request a quote"
+    }
+  },
   "common": {
     "learn_more": "Learn more",
     "contact_us": "Contact us",

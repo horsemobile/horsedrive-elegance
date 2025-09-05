@@ -600,6 +600,119 @@
       "contact_cta": "Nous contacter"
     }
   },
+  "about": {
+    "hero": {
+      "badge": "Notre histoire",
+      "title": "À Propos de Nous",
+      "description": "Depuis 15 ans, nous accompagnons les passionnés d'équitation et de voyage dans la réalisation de leurs projets de véhicules sur mesure."
+    },
+    "stats": {
+      "experience": {
+        "label": "Années d'expérience",
+        "value": "15+"
+      },
+      "clients": {
+        "label": "Clients satisfaits",
+        "value": "500+"
+      },
+      "vehicles": {
+        "label": "Véhicules livrés",
+        "value": "1000+"
+      },
+      "certifications": {
+        "label": "Certifications",
+        "value": "5"
+      }
+    },
+    "mission": {
+      "badge": "Notre mission",
+      "title": "Votre projet, notre expertise",
+      "description1": "Chez HORSEMOBIL, nous croyons que chaque passionné mérite un véhicule à la hauteur de ses ambitions. Que vous soyez cavalier professionnel, amateur éclairé ou aventurier en quête de liberté, nous mettons notre savoir-faire à votre service.",
+      "description2": "Notre équipe d'experts combine tradition artisanale et innovations technologiques pour créer des véhicules uniques, parfaitement adaptés à vos besoins spécifiques.",
+      "cta": "Découvrir nos réalisations"
+    },
+    "values": {
+      "passion": {
+        "title": "Passion",
+        "description": "Une équipe passionnée par l'automobile et l'aménagement de véhicules spécialisés"
+      },
+      "quality": {
+        "title": "Qualité",
+        "description": "Des standards de qualité élevés pour chaque véhicule que nous livrons"
+      },
+      "precision": {
+        "title": "Précision",
+        "description": "Une attention particulière aux détails pour répondre parfaitement à vos besoins"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "À la pointe des dernières technologies et tendances du marché"
+      }
+    },
+    "timeline": {
+      "title": "Notre parcours",
+      "description": "15 années d'innovation et de passion au service de nos clients",
+      "2009": {
+        "title": "Création de l'entreprise",
+        "description": "Début de l'aventure avec une passion pour les véhicules équestres"
+      },
+      "2012": {
+        "title": "Premier atelier",
+        "description": "Ouverture de notre premier atelier d'aménagement"
+      },
+      "2016": {
+        "title": "Expansion",
+        "description": "Agrandissement et diversification vers les vans aménagés"
+      },
+      "2020": {
+        "title": "Innovation",
+        "description": "Intégration des dernières technologies d'aménagement"
+      },
+      "2024": {
+        "title": "Excellence",
+        "description": "Leader régional en véhicules équestres et vans aménagés"
+      }
+    },
+    "team": {
+      "title": "Notre équipe",
+      "description": "Des professionnels passionnés à votre écoute",
+      "director": {
+        "name": "Jean Dubois",
+        "role": "Directeur Général",
+        "experience": "20 ans d'expérience",
+        "description": "Expert en véhicules équestres et aménagements spécialisés"
+      },
+      "commercial": {
+        "name": "Marie Martin",
+        "role": "Responsable Commercial",
+        "experience": "12 ans d'expérience",
+        "description": "Spécialiste en conseil client et solutions sur mesure"
+      },
+      "workshop": {
+        "name": "Pierre Durand",
+        "role": "Chef d'Atelier",
+        "experience": "15 ans d'expérience",
+        "description": "Maître artisan en aménagement et modification de véhicules"
+      }
+    },
+    "certifications": {
+      "title": "Nos certifications",
+      "description": "Gage de qualité et de confiance pour tous nos clients",
+      "list": [
+        "Certification ISO 9001",
+        "Agrément FFEMA",
+        "Qualification RGE",
+        "Certification QUALIBAT",
+        "Label Artisan de Confiance"
+      ]
+    },
+    "cta": {
+      "title": "Prêt à démarrer votre projet ?",
+      "description": "Contactez notre équipe pour discuter de votre projet et découvrir comment nous pouvons vous aider",
+      "contact": "Nous contacter",
+      "quote": "Demander un devis"
+    }
+  },
   "common": {
     "learn_more": "En savoir plus",
     "contact_us": "Nous contacter",

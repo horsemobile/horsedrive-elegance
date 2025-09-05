@@ -567,6 +567,119 @@
       "contact_cta": "Kontakt aufnehmen"
     }
   },
+  "about": {
+    "hero": {
+      "badge": "Unsere Geschichte",
+      "title": "Über Uns",
+      "description": "Seit 15 Jahren unterstützen wir Reitsport- und Reisebegeisterte bei der Verwirklichung ihrer maßgeschneiderten Fahrzeugprojekte."
+    },
+    "stats": {
+      "experience": {
+        "label": "Jahre Erfahrung",
+        "value": "15+"
+      },
+      "clients": {
+        "label": "Zufriedene Kunden",
+        "value": "500+"
+      },
+      "vehicles": {
+        "label": "Gelieferte Fahrzeuge",
+        "value": "1000+"
+      },
+      "certifications": {
+        "label": "Zertifizierungen",
+        "value": "5"
+      }
+    },
+    "mission": {
+      "badge": "Unsere Mission",
+      "title": "Ihr Projekt, unsere Expertise",
+      "description1": "Bei HORSEMOBIL glauben wir, dass jeder Enthusiast ein Fahrzeug verdient, das seinen Ambitionen entspricht. Ob Sie professioneller Reiter, aufgeklärter Amateur oder Abenteurer auf der Suche nach Freiheit sind, wir stellen unser Know-how in Ihren Dienst.",
+      "description2": "Unser Expertenteam verbindet traditionelle Handwerkskunst mit technologischen Innovationen, um einzigartige Fahrzeuge zu schaffen, die perfekt an Ihre spezifischen Bedürfnisse angepasst sind.",
+      "cta": "Entdecken Sie unsere Leistungen"
+    },
+    "values": {
+      "passion": {
+        "title": "Leidenschaft",
+        "description": "Ein Team, das sich leidenschaftlich für Automobile und spezialisierte Fahrzeugumbauten einsetzt"
+      },
+      "quality": {
+        "title": "Qualität",
+        "description": "Hohe Qualitätsstandards für jedes Fahrzeug, das wir liefern"
+      },
+      "precision": {
+        "title": "Präzision",
+        "description": "Besondere Aufmerksamkeit für Details, um Ihre Bedürfnisse perfekt zu erfüllen"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "An der Spitze der neuesten Technologien und Markttrends"
+      }
+    },
+    "timeline": {
+      "title": "Unser Weg",
+      "description": "15 Jahre Innovation und Leidenschaft im Dienste unserer Kunden",
+      "2009": {
+        "title": "Unternehmensgründung",
+        "description": "Beginn des Abenteuers mit einer Leidenschaft für Pferdetransportfahrzeuge"
+      },
+      "2012": {
+        "title": "Erste Werkstatt",
+        "description": "Eröffnung unserer ersten Umbau-Werkstatt"
+      },
+      "2016": {
+        "title": "Expansion",
+        "description": "Erweiterung und Diversifikation hin zu ausgebauten Transportern"
+      },
+      "2020": {
+        "title": "Innovation",
+        "description": "Integration der neuesten Umbau-Technologien"
+      },
+      "2024": {
+        "title": "Exzellenz",
+        "description": "Regionaler Marktführer bei Pferdetransportfahrzeugen und ausgebauten Transportern"
+      }
+    },
+    "team": {
+      "title": "Unser Team",
+      "description": "Leidenschaftliche Fachkräfte zu Ihren Diensten",
+      "director": {
+        "name": "Jean Dubois",
+        "role": "Geschäftsführer",
+        "experience": "20 Jahre Erfahrung",
+        "description": "Experte für Pferdetransportfahrzeuge und spezialisierte Umbauten"
+      },
+      "commercial": {
+        "name": "Marie Martin",
+        "role": "Vertriebsleiter",
+        "experience": "12 Jahre Erfahrung",
+        "description": "Spezialist für Kundenberatung und maßgeschneiderte Lösungen"
+      },
+      "workshop": {
+        "name": "Pierre Durand",
+        "role": "Werkstattleiter",
+        "experience": "15 Jahre Erfahrung",
+        "description": "Meisterhandwerker für Fahrzeugumbau und -modifikation"
+      }
+    },
+    "certifications": {
+      "title": "Unsere Zertifizierungen",
+      "description": "Qualitäts- und Vertrauensgarantie für alle unsere Kunden",
+      "list": [
+        "ISO 9001 Zertifizierung",
+        "FFEMA Zulassung",
+        "RGE Qualifikation",
+        "QUALIBAT Zertifizierung",
+        "Vertrauensvoller Handwerker Label"
+      ]
+    },
+    "cta": {
+      "title": "Bereit, Ihr Projekt zu starten?",
+      "description": "Kontaktieren Sie unser Team, um Ihr Projekt zu besprechen und zu entdecken, wie wir Ihnen helfen können",
+      "contact": "Kontakt aufnehmen",
+      "quote": "Angebot anfordern"
+    }
+  },
   "common": {
     "learn_more": "Mehr erfahren",
     "contact_us": "Kontaktieren Sie uns",
