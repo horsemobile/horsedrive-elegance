@@ -124,14 +124,14 @@ const Devis = () => {
                   {vehicleType === 'van-amenage' ? (
                     <>
                       <div className="space-y-2">
-                        <Label htmlFor="passengers">{t('pages.quote.passengersNumber')}</Label>
+                        <Label htmlFor="passengers">{t('quote.passengersNumber')}</Label>
                         <Input 
                           id="passengers" 
                           placeholder={t('pages.quote.passengersPlaceholder')} 
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="usage">{t('pages.quote.vanUsage')}</Label>
+                        <Label htmlFor="usage">{t('quote.vanUsage')}</Label>
                         <Input 
                           id="usage" 
                           placeholder={t('pages.quote.vanUsagePlaceholder')} 
