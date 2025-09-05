@@ -29,9 +29,9 @@
         "cta": "Transporter entdecken"
       },
       "expertise": {
-        "title": "Deutsche Expertise",
+        "title": "Österreichische Expertise",
         "subtitle": "Qualität und Zuverlässigkeit",
-        "description": "Mit unserer deutschen Expertise bieten wir Pferdetransportfahrzeuge, die Innovation, Sicherheit und außergewöhnliche Leistung vereinen.",
+        "description": "Mit unserer österreichischen Expertise bieten wir Pferdetransportfahrzeuge, die Innovation, Sicherheit und außergewöhnliche Leistung vereinen.",
         "cta": "Mehr erfahren"
       },
       "contact_cta": "Kontaktieren Sie uns"
@@ -75,7 +75,7 @@
     "terms": "AGB",
     "cookies": "Cookies",
     "legal_notices": "Impressum",
-    "description": "Deutscher Spezialist für hochwertige Pferdetransportfahrzeuge. Wir bieten komplette Lösungen für den Transport Ihrer Pferde mit deutscher Qualität und Zuverlässigkeit.",
+    "description": "Österreichischer Spezialist für hochwertige Pferdetransportfahrzeuge. Wir bieten komplette Lösungen für den Transport Ihrer Pferde mit österreichischer Qualität und Zuverlässigkeit.",
     "vehicles_title": "Unsere Fahrzeuge",
     "trucks": "Pferdetransporter",
     "vans": "Pferde-Transporter",
@@ -91,17 +91,17 @@
     "newsletter_submit": "Anmelden",
     "newsletter_success_title": "Erfolgreich angemeldet!",
     "newsletter_success_description": "Sie erhalten bald unsere neuesten Nachrichten.",
-    "phone": "+49 123 456 789",
-    "email": "info@horsemobil.de",
+    "phone": "+43 1 234 567 89",
+    "email": "info@horsemobil.at",
     "address": "Musterstraße 123",
-    "address_city": "12345 Berlin, Deutschland",
+    "address_city": "1010 Wien, Österreich",
     "hours": "Mo-Fr: 8-18 Uhr"
   },
   "floating_cta": {
     "whatsapp": "WhatsApp",
     "quote": "Angebot anfordern",
     "call": "Anrufen",
-    "whatsapp_message": "Hallo, ich interessiere mich für Ihre Pferdetransportfahrzeuge. Können Sie mir weitere Informationen geben?"
+    "whatsapp_message": "Servus, ich interessiere mich für Ihre Pferdetransportfahrzeuge. Können Sie mir weitere Informationen geben?"
   },
   "trucks": {
     "title": "Pferdetransporter",
@@ -190,18 +190,18 @@
     "info": {
       "phone": {
         "title": "Telefon",
-        "value": "+33 1 23 45 67 89",
+        "value": "+43 1 234 567 89",
         "schedule": "Montag bis Freitag, 9-18 Uhr"
       },
       "email": {
         "title": "E-Mail",
-        "value": "contact@horsemobil.fr",
+        "value": "kontakt@horsemobil.at",
         "response": "Antwort innerhalb von 24h"
       },
       "address": {
         "title": "Adresse",
-        "street": "123 Avenue des Chevaux",
-        "city": "75000 Paris, Frankreich"
+        "street": "123 Pferdestraße",
+        "city": "1010 Wien, Österreich"
       },
       "hours": {
         "title": "Öffnungszeiten",

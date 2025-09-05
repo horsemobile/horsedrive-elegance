@@ -1,295 +1,295 @@
 {
   "nav": {
-    "home": "Startseite",
-    "trucks": "LKWs",
-    "vans": "Transporter",
-    "amenaged_vans": "Ausgebaute Transporter", 
-    "financing": "Finanzierung",
-    "about": "Über uns",
+    "home": "Hjem",
+    "trucks": "Lastebiler",
+    "vans": "Varebiler",
+    "amenaged_vans": "Innredede varebiler", 
+    "financing": "Finansiering",
+    "about": "Om oss",
     "contact": "Kontakt",
-    "quote": "Angebot"
+    "quote": "Tilbud"
   },
   "hero": {
     "title": "HorseMobil",
-    "subtitle": "Ihr Partner für Pferdetransport",
-    "description": "Entdecken Sie unser komplettes Sortiment an spezialisierten Fahrzeugen für den Pferdetransport. Qualität, Sicherheit und Komfort garantiert.",
-    "cta": "Unsere Fahrzeuge entdecken",
-    "quote_cta": "Angebot anfordern",
+    "subtitle": "Din partner for hestetransport",
+    "description": "Oppdag vårt komplette utvalg av spesialiserte kjøretøy for hestetransport. Kvalitet, sikkerhet og komfort garantert.",
+    "cta": "Oppdag våre kjøretøy",
+    "quote_cta": "Be om tilbud",
     "slides": {
       "premium": {
-        "title": "Premium Pferdetransportfahrzeuge",
-        "subtitle": "Hochwertiger Pferdetransport",
-        "description": "Entdecken Sie unser komplettes Sortiment an Pferdetransportfahrzeugen: LKWs, Transporter und Anhänger für Komfort und Sicherheit Ihrer Pferde.",
-        "cta": "Unsere Fahrzeuge ansehen"
+        "title": "Premium hestetransportkjøretøy",
+        "subtitle": "Høykvalitets hestetransport",
+        "description": "Oppdag vårt komplette utvalg av hestetransportkjøretøy: lastebiler, varebiler og tilhengere for komfort og sikkerhet for hestene dine.",
+        "cta": "Se våre kjøretøy"
       },
       "customVans": {
-        "title": "Maßgeschneiderte Transporter",
-        "subtitle": "Komplette Anpassung",
-        "description": "Unsere ausgebauten Transporter bieten eine perfekte Lösung für Pferdetransporte mit allem nötigen Komfort für Reiter und Pferde.",
-        "cta": "Transporter entdecken"
+        "title": "Skreddersydde varebiler",
+        "subtitle": "Komplett tilpasning",
+        "description": "Våre innredede varebiler tilbyr en perfekt løsning for hestetransport med all nødvendig komfort for ryttere og hester.",
+        "cta": "Oppdag varebiler"
       },
       "expertise": {
-        "title": "Deutsche Expertise",
-        "subtitle": "Qualität und Zuverlässigkeit",
-        "description": "Mit unserer deutschen Expertise bieten wir Pferdetransportfahrzeuge, die Innovation, Sicherheit und außergewöhnliche Leistung vereinen.",
-        "cta": "Mehr erfahren"
+        "title": "Norsk ekspertise",
+        "subtitle": "Kvalitet og pålitelighet",
+        "description": "Med vår norske ekspertise tilbyr vi hestetransportkjøretøy som kombinerer innovasjon, sikkerhet og eksepsjonell ytelse.",
+        "cta": "Lær mer"
       },
-      "contact_cta": "Kontaktieren Sie uns"
+      "contact_cta": "Kontakt oss"
     }
   },
   "categories": {
-    "title": "Unsere Fahrzeuge",
+    "title": "Våre kjøretøy",
     "trucks": {
-      "title": "Pferdetransporter",
-      "description": "Professionelle LKWs für den sicheren Transport Ihrer Pferde"
+      "title": "Hestetransportbiler",
+      "description": "Profesjonelle lastebiler for sikker transport av hestene dine"
     },
     "vans": {
-      "title": "Pferde-Transporter",
-      "description": "Kompakte und wendige Lösungen für Ihre Fahrten"
+      "title": "Heste-varebiler",
+      "description": "Kompakte og smidige løsninger for turene dine"
     },
     "amenaged": {
-      "title": "Ausgebaute Transporter",
-      "description": "All-in-One Fahrzeuge mit integriertem Wohnbereich"
+      "title": "Innredede varebiler",
+      "description": "Alt-i-ett kjøretøy med integrert oppholdsområde"
     },
     "trailers": {
-      "title": "Anhänger",
-      "description": "Hochwertige Anhänger für alle Pferdetypen"
+      "title": "Tilhengere",
+      "description": "Høykvalitets tilhengere for alle hestetyper"
     }
   },
   "stats": {
-    "experience": "Jahre Erfahrung",
-    "vehicles": "Verkaufte Fahrzeuge",
-    "customers": "Zufriedene Kunden",
-    "workshops": "Werkstätten in Europa"
+    "experience": "År med erfaring",
+    "vehicles": "Solgte kjøretøy",
+    "customers": "Fornøyde kunder",
+    "workshops": "Verksteder i Europa"
   },
   "testimonials": {
-    "title": "Was unsere Kunden sagen"
+    "title": "Hva kundene våre sier"
   },
   "footer": {
-    "company": "Unternehmen",
-    "products": "Produkte",
+    "company": "Selskap",
+    "products": "Produkter",
     "support": "Support",
-    "legal": "Rechtliches",
-    "rights": "Alle Rechte vorbehalten",
-    "privacy": "Datenschutz",
-    "terms": "AGB",
+    "legal": "Juridisk",
+    "rights": "Alle rettigheter forbeholdt",
+    "privacy": "Personvern",
+    "terms": "Vilkår",
     "cookies": "Cookies",
-    "legal_notices": "Impressum",
-    "description": "Deutscher Spezialist für hochwertige Pferdetransportfahrzeuge. Wir bieten komplette Lösungen für den Transport Ihrer Pferde mit deutscher Qualität und Zuverlässigkeit.",
-    "vehicles_title": "Unsere Fahrzeuge",
-    "trucks": "Pferdetransporter",
-    "vans": "Pferde-Transporter",
-    "amenaged_vans": "Ausgebaute Transporter",
-    "company_title": "Unternehmen",
-    "about": "Über uns",
+    "legal_notices": "Juridiske merknader",
+    "description": "Norsk spesialist på høykvalitets hestetransportkjøretøy. Vi tilbyr komplette løsninger for transport av hestene dine med norsk kvalitet og pålitelighet.",
+    "vehicles_title": "Våre kjøretøy",
+    "trucks": "Hestetransportbiler",
+    "vans": "Heste-varebiler",
+    "amenaged_vans": "Innredede varebiler",
+    "company_title": "Selskap",
+    "about": "Om oss",
     "contact": "Kontakt",
-    "quote": "Angebot anfordern",
-    "financing": "Finanzierung",
-    "newsletter_title": "Bleiben Sie in Kontakt",
-    "newsletter_description": "Erhalten Sie unsere neuesten Nachrichten und Sonderangebote.",
-    "newsletter_placeholder": "Ihre E-Mail",
-    "newsletter_submit": "Anmelden",
-    "newsletter_success_title": "Erfolgreich angemeldet!",
-    "newsletter_success_description": "Sie erhalten bald unsere neuesten Nachrichten.",
-    "phone": "+49 123 456 789",
-    "email": "info@horsemobil.de",
-    "address": "Musterstraße 123",
-    "address_city": "12345 Berlin, Deutschland",
-    "hours": "Mo-Fr: 8-18 Uhr"
+    "quote": "Be om tilbud",
+    "financing": "Finansiering",
+    "newsletter_title": "Hold kontakten",
+    "newsletter_description": "Motta våre siste nyheter og spesialtilbud.",
+    "newsletter_placeholder": "Din e-post",
+    "newsletter_submit": "Meld deg på",
+    "newsletter_success_title": "Vellykket registrering!",
+    "newsletter_success_description": "Du vil snart motta våre siste nyheter.",
+    "phone": "+47 123 456 789",
+    "email": "info@horsemobil.no",
+    "address": "Eksempelgate 123",
+    "address_city": "0123 Oslo, Norge",
+    "hours": "Man-Fre: 8-18"
   },
   "floating_cta": {
     "whatsapp": "WhatsApp",
-    "quote": "Angebot anfordern",
-    "call": "Anrufen",
-    "whatsapp_message": "Hallo, ich interessiere mich für Ihre Pferdetransportfahrzeuge. Können Sie mir weitere Informationen geben?"
+    "quote": "Be om tilbud",
+    "call": "Ring",
+    "whatsapp_message": "Hei, jeg er interessert i hestetransportkjøretøyene deres. Kan dere gi meg mer informasjon?"
   },
   "trucks": {
-    "title": "Pferdetransporter",
-    "badge": "Premium-Fahrzeuge",
-    "description": "Entdecken Sie unser Sortiment hochwertiger Pferdetransporter, die maximalen Komfort und Sicherheit für Ihre Pferde bei beruflichen oder privaten Fahrten bieten.",
-    "quote_cta": "Angebot anfordern",
-    "contact_cta": "Kontakt aufnehmen",
-    "alt_image": "Luxus-Pferdetransporter",
+    "title": "Hestetransportbiler",
+    "badge": "Premium kjøretøy",
+    "description": "Oppdag vårt utvalg av høykvalitets hestetransportbiler som tilbyr maksimal komfort og sikkerhet for hestene dine under profesjonelle eller private turer.",
+    "quote_cta": "Be om tilbud",
+    "contact_cta": "Ta kontakt",
+    "alt_image": "Luksus hestetransportbil",
     "features": {
-      "title": "Warum unsere Pferdetransporter wählen?",
-      "description": "Unsere Pferdetransporter kombinieren Innovation, Komfort und Sicherheit für das beste Transporterlebnis Ihrer Pferde.",
+      "title": "Hvorfor velge våre hestetransportbiler?",
+      "description": "Våre hestetransportbiler kombinerer innovasjon, komfort og sikkerhet for den beste transportopplevelsen for hestene dine.",
       "safety": {
-        "title": "Maximale Sicherheit",
-        "description": "Fortschrittliche Sicherheitssysteme und Anti-Stress-Ausstattung für Ihre Pferde"
+        "title": "Maksimal sikkerhet",
+        "description": "Avanserte sikkerhetssystemer og anti-stress utstyr for hestene dine"
       },
       "capacity": {
-        "title": "Hohe Kapazität",
-        "description": "Von 2 bis 8 Pferden je nach Bedarf, mit integrierten Wohnbereichen"
+        "title": "Høy kapasitet",
+        "description": "Fra 2 til 8 hester etter behov, med integrerte oppholdsområder"
       },
       "custom": {
-        "title": "Maßgeschneidert",
-        "description": "Komplette Anpassung nach Ihren Bedürfnissen und Vorlieben"
+        "title": "Skreddersydd",
+        "description": "Komplett tilpasning etter dine behov og preferanser"
       },
       "quality": {
-        "title": "Premium-Qualität",
-        "description": "Hochwertige Materialien und außergewöhnliche Verarbeitung"
+        "title": "Premium kvalitet",
+        "description": "Høykvalitets materialer og eksepsjonelt håndverk"
       }
     },
     "models": {
-      "title": "Unsere LKW-Modelle",
-      "description": "Ein komplettes Sortiment für alle Ihre Pferdetransportbedürfnisse",
+      "title": "Våre lastebilmodeller",
+      "description": "Et komplett utvalg for alle dine hestetransportbehov",
       "2_horses": {
-        "title": "2-Pferde-LKW",
-        "description": "Ideal für lokale Ausflüge",
+        "title": "2-hester lastebil",
+        "description": "Ideell for lokale utflukter",
         "features": [
-          "Kapazität: 2 Pferde",
-          "Sattelkammer",
-          "Belüftungssystem",
-          "Rutschfester Boden"
+          "Kapasitet: 2 hester",
+          "Sadelkammer",
+          "Ventilasjonssystem",
+          "Sklisikkert gulv"
         ]
       },
       "4_horses": {
-        "title": "4-Pferde-LKW",
-        "description": "Für Teams und Vereine",
+        "title": "4-hester lastebil",
+        "description": "For lag og klubber",
         "features": [
-          "Kapazität: 4 Pferde",
-          "Integrierter Wohnbereich",
-          "Ausgestattete Küche",
-          "Toilette und Dusche"
+          "Kapasitet: 4 hester",
+          "Integrert oppholdsområde",
+          "Utstyrt kjøkken",
+          "Toalett og dusj"
         ]
       },
       "6_horses": {
-        "title": "6+ Pferde-LKW",
-        "description": "Professionelle Lösung",
+        "title": "6+ hester lastebil",
+        "description": "Profesjonell løsning",
         "features": [
-          "Kapazität: 6 bis 8 Pferde",
-          "Komplette Wohnung",
-          "Garage für Ausrüstung",
-          "Premium-Optionen"
+          "Kapasitet: 6 til 8 hester",
+          "Komplett leilighet",
+          "Garasje for utstyr",
+          "Premium alternativer"
         ]
       }
     },
     "cta": {
-      "title": "Bereit, Ihren idealen Pferdetransporter zu entdecken?",
-      "description": "Kontaktieren Sie unsere Experten für eine persönliche Beratung",
-      "quote_cta": "Kostenloses Angebot anfordern",
-      "appointment_cta": "Termin vereinbaren"
+      "title": "Klar til å oppdage din ideelle hestetransportbil?",
+      "description": "Kontakt våre eksperter for personlig rådgivning",
+      "quote_cta": "Be om gratis tilbud",
+      "appointment_cta": "Book avtale"
     }
   },
   "contact": {
-    "title": "Kontaktieren Sie uns",
-    "description": "Unser Expertenteam steht Ihnen zur Verfügung, um alle Ihre Fragen zu beantworten und Sie bei Ihrem Pferdetransportfahrzeug-Projekt zu unterstützen.",
+    "title": "Kontakt oss",
+    "description": "Vårt ekspertteam er tilgjengelig for å svare på alle spørsmålene dine og støtte deg i ditt hestetransportkjøretøy-prosjekt.",
     "form": {
-      "title": "Senden Sie uns eine Nachricht",
-      "description": "Füllen Sie dieses Formular aus und wir antworten Ihnen so schnell wie möglich",
-      "first_name": "Vorname",
-      "last_name": "Nachname",
-      "email": "E-Mail",
+      "title": "Send oss en melding",
+      "description": "Fyll ut dette skjemaet så svarer vi deg så snart som mulig",
+      "first_name": "Fornavn",
+      "last_name": "Etternavn",
+      "email": "E-post",
       "phone": "Telefon",
-      "subject": "Betreff",
-      "subject_placeholder": "Betreff Ihrer Anfrage",
-      "message": "Nachricht",
-      "message_placeholder": "Beschreiben Sie Ihr Projekt oder Ihre Anfrage...",
-      "submit": "Nachricht senden"
+      "subject": "Emne",
+      "subject_placeholder": "Emne for forespørselen din",
+      "message": "Melding",
+      "message_placeholder": "Beskriv prosjektet eller forespørselen din...",
+      "submit": "Send melding"
     },
     "info": {
       "phone": {
         "title": "Telefon",
-        "value": "+33 1 23 45 67 89",
-        "schedule": "Montag bis Freitag, 9-18 Uhr"
+        "value": "+47 123 456 789",
+        "schedule": "Mandag til fredag, 9-18"
       },
       "email": {
-        "title": "E-Mail",
-        "value": "contact@horsemobil.fr",
-        "response": "Antwort innerhalb von 24h"
+        "title": "E-post",
+        "value": "kontakt@horsemobil.no",
+        "response": "Svar innen 24t"
       },
       "address": {
         "title": "Adresse",
-        "street": "123 Avenue des Chevaux",
-        "city": "75000 Paris, Frankreich"
+        "street": "123 Hestegata",
+        "city": "0123 Oslo, Norge"
       },
       "hours": {
-        "title": "Öffnungszeiten",
-        "weekdays": "Montag - Freitag",
-        "weekdays_hours": "9 - 18 Uhr",
-        "saturday": "Samstag",
-        "saturday_hours": "9 - 12 Uhr",
-        "sunday": "Sonntag",
-        "sunday_status": "Geschlossen"
+        "title": "Åpningstider",
+        "weekdays": "Mandag - Fredag",
+        "weekdays_hours": "9 - 18",
+        "saturday": "Lørdag",
+        "saturday_hours": "9 - 12",
+        "sunday": "Søndag",
+        "sunday_status": "Stengt"
       }
     }
   },
   "quote": {
-    "title": "Angebot anfordern",
-    "description": "Erhalten Sie ein personalisiertes Angebot für Ihr Pferdetransportfahrzeug-Projekt. Unser Team bietet Ihnen die besten, an Ihre Bedürfnisse angepassten Lösungen.",
+    "title": "Be om tilbud",
+    "description": "Få et personlig tilbud for ditt hestetransportkjøretøy-prosjekt. Teamet vårt tilbyr deg de beste løsningene tilpasset dine behov.",
     "benefits": {
       "free": {
-        "title": "Kostenloses Angebot",
-        "description": "Personalisierte Schätzung ohne Verpflichtung"
+        "title": "Gratis tilbud",
+        "description": "Personlig estimat uten forpliktelser"
       },
       "fast": {
-        "title": "Schnelle Antwort",
-        "description": "Antwort innerhalb von maximal 24h"
+        "title": "Rask respons",
+        "description": "Svar innen maksimalt 24t"
       },
       "detailed": {
-        "title": "Detailliertes Angebot",
-        "description": "Alle Details und Optionen enthalten"
+        "title": "Detaljert tilbud",
+        "description": "Alle detaljer og alternativer inkludert"
       }
     },
     "form": {
-      "title": "Angebotsanfrage-Formular",
-      "description": "Je genauer Ihre Informationen sind, desto besser wird unser Angebot an Ihre Bedürfnisse angepasst",
-      "contact_info": "Kontaktinformationen",
-      "first_name": "Vorname",
-      "last_name": "Nachname",
-      "email": "E-Mail",
+      "title": "Tilbudsforespørsel skjema",
+      "description": "Jo mer nøyaktige opplysningene dine er, jo bedre vil vårt tilbud bli tilpasset dine behov",
+      "contact_info": "Kontaktinformasjon",
+      "first_name": "Fornavn",
+      "last_name": "Etternavn",
+      "email": "E-post",
       "phone": "Telefon",
-      "vehicle_type": "Gewünschter Fahrzeugtyp",
-      "category": "Kategorie",
-      "category_placeholder": "Fahrzeugtyp auswählen",
-      "specifications": "Spezifikationen",
-      "horses_number": "Anzahl der Pferde",
-      "horses_placeholder": "Auswählen",
-      "budget": "Ungefähriges Budget",
-      "budget_placeholder": "Budget auswählen",
-      "options": "Gewünschte Optionen",
-      "project_description": "Projektbeschreibung",
-      "project_description_label": "Beschreiben Sie uns Ihr Projekt, Ihre spezifischen Bedürfnisse und Einschränkungen",
-      "project_description_placeholder": "Beispiel: Ich suche einen 2-Pferde-Transporter für Wochenend-Turniere, mit kleinem Wohnbereich für mehrtägige Reisen...",
-      "submit": "Mein kostenloses Angebot anfordern",
+      "vehicle_type": "Ønsket kjøretøytype",
+      "category": "Kategori",
+      "category_placeholder": "Velg kjøretøytype",
+      "specifications": "Spesifikasjoner",
+      "horses_number": "Antall hester",
+      "horses_placeholder": "Velg",
+      "budget": "Omtrentlig budsjett",
+      "budget_placeholder": "Velg budsjett",
+      "options": "Ønskede alternativer",
+      "project_description": "Prosjektbeskrivelse",
+      "project_description_label": "Beskriv prosjektet ditt, dine spesifikke behov og begrensninger",
+      "project_description_placeholder": "Eksempel: Jeg leter etter en 2-hester varebil for helgeturnering, med lite oppholdsområde for flerdagsturer...",
+      "submit": "Be om mitt gratis tilbud",
       "vehicle_types": {
-        "truck": "Pferdetransporter",
-        "van": "Pferde-Transporter",
-        "amenaged_van": "Ausgebauter Transporter",
-        "trailer": "Anhänger"
+        "truck": "Hestetransportbil",
+        "van": "Heste-varebil",
+        "amenaged_van": "Innredet varebil",
+        "trailer": "Tilhenger"
       },
       "horses_options": {
-        "1": "1 Pferd",
-        "2": "2 Pferde",
-        "3": "3 Pferde",
-        "4": "4 Pferde",
-        "5": "5 Pferde oder mehr"
+        "1": "1 hest",
+        "2": "2 hester",
+        "3": "3 hester",
+        "4": "4 hester",
+        "5": "5 hester eller mer"
       },
       "budget_options": {
         "50k-100k": "50.000€ - 100.000€",
         "100k-150k": "100.000€ - 150.000€",
         "150k-200k": "150.000€ - 200.000€",
-        "200k": "Mehr als 200.000€"
+        "200k": "Mer enn 200.000€"
       },
       "options_list": {
-        "tack_room": "Sattelkammer",
-        "water_tank": "Wassertank",
-        "sleeping_area": "Schlafbereich",
-        "kitchen": "Küchenbereich",
-        "air_conditioning": "Klimaanlage",
-        "led_lighting": "LED-Beleuchtung"
+        "tack_room": "Sadelkammer",
+        "water_tank": "Vanntank",
+        "sleeping_area": "Soveområde",
+        "kitchen": "Kjøkkenområde",
+        "air_conditioning": "Klimaanlegg",
+        "led_lighting": "LED-belysning"
       }
     }
   },
   "common": {
-    "learn_more": "Mehr erfahren",
-    "contact_us": "Kontaktieren Sie uns",
-    "back_home": "Zurück zur Startseite",
-    "coming_soon": "Inhalt folgt in Kürze",
-    "under_construction": "Diese Seite ist im Aufbau",
-    "discover": "Entdecken",
-    "discover_more": "Mehr entdecken",
-    "see_vehicles": "Unsere Fahrzeuge ansehen",
-    "request_quote": "Angebot anfordern"
+    "learn_more": "Lær mer",
+    "contact_us": "Kontakt oss",
+    "back_home": "Tilbake til hjemmesiden",
+    "coming_soon": "Innhold kommer snart",
+    "under_construction": "Denne siden er under konstruksjon",
+    "discover": "Oppdag",
+    "discover_more": "Oppdag mer",
+    "see_vehicles": "Se våre kjøretøy",
+    "request_quote": "Be om tilbud"
   }
 }
