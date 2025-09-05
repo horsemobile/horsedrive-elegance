@@ -281,6 +281,107 @@
       }
     }
   },
+  "testimonials": {
+    "title": "Témoignages Clients",
+    "testimonial1": {
+      "name": "Marie Dubois",
+      "role": "Cavalière Professionnelle",
+      "company": "Écurie des Chênes",
+      "content": "Excellente qualité et service exceptionnel. Mon van HorseMobil me permet de voyager en toute sérénité avec mes chevaux. La finition allemande fait toute la différence.",
+      "vehicle": "Van Aménagé Prestige"
+    },
+    "testimonial2": {
+      "name": "Pierre Martin",
+      "role": "Éleveur", 
+      "company": "Haras de la Vallée",
+      "content": "Un investissement parfait pour notre activité. Le camion équestre que nous avons acheté répond parfaitement à nos besoins de transport professionnel.",
+      "vehicle": "Camion Équestre Pro"
+    },
+    "testimonial3": {
+      "name": "Sophie Laurent",
+      "role": "Compétitrice CSO",
+      "company": "Sport Équestre Elite",
+      "content": "Service client remarquable et véhicules de très haute qualité. Je recommande vivement HorseMobil pour tous vos besoins de transport équestre.",
+      "vehicle": "Van Sport Compétition"
+    },
+    "testimonial4": {
+      "name": "Thomas Weber",
+      "role": "Instructeur",
+      "company": "Centre Équestre Alpin", 
+      "content": "Fiabilité et confort exceptionnels. Nos déplacements en compétition sont désormais un plaisir grâce à notre nouveau van HorseMobil.",
+      "vehicle": "Van Confort Plus"
+    },
+    "description": "Découvrez les témoignages de nos clients satisfaits qui nous font confiance pour leurs besoins de transport équestre."
+  },
+  "stats": {
+    "experienceDesc": "D'expertise dans le transport équestre",
+    "customersDesc": "Nous font confiance chaque année",
+    "vehiclesDesc": "Livrés avec succès",
+    "satisfactionTitle": "Satisfaction Client",
+    "satisfactionDesc": "Taux de recommandation"
+  },
+  "pages": {
+    "contact": {
+      "title": "Contactez-nous",
+      "description": "Notre équipe d'experts est à votre disposition pour répondre à toutes vos questions et vous accompagner dans votre projet de véhicule équestre.",
+      "formTitle": "Envoyez-nous un message",
+      "formDescription": "Remplissez ce formulaire et nous vous répondrons dans les plus brefs délais",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "subject": "Sujet",
+      "message": "Message",
+      "sendMessage": "Envoyer le message",
+      "phoneNumber": "+33 1 23 45 67 89",
+      "phoneHours": "Du lundi au vendredi, 9h-18h",
+      "email": "contact@horsemobil.fr",
+      "responseTime": "Réponse sous 24h",
+      "address": "123 Avenue des Chevaux",
+      "city": "75000 Paris, France",
+      "hours": "Horaires d'ouverture",
+      "mondayFriday": "Lundi - Vendredi",
+      "saturday": "Samedi",
+      "sunday": "Dimanche",
+      "timeWeekdays": "9h - 18h",
+      "timeSaturday": "9h - 12h",
+      "closed": "Fermé"
+    },
+    "quote": {
+      "title": "Demander un Devis",
+      "description": "Obtenez un devis personnalisé pour votre projet de véhicule équestre. Notre équipe vous propose les meilleures solutions adaptées à vos besoins.",
+      "freeQuote": "Devis Gratuit",
+      "freeDesc": "Estimation personnalisée sans engagement",
+      "fastResponse": "Réponse Rapide", 
+      "fastDesc": "Réponse sous 24h maximum",
+      "detailedQuote": "Devis Détaillé",
+      "detailedDesc": "Tous les détails et options inclus",
+      "formTitle": "Formulaire de demande de devis",
+      "formDescription": "Plus vos informations sont précises, plus notre devis sera adapté à vos besoins",
+      "contactInfo": "Informations de contact",
+      "vehicleType": "Type de véhicule souhaité",
+      "category": "Catégorie",
+      "selectVehicleType": "Sélectionnez le type de véhicule",
+      "specifications": "Spécifications",
+      "horsesNumber": "Nombre de chevaux",
+      "selectNumber": "Sélectionnez",
+      "budget": "Budget approximatif",
+      "selectBudget": "Sélectionnez votre budget",
+      "budget50k": "50 000€ - 100 000€",
+      "budget100k": "100 000€ - 150 000€",
+      "budget150k": "150 000€ - 200 000€",
+      "budget200k": "Plus de 200 000€",
+      "options": "Options souhaitées",
+      "saddlery": "Compartiment sellerie",
+      "water": "Réservoir d'eau",
+      "sleeping": "Espace couchage",
+      "kitchen": "Coin cuisine",
+      "airConditioning": "Climatisation",
+      "lighting": "Éclairage LED",
+      "projectDescription": "Description de votre projet",
+      "projectDescLabel": "Décrivez-nous votre projet, vos besoins spécifiques et vos contraintes",
+      "projectPlaceholder": "Exemple: Je recherche un van 2 chevaux pour des concours le weekend, avec un petit espace de vie pour les déplacements de plusieurs jours...",
+      "submitQuote": "Demander mon devis gratuit"
+    }
+  },
   "common": {
     "learn_more": "En savoir plus",
     "contact_us": "Nous contacter",

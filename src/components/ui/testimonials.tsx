@@ -15,46 +15,46 @@ interface Testimonial {
   vehicle: string;
 }
 
-const testimonials: Testimonial[] = [
+const getTestimonials = (t: any): Testimonial[] => [
   {
     id: 1,
-    name: 'Marie Dubois',
-    role: 'Cavalière Professionnelle',
-    company: 'Écurie des Chênes',
-    content: 'Excellente qualité et service exceptionnel. Mon van HorseMobil me permet de voyager en toute sérénité avec mes chevaux. La finition allemande fait toute la différence.',
+    name: t('testimonials.testimonial1.name'),
+    role: t('testimonials.testimonial1.role'),
+    company: t('testimonials.testimonial1.company'),
+    content: t('testimonials.testimonial1.content'),
     rating: 5,
     avatar: '/api/placeholder/100/100',
-    vehicle: 'Van Aménagé Prestige'
+    vehicle: t('testimonials.testimonial1.vehicle')
   },
   {
     id: 2,
-    name: 'Pierre Martin',
-    role: 'Éleveur',
-    company: 'Haras de la Vallée',
-    content: 'Un investissement parfait pour notre activité. Le camion équestre que nous avons acheté répond parfaitement à nos besoins de transport professionnel.',
+    name: t('testimonials.testimonial2.name'),
+    role: t('testimonials.testimonial2.role'),
+    company: t('testimonials.testimonial2.company'),
+    content: t('testimonials.testimonial2.content'),
     rating: 5,
     avatar: '/api/placeholder/100/100',
-    vehicle: 'Camion Équestre Pro'
+    vehicle: t('testimonials.testimonial2.vehicle')
   },
   {
     id: 3,
-    name: 'Sophie Laurent',
-    role: 'Compétitrice CSO',
-    company: 'Sport Équestre Elite',
-    content: 'Service client remarquable et véhicules de très haute qualité. Je recommande vivement HorseMobil pour tous vos besoins de transport équestre.',
+    name: t('testimonials.testimonial3.name'),
+    role: t('testimonials.testimonial3.role'),
+    company: t('testimonials.testimonial3.company'),
+    content: t('testimonials.testimonial3.content'),
     rating: 5,
     avatar: '/api/placeholder/100/100',
-    vehicle: 'Van Sport Compétition'
+    vehicle: t('testimonials.testimonial3.vehicle')
   },
   {
     id: 4,
-    name: 'Thomas Weber',
-    role: 'Instructeur',
-    company: 'Centre Équestre Alpin',
-    content: 'Fiabilité et confort exceptionnels. Nos déplacements en compétition sont désormais un plaisir grâce à notre nouveau van HorseMobil.',
+    name: t('testimonials.testimonial4.name'),
+    role: t('testimonials.testimonial4.role'),
+    company: t('testimonials.testimonial4.company'),
+    content: t('testimonials.testimonial4.content'),
     rating: 5,
     avatar: '/api/placeholder/100/100',
-    vehicle: 'Van Confort Plus'
+    vehicle: t('testimonials.testimonial4.vehicle')
   }
 ];
 
@@ -62,6 +62,8 @@ export const Testimonials = () => {
   const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
+  
+  const testimonials = getTestimonials(t);
 
   useEffect(() => {
     if (!isAutoPlay) return;
@@ -94,8 +96,7 @@ export const Testimonials = () => {
             {t('testimonials.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Découvrez les témoignages de nos clients satisfaits qui nous font confiance 
-            pour leurs besoins de transport équestre.
+            {t('testimonials.description')}
           </p>
         </div>
 

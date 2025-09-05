@@ -7,18 +7,20 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       <main className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Contactez-nous</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('pages.contact.title')}</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Notre équipe d'experts est à votre disposition pour répondre à toutes vos questions 
-              et vous accompagner dans votre projet de véhicule équestre.
+              {t('pages.contact.description')}
             </p>
           </div>
 
@@ -26,44 +28,44 @@ const Contact = () => {
             {/* Contact Form */}
             <Card>
               <CardHeader>
-                <CardTitle>Envoyez-nous un message</CardTitle>
+                <CardTitle>{t('pages.contact.formTitle')}</CardTitle>
                 <CardDescription>
-                  Remplissez ce formulaire et nous vous répondrons dans les plus brefs délais
+                  {t('pages.contact.formDescription')}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName">Prénom</Label>
-                    <Input id="firstName" placeholder="Votre prénom" />
+                    <Label htmlFor="firstName">{t('pages.contact.firstName')}</Label>
+                    <Input id="firstName" placeholder={t('contact.firstName_placeholder')} />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="lastName">Nom</Label>
-                    <Input id="lastName" placeholder="Votre nom" />
+                    <Label htmlFor="lastName">{t('pages.contact.lastName')}</Label>
+                    <Input id="lastName" placeholder={t('contact.name_placeholder')} />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="votre@email.com" />
+                  <Label htmlFor="email">{t('contact.email')}</Label>
+                  <Input id="email" type="email" placeholder={t('contact.email_placeholder')} />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Téléphone</Label>
-                  <Input id="phone" type="tel" placeholder="06 12 34 56 78" />
+                  <Label htmlFor="phone">{t('contact.phone')}</Label>
+                  <Input id="phone" type="tel" placeholder={t('contact.phone_placeholder')} />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="subject">Sujet</Label>
-                  <Input id="subject" placeholder="Objet de votre demande" />
+                  <Label htmlFor="subject">{t('pages.contact.subject')}</Label>
+                  <Input id="subject" placeholder={t('contact.subject_placeholder')} />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message">{t('pages.contact.message')}</Label>
                   <Textarea 
                     id="message" 
-                    placeholder="Décrivez votre projet ou votre demande..."
+                    placeholder={t('contact.message_placeholder')}
                     className="min-h-32"
                   />
                 </div>
                 <Button className="w-full" size="lg">
-                  Envoyer le message
+                  {t('pages.contact.sendMessage')}
                 </Button>
               </CardContent>
             </Card>
@@ -74,12 +76,12 @@ const Contact = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Phone className="h-5 w-5" />
-                    Téléphone
+                    {t('contact.phone')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-semibold">+33 1 23 45 67 89</p>
-                  <p className="text-muted-foreground">Du lundi au vendredi, 9h-18h</p>
+                  <p className="text-lg font-semibold">{t('pages.contact.phoneNumber')}</p>
+                  <p className="text-muted-foreground">{t('pages.contact.phoneHours')}</p>
                 </CardContent>
               </Card>
 
@@ -87,12 +89,12 @@ const Contact = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Mail className="h-5 w-5" />
-                    Email
+                    {t('contact.email')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-semibold">contact@horsemobil.fr</p>
-                  <p className="text-muted-foreground">Réponse sous 24h</p>
+                  <p className="text-lg font-semibold">{t('pages.contact.email')}</p>
+                  <p className="text-muted-foreground">{t('pages.contact.responseTime')}</p>
                 </CardContent>
               </Card>
 
@@ -100,12 +102,12 @@ const Contact = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <MapPin className="h-5 w-5" />
-                    Adresse
+                    {t('contact.address')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-semibold">123 Avenue des Chevaux</p>
-                  <p className="text-muted-foreground">75000 Paris, France</p>
+                  <p className="text-lg font-semibold">{t('pages.contact.address')}</p>
+                  <p className="text-muted-foreground">{t('pages.contact.city')}</p>
                 </CardContent>
               </Card>
 
@@ -113,22 +115,22 @@ const Contact = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Clock className="h-5 w-5" />
-                    Horaires d'ouverture
+                    {t('pages.contact.hours')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span>Lundi - Vendredi</span>
-                      <span className="font-semibold">9h - 18h</span>
+                      <span>{t('pages.contact.mondayFriday')}</span>
+                      <span className="font-semibold">{t('pages.contact.timeWeekdays')}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Samedi</span>
-                      <span className="font-semibold">9h - 12h</span>
+                      <span>{t('pages.contact.saturday')}</span>
+                      <span className="font-semibold">{t('pages.contact.timeSaturday')}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Dimanche</span>
-                      <span className="text-muted-foreground">Fermé</span>
+                      <span>{t('pages.contact.sunday')}</span>
+                      <span className="text-muted-foreground">{t('pages.contact.closed')}</span>
                     </div>
                   </div>
                 </CardContent>

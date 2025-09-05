@@ -9,18 +9,20 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Calculator, FileText, Clock } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Devis = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       <main className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Demander un Devis</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('pages.quote.title')}</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Obtenez un devis personnalisé pour votre projet de véhicule équestre. 
-              Notre équipe vous propose les meilleures solutions adaptées à vos besoins.
+              {t('pages.quote.description')}
             </p>
           </div>
 
@@ -28,11 +30,11 @@ const Devis = () => {
             <Card className="text-center">
               <CardHeader>
                 <Calculator className="h-8 w-8 mx-auto text-primary mb-4" />
-                <CardTitle>Devis Gratuit</CardTitle>
+                <CardTitle>{t('pages.quote.freeQuote')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Estimation personnalisée sans engagement
+                  {t('pages.quote.freeDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -40,11 +42,11 @@ const Devis = () => {
             <Card className="text-center">
               <CardHeader>
                 <Clock className="h-8 w-8 mx-auto text-primary mb-4" />
-                <CardTitle>Réponse Rapide</CardTitle>
+                <CardTitle>{t('pages.quote.fastResponse')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Réponse sous 24h maximum
+                  {t('pages.quote.fastDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -52,11 +54,11 @@ const Devis = () => {
             <Card className="text-center">
               <CardHeader>
                 <FileText className="h-8 w-8 mx-auto text-primary mb-4" />
-                <CardTitle>Devis Détaillé</CardTitle>
+                <CardTitle>{t('pages.quote.detailedQuote')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Tous les détails et options inclus
+                  {t('pages.quote.detailedDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -64,9 +66,9 @@ const Devis = () => {
 
           <Card className="max-w-4xl mx-auto">
             <CardHeader>
-              <CardTitle>Formulaire de demande de devis</CardTitle>
+              <CardTitle>{t('pages.quote.formTitle')}</CardTitle>
               <CardDescription>
-                Plus vos informations sont précises, plus notre devis sera adapté à vos besoins
+                {t('pages.quote.formDescription')}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-8">
@@ -194,9 +196,9 @@ const Devis = () => {
                 </div>
               </div>
 
-              <Button className="w-full" size="lg">
-                Demander mon devis gratuit
-              </Button>
+                <Button className="w-full" size="lg">
+                  {t('pages.quote.submitQuote')}
+                </Button>
             </CardContent>
           </Card>
         </div>

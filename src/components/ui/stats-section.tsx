@@ -23,7 +23,7 @@ const useStatsData = () => {
       value: 25,
       suffix: '+',
       icon: <Award className="h-8 w-8" />,
-      description: "D'expertise dans le transport équestre"
+      description: t('stats.experienceDesc')
     },
     {
       id: 'clients',
@@ -31,7 +31,7 @@ const useStatsData = () => {
       value: 1200,
       suffix: '+',
       icon: <Users className="h-8 w-8" />,
-      description: 'Nous font confiance chaque année'
+      description: t('stats.customersDesc')
     },
     {
       id: 'vehicles',
@@ -39,15 +39,15 @@ const useStatsData = () => {
       value: 500,
       suffix: '+',
       icon: <Truck className="h-8 w-8" />,
-      description: 'Livrés avec succès'
+      description: t('stats.vehiclesDesc')
     },
     {
       id: 'satisfaction',
-      title: 'Satisfaction Client',
+      title: t('stats.satisfactionTitle'),
       value: 98,
       suffix: '%',
       icon: <ThumbsUp className="h-8 w-8" />,
-      description: 'Taux de recommandation'
+      description: t('stats.satisfactionDesc')
     }
   ];
 };
