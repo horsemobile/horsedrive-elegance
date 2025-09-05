@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { LanguageSelector } from './language-selector';
+import horsemobilLogo from '@/assets/horsemobil-logo.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,14 +34,12 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center shadow-glow group-hover:scale-105 transition-transform">
-              <span className="text-2xl font-bold text-white">H</span>
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="text-xl font-display font-bold gradient-text">HorseMobil</h1>
-              <p className="text-xs text-muted-foreground">GmbH</p>
-            </div>
+          <Link to="/" className="flex items-center space-x-3 group">
+            <img 
+              src={horsemobilLogo} 
+              alt="HORSEMOBIL GmbH" 
+              className="h-16 w-auto group-hover:scale-105 transition-transform"
+            />
           </Link>
 
           {/* Desktop Navigation */}
