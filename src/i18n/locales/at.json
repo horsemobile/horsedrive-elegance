@@ -257,6 +257,74 @@
       }
     }
   },
+  "trucks": {
+    "title": "Pferdetransporter",
+    "badge": "Premium Fahrzeuge",
+    "description": "Entdecken Sie unsere Auswahl an hochwertigen Pferdetransportern, die maximalen Komfort und Sicherheit für Ihre Pferde bei beruflichen oder privaten Reisen bieten.",
+    "quote_cta": "Angebot anfordern",
+    "contact_cta": "Kontakt aufnehmen",
+    "alt_image": "Luxus-Pferdetransporter",
+    "features": {
+      "title": "Warum unsere Pferdetransporter wählen?",
+      "description": "Unsere Pferdetransporter kombinieren Innovation, Komfort und Sicherheit für die beste Transporterfahrung für Ihre Pferde.",
+      "safety": {
+        "title": "Maximale Sicherheit",
+        "description": "Fortschrittliche Sicherheitssysteme und Anti-Stress-Ausstattung für Ihre Pferde"
+      },
+      "capacity": {
+        "title": "Hohe Kapazität",
+        "description": "2 bis 8 Pferde je nach Bedarf, mit integrierten Wohnbereichen"
+      },
+      "custom": {
+        "title": "Maßgeschneidert",
+        "description": "Vollständige Anpassung nach Ihren Bedürfnissen und Vorlieben"
+      },
+      "quality": {
+        "title": "Premium-Qualität",
+        "description": "Hochwertige Materialien und außergewöhnliche Verarbeitung"
+      }
+    },
+    "models": {
+      "title": "Unsere LKW-Modelle",
+      "description": "Eine komplette Palette für alle Ihre Pferdetransportbedürfnisse",
+      "2_horses": {
+        "title": "2-Pferde LKW",
+        "description": "Ideal für lokale Ausflüge",
+        "features": [
+          "Kapazität: 2 Pferde",
+          "Sattelkammer",
+          "Belüftungssystem",
+          "Rutschfester Boden"
+        ]
+      },
+      "4_horses": {
+        "title": "4-Pferde LKW",
+        "description": "Für Teams und Vereine",
+        "features": [
+          "Kapazität: 4 Pferde",
+          "Integrierter Wohnbereich",
+          "Ausgestattete Küche",
+          "Toilette und Dusche"
+        ]
+      },
+      "6_horses": {
+        "title": "6+ Pferde LKW",
+        "description": "Professionelle Lösung",
+        "features": [
+          "Kapazität: 6 bis 8 Pferde",
+          "Komplette Wohnung",
+          "Ausrüstungsgarage",
+          "Premium-Optionen"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihren idealen Pferdetransporter zu entdecken?",
+      "description": "Kontaktieren Sie unsere Experten für eine persönliche Beratung",
+      "quote_cta": "Kostenloses Angebot anfordern",
+      "appointment_cta": "Termin vereinbaren"
+    }
+  },
   "quote": {
     "title": "Angebot anfordern",
     "description": "Erhalten Sie ein personalisiertes Angebot für Ihr Pferdetransportfahrzeug-Projekt. Unser Team bietet Ihnen die besten, an Ihre Bedürfnisse angepassten Lösungen.",

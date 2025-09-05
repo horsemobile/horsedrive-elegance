@@ -6,9 +6,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import { Truck, Users, Shield, Wrench, Star, ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import categoryTrucks from '@/assets/category-trucks.jpg';
 
 const Camions = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -18,25 +21,23 @@ const Camions = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4">Véhicules Premium</Badge>
+              <Badge className="mb-4">{t('trucks.badge')}</Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Camions Équestres
+                {t('trucks.title')}
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Découvrez notre gamme de camions équestres haut de gamme, 
-                conçus pour offrir le maximum de confort et de sécurité à vos chevaux 
-                lors de vos déplacements professionnels ou de loisir.
+                {t('trucks.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg">
                   <Link to="/devis">
                     <Truck className="mr-2 h-5 w-5" />
-                    Demander un Devis
+                    {t('trucks.quote_cta')}
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link to="/contact">
-                    Nous Contacter
+                    {t('trucks.contact_cta')}
                   </Link>
                 </Button>
               </div>
@@ -44,7 +45,7 @@ const Camions = () => {
             <div className="relative">
               <img 
                 src={categoryTrucks} 
-                alt="Camion équestre de luxe" 
+                alt={t('trucks.alt_image')} 
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
             </div>
@@ -57,11 +58,10 @@ const Camions = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Pourquoi choisir nos camions équestres ?
+              {t('trucks.features.title')}
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Nos camions équestres combinent innovation, confort et sécurité 
-              pour offrir la meilleure expérience de transport à vos chevaux.
+              {t('trucks.features.description')}
             </p>
           </div>
 
@@ -69,11 +69,11 @@ const Camions = () => {
             <Card className="text-center">
               <CardHeader>
                 <Shield className="h-8 w-8 mx-auto text-primary mb-4" />
-                <CardTitle>Sécurité Maximale</CardTitle>
+                <CardTitle>{t('trucks.features.safety.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Systèmes de sécurité avancés et aménagements anti-stress pour vos chevaux
+                  {t('trucks.features.safety.description')}
                 </p>
               </CardContent>
             </Card>
@@ -81,11 +81,11 @@ const Camions = () => {
             <Card className="text-center">
               <CardHeader>
                 <Users className="h-8 w-8 mx-auto text-primary mb-4" />
-                <CardTitle>Capacité Élevée</CardTitle>
+                <CardTitle>{t('trucks.features.capacity.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  De 2 à 8 chevaux selon vos besoins, avec espaces de vie intégrés
+                  {t('trucks.features.capacity.description')}
                 </p>
               </CardContent>
             </Card>
@@ -93,11 +93,11 @@ const Camions = () => {
             <Card className="text-center">
               <CardHeader>
                 <Wrench className="h-8 w-8 mx-auto text-primary mb-4" />
-                <CardTitle>Sur Mesure</CardTitle>
+                <CardTitle>{t('trucks.features.custom.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Personnalisation complète selon vos besoins et préférences
+                  {t('trucks.features.custom.description')}
                 </p>
               </CardContent>
             </Card>
@@ -105,11 +105,11 @@ const Camions = () => {
             <Card className="text-center">
               <CardHeader>
                 <Star className="h-8 w-8 mx-auto text-primary mb-4" />
-                <CardTitle>Qualité Premium</CardTitle>
+                <CardTitle>{t('trucks.features.quality.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Matériaux haut de gamme et finitions exceptionnelles
+                  {t('trucks.features.quality.description')}
                 </p>
               </CardContent>
             </Card>
@@ -122,29 +122,28 @@ const Camions = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Nos Modèles de Camions
+              {t('trucks.models.title')}
             </h2>
             <p className="text-lg text-muted-foreground">
-              Une gamme complète pour tous vos besoins de transport équestre
+              {t('trucks.models.description')}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card>
               <CardHeader>
-                <CardTitle>Camion 2 Chevaux</CardTitle>
-                <CardDescription>Idéal pour les sorties locales</CardDescription>
+                <CardTitle>{t('trucks.models.2_horses.title')}</CardTitle>
+                <CardDescription>{t('trucks.models.2_horses.description')}</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground mb-6">
-                  <li>• Capacité : 2 chevaux</li>
-                  <li>• Compartiment sellerie</li>
-                  <li>• Système de ventilation</li>
-                  <li>• Sol antidérapant</li>
+                  {(t('trucks.models.2_horses.features', { returnObjects: true }) as string[]).map((feature: string, index: number) => (
+                    <li key={index}>• {feature}</li>
+                  ))}
                 </ul>
                 <Button asChild className="w-full">
                   <Link to="/devis">
-                    Demander un Devis
+                    {t('trucks.quote_cta')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
@@ -153,19 +152,18 @@ const Camions = () => {
 
             <Card>
               <CardHeader>
-                <CardTitle>Camion 4 Chevaux</CardTitle>
-                <CardDescription>Pour les équipes et clubs</CardDescription>
+                <CardTitle>{t('trucks.models.4_horses.title')}</CardTitle>
+                <CardDescription>{t('trucks.models.4_horses.description')}</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground mb-6">
-                  <li>• Capacité : 4 chevaux</li>
-                  <li>• Espace de vie intégré</li>
-                  <li>• Cuisine équipée</li>
-                  <li>• Toilettes et douche</li>
+                  {(t('trucks.models.4_horses.features', { returnObjects: true }) as string[]).map((feature: string, index: number) => (
+                    <li key={index}>• {feature}</li>
+                  ))}
                 </ul>
                 <Button asChild className="w-full">
                   <Link to="/devis">
-                    Demander un Devis
+                    {t('trucks.quote_cta')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
@@ -174,19 +172,18 @@ const Camions = () => {
 
             <Card>
               <CardHeader>
-                <CardTitle>Camion 6+ Chevaux</CardTitle>
-                <CardDescription>Solution professionnelle</CardDescription>
+                <CardTitle>{t('trucks.models.6_horses.title')}</CardTitle>
+                <CardDescription>{t('trucks.models.6_horses.description')}</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground mb-6">
-                  <li>• Capacité : 6 à 8 chevaux</li>
-                  <li>• Appartement complet</li>
-                  <li>• Garage pour matériel</li>
-                  <li>• Options premium</li>
+                  {(t('trucks.models.6_horses.features', { returnObjects: true }) as string[]).map((feature: string, index: number) => (
+                    <li key={index}>• {feature}</li>
+                  ))}
                 </ul>
                 <Button asChild className="w-full">
                   <Link to="/devis">
-                    Demander un Devis
+                    {t('trucks.quote_cta')}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
@@ -202,20 +199,20 @@ const Camions = () => {
           <Card className="bg-gradient-to-r from-primary to-primary-light text-primary-foreground">
             <CardContent className="text-center py-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Prêt à découvrir votre camion équestre idéal ?
+                {t('trucks.cta.title')}
               </h2>
               <p className="text-xl mb-8 opacity-90">
-                Contactez nos experts pour une consultation personnalisée
+                {t('trucks.cta.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" variant="secondary">
                   <Link to="/devis">
-                    Demander un Devis Gratuit
+                    {t('trucks.cta.quote_cta')}
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                   <Link to="/contact">
-                    Prendre Rendez-vous
+                    {t('trucks.cta.appointment_cta')}
                   </Link>
                 </Button>
               </div>

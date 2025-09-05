@@ -257,6 +257,74 @@
       }
     }
   },
+  "trucks": {
+    "title": "Hevoskuljetusautot",
+    "badge": "Premium ajoneuvot",
+    "description": "Tutustu korkealaatuisten hevoskuljetusautojemme valikoimaan, jotka tarjoavat maksimaalisen mukavuuden ja turvallisuuden hevosillesi ammatillisissa tai vapaa-ajan matkoissa.",
+    "quote_cta": "Pyydä tarjous",
+    "contact_cta": "Ota yhteyttä",
+    "alt_image": "Luksus hevoskuljetusauto",
+    "features": {
+      "title": "Miksi valita meidän hevoskuljetusautomme?",
+      "description": "Hevoskuljetusautomme yhdistävät innovaation, mukavuuden ja turvallisuuden tarjotakseen parhaan kuljetuskokemuksen hevosillesi.",
+      "safety": {
+        "title": "Maksimaalinen turvallisuus",
+        "description": "Edistyneet turvajärjestelmät ja stressiä ehkäisevät järjestelyt hevosillesi"
+      },
+      "capacity": {
+        "title": "Suuri kapasiteetti",
+        "description": "2-8 hevosta tarpeidesi mukaan, integroiduilla asuintiloilla"
+      },
+      "custom": {
+        "title": "Räätälöity",
+        "description": "Täydellinen räätälöinti tarpeidesi ja mieltymystesi mukaan"
+      },
+      "quality": {
+        "title": "Premium laatu",
+        "description": "Korkealaatuiset materiaalit ja poikkeuksellinen viimeistely"
+      }
+    },
+    "models": {
+      "title": "Kuorma-automallit",
+      "description": "Täydellinen valikoima kaikkiin hevoskuljetustarpeisiisi",
+      "2_horses": {
+        "title": "2-hevonen kuorma-auto",
+        "description": "Ihanteellinen paikallisiin retkiin",
+        "features": [
+          "Kapasiteetti: 2 hevosta",
+          "Satulahuone",
+          "Ilmanvaihtojärjestelmä",
+          "Liukumaton lattia"
+        ]
+      },
+      "4_horses": {
+        "title": "4-hevonen kuorma-auto",
+        "description": "Joukkueille ja seuroille",
+        "features": [
+          "Kapasiteetti: 4 hevosta",
+          "Integroitu asuintila",
+          "Varustettu keittiö",
+          "WC ja suihku"
+        ]
+      },
+      "6_horses": {
+        "title": "6+ hevonen kuorma-auto",
+        "description": "Ammattimainen ratkaisu",
+        "features": [
+          "Kapasiteetti: 6-8 hevosta",
+          "Täydellinen asunto",
+          "Varustevarasto",
+          "Premium vaihtoehdot"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Valmis löytämään ihanteellisen hevoskuljetusautosi?",
+      "description": "Ota yhteyttä asiantuntijoihimme henkilökohtaista konsultaatiota varten",
+      "quote_cta": "Pyydä ilmainen tarjous",
+      "appointment_cta": "Varaa aika"
+    }
+  },
   "quote": {
     "title": "Pyydä tarjous",
     "description": "Saa henkilökohtainen tarjous hevoskuljetusajoneuvo-projektiisi. Tiimimme tarjoaa sinulle parhaat ratkaisut tarpeisiisi mukautettuina.",

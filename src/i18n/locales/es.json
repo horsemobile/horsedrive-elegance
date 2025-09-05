@@ -146,6 +146,74 @@
     "call": "Llamarnos",
     "whatsapp_message": "Hola, estoy interesado en sus vehículos ecuestres. ¿Pueden darme más información?"
   },
+  "trucks": {
+    "title": "Camiones Ecuestres",
+    "badge": "Vehículos Premium",
+    "description": "Descubra nuestra gama de camiones ecuestres de alta gama, diseñados para ofrecer el máximo confort y seguridad a sus caballos durante sus desplazamientos profesionales o de ocio.",
+    "quote_cta": "Solicitar Presupuesto",
+    "contact_cta": "Contactarnos",
+    "alt_image": "Camión ecuestre de lujo",
+    "features": {
+      "title": "¿Por qué elegir nuestros camiones ecuestres?",
+      "description": "Nuestros camiones ecuestres combinan innovación, comodidad y seguridad para ofrecer la mejor experiencia de transporte a sus caballos.",
+      "safety": {
+        "title": "Seguridad Máxima",
+        "description": "Sistemas de seguridad avanzados y disposiciones anti-estrés para sus caballos"
+      },
+      "capacity": {
+        "title": "Alta Capacidad",
+        "description": "De 2 a 8 caballos según sus necesidades, con espacios de vida integrados"
+      },
+      "custom": {
+        "title": "A Medida",
+        "description": "Personalización completa según sus necesidades y preferencias"
+      },
+      "quality": {
+        "title": "Calidad Premium",
+        "description": "Materiales de alta gama y acabados excepcionales"
+      }
+    },
+    "models": {
+      "title": "Nuestros Modelos de Camiones",
+      "description": "Una gama completa para todas sus necesidades de transporte ecuestre",
+      "2_horses": {
+        "title": "Camión 2 Caballos",
+        "description": "Ideal para salidas locales",
+        "features": [
+          "Capacidad: 2 caballos",
+          "Compartimento de arneses",
+          "Sistema de ventilación",
+          "Suelo antideslizante"
+        ]
+      },
+      "4_horses": {
+        "title": "Camión 4 Caballos",
+        "description": "Para equipos y clubes",
+        "features": [
+          "Capacidad: 4 caballos",
+          "Espacio de vida integrado",
+          "Cocina equipada",
+          "Baño y ducha"
+        ]
+      },
+      "6_horses": {
+        "title": "Camión 6+ Caballos",
+        "description": "Solución profesional",
+        "features": [
+          "Capacidad: 6 a 8 caballos",
+          "Apartamento completo",
+          "Garaje para material",
+          "Opciones premium"
+        ]
+      }
+    },
+    "cta": {
+      "title": "¿Listo para descubrir su camión ecuestre ideal?",
+      "description": "Contacte a nuestros expertos para una consulta personalizada",
+      "quote_cta": "Solicitar Presupuesto Gratuito",
+      "appointment_cta": "Programar Cita"
+    }
+  },
   "common": {
     "learn_more": "Saber más",
     "contact_us": "Contáctanos",
