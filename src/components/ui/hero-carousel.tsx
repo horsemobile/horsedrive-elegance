@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import heroTruckRed from '@/assets/hero-truck-red.jpg';
+import heroVanInterior from '@/assets/hero-van-interior.jpg';
+import heroVanSunset from '@/assets/hero-van-sunset.jpg';
 
 interface Slide {
   id: number;
@@ -21,7 +24,7 @@ const slides: Slide[] = [
     description: 'Découvrez notre gamme complète de véhicules équestres : camions, vans et remorques conçus pour le confort et la sécurité de vos chevaux.',
     ctaText: 'Voir nos Véhicules',
     ctaLink: '/camions',
-    image: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=1920&h=1080&fit=crop&crop=center'
+    image: heroTruckRed
   },
   {
     id: 2,
@@ -30,7 +33,7 @@ const slides: Slide[] = [
     description: 'Nos vans aménagés offrent une solution parfaite pour les déplacements équestres avec tout le confort nécessaire pour cavaliers et chevaux.',
     ctaText: 'Découvrir les Vans',
     ctaLink: '/van-amenage',
-    image: 'https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=1920&h=1080&fit=crop&crop=center'
+    image: heroVanInterior
   },
   {
     id: 3,
@@ -39,7 +42,7 @@ const slides: Slide[] = [
     description: 'Fort de notre expertise allemande, nous proposons des véhicules équestres alliant innovation, sécurité et performance exceptionnelle.',
     ctaText: 'En Savoir Plus',
     ctaLink: '/about',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop&crop=center'
+    image: heroVanSunset
   }
 ];
 
