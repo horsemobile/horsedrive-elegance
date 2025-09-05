@@ -24,15 +24,21 @@ i18n
   .init({
     resources,
     fallbackLng: 'fr',
-    debug: false,
+    debug: true, // Temporarily enable debug for troubleshooting
     
     detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
+      order: ['querystring', 'localStorage', 'navigator', 'htmlTag'],
+      lookupQuerystring: 'lng',
+      lookupLocalStorage: 'i18nextLng',
       caches: ['localStorage'],
     },
 
     interpolation: {
       escapeValue: false,
+    },
+    
+    react: {
+      useSuspense: false,
     },
   });
 
