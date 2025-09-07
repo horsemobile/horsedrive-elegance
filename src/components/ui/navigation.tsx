@@ -83,7 +83,7 @@ const Navigation = () => {
               <Link to="/devis">{t('nav.quote')}</Link>
             </Button>
 
-            {/* Auth Section */}
+            {/* Auth Section - Hidden */}
             {user ? (
               <div className="hidden md:flex items-center space-x-2">
                 {isAdmin && (
@@ -96,14 +96,7 @@ const Navigation = () => {
                   Déconnexion
                 </Button>
               </div>
-            ) : (
-              <Button asChild variant="ghost" size="sm" className="hidden md:inline-flex">
-                <Link to="/auth">
-                  <User className="h-4 w-4 mr-1" />
-                  Connexion
-                </Link>
-              </Button>
-            )}
+            ) : null}
 
             {/* Mobile Menu Button */}
             <Button
@@ -151,14 +144,7 @@ const Navigation = () => {
                       Déconnexion
                     </Button>
                   </>
-                ) : (
-                  <Button asChild variant="ghost" className="w-full" size="sm">
-                    <Link to="/auth">
-                      <User className="h-4 w-4 mr-1" />
-                      Connexion
-                    </Link>
-                  </Button>
-                )}
+                ) : null}
               </div>
             </div>
           </div>

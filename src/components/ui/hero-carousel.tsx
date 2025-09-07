@@ -164,12 +164,6 @@ export const HeroCarousel = () => {
         ))}
       </div>
 
-      {/* Slide Counter */}
-      <div className="absolute bottom-8 right-8 z-20 glass-effect px-4 py-2 rounded-lg">
-        <span className="text-sm font-medium">
-          {String(currentSlide + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
-        </span>
-      </div>
     </div>
   );
 };
