@@ -20,14 +20,34 @@ import {
 } from 'lucide-react';
 
 const Financement = () => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
+  
+  console.log('Financement component render:', { ready });
+  
+  // Early return if translations not ready
+  if (!ready) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary mx-auto"></div>
+          <p className="mt-4 text-muted-foreground">Chargement...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Test if translation keys exist
+  console.log('Testing translation keys:');
+  console.log('hero.title:', t('financing.hero.title'));
+  console.log('options.title:', t('financing.options.title'));
+  console.log('process.steps raw:', t('financing.process.steps', { returnObjects: true }));
 
   const financingOptions = [
     {
-      title: t('financing.options.classicCredit.title'),
-      description: t('financing.options.classicCredit.description'),
-      rate: t('financing.options.classicCredit.rate'),
-      duration: t('financing.options.classicCredit.duration'),
+      title: t('financing.options.classicCredit.title') || 'Crédit classique',
+      description: t('financing.options.classicCredit.description') || 'Financement traditionnel avec apport personnel',
+      rate: t('financing.options.classicCredit.rate') || '0% sans intérêt',
+      duration: t('financing.options.classicCredit.duration') || '12 à 84 mois',
       advantages: (() => {
         const advData = t('financing.options.classicCredit.advantages', { returnObjects: true });
         return Array.isArray(advData) ? advData : ["Taux 0%", "Remboursement flexible", "Assurance optionnelle"];
@@ -35,10 +55,10 @@ const Financement = () => {
       icon: CreditCard
     },
     {
-      title: t('financing.options.leasing.title'),
-      description: t('financing.options.leasing.description'),
-      rate: t('financing.options.leasing.rate'),
-      duration: t('financing.options.leasing.duration'),
+      title: t('financing.options.leasing.title') || 'Leasing',
+      description: t('financing.options.leasing.description') || 'Location avec option d\'achat',
+      rate: t('financing.options.leasing.rate') || '0% sans intérêt',
+      duration: t('financing.options.leasing.duration') || '24 à 60 mois',
       advantages: (() => {
         const advData = t('financing.options.leasing.advantages', { returnObjects: true });
         return Array.isArray(advData) ? advData : ["Pas d'apport", "Mensualités réduites", "Option rachat"];
@@ -46,10 +66,10 @@ const Financement = () => {
       icon: FileText
     },
     {
-      title: t('financing.options.balloonCredit.title'),
-      description: t('financing.options.balloonCredit.description'),
-      rate: t('financing.options.balloonCredit.rate'),
-      duration: t('financing.options.balloonCredit.duration'),
+      title: t('financing.options.balloonCredit.title') || 'Crédit ballon',
+      description: t('financing.options.balloonCredit.description') || 'Mensualités réduites avec apport final',
+      rate: t('financing.options.balloonCredit.rate') || '0% sans intérêt',
+      duration: t('financing.options.balloonCredit.duration') || '24 à 48 mois',
       advantages: (() => {
         const advData = t('financing.options.balloonCredit.advantages', { returnObjects: true });
         return Array.isArray(advData) ? advData : ["Mensualités allégées", "Flexibilité finale", "Taux 0%"];
@@ -60,6 +80,8 @@ const Financement = () => {
 
   // Safely get steps data with fallback
   const stepsData = t('financing.process.steps', { returnObjects: true });
+  console.log('Steps data type:', typeof stepsData, 'isArray:', Array.isArray(stepsData), 'value:', stepsData);
+  
   const steps = Array.isArray(stepsData) ? stepsData.map((step: any, index: number) => ({
     number: String(index + 1).padStart(2, '0'),
     title: step.title || '',
