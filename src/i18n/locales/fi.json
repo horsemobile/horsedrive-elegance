@@ -255,17 +255,6 @@
         "sunday": "Sunnuntai",
         "sunday_status": "Kiinni"
   },
-  "confidentialite": {
-    "badge": "Tietosuoja",
-    "title": "Tietosuojakäytäntö",
-    "subtitle": "HORSEMOBIL sitoutuu suojelemaan yksityisyyttäsi ja henkilötietojasi",
-    "introduction": {
-      "title": "Johdanto",
-      "paragraph1": "Tämä tietosuojakäytäntö kuvaa, kuinka HORSEMOBIL kerää, käyttää ja suojaa henkilötietojasi, kun käytät verkkosivustoamme tai palveluitamme.",
-      "paragraph2": "Käyttämällä verkkosivustoamme hyväksyt tässä tietosuojakäytännössä kuvatut käytännöt. Jos et hyväksy näitä käytäntöjä, älä käytä sivustoamme.",
-      "paragraph3": "Tämä käytäntö noudattaa yleistä tietosuoja-asetusta (GDPR) ja Ranskan tietosuojalakia."
-    }
-  },
   "cookies": {
     "badge": "Evästeiden hallinta",
     "title": "Evästekäytäntö",

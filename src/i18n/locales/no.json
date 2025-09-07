@@ -255,17 +255,6 @@
         "sunday": "Søndag",
         "sunday_status": "Stengt"
   },
-  "confidentialite": {
-    "badge": "Databeskyttelse",
-    "title": "Personvernerklæring",
-    "subtitle": "HORSEMOBIL forplikter seg til å beskytte ditt personvern og personlige data",
-    "introduction": {
-      "title": "Innledning",
-      "paragraph1": "Denne personvernerklæringen beskriver hvordan HORSEMOBIL samler inn, bruker og beskytter din personlige informasjon når du bruker vårt nettsted eller tjenester.",
-      "paragraph2": "Ved å bruke vårt nettsted, aksepterer du praksisene beskrevet i denne personvernerklæringen. Hvis du ikke aksepterer disse praksisene, vennligst ikke bruk vårt nettsted.",
-      "paragraph3": "Denne policyen overholder General Data Protection Regulation (GDPR) og fransk databeskyttelseslov."
-    }
-  },
   "cookies": {
     "badge": "Cookie-administrasjon",
     "title": "Cookie-policy",

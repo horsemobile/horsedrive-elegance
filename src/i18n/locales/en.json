@@ -749,17 +749,6 @@
       "submitQuote": "Submit Quote Request"
     }
   },
-  "confidentialite": {
-    "badge": "Data Protection",
-    "title": "Privacy Policy",
-    "subtitle": "HORSEMOBIL is committed to protecting your privacy and personal data",
-    "introduction": {
-      "title": "Introduction",
-      "paragraph1": "This privacy policy describes how HORSEMOBIL collects, uses and protects your personal information when you use our website or services.",
-      "paragraph2": "By using our website, you accept the practices described in this privacy policy. If you do not accept these practices, please do not use our site.",
-      "paragraph3": "This policy complies with the General Data Protection Regulation (GDPR) and French Data Protection Act."
-    }
-  },
   "cookies": {
     "badge": "Cookie Management",
     "title": "Cookie Policy",

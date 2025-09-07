@@ -784,17 +784,6 @@
     "address": "Dirección",
     "openingHours": "Horarios de apertura"
   },
-  "confidentialite": {
-    "badge": "Protección de Datos",
-    "title": "Política de Privacidad",
-    "subtitle": "HORSEMOBIL se compromete a proteger su privacidad y datos personales",
-    "introduction": {
-      "title": "Introducción",
-      "paragraph1": "Esta política de privacidad describe cómo HORSEMOBIL recopila, utiliza y protege su información personal cuando utiliza nuestro sitio web o servicios.",
-      "paragraph2": "Al utilizar nuestro sitio web, acepta las prácticas descritas en esta política de privacidad. Si no acepta estas prácticas, no utilice nuestro sitio.",
-      "paragraph3": "Esta política cumple con el Reglamento General de Protección de Datos (RGPD) y la ley francesa de Protección de Datos."
-    }
-  },
   "cookies": {
     "badge": "Gestión de Cookies",
     "title": "Política de Cookies",

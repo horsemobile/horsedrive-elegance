@@ -900,17 +900,6 @@
       "quoteButton": "Demander un devis"
     }
   },
-  "confidentialite": {
-    "badge": "Protection des données",
-    "title": "Politique de Confidentialité",
-    "subtitle": "HORSEMOBIL s'engage à protéger votre vie privée et vos données personnelles",
-    "introduction": {
-      "title": "Introduction",
-      "paragraph1": "La présente politique de confidentialité décrit comment HORSEMOBIL collecte, utilise et protège vos informations personnelles lorsque vous utilisez notre site web ou nos services.",
-      "paragraph2": "En utilisant notre site web, vous acceptez les pratiques décrites dans cette politique de confidentialité. Si vous n'acceptez pas ces pratiques, veuillez ne pas utiliser notre site.",
-      "paragraph3": "Cette politique est conforme au Règlement Général sur la Protection des Données (RGPD) et à la loi française Informatique et Libertés."
-    }
-  },
   "cookies": {
     "badge": "Gestion des cookies",
     "title": "Politique de Cookies",
