@@ -24,13 +24,13 @@ i18n
   .init({
     resources,
     fallbackLng: 'fr',
-    debug: true, // Temporarily enable debug for troubleshooting
+    debug: false, // Debug disabled
     
     detection: {
       order: ['querystring', 'localStorage', 'navigator', 'htmlTag'],
       lookupQuerystring: 'lng',
       lookupLocalStorage: 'i18nextLng',
-      caches: ['localStorage'],
+      caches: [], // Disable localStorage cache to force refresh
     },
 
     interpolation: {
