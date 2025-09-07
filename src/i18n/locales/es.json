@@ -804,5 +804,16 @@
       "paragraph1": "Una cookie es un pequeño archivo de texto almacenado en su dispositivo (ordenador, tablet, smartphone) cuando visita nuestro sitio web. Permite reconocer su navegador y recordar cierta información sobre usted o sus preferencias.",
       "paragraph2": "Las cookies facilitan su navegación, ayudan a asegurar su conexión y nos ayudan a entender mejor cómo se utiliza nuestro sitio para mejorarlo."
     }
+  },
+  "cgu": {
+    "badge": "Condiciones de uso",
+    "title": "Condiciones Generales de Uso",
+    "subtitle": "Reglas y condiciones de uso del sitio web HORSEMOBIL",
+    "preamble": {
+      "title": "Preámbulo",
+      "paragraph1": "Las presentes Condiciones Generales de Uso (CGU) rigen el acceso y uso del sitio web horsemobil.fr, editado por la empresa HORSEMOBIL SARL.",
+      "paragraph2": "El acceso al sitio implica la aceptación completa de estas CGU. Si no acepta estas condiciones, le pedimos que no use este sitio.",
+      "paragraph3": "HORSEMOBIL se reserva el derecho de modificar estas CGU en cualquier momento. Las modificaciones entran en vigor tan pronto como se publican en el sitio."
+    }
   }
 }

@@ -275,6 +275,17 @@
       "paragraph1": "Eväste on pieni tekstitiedosto, joka tallennetaan laitteellesi (tietokone, tabletti, älypuhelin), kun vierailet verkkosivustollamme. Se antaa meille mahdollisuuden tunnistaa selaimesi ja muistaa tiettyjä tietoja sinusta tai mieltymyksistäsi.",
       "paragraph2": "Evästeet helpottavat navigointiasi, auttavat turvaamaan yhteytesi ja auttavat meitä ymmärtämään paremmin, miten sivustoamme käytetään sen parantamiseksi."
     }
+  },
+  "cgu": {
+    "badge": "Käyttöehdot",
+    "title": "Yleiset käyttöehdot",
+    "subtitle": "HORSEMOBIL-sivuston käyttösäännöt ja -ehdot",
+    "preamble": {
+      "title": "Johdanto",
+      "paragraph1": "Nämä yleiset käyttöehdot (YKE) säätelevät horsemobil.fr-verkkosivuston käyttöä ja pääsyä siihen. Sivuston julkaisija on HORSEMOBIL SARL.",
+      "paragraph2": "Sivustolle pääsy tarkoittaa näiden YKE:n täydellistä hyväksymistä. Jos et hyväksy näitä ehtoja, pyydämme sinua olemaan käyttämättä tätä sivustoa.",
+      "paragraph3": "HORSEMOBIL pidättää oikeuden muuttaa näitä YKE:jä milloin tahansa. Muutokset tulevat voimaan heti, kun ne julkaistaan sivustolla."
+    }
   }
 }
   },

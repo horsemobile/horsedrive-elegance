@@ -275,6 +275,17 @@
       "paragraph1": "En cookie er en liten tekstfil som lagres på enheten din (datamaskin, nettbrett, smarttelefon) når du besøker nettstedet vårt. Den lar oss gjenkjenne nettleseren din og huske visse opplysninger om deg eller preferansene dine.",
       "paragraph2": "Cookies letter navigasjonen din, bidrar til å sikre tilkoblingen din og hjelper oss å forstå hvordan nettstedet vårt brukes for å forbedre det."
     }
+  },
+  "cgu": {
+    "badge": "Bruksvilkår",
+    "title": "Generelle bruksvilkår",
+    "subtitle": "Regler og vilkår for bruk av HORSEMOBIL-nettstedet",
+    "preamble": {
+      "title": "Innledning",
+      "paragraph1": "Disse generelle bruksvilkårene (GBV) styrer tilgang til og bruk av nettstedet horsemobil.fr, publisert av selskapet HORSEMOBIL SARL.",
+      "paragraph2": "Tilgang til nettstedet innebærer full aksept av disse GBV. Hvis du ikke aksepterer disse vilkårene, ber vi deg om ikke å bruke dette nettstedet.",
+      "paragraph3": "HORSEMOBIL forbeholder seg retten til å endre disse GBV når som helst. Endringer trer i kraft så snart de er publisert på nettstedet."
+    }
   }
 }
   },

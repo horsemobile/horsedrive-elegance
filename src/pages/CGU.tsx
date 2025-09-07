@@ -3,8 +3,10 @@ import Footer from '@/components/ui/footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { FileText, AlertTriangle, Shield, Gavel } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const CGU = () => {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -16,13 +18,13 @@ const CGU = () => {
             <div className="text-center max-w-4xl mx-auto">
               <Badge variant="outline" className="mb-4">
                 <FileText className="w-4 h-4 mr-2" />
-                Conditions d'utilisation
+                {t('cgu.badge')}
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Conditions Générales d'Utilisation
+                {t('cgu.title')}
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Règles et conditions d'utilisation du site HORSEMOBIL
+                {t('cgu.subtitle')}
               </p>
             </div>
           </div>
@@ -38,18 +40,18 @@ const CGU = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <FileText className="w-5 h-5 text-primary" />
-                    Préambule
+                    {t('cgu.preamble.title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation du site web horsemobil.fr, édité par la société HORSEMOBIL SARL.
+                    {t('cgu.preamble.paragraph1')}
                   </p>
                   <p className="text-muted-foreground">
-                    L'accès au site implique l'acceptation pleine et entière des présentes CGU. Si vous n'acceptez pas ces conditions, nous vous demandons de ne pas utiliser ce site.
+                    {t('cgu.preamble.paragraph2')}
                   </p>
                   <p className="text-muted-foreground">
-                    HORSEMOBIL se réserve le droit de modifier à tout moment les présentes CGU. Les modifications prennent effet dès leur publication sur le site.
+                    {t('cgu.preamble.paragraph3')}
                   </p>
                 </CardContent>
               </Card>

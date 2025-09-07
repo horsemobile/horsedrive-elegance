@@ -769,5 +769,16 @@
       "paragraph1": "A cookie is a small text file stored on your device (computer, tablet, smartphone) when you visit our website. It allows us to recognize your browser and remember certain information about you or your preferences.",
       "paragraph2": "Cookies facilitate your navigation, help secure your connection and help us better understand how our site is used to improve it."
     }
+  },
+  "cgu": {
+    "badge": "Terms of Use",
+    "title": "Terms and Conditions of Use",
+    "subtitle": "Rules and conditions for using the HORSEMOBIL website",
+    "preamble": {
+      "title": "Preamble",
+      "paragraph1": "These General Terms of Use (GTU) govern access to and use of the horsemobil.fr website, published by HORSEMOBIL SARL.",
+      "paragraph2": "Access to the site implies full acceptance of these GTU. If you do not accept these conditions, we ask you not to use this site.",
+      "paragraph3": "HORSEMOBIL reserves the right to modify these GTU at any time. Modifications take effect as soon as they are published on the site."
+    }
   }
 }
