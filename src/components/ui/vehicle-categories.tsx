@@ -116,11 +116,6 @@ export const VehicleCategories = () => {
                   </p>
                 </div>
 
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs text-muted-foreground">
-                    {category.vehicleCount} {t('categories.vehiclesAvailable')}
-                  </span>
-                </div>
 
                 <Button asChild className="w-full group/btn" size="sm">
                   <Link to={category.link}>
