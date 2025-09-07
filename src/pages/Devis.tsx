@@ -185,9 +185,9 @@ const Devis = () => {
                           <SelectValue placeholder={t('order.form.vehicle.categoryPlaceholder')} />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="vans">Vans</SelectItem>
-                          <SelectItem value="camions">Camions</SelectItem>
-                          <SelectItem value="vans_amenage">Vans Aménagés</SelectItem>
+                          <SelectItem value="vans">{t('order.form.vehicle.categories.vans')}</SelectItem>
+                          <SelectItem value="camions">{t('order.form.vehicle.categories.camions')}</SelectItem>
+                          <SelectItem value="vans_amenage">{t('order.form.vehicle.categories.vans_amenage')}</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -212,7 +212,7 @@ const Devis = () => {
                     <div className="mt-4 p-4 bg-muted rounded-lg">
                       <h4 className="font-semibold">{t('order.form.vehicle.summary')}</h4>
                       <p className="text-sm text-muted-foreground">
-                        <strong>{t('order.form.vehicle.category').replace(' *', '')} :</strong> {selectedCategory === 'vans' ? 'Van' : selectedCategory === 'camions' ? 'Camion' : 'Van Aménagé'}
+                        <strong>{t('order.form.vehicle.category').replace(' *', '')} :</strong> {t(`order.form.vehicle.categories.${selectedCategory}`)}
                       </p>
                       <p className="text-sm text-muted-foreground">
                         <strong>{t('order.form.vehicle.name').replace(' *', '')} :</strong> {vehicleName}

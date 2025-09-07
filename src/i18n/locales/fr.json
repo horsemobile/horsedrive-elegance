@@ -89,7 +89,12 @@
         "namePlaceholder": "Ex: Mercedes Sprinter 2024, DAF CF 440, etc.",
         "nameDescription": "Décrivez le véhicule que vous souhaitez (marque, modèle, année...)",
         "summary": "Récapitulatif de votre demande",
-        "customPrice": "Prix sur devis - Nous vous ferons une offre personnalisée"
+        "customPrice": "Prix sur devis - Nous vous ferons une offre personnalisée",
+        "categories": {
+          "vans": "Vans",
+          "camions": "Camions", 
+          "vans_amenage": "Vans Aménagés"
+        }
       },
       "contact": {
         "title": "Informations de contact",

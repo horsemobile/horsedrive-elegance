@@ -93,7 +93,12 @@
         "namePlaceholder": "Ej: Mercedes Sprinter 2024, DAF CF 440, etc.",
         "nameDescription": "Describe el vehículo que deseas (marca, modelo, año...)",
         "summary": "Resumen de tu solicitud",
-        "customPrice": "Precio bajo presupuesto - Te haremos una oferta personalizada"
+        "customPrice": "Precio bajo presupuesto - Te haremos una oferta personalizada",
+        "categories": {
+          "vans": "Furgonetas",
+          "camions": "Camiones",
+          "vans_amenage": "Furgonetas Acondicionadas"
+        }
       },
       "contact": {
         "title": "Información de Contacto",
