@@ -411,13 +411,6 @@
     },
     "description": "Découvrez les témoignages de nos clients satisfaits qui nous font confiance pour leurs besoins de transport équestre."
   },
-  "stats": {
-    "experienceDesc": "D'expertise dans le transport équestre",
-    "customersDesc": "Nous font confiance chaque année",
-    "vehiclesDesc": "Livrés avec succès",
-    "satisfactionTitle": "Satisfaction Client",
-    "satisfactionDesc": "Taux de recommandation"
-  },
   "pages": {
     "contact": {
       "title": "Contactez-nous",

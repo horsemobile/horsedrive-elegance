@@ -143,8 +143,25 @@ const StatCard = ({ stat }: { stat: Stat }) => {
 };
 
 export const StatsSection = () => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const stats = useStatsData();
+  
+  // Debug logs
+  console.log('StatsSection render:', { 
+    ready, 
+    title: t('stats.title'),
+    subtitle: t('stats.subtitle')
+  });
+  
+  if (!ready) {
+    return (
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 text-center">
+          <div className="animate-pulse">Chargement des statistiques...</div>
+        </div>
+      </section>
+    );
+  }
   
   return (
     <section className="py-20 bg-background">
