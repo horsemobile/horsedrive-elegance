@@ -19,7 +19,7 @@ const Devis = () => {
   const { t } = useTranslation();
   const [searchParams] = useSearchParams();
   const { toast } = useToast();
-  const { vehicles } = useVehicles();
+  const { vehicles, loading, error } = useVehicles();
   
   const [selectedVehicle, setSelectedVehicle] = useState<string>('');
   const [customerName, setCustomerName] = useState('');
@@ -27,7 +27,12 @@ const Devis = () => {
   const [customerPhone, setCustomerPhone] = useState('');
   const [deliveryDate, setDeliveryDate] = useState('');
   const [message, setMessage] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  // Debug logging
+  console.log('Vehicles data:', vehicles);
+  console.log('Vehicles loading:', loading);
+  console.log('Vehicles error:', error);
 
   // Pre-select vehicle from URL parameter
   useEffect(() => {
@@ -43,7 +48,7 @@ const Devis = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
+    setSubmitting(true);
 
     try {
       if (!selectedVehicle || !customerName || !customerEmail) {
@@ -97,9 +102,8 @@ const Devis = () => {
         variant: "destructive",
       });
     } finally {
-      setLoading(false);
+      setSubmitting(false);
     }
-  };
   
   return (
     <div className="min-h-screen bg-background">
@@ -170,11 +174,17 @@ const Devis = () => {
                         <SelectValue placeholder={t('order.form.vehicle.placeholder')} />
                       </SelectTrigger>
                       <SelectContent>
-                        {vehicles.map((vehicle) => (
-                          <SelectItem key={vehicle.id} value={vehicle.id}>
-                            {vehicle.name} - {vehicle.sale_price}€
+                        {vehicles.length === 0 ? (
+                          <SelectItem value="no-vehicles" disabled>
+                            {loading ? "Chargement..." : "Aucun véhicule disponible"}
                           </SelectItem>
-                        ))}
+                        ) : (
+                          vehicles.map((vehicle) => (
+                            <SelectItem key={vehicle.id} value={vehicle.id}>
+                              {vehicle.name} - {vehicle.sale_price}€
+                            </SelectItem>
+                          ))
+                        )}
                       </SelectContent>
                     </Select>
                   </div>
@@ -262,8 +272,8 @@ const Devis = () => {
                   </div>
                 </div>
 
-                <Button type="submit" className="w-full" size="lg" disabled={loading}>
-                  {loading ? t('order.form.submitting') : t('order.form.submit')}
+                <Button type="submit" className="w-full" size="lg" disabled={submitting}>
+                  {submitting ? t('order.form.submitting') : t('order.form.submit')}
                 </Button>
               </CardContent>
             </Card>
