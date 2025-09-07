@@ -86,7 +86,14 @@
         "title": "Vehicle",
         "select": "Select a vehicle *",
         "placeholder": "Choose a vehicle",
-        "price": "Price"
+        "price": "Price",
+        "category": "Vehicle category *",
+        "categoryPlaceholder": "Choose a category",
+        "name": "Desired vehicle name *",
+        "namePlaceholder": "Ex: Mercedes Sprinter 2024, DAF CF 440, etc.",
+        "nameDescription": "Describe the vehicle you want (brand, model, year...)",
+        "summary": "Summary of your request",
+        "customPrice": "Price on quote - We will make you a personalized offer"
       },
       "contact": {
         "title": "Contact Information",

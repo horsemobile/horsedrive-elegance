@@ -176,13 +176,13 @@ const Devis = () => {
                   {/* Category Selection */}
                   <div className="space-y-4">
                     <div className="space-y-2">
-                      <Label htmlFor="category">Catégorie de véhicule *</Label>
+                      <Label htmlFor="category">{t('order.form.vehicle.category')}</Label>
                       <Select value={selectedCategory} onValueChange={(value) => {
                         setSelectedCategory(value);
                         setVehicleName(''); // Reset vehicle name when category changes
                       }}>
                         <SelectTrigger>
-                          <SelectValue placeholder="Choisissez une catégorie" />
+                          <SelectValue placeholder={t('order.form.vehicle.categoryPlaceholder')} />
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="vans">Vans</SelectItem>
@@ -194,31 +194,31 @@ const Devis = () => {
 
                     {/* Vehicle Name Input */}
                     <div className="space-y-2">
-                      <Label htmlFor="vehicleName">Nom du véhicule souhaité *</Label>
+                      <Label htmlFor="vehicleName">{t('order.form.vehicle.name')}</Label>
                       <Input 
                         id="vehicleName"
                         value={vehicleName}
                         onChange={(e) => setVehicleName(e.target.value)}
-                        placeholder="Ex: Mercedes Sprinter 2024, DAF CF 440, etc."
+                        placeholder={t('order.form.vehicle.namePlaceholder')}
                         required
                       />
                       <p className="text-sm text-muted-foreground">
-                        Décrivez le véhicule que vous souhaitez (marque, modèle, année...)
+                        {t('order.form.vehicle.nameDescription')}
                       </p>
                     </div>
                   </div>
                   
                   {getVehicleInfo() && (
                     <div className="mt-4 p-4 bg-muted rounded-lg">
-                      <h4 className="font-semibold">Récapitulatif de votre demande</h4>
+                      <h4 className="font-semibold">{t('order.form.vehicle.summary')}</h4>
                       <p className="text-sm text-muted-foreground">
-                        <strong>Catégorie :</strong> {selectedCategory === 'vans' ? 'Van' : selectedCategory === 'camions' ? 'Camion' : 'Van Aménagé'}
+                        <strong>{t('order.form.vehicle.category').replace(' *', '')} :</strong> {selectedCategory === 'vans' ? 'Van' : selectedCategory === 'camions' ? 'Camion' : 'Van Aménagé'}
                       </p>
                       <p className="text-sm text-muted-foreground">
-                        <strong>Véhicule :</strong> {vehicleName}
+                        <strong>{t('order.form.vehicle.name').replace(' *', '')} :</strong> {vehicleName}
                       </p>
                       <div className="mt-2 text-sm text-primary">
-                        Prix sur devis - Nous vous ferons une offre personnalisée
+                        {t('order.form.vehicle.customPrice')}
                       </div>
                     </div>
                   )}

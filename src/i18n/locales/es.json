@@ -86,7 +86,14 @@
         "title": "Vehículo",
         "select": "Selecciona un vehículo *",
         "placeholder": "Elige un vehículo",
-        "price": "Precio"
+        "price": "Precio",
+        "category": "Categoría de vehículo *",
+        "categoryPlaceholder": "Elegir una categoría",
+        "name": "Nombre del vehículo deseado *",
+        "namePlaceholder": "Ej: Mercedes Sprinter 2024, DAF CF 440, etc.",
+        "nameDescription": "Describe el vehículo que deseas (marca, modelo, año...)",
+        "summary": "Resumen de tu solicitud",
+        "customPrice": "Precio bajo presupuesto - Te haremos una oferta personalizada"
       },
       "contact": {
         "title": "Información de Contacto",
