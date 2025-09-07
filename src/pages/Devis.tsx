@@ -13,16 +13,15 @@ import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
-import { useVehicles, Vehicle } from '@/hooks/useVehicles';
 
 const Devis = () => {
   const { t } = useTranslation();
   const [searchParams] = useSearchParams();
   const { toast } = useToast();
-  const { vehicles, loading, error } = useVehicles();
+  // Removed useVehicles hook as we no longer need it
   
   const [selectedCategory, setSelectedCategory] = useState<string>('');
-  const [selectedVehicle, setSelectedVehicle] = useState<string>('');
+  const [vehicleName, setVehicleName] = useState<string>('');
   const [customerName, setCustomerName] = useState('');
   const [customerEmail, setCustomerEmail] = useState('');
   const [customerPhone, setCustomerPhone] = useState('');
@@ -31,24 +30,25 @@ const Devis = () => {
   const [submitting, setSubmitting] = useState(false);
 
   // Debug logging
-  console.log('Vehicles data:', vehicles);
-  console.log('Vehicles loading:', loading);
-  console.log('Vehicles error:', error);
+  console.log('Selected category:', selectedCategory);
+  console.log('Vehicle name:', vehicleName);
 
-  // Pre-select vehicle from URL parameter and set category accordingly
+  // Pre-select category from URL parameter if vehicle ID is provided
   useEffect(() => {
     const vehicleId = searchParams.get('vehicle');
-    if (vehicleId && vehicles.length > 0) {
-      const vehicle = vehicles.find(v => v.id === vehicleId);
-      if (vehicle) {
-        setSelectedCategory(vehicle.category);
-        setSelectedVehicle(vehicleId);
-      }
+    const category = searchParams.get('category');
+    if (category) {
+      setSelectedCategory(category);
     }
-  }, [searchParams, vehicles]);
+    // We could potentially fetch vehicle name from ID if needed in the future
+  }, [searchParams]);
 
-  const getSelectedVehicleInfo = (): Vehicle | null => {
-    return vehicles.find(v => v.id === selectedVehicle) || null;
+  const getVehicleInfo = () => {
+    if (!vehicleName || !selectedCategory) return null;
+    return {
+      name: vehicleName,
+      category: selectedCategory
+    };
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -56,7 +56,7 @@ const Devis = () => {
     setSubmitting(true);
 
     try {
-      if (!selectedVehicle || !customerName || !customerEmail) {
+      if (!vehicleName || !selectedCategory || !customerName || !customerEmail) {
         toast({
           title: t('order.form.error.title'),
           description: t('order.form.validation.required'),
@@ -65,19 +65,17 @@ const Devis = () => {
         return;
       }
 
-      const selectedVehicleInfo = getSelectedVehicleInfo();
-      const purchasePrice = selectedVehicleInfo?.sale_price || 0;
-
+      // For custom vehicle orders, we don't have a predefined price
       const { error } = await supabase
         .from('orders')
         .insert({
-          vehicle_id: selectedVehicle,
+          vehicle_id: null, // No specific vehicle ID since it's a custom request
           customer_name: customerName,
           customer_email: customerEmail,
           customer_phone: customerPhone,
           delivery_date: deliveryDate || null,
-          purchase_price: purchasePrice,
-          message: message,
+          purchase_price: null, // Will be determined later
+          message: `Catégorie: ${selectedCategory}\nVéhicule demandé: ${vehicleName}\n\n${message}`,
           status: 'pending'
         });
 
@@ -96,9 +94,9 @@ const Devis = () => {
       setCustomerPhone('');
       setDeliveryDate('');
       setMessage('');
-      if (!searchParams.get('vehicle')) {
+      if (!searchParams.get('category')) {
         setSelectedCategory('');
-        setSelectedVehicle('');
+        setVehicleName('');
       }
 
     } catch (error) {
@@ -181,7 +179,7 @@ const Devis = () => {
                       <Label htmlFor="category">Catégorie de véhicule *</Label>
                       <Select value={selectedCategory} onValueChange={(value) => {
                         setSelectedCategory(value);
-                        setSelectedVehicle(''); // Reset vehicle when category changes
+                        setVehicleName(''); // Reset vehicle name when category changes
                       }}>
                         <SelectTrigger>
                           <SelectValue placeholder="Choisissez une catégorie" />
@@ -194,38 +192,35 @@ const Devis = () => {
                       </Select>
                     </div>
 
-                    {/* Vehicle Selection - only show when category is selected */}
+                    {/* Vehicle Name Input - only show when category is selected */}
                     {selectedCategory && (
                       <div className="space-y-2">
-                        <Label htmlFor="vehicle">{t('order.form.vehicle.select')}</Label>
-                        <Select value={selectedVehicle} onValueChange={setSelectedVehicle}>
-                          <SelectTrigger>
-                            <SelectValue placeholder={t('order.form.vehicle.placeholder')} />
-                          </SelectTrigger>
-                          <SelectContent>
-                            {vehicles.length === 0 ? (
-                              <SelectItem value="no-vehicles" disabled>
-                                {loading ? "Chargement..." : "Aucun véhicule disponible"}
-                              </SelectItem>
-                            ) : (
-                              vehicles.map((vehicle) => (
-                                <SelectItem key={vehicle.id} value={vehicle.id}>
-                                  {vehicle.name} - {vehicle.sale_price}€
-                                </SelectItem>
-                              ))
-                            )}
-                          </SelectContent>
-                        </Select>
+                        <Label htmlFor="vehicleName">Nom du véhicule souhaité *</Label>
+                        <Input 
+                          id="vehicleName"
+                          value={vehicleName}
+                          onChange={(e) => setVehicleName(e.target.value)}
+                          placeholder="Ex: Mercedes Sprinter 2024, DAF CF 440, etc."
+                          required
+                        />
+                        <p className="text-sm text-muted-foreground">
+                          Décrivez le véhicule que vous souhaitez (marque, modèle, année...)
+                        </p>
                       </div>
                     )}
                   </div>
                   
-                  {getSelectedVehicleInfo() && (
+                  {getVehicleInfo() && (
                     <div className="mt-4 p-4 bg-muted rounded-lg">
-                      <h4 className="font-semibold">{getSelectedVehicleInfo()?.name}</h4>
-                      <p className="text-sm text-muted-foreground">{getSelectedVehicleInfo()?.description}</p>
-                      <div className="mt-2 text-lg font-bold text-primary">
-                        {t('order.form.vehicle.price')}: {getSelectedVehicleInfo()?.sale_price}€
+                      <h4 className="font-semibold">Récapitulatif de votre demande</h4>
+                      <p className="text-sm text-muted-foreground">
+                        <strong>Catégorie :</strong> {selectedCategory === 'vans' ? 'Van' : selectedCategory === 'camions' ? 'Camion' : 'Van Aménagé'}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        <strong>Véhicule :</strong> {vehicleName}
+                      </p>
+                      <div className="mt-2 text-sm text-primary">
+                        Prix sur devis - Nous vous ferons une offre personnalisée
                       </div>
                     </div>
                   )}
