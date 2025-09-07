@@ -931,5 +931,27 @@
       "paragraph2": "L'accès au site implique l'acceptation pleine et entière des présentes CGU. Si vous n'acceptez pas ces conditions, nous vous demandons de ne pas utiliser ce site.",
       "paragraph3": "HORSEMOBIL se réserve le droit de modifier à tout moment les présentes CGU. Les modifications prennent effet dès leur publication sur le site."
     }
+  },
+  "mentionsLegales": {
+    "badge": "Informations légales",
+    "title": "Mentions Légales",
+    "subtitle": "Informations légales et identification de l'éditeur du site HORSEMOBIL",
+    "companyInfo": {
+      "title": "Informations sur l'entreprise",
+      "companyName": "Dénomination sociale",
+      "companyNameValue": "HORSEMOBIL SARL",
+      "legalForm": "Forme juridique",
+      "legalFormValue": "Société à Responsabilité Limitée (SARL)",
+      "capital": "Capital social",
+      "capitalValue": "50 000 euros",
+      "siret": "Numéro SIRET",
+      "siretValue": "XXX XXX XXX 00012",
+      "rcs": "RCS",
+      "rcsValue": "Lyon B XXX XXX XXX",
+      "vat": "Numéro de TVA intracommunautaire",
+      "vatValue": "FR XX XXX XXX XXX",
+      "address": "Adresse du siège social",
+      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, France"
+    }
   }
 }

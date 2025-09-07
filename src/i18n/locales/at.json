@@ -918,5 +918,27 @@
       "paragraph2": "Der Zugang zur Website bedeutet die vollständige Annahme dieser AGB. Wenn Sie diese Bedingungen nicht akzeptieren, bitten wir Sie, diese Website nicht zu nutzen.",
       "paragraph3": "HORSEMOBIL behält sich das Recht vor, diese AGB jederzeit zu ändern. Änderungen treten in Kraft, sobald sie auf der Website veröffentlicht werden."
     }
+  },
+  "mentionsLegales": {
+    "badge": "Rechtliche Informationen",
+    "title": "Impressum",
+    "subtitle": "Rechtliche Informationen und Identifikation des HORSEMOBIL Website-Herausgebers",
+    "companyInfo": {
+      "title": "Unternehmensinformationen",
+      "companyName": "Firmenname",
+      "companyNameValue": "HORSEMOBIL SARL",
+      "legalForm": "Rechtsform",
+      "legalFormValue": "Gesellschaft mit beschränkter Haftung (SARL)",
+      "capital": "Stammkapital",
+      "capitalValue": "50.000 Euro",
+      "siret": "SIRET-Nummer",
+      "siretValue": "XXX XXX XXX 00012",
+      "rcs": "Handelsregister",
+      "rcsValue": "Lyon B XXX XXX XXX",
+      "vat": "EU-Umsatzsteuer-ID",
+      "vatValue": "FR XX XXX XXX XXX",
+      "address": "Geschäftssitz",
+      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, Frankreich"
+    }
   }
 }

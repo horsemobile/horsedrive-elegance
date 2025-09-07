@@ -780,5 +780,27 @@
       "paragraph2": "Access to the site implies full acceptance of these GTU. If you do not accept these conditions, we ask you not to use this site.",
       "paragraph3": "HORSEMOBIL reserves the right to modify these GTU at any time. Modifications take effect as soon as they are published on the site."
     }
+  },
+  "mentionsLegales": {
+    "badge": "Legal Information",
+    "title": "Legal Notice",
+    "subtitle": "Legal information and identification of the HORSEMOBIL website publisher",
+    "companyInfo": {
+      "title": "Company Information",
+      "companyName": "Company Name",
+      "companyNameValue": "HORSEMOBIL SARL",
+      "legalForm": "Legal Form",
+      "legalFormValue": "Limited Liability Company (SARL)",
+      "capital": "Share Capital",
+      "capitalValue": "50,000 euros",
+      "siret": "SIRET Number",
+      "siretValue": "XXX XXX XXX 00012",
+      "rcs": "Company Registration",
+      "rcsValue": "Lyon B XXX XXX XXX",
+      "vat": "EU VAT Number",
+      "vatValue": "FR XX XXX XXX XXX",
+      "address": "Registered Office Address",
+      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, France"
+    }
   }
 }

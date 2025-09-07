@@ -286,6 +286,28 @@
       "paragraph2": "Sivustolle pääsy tarkoittaa näiden YKE:n täydellistä hyväksymistä. Jos et hyväksy näitä ehtoja, pyydämme sinua olemaan käyttämättä tätä sivustoa.",
       "paragraph3": "HORSEMOBIL pidättää oikeuden muuttaa näitä YKE:jä milloin tahansa. Muutokset tulevat voimaan heti, kun ne julkaistaan sivustolla."
     }
+  },
+  "mentionsLegales": {
+    "badge": "Oikeudellinen tieto",
+    "title": "Lakisääteinen ilmoitus",
+    "subtitle": "Oikeudellista tietoa ja HORSEMOBIL-verkkosivuston julkaisijan tunnistaminen",
+    "companyInfo": {
+      "title": "Yrityksen tiedot",
+      "companyName": "Yrityksen nimi",
+      "companyNameValue": "HORSEMOBIL SARL",
+      "legalForm": "Juridinen muoto",
+      "legalFormValue": "Rajoitettu vastuuyhtiö (SARL)",
+      "capital": "Osakepääoma",
+      "capitalValue": "50 000 euroa",
+      "siret": "SIRET-numero",
+      "siretValue": "XXX XXX XXX 00012",
+      "rcs": "Kaupparekisteri",
+      "rcsValue": "Lyon B XXX XXX XXX",
+      "vat": "EU ALV-numero",
+      "vatValue": "FR XX XXX XXX XXX",
+      "address": "Rekisteröity toimisto-osoite",
+      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, Ranska"
+    }
   }
 }
   },

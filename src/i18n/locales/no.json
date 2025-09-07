@@ -286,6 +286,28 @@
       "paragraph2": "Tilgang til nettstedet innebærer full aksept av disse GBV. Hvis du ikke aksepterer disse vilkårene, ber vi deg om ikke å bruke dette nettstedet.",
       "paragraph3": "HORSEMOBIL forbeholder seg retten til å endre disse GBV når som helst. Endringer trer i kraft så snart de er publisert på nettstedet."
     }
+  },
+  "mentionsLegales": {
+    "badge": "Juridisk informasjon",
+    "title": "Juridisk merknad",
+    "subtitle": "Juridisk informasjon og identifikasjon av HORSEMOBIL nettstedutgiver",
+    "companyInfo": {
+      "title": "Selskapsinformasjon",
+      "companyName": "Firmanavn",
+      "companyNameValue": "HORSEMOBIL SARL",
+      "legalForm": "Juridisk form",
+      "legalFormValue": "Aksjeselskap med begrenset ansvar (SARL)",
+      "capital": "Aksjekapital",
+      "capitalValue": "50 000 euro",
+      "siret": "SIRET-nummer",
+      "siretValue": "XXX XXX XXX 00012",
+      "rcs": "Foretaksregister",
+      "rcsValue": "Lyon B XXX XXX XXX",
+      "vat": "EU MVA-nummer",
+      "vatValue": "FR XX XXX XXX XXX",
+      "address": "Registrert kontoadresse",
+      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, Frankrike"
+    }
   }
 }
   },
