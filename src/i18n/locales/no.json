@@ -747,5 +747,108 @@
       "budget100kPlus": "100 000€+",
       "submitQuote": "Send Tilbudsforespørsel"
     }
+  },
+  "financing": {
+    "hero": {
+      "badge": "Finansieringsløsninger",
+      "title": "Finansiering",
+      "description": "Finn finansieringsløsningen som passer deg. Våre bankpartnere tilbyr deg fordelaktige vilkår for å realisere prosjektet ditt.",
+      "simulateButton": "Simuler min finansiering",
+      "advisorButton": "Snakk med en rådgiver"
+    },
+    "options": {
+      "title": "Våre finansieringsløsninger",
+      "description": "Velg formelen som passer best til din økonomiske situasjon",
+      "classicCredit": {
+        "title": "Klassisk kreditt",
+        "description": "Tradisjonell finansiering med personlig bidrag",
+        "rate": "0% rentefritt",
+        "duration": "12 til 84 måneder",
+        "advantages": ["0% rente", "Fleksibel nedbetaling", "Valgfri forsikring"]
+      },
+      "leasing": {
+        "title": "Leasing",
+        "description": "Leie med kjøpsopsjon",
+        "rate": "0% rentefritt",
+        "duration": "24 til 60 måneder",
+        "advantages": ["Ingen forskudd", "Reduserte månedlige betalinger", "Kjøpsopsjon"]
+      },
+      "balloonCredit": {
+        "title": "Ballongkreditt",
+        "description": "Reduserte månedlige betalinger med endelig bidrag",
+        "rate": "0% rentefritt",
+        "duration": "24 til 48 måneder",
+        "advantages": ["Lette månedlige betalinger", "Endelig fleksibilitet", "0% rente"]
+      },
+      "rateLabel": "Rente",
+      "durationLabel": "Varighet",
+      "advantagesLabel": "Fordeler:",
+      "learnMoreButton": "Lær mer"
+    },
+    "process": {
+      "title": "Hvordan fungerer det?",
+      "description": "En enkel og rask prosess for å få finansiering",
+      "steps": [
+        {
+          "title": "Simulering",
+          "description": "Beregn din finansieringskapasitet online"
+        },
+        {
+          "title": "Mappe",
+          "description": "Bygg din mappe med våre rådgivere"
+        },
+        {
+          "title": "Validering",
+          "description": "Få et raskt svar fra våre partnere"
+        },
+        {
+          "title": "Signatur",
+          "description": "Fullfør finansieringen og hent kjøretøyet ditt"
+        }
+      ]
+    },
+    "documents": {
+      "badge": "Nødvendige dokumenter",
+      "title": "Forbered din mappe",
+      "description": "For å fremskynde behandlingen av forespørselen din, forbered disse essensielle dokumentene.",
+      "list": [
+        "Identitetsbevis",
+        "Inntektsbevis (3 siste lønnsslipper)",
+        "Adressebevis",
+        "Kontoutskrifter (3 siste måneder)",
+        "Skattemelding",
+        "Bevis på personlig bidrag"
+      ]
+    },
+    "simulator": {
+      "title": "Finansieringssimulator",
+      "description": "Beregn dine månedlige betalinger med få klikk",
+      "freeSimulation": "Gratis simulering",
+      "personalizedEstimate": "Få et personlig estimat",
+      "startButton": "Start simulering"
+    },
+    "partners": {
+      "title": "Våre finansielle partnere",
+      "description": "Vi arbeider med de største finansielle institusjonene for å tilby deg de beste vilkårene"
+    },
+    "cta": {
+      "title": "Trenger du hjelp med finansieringen din?",
+      "description": "Våre rådgivere er her for å støtte deg i prosjektet ditt og finne den beste løsningen",
+      "appointmentButton": "Bestill time",
+      "quoteButton": "Be om tilbud"
+    }
+  },
+  "common": {
+    "learnMore": "Lær mer",
+    "contactUs": "Kontakt oss",
+    "backHome": "Tilbake hjem",
+    "comingSoon": "Kommer snart",
+    "readMore": "Les mer",
+    "getQuote": "Få tilbud",
+    "callUs": "Ring oss",
+    "email": "E-post",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "openingHours": "Åpningstider"
   }
 }

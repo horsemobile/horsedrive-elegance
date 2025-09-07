@@ -815,5 +815,76 @@
       "budget100kPlus": "100.000€+",
       "submitQuote": "Angebot Anfordern"
     }
+  },
+  "financing": {
+    "hero": {
+      "badge": "Finanzierungslösungen",
+      "title": "Finanzierung",
+      "description": "Finden Sie die Finanzierungslösung, die zu Ihnen passt. Unsere Bankpartner bieten Ihnen vorteilhafte Konditionen zur Verwirklichung Ihres Projekts.",
+      "simulateButton": "Meine Finanzierung simulieren",
+      "advisorButton": "Mit einem Berater sprechen"
+    },
+    "options": {
+      "title": "Unsere Finanzierungslösungen",
+      "description": "Wählen Sie die Formel, die am besten zu Ihrer finanziellen Situation passt",
+      "classicCredit": {
+        "title": "Klassischer Kredit",
+        "description": "Traditionelle Finanzierung mit Eigenanteil",
+        "rate": "0% zinsfrei",
+        "duration": "12 bis 84 Monate",
+        "advantages": ["0% Zinssatz", "Flexible Rückzahlung", "Optionale Versicherung"]
+      },
+      "leasing": {
+        "title": "Leasing",
+        "description": "Miete mit Kaufoption",
+        "rate": "0% zinsfrei",
+        "duration": "24 bis 60 Monate",
+        "advantages": ["Keine Anzahlung", "Reduzierte Monatsraten", "Kaufoption"]
+      },
+      "balloonCredit": {
+        "title": "Ballonkredit",
+        "description": "Reduzierte Monatsraten mit Schlussrate",
+        "rate": "0% zinsfrei",
+        "duration": "24 bis 48 Monate",
+        "advantages": ["Reduzierte Monatsraten", "Endflexibilität", "0% Zinssatz"]
+      },
+      "rateLabel": "Zinssatz",
+      "durationLabel": "Laufzeit",
+      "advantagesLabel": "Vorteile:",
+      "learnMoreButton": "Mehr erfahren"
+    },
+    "process": {
+      "title": "Wie funktioniert es?",
+      "description": "Ein einfacher und schneller Prozess zur Finanzierung",
+      "steps": [
+        {"title": "Simulation", "description": "Berechnen Sie Ihre Finanzierungskapazität online"},
+        {"title": "Unterlagen", "description": "Stellen Sie Ihre Unterlagen mit unseren Beratern zusammen"},
+        {"title": "Validierung", "description": "Erhalten Sie eine schnelle Antwort von unseren Partnern"},
+        {"title": "Unterschrift", "description": "Schließen Sie Ihre Finanzierung ab und holen Sie Ihr Fahrzeug ab"}
+      ]
+    },
+    "documents": {
+      "badge": "Erforderliche Dokumente",
+      "title": "Bereiten Sie Ihre Unterlagen vor",
+      "description": "Um die Bearbeitung Ihres Antrags zu beschleunigen, bereiten Sie diese wichtigen Dokumente vor.",
+      "list": ["Ausweisdokumente", "Einkommensnachweise (3 letzte Gehaltsabrechnungen)", "Wohnsitznachweis", "Kontoauszüge (3 letzte Monate)", "Steuerbescheid", "Nachweis des Eigenanteils"]
+    },
+    "simulator": {
+      "title": "Finanzierungsrechner",
+      "description": "Berechnen Sie Ihre monatlichen Raten mit wenigen Klicks",
+      "freeSimulation": "Kostenlose Simulation",
+      "personalizedEstimate": "Erhalten Sie eine personalisierte Schätzung",
+      "startButton": "Simulation starten"
+    },
+    "partners": {
+      "title": "Unsere Finanzpartner",
+      "description": "Wir arbeiten mit den größten Finanzinstituten zusammen, um Ihnen die besten Konditionen zu bieten"
+    },
+    "cta": {
+      "title": "Benötigen Sie Hilfe bei Ihrer Finanzierung?",
+      "description": "Unsere Berater sind hier, um Sie bei Ihrem Projekt zu unterstützen und die beste Lösung zu finden",
+      "appointmentButton": "Termin vereinbaren",
+      "quoteButton": "Angebot anfordern"
+    }
   }
 }

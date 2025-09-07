@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { 
   CreditCard, 
   Calculator, 
@@ -19,55 +20,41 @@ import {
 } from 'lucide-react';
 
 const Financement = () => {
+  const { t } = useTranslation();
+
   const financingOptions = [
     {
-      title: "Crédit classique",
-      description: "Financement traditionnel avec apport personnel",
-      rate: "0% sans intérêt",
-      duration: "12 à 84 mois",
-      advantages: ["Taux 0%", "Remboursement flexible", "Assurance optionnelle"],
+      title: t('financing.options.classicCredit.title'),
+      description: t('financing.options.classicCredit.description'),
+      rate: t('financing.options.classicCredit.rate'),
+      duration: t('financing.options.classicCredit.duration'),
+      advantages: t('financing.options.classicCredit.advantages', { returnObjects: true }) as string[],
       icon: CreditCard
     },
     {
-      title: "Leasing",
-      description: "Location avec option d'achat",
-      rate: "0% sans intérêt",
-      duration: "24 à 60 mois",
-      advantages: ["Pas d'apport", "Mensualités réduites", "Option rachat"],
+      title: t('financing.options.leasing.title'),
+      description: t('financing.options.leasing.description'),
+      rate: t('financing.options.leasing.rate'),
+      duration: t('financing.options.leasing.duration'),
+      advantages: t('financing.options.leasing.advantages', { returnObjects: true }) as string[],
       icon: FileText
     },
     {
-      title: "Crédit ballon",
-      description: "Mensualités réduites avec apport final",
-      rate: "0% sans intérêt",
-      duration: "24 à 48 mois",
-      advantages: ["Mensualités allégées", "Flexibilité finale", "Taux 0%"],
+      title: t('financing.options.balloonCredit.title'),
+      description: t('financing.options.balloonCredit.description'),
+      rate: t('financing.options.balloonCredit.rate'),
+      duration: t('financing.options.balloonCredit.duration'),
+      advantages: t('financing.options.balloonCredit.advantages', { returnObjects: true }) as string[],
       icon: TrendingUp
     }
   ];
 
-  const steps = [
-    {
-      number: "01",
-      title: "Simulation",
-      description: "Calculez votre capacité de financement en ligne"
-    },
-    {
-      number: "02",
-      title: "Dossier",
-      description: "Constituez votre dossier avec nos conseillers"
-    },
-    {
-      number: "03",
-      title: "Validation",
-      description: "Obtenez une réponse rapide de nos partenaires"
-    },
-    {
-      number: "04",
-      title: "Signature",
-      description: "Finalisez votre financement et récupérez votre véhicule"
-    }
-  ];
+  const stepsData = t('financing.process.steps', { returnObjects: true }) as Array<{title: string, description: string}>;
+  const steps = stepsData.map((step, index) => ({
+    number: String(index + 1).padStart(2, '0'),
+    title: step.title,
+    description: step.description
+  }));
 
   const partners = [
     "BNP Paribas",
@@ -78,14 +65,7 @@ const Financement = () => {
     "Sofinco"
   ];
 
-  const documents = [
-    "Justificatifs d'identité",
-    "Justificatifs de revenus (3 derniers bulletins)",
-    "Justificatifs de domicile",
-    "Relevés bancaires (3 derniers mois)",
-    "Avis d'imposition",
-    "Justificatifs d'apport personnel"
-  ];
+  const documents = t('financing.documents.list', { returnObjects: true }) as string[];
 
   return (
     <div className="min-h-screen bg-background">
@@ -98,21 +78,20 @@ const Financement = () => {
             <div className="text-center max-w-4xl mx-auto">
               <Badge variant="outline" className="mb-4">
                 <Euro className="w-4 h-4 mr-2" />
-                Solutions de financement
+                {t('financing.hero.badge')}
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Financement
+                {t('financing.hero.title')}
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Trouvez la solution de financement qui vous correspond. Nos partenaires bancaires 
-                vous proposent des conditions avantageuses pour concrétiser votre projet.
+                {t('financing.hero.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                  <Link to="/devis">Simuler mon financement</Link>
+                  <Link to="/devis">{t('financing.hero.simulateButton')}</Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link to="/contact">Parler à un conseiller</Link>
+                  <Link to="/contact">{t('financing.hero.advisorButton')}</Link>
                 </Button>
               </div>
             </div>
@@ -123,9 +102,9 @@ const Financement = () => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Nos solutions de financement</h2>
+              <h2 className="text-3xl font-bold mb-4">{t('financing.options.title')}</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Choisissez la formule qui s'adapte le mieux à votre situation financière
+                {t('financing.options.description')}
               </p>
             </div>
 
@@ -149,17 +128,17 @@ const Financement = () => {
                       <div className="text-center p-3 bg-muted/50 rounded-lg">
                         <Percent className="w-5 h-5 mx-auto mb-1 text-primary" />
                         <div className="text-sm font-medium">{option.rate}</div>
-                        <div className="text-xs text-muted-foreground">Taux</div>
+                        <div className="text-xs text-muted-foreground">{t('financing.options.rateLabel')}</div>
                       </div>
                       <div className="text-center p-3 bg-muted/50 rounded-lg">
                         <Clock className="w-5 h-5 mx-auto mb-1 text-primary" />
                         <div className="text-sm font-medium">{option.duration}</div>
-                        <div className="text-xs text-muted-foreground">Durée</div>
+                        <div className="text-xs text-muted-foreground">{t('financing.options.durationLabel')}</div>
                       </div>
                     </div>
 
                     <div className="space-y-2">
-                      <h4 className="font-semibold text-sm">Avantages:</h4>
+                      <h4 className="font-semibold text-sm">{t('financing.options.advantagesLabel')}</h4>
                       <ul className="space-y-1">
                         {option.advantages.map((advantage, i) => (
                           <li key={i} className="flex items-center gap-2 text-sm">
@@ -171,7 +150,7 @@ const Financement = () => {
                     </div>
 
                     <Button className="w-full" variant="outline" asChild>
-                      <Link to="/devis">En savoir plus</Link>
+                      <Link to="/devis">{t('financing.options.learnMoreButton')}</Link>
                     </Button>
                   </CardContent>
                 </Card>
@@ -184,9 +163,9 @@ const Financement = () => {
         <section className="py-16 bg-muted/50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Comment ça marche ?</h2>
+              <h2 className="text-3xl font-bold mb-4">{t('financing.process.title')}</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Un processus simple et rapide pour obtenir votre financement
+                {t('financing.process.description')}
               </p>
             </div>
 
@@ -215,11 +194,11 @@ const Financement = () => {
               <div>
                 <Badge variant="outline" className="mb-4">
                   <FileText className="w-4 h-4 mr-2" />
-                  Documents requis
+                  {t('financing.documents.badge')}
                 </Badge>
-                <h2 className="text-3xl font-bold mb-6">Préparez votre dossier</h2>
+                <h2 className="text-3xl font-bold mb-6">{t('financing.documents.title')}</h2>
                 <p className="text-muted-foreground mb-8">
-                  Pour accélérer le traitement de votre demande, préparez ces documents essentiels.
+                  {t('financing.documents.description')}
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -236,20 +215,20 @@ const Financement = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Calculator className="w-5 h-5 text-primary" />
-                    Simulateur de financement
+                    {t('financing.simulator.title')}
                   </CardTitle>
                   <CardDescription>
-                    Calculez vos mensualités en quelques clics
+                    {t('financing.simulator.description')}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="p-6 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg text-center">
-                    <h3 className="text-2xl font-bold mb-2">Simulation gratuite</h3>
+                    <h3 className="text-2xl font-bold mb-2">{t('financing.simulator.freeSimulation')}</h3>
                     <p className="text-muted-foreground mb-4">
-                      Obtenez une estimation personnalisée
+                      {t('financing.simulator.personalizedEstimate')}
                     </p>
                     <Button size="lg" className="w-full" asChild>
-                      <Link to="/devis">Démarrer la simulation</Link>
+                      <Link to="/devis">{t('financing.simulator.startButton')}</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -262,9 +241,9 @@ const Financement = () => {
         <section className="py-16 bg-muted/50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Nos partenaires financiers</h2>
+              <h2 className="text-3xl font-bold mb-4">{t('financing.partners.title')}</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Nous travaillons avec les plus grandes institutions financières pour vous offrir les meilleures conditions
+                {t('financing.partners.description')}
               </p>
             </div>
 
@@ -284,16 +263,16 @@ const Financement = () => {
         {/* CTA Section */}
         <section className="py-16 bg-gradient-to-r from-primary to-secondary text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Besoin d'aide pour votre financement ?</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('financing.cta.title')}</h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Nos conseillers sont là pour vous accompagner dans votre projet et trouver la meilleure solution
+              {t('financing.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>
-                <Link to="/contact">Prendre rendez-vous</Link>
+                <Link to="/contact">{t('financing.cta.appointmentButton')}</Link>
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
-                <Link to="/devis">Demander un devis</Link>
+                <Link to="/devis">{t('financing.cta.quoteButton')}</Link>
               </Button>
             </div>
           </div>

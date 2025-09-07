@@ -815,5 +815,108 @@
       "budget100kPlus": "100 000€+",
       "submitQuote": "Lähetä Tarjouspyyntö"
     }
+  },
+  "financing": {
+    "hero": {
+      "badge": "Rahoitusratkaisut",
+      "title": "Rahoitus",
+      "description": "Löydä sinulle sopiva rahoitusratkaisu. Pankkikumppanimme tarjoavat sinulle edullisia ehtoja projektisi toteuttamiseksi.",
+      "simulateButton": "Simuloi rahoitukseni",
+      "advisorButton": "Puhu neuvonantajan kanssa"
+    },
+    "options": {
+      "title": "Rahoitusratkaisumme",
+      "description": "Valitse kaava, joka sopii parhaiten taloudelliseen tilanteeseesi",
+      "classicCredit": {
+        "title": "Klassinen luotto",
+        "description": "Perinteinen rahoitus henkilökohtaisella osuudella",
+        "rate": "0% koroton",
+        "duration": "12–84 kuukautta",
+        "advantages": ["0% korko", "Joustava takaisinmaksu", "Valinnainen vakuutus"]
+      },
+      "leasing": {
+        "title": "Leasing",
+        "description": "Vuokraus osto-optiolla",
+        "rate": "0% koroton",
+        "duration": "24–60 kuukautta",
+        "advantages": ["Ei käsirahaa", "Alennetut kuukausierät", "Osto-optio"]
+      },
+      "balloonCredit": {
+        "title": "Ilmapallokredit",
+        "description": "Alennetut kuukausierät lopullisella osuudella",
+        "rate": "0% koroton",
+        "duration": "24–48 kuukautta",
+        "advantages": ["Kevennetyt kuukausierät", "Lopullinen joustavuus", "0% korko"]
+      },
+      "rateLabel": "Korko",
+      "durationLabel": "Kesto",
+      "advantagesLabel": "Edut:",
+      "learnMoreButton": "Lue lisää"
+    },
+    "process": {
+      "title": "Miten se toimii?",
+      "description": "Yksinkertainen ja nopea prosessi rahoituksen saamiseksi",
+      "steps": [
+        {
+          "title": "Simulaatio",
+          "description": "Laske rahoituskapasiteettisi verkossa"
+        },
+        {
+          "title": "Hakemukset",
+          "description": "Rakenna hakemuksesi neuvojiemme kanssa"
+        },
+        {
+          "title": "Vahvistus",
+          "description": "Saa nopea vastaus kumppaneiltamme"
+        },
+        {
+          "title": "Allekirjoitus",
+          "description": "Viimeistele rahoituksesi ja hae ajoneuvosi"
+        }
+      ]
+    },
+    "documents": {
+      "badge": "Vaaditut asiakirjat",
+      "title": "Valmistele hakemuksesi",
+      "description": "Pyyntösi käsittelyn nopeuttamiseksi valmistele nämä olennaiset asiakirjat.",
+      "list": [
+        "Henkilöllisyystodistukset",
+        "Tulotodistukset (3 viimeistä palkkalaskelmaa)",
+        "Asuinpaikan todistus",
+        "Tiliotteen (3 viimeistä kuukautta)",
+        "Veroilmoitus",
+        "Henkilökohtaisen osuuden todistus"
+      ]
+    },
+    "simulator": {
+      "title": "Rahoitussimulaattori",
+      "description": "Laske kuukausierät muutamalla klikkauksella",
+      "freeSimulation": "Ilmainen simulaatio",
+      "personalizedEstimate": "Hanki henkilökohtainen arvio",
+      "startButton": "Aloita simulaatio"
+    },
+    "partners": {
+      "title": "Rahoituskumppanimme",
+      "description": "Työskentelemme suurimpien rahoituslaitosten kanssa tarjotaksemme sinulle parhaat ehdot"
+    },
+    "cta": {
+      "title": "Tarvitsetko apua rahoituksessasi?",
+      "description": "Neuvojamme ovat täällä tukemassa sinua projektissasi ja löytämässä parhaan ratkaisun",
+      "appointmentButton": "Varaa aika",
+      "quoteButton": "Pyydä tarjous"
+    }
+  },
+  "common": {
+    "learnMore": "Lue lisää",
+    "contactUs": "Ota yhteyttä",
+    "backHome": "Takaisin kotiin",
+    "comingSoon": "Tulossa pian",
+    "readMore": "Lue lisää",
+    "getQuote": "Pyydä tarjous",
+    "callUs": "Soita meille",
+    "email": "Sähköposti",
+    "phone": "Puhelin",
+    "address": "Osoite",
+    "openingHours": "Aukioloajat"
   }
 }

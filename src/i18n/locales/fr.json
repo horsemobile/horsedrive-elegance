@@ -835,5 +835,76 @@
     "discover_more": "Découvrir plus",
     "see_vehicles": "Voir nos véhicules",
     "request_quote": "Demander un devis"
+  },
+  "financing": {
+    "hero": {
+      "badge": "Solutions de financement",
+      "title": "Financement",
+      "description": "Trouvez la solution de financement qui vous correspond. Nos partenaires bancaires vous proposent des conditions avantageuses pour concrétiser votre projet.",
+      "simulateButton": "Simuler mon financement",
+      "advisorButton": "Parler à un conseiller"
+    },
+    "options": {
+      "title": "Nos solutions de financement",
+      "description": "Choisissez la formule qui s'adapte le mieux à votre situation financière",
+      "classicCredit": {
+        "title": "Crédit classique",
+        "description": "Financement traditionnel avec apport personnel",
+        "rate": "0% sans intérêt",
+        "duration": "12 à 84 mois",
+        "advantages": ["Taux 0%", "Remboursement flexible", "Assurance optionnelle"]
+      },
+      "leasing": {
+        "title": "Leasing",
+        "description": "Location avec option d'achat",
+        "rate": "0% sans intérêt",
+        "duration": "24 à 60 mois",
+        "advantages": ["Pas d'apport", "Mensualités réduites", "Option rachat"]
+      },
+      "balloonCredit": {
+        "title": "Crédit ballon",
+        "description": "Mensualités réduites avec apport final",
+        "rate": "0% sans intérêt",
+        "duration": "24 à 48 mois",
+        "advantages": ["Mensualités allégées", "Flexibilité finale", "Taux 0%"]
+      },
+      "rateLabel": "Taux",
+      "durationLabel": "Durée",
+      "advantagesLabel": "Avantages:",
+      "learnMoreButton": "En savoir plus"
+    },
+    "process": {
+      "title": "Comment ça marche ?",
+      "description": "Un processus simple et rapide pour obtenir votre financement",
+      "steps": [
+        {"title": "Simulation", "description": "Calculez votre capacité de financement en ligne"},
+        {"title": "Dossier", "description": "Constituez votre dossier avec nos conseillers"},
+        {"title": "Validation", "description": "Obtenez une réponse rapide de nos partenaires"},
+        {"title": "Signature", "description": "Finalisez votre financement et récupérez votre véhicule"}
+      ]
+    },
+    "documents": {
+      "badge": "Documents requis",
+      "title": "Préparez votre dossier",
+      "description": "Pour accélérer le traitement de votre demande, préparez ces documents essentiels.",
+      "list": ["Justificatifs d'identité", "Justificatifs de revenus (3 derniers bulletins)", "Justificatifs de domicile", "Relevés bancaires (3 derniers mois)", "Avis d'imposition", "Justificatifs d'apport personnel"]
+    },
+    "simulator": {
+      "title": "Simulateur de financement",
+      "description": "Calculez vos mensualités en quelques clics",
+      "freeSimulation": "Simulation gratuite",
+      "personalizedEstimate": "Obtenez une estimation personnalisée",
+      "startButton": "Démarrer la simulation"
+    },
+    "partners": {
+      "title": "Nos partenaires financiers",
+      "description": "Nous travaillons avec les plus grandes institutions financières pour vous offrir les meilleures conditions"
+    },
+    "cta": {
+      "title": "Besoin d'aide pour votre financement ?",
+      "description": "Nos conseillers sont là pour vous accompagner dans votre projet et trouver la meilleure solution",
+      "appointmentButton": "Prendre rendez-vous",
+      "quoteButton": "Demander un devis"
+    }
   }
 }

@@ -680,5 +680,108 @@
       "budget100kPlus": "100.000€+",
       "submitQuote": "Enviar Solicitud de Presupuesto"
     }
+  },
+  "financing": {
+    "hero": {
+      "badge": "Soluciones de financiación",
+      "title": "Financiación",
+      "description": "Encuentra la solución de financiación que te conviene. Nuestros socios bancarios te ofrecen condiciones ventajosas para hacer realidad tu proyecto.",
+      "simulateButton": "Simular mi financiación",
+      "advisorButton": "Hablar con un asesor"
+    },
+    "options": {
+      "title": "Nuestras soluciones de financiación",
+      "description": "Elige la fórmula que mejor se adapte a tu situación financiera",
+      "classicCredit": {
+        "title": "Crédito clásico",
+        "description": "Financiación tradicional con aporte personal",
+        "rate": "0% sin interés",
+        "duration": "12 a 84 meses",
+        "advantages": ["Tasa 0%", "Reembolso flexible", "Seguro opcional"]
+      },
+      "leasing": {
+        "title": "Leasing",
+        "description": "Alquiler con opción de compra",
+        "rate": "0% sin interés",
+        "duration": "24 a 60 meses",
+        "advantages": ["Sin entrada", "Cuotas reducidas", "Opción de compra"]
+      },
+      "balloonCredit": {
+        "title": "Crédito globo",
+        "description": "Cuotas reducidas con aporte final",
+        "rate": "0% sin interés",
+        "duration": "24 a 48 meses",
+        "advantages": ["Cuotas aligeradas", "Flexibilidad final", "Tasa 0%"]
+      },
+      "rateLabel": "Tasa",
+      "durationLabel": "Duración",
+      "advantagesLabel": "Ventajas:",
+      "learnMoreButton": "Saber más"
+    },
+    "process": {
+      "title": "¿Cómo funciona?",
+      "description": "Un proceso simple y rápido para obtener tu financiación",
+      "steps": [
+        {
+          "title": "Simulación",
+          "description": "Calcula tu capacidad de financiación en línea"
+        },
+        {
+          "title": "Expediente",
+          "description": "Constituye tu expediente con nuestros asesores"
+        },
+        {
+          "title": "Validación",
+          "description": "Obtén una respuesta rápida de nuestros socios"
+        },
+        {
+          "title": "Firma",
+          "description": "Finaliza tu financiación y recoge tu vehículo"
+        }
+      ]
+    },
+    "documents": {
+      "badge": "Documentos requeridos",
+      "title": "Prepara tu expediente",
+      "description": "Para acelerar el procesamiento de tu solicitud, prepara estos documentos esenciales.",
+      "list": [
+        "Justificantes de identidad",
+        "Justificantes de ingresos (3 últimas nóminas)",
+        "Justificantes de domicilio",
+        "Extractos bancarios (3 últimos meses)",
+        "Declaración de la renta",
+        "Justificantes de aporte personal"
+      ]
+    },
+    "simulator": {
+      "title": "Simulador de financiación",
+      "description": "Calcula tus cuotas mensuales en unos clics",
+      "freeSimulation": "Simulación gratuita",
+      "personalizedEstimate": "Obtén una estimación personalizada",
+      "startButton": "Iniciar simulación"
+    },
+    "partners": {
+      "title": "Nuestros socios financieros",
+      "description": "Trabajamos con las mayores instituciones financieras para ofrecerte las mejores condiciones"
+    },
+    "cta": {
+      "title": "¿Necesitas ayuda con tu financiación?",
+      "description": "Nuestros asesores están aquí para acompañarte en tu proyecto y encontrar la mejor solución",
+      "appointmentButton": "Pedir cita",
+      "quoteButton": "Solicitar presupuesto"
+    }
+  },
+  "common": {
+    "learnMore": "Saber más",
+    "contactUs": "Contáctanos",
+    "backHome": "Volver al inicio",
+    "comingSoon": "Próximamente",
+    "readMore": "Leer más",
+    "getQuote": "Solicitar presupuesto",
+    "callUs": "Llámanos",
+    "email": "Email",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "openingHours": "Horarios de apertura"
   }
 }
