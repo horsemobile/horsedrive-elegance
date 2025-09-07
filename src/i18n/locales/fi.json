@@ -287,6 +287,164 @@
       "paragraph3": "HORSEMOBIL pidättää oikeuden muuttaa näitä YKE:jä milloin tahansa. Muutokset tulevat voimaan heti, kun ne julkaistaan sivustolla."
     }
   },
+  "confidentialite": {
+    "badge": "Yksityisyys",
+    "title": "Tietosuojakäytäntö",
+    "subtitle": "Otamme henkilötietojesi suojan vakavasti. Opi, kuinka keräämme, käytämme ja suojaamme tietojasi.",
+    "introduction": {
+      "title": "Johdanto",
+      "paragraph1": "Tämä tietosuojakäytäntö kuvaa, kuinka HORSEMOBIL SARL kerää, käyttää, jakaa ja suojaa henkilötietojasi, kun vierailet verkkosivustollamme tai käytät palveluitamme.",
+      "paragraph2": "Käyttämällä verkkosivustoamme hyväksyt tässä tietosuojakäytännössä kuvatut käytännöt.",
+      "paragraph3": "Jos sinulla on kysymyksiä tästä käytännöstä, älä epäröi ottaa meihin yhteyttä."
+    },
+    "dataController": {
+      "title": "Rekisterinpitäjä",
+      "content": "Henkilötietojen käsittelyn vastuullinen taho on:",
+      "company": "HORSEMOBIL SARL",
+      "address": "123 Avenue des Chevaux",
+      "city": "69000 Lyon, Ranska",
+      "email": "Sähköposti: contact@horsemobil.fr",
+      "phone": "Puhelin: +33 4 78 XX XX XX"
+    },
+    "dataCollection": {
+      "title": "Tietojen keruu",
+      "automaticData": {
+        "title": "Automaattisesti kerätyt tiedot",
+        "items": [
+          "IP-osoite",
+          "Selaimen tyyppi ja versio",
+          "Käyttöjärjestelmä",
+          "Vieraillut sivut ja vietetty aika",
+          "Vierailujen päivämäärä ja aika",
+          "Viittaava verkkosivusto"
+        ]
+      },
+      "voluntaryData": {
+        "title": "Vapaaehtoisesti toimitetut tiedot",
+        "items": [
+          "Etu- ja sukunimi",
+          "Sähköpostiosoite",
+          "Puhelinnumero",
+          "Postiosoite",
+          "Tiedot projektistasi",
+          "Viestit ja kommentit"
+        ]
+      }
+    },
+    "purposes": {
+      "title": "Käsittelyn tarkoitukset",
+      "intro": "Käytämme henkilötietojasi:",
+      "items": [
+        "Vastata tarjous- ja tietopyyntöihisi",
+        "Ottaa yhteyttä palveluistamme",
+        "Hallita asiakassuhdettasi",
+        "Parantaa palveluitamme ja verkkosivustoamme",
+        "Lähettää kaupallista tietoa (suostumuksellasi)",
+        "Täyttää lakisääteiset velvoitteemme",
+        "Analysoida verkkosivustomme käyttöä"
+      ]
+    },
+    "legalBasis": {
+      "title": "Käsittelyn oikeusperusta",
+      "consent": {
+        "title": "Suostumus",
+        "description": "Markkinointiviestien lähettämiseen ja ei-välttämättömien evästeiden käyttöön."
+      },
+      "contract": {
+        "title": "Sopimuksen täyttäminen",
+        "description": "Tilaustesi käsittelyyn ja sopimussuhteiden hallintaan."
+      },
+      "legitimateInterest": {
+        "title": "Oikeutettu etu",
+        "description": "Palvelujemme parantamiseen, sivuston käytön analysointiin ja turvallisuuden varmistamiseen."
+      },
+      "legalObligation": {
+        "title": "Lakisääteinen velvoite",
+        "description": "Kirjanpito-, vero- ja sääntelyvelvoitteidemme täyttämiseen."
+      }
+    },
+    "retention": {
+      "title": "Tietojen säilytys",
+      "items": [
+        "Asiakastiedot: 5 vuotta liikesuhteiden päättymisen jälkeen",
+        "Tarjouspyynnöt: 3 vuotta pyynnöstä",
+        "Navigointitiedot: enintään 13 kuukautta",
+        "Markkinointitiedot: 3 vuotta viimeisestä yhteydestä",
+        "Kirjanpitotiedot: 10 vuotta lakisääteisten velvoitteiden mukaisesti"
+      ]
+    },
+    "sharing": {
+      "title": "Tietojen jakaminen",
+      "intro": "Emme myy, vuokraa tai jaa henkilötietojasi kolmansille osapuolille, paitsi seuraavissa tapauksissa:",
+      "items": [
+        "Nimenomaisella suostumuksellasi",
+        "Palveluntarjoajiemme kanssa (hosting, ylläpito, asiakastuki)",
+        "Lakisääteisen velvoitteen täyttämiseksi",
+        "Oikeuksiemme ja turvallisuutemme suojaamiseksi",
+        "Fuusion, yrityskaupan tai liiketoiminnan siirron yhteydessä"
+      ]
+    },
+    "security": {
+      "title": "Tietoturva",
+      "intro": "Toteutamme asianmukaiset tekniset ja organisatoriset toimenpiteet henkilötietojesi suojaamiseksi:",
+      "items": [
+        "Luvaton pääsy",
+        "Muutos, paljastaminen tai tuhoaminen",
+        "Tahaton menetys"
+      ],
+      "measures": "Näihin toimenpiteisiin kuuluu tietojen salaus, todennus, palomuurit, säännölliset varmuuskopiot ja henkilöstön koulutus."
+    },
+    "rights": {
+      "title": "Oikeutesi",
+      "intro": "GDPR:n mukaisesti sinulla on seuraavat oikeudet:",
+      "access": {
+        "title": "Tiedonsaantioikeus",
+        "description": "Saa kopio henkilötiedoistasi"
+      },
+      "rectification": {
+        "title": "Oikeus oikaista",
+        "description": "Korjata virheelliset tai puutteelliset tiedot"
+      },
+      "erasure": {
+        "title": "Oikeus poistaa",
+        "description": "Pyytää tietojesi poistamista"
+      },
+      "portability": {
+        "title": "Siirrettävyysoikeus",
+        "description": "Hakea tietosi jäsennellyssä muodossa"
+      },
+      "objection": {
+        "title": "Vastustamisoikeus",
+        "description": "Vastustaa tietojesi käsittelyä"
+      },
+      "restriction": {
+        "title": "Rajoittamisoikeus",
+        "description": "Rajoittaa tietojesi käsittelyä"
+      }
+    },
+    "exerciseRights": {
+      "title": "Oikeuksien käyttäminen",
+      "intro": "Oikeuksiesi käyttämiseksi ota meihin yhteyttä:",
+      "items": [
+        "Sähköpostitse: contact@horsemobil.fr",
+        "Postitse: HORSEMOBIL SARL, 123 Avenue des Chevaux, 69000 Lyon"
+      ],
+      "response": "Vastaamme sinulle kuukauden kuluessa. Henkilöllisyystodistusta voidaan pyytää henkilöllisyytesi vahvistamiseksi.",
+      "complaint": "Sinulla on myös oikeus tehdä valitus CNIL:lle (Kansallinen tietosuoja- ja vapauslautakunta)."
+    },
+    "cookies": {
+      "title": "Evästeet ja vastaavat teknologiat",
+      "content": "Sivustomme käyttää evästeitä ja vastaavia teknologioita. Lisätietoja löydät",
+      "link": "evästekäytännöstämme"
+    },
+    "updates": {
+      "title": "Muutokset tähän käytäntöön",
+      "paragraph1": "Pidätämme oikeuden muuttaa tätä tietosuojakäytäntöä milloin tahansa. Muutokset julkaistaan tällä sivulla uudella päivityspäivämäärällä.",
+      "paragraph2": "Kehotamme tutustumaan tähän sivuun säännöllisesti pysyäksesi ajan tasalla tietosuojakäytännöistämme.",
+      "lastUpdate": "Viimeksi päivitetty:",
+      "date": "5. syyskuuta 2024"
+    }
+  },
   "mentionsLegales": {
     "badge": "Oikeudellinen tieto",
     "title": "Lakisääteinen ilmoitus",

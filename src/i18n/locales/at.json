@@ -919,6 +919,164 @@
       "paragraph3": "HORSEMOBIL behält sich das Recht vor, diese AGB jederzeit zu ändern. Änderungen treten in Kraft, sobald sie auf der Website veröffentlicht werden."
     }
   },
+  "confidentialite": {
+    "badge": "Datenschutz",
+    "title": "Datenschutzerklärung",
+    "subtitle": "Wir nehmen den Schutz Ihrer persönlichen Daten ernst. Erfahren Sie, wie wir Ihre Informationen sammeln, verwenden und schützen.",
+    "introduction": {
+      "title": "Einführung",
+      "paragraph1": "Diese Datenschutzerklärung beschreibt, wie HORSEMOBIL SARL Ihre persönlichen Daten sammelt, verwendet, teilt und schützt, wenn Sie unsere Website besuchen oder unsere Dienste nutzen.",
+      "paragraph2": "Durch die Nutzung unserer Website akzeptieren Sie die in dieser Datenschutzerklärung beschriebenen Praktiken.",
+      "paragraph3": "Wenn Sie Fragen zu dieser Richtlinie haben, zögern Sie nicht, uns zu kontaktieren."
+    },
+    "dataController": {
+      "title": "Datenverantwortlicher",
+      "content": "Der Verantwortliche für die Verarbeitung personenbezogener Daten ist:",
+      "company": "HORSEMOBIL SARL",
+      "address": "123 Avenue des Chevaux",
+      "city": "69000 Lyon, Frankreich",
+      "email": "E-Mail: contact@horsemobil.fr",
+      "phone": "Telefon: +33 4 78 XX XX XX"
+    },
+    "dataCollection": {
+      "title": "Datensammlung",
+      "automaticData": {
+        "title": "Automatisch gesammelte Daten",
+        "items": [
+          "IP-Adresse",
+          "Browsertyp und -version",
+          "Betriebssystem",
+          "Besuchte Seiten und verbrachte Zeit",
+          "Datum und Uhrzeit der Besuche",
+          "Verweisende Website"
+        ]
+      },
+      "voluntaryData": {
+        "title": "Freiwillig bereitgestellte Daten",
+        "items": [
+          "Vor- und Nachname",
+          "E-Mail-Adresse",
+          "Telefonnummer",
+          "Postanschrift",
+          "Informationen über Ihr Projekt",
+          "Nachrichten und Kommentare"
+        ]
+      }
+    },
+    "purposes": {
+      "title": "Verarbeitungszwecke",
+      "intro": "Wir verwenden Ihre persönlichen Daten, um:",
+      "items": [
+        "Auf Ihre Angebots- und Informationsanfragen zu antworten",
+        "Sie bezüglich unserer Dienstleistungen zu kontaktieren",
+        "Ihre Kundenbeziehung zu verwalten",
+        "Unsere Dienstleistungen und Website zu verbessern",
+        "Ihnen kommerzielle Informationen zu senden (mit Ihrer Einwilligung)",
+        "Unsere rechtlichen Verpflichtungen zu erfüllen",
+        "Die Nutzung unserer Website zu analysieren"
+      ]
+    },
+    "legalBasis": {
+      "title": "Rechtsgrundlage für die Verarbeitung",
+      "consent": {
+        "title": "Einwilligung",
+        "description": "Für das Versenden von Marketing-Kommunikation und die Verwendung nicht-essentieller Cookies."
+      },
+      "contract": {
+        "title": "Vertragserfüllung",
+        "description": "Zur Bearbeitung Ihrer Bestellungen und Verwaltung der Vertragsbeziehung."
+      },
+      "legitimateInterest": {
+        "title": "Berechtigtes Interesse",
+        "description": "Zur Verbesserung unserer Dienstleistungen, Analyse der Website-Nutzung und Gewährleistung der Sicherheit."
+      },
+      "legalObligation": {
+        "title": "Rechtliche Verpflichtung",
+        "description": "Zur Erfüllung unserer buchhalterischen, steuerlichen und regulatorischen Verpflichtungen."
+      }
+    },
+    "retention": {
+      "title": "Datenaufbewahrung",
+      "items": [
+        "Kundendaten: 5 Jahre nach Ende der Geschäftsbeziehung",
+        "Angebotsanfragen: 3 Jahre ab der Anfrage",
+        "Navigationsdaten: maximal 13 Monate",
+        "Marketing-Daten: 3 Jahre ab dem letzten Kontakt",
+        "Buchhaltungsdaten: 10 Jahre gemäß gesetzlichen Verpflichtungen"
+      ]
+    },
+    "sharing": {
+      "title": "Datenweitergabe",
+      "intro": "Wir verkaufen, vermieten oder teilen Ihre persönlichen Daten nicht mit Dritten, außer in folgenden Fällen:",
+      "items": [
+        "Mit Ihrer ausdrücklichen Einwilligung",
+        "Mit unseren Dienstleistern (Hosting, Wartung, Kundensupport)",
+        "Zur Erfüllung einer rechtlichen Verpflichtung",
+        "Zum Schutz unserer Rechte und Sicherheit",
+        "Im Falle einer Fusion, Übernahme oder Geschäftsübertragung"
+      ]
+    },
+    "security": {
+      "title": "Datensicherheit",
+      "intro": "Wir setzen angemessene technische und organisatorische Maßnahmen zum Schutz Ihrer persönlichen Daten ein gegen:",
+      "items": [
+        "Unbefugten Zugriff",
+        "Veränderung, Offenlegung oder Zerstörung",
+        "Versehentlichen Verlust"
+      ],
+      "measures": "Diese Maßnahmen umfassen Datenverschlüsselung, Authentifizierung, Firewalls, regelmäßige Backups und Mitarbeiterschulungen."
+    },
+    "rights": {
+      "title": "Ihre Rechte",
+      "intro": "Gemäß DSGVO haben Sie folgende Rechte:",
+      "access": {
+        "title": "Auskunftsrecht",
+        "description": "Eine Kopie Ihrer persönlichen Daten erhalten"
+      },
+      "rectification": {
+        "title": "Recht auf Berichtigung",
+        "description": "Unrichtige oder unvollständige Daten korrigieren"
+      },
+      "erasure": {
+        "title": "Recht auf Löschung",
+        "description": "Löschung Ihrer Daten beantragen"
+      },
+      "portability": {
+        "title": "Recht auf Datenübertragbarkeit",
+        "description": "Ihre Daten in einem strukturierten Format abrufen"
+      },
+      "objection": {
+        "title": "Widerspruchsrecht",
+        "description": "Der Verarbeitung Ihrer Daten widersprechen"
+      },
+      "restriction": {
+        "title": "Recht auf Einschränkung",
+        "description": "Die Verarbeitung Ihrer Daten einschränken"
+      }
+    },
+    "exerciseRights": {
+      "title": "Ihre Rechte ausüben",
+      "intro": "Um Ihre Rechte auszuüben, kontaktieren Sie uns:",
+      "items": [
+        "Per E-Mail: contact@horsemobil.fr",
+        "Per Post: HORSEMOBIL SARL, 123 Avenue des Chevaux, 69000 Lyon"
+      ],
+      "response": "Wir werden Ihnen innerhalb von maximal einem Monat antworten. Möglicherweise werden Sie um einen Identitätsnachweis gebeten, um Ihre Identität zu überprüfen.",
+      "complaint": "Sie haben auch das Recht, eine Beschwerde bei der CNIL (Nationale Kommission für Datenschutz und Freiheiten) einzureichen."
+    },
+    "cookies": {
+      "title": "Cookies und ähnliche Technologien",
+      "content": "Unsere Website verwendet Cookies und ähnliche Technologien. Für weitere Informationen siehe unsere",
+      "link": "Cookie-Richtlinie"
+    },
+    "updates": {
+      "title": "Änderungen dieser Richtlinie",
+      "paragraph1": "Wir behalten uns das Recht vor, diese Datenschutzerklärung jederzeit zu ändern. Änderungen werden auf dieser Seite mit einem neuen Aktualisierungsdatum veröffentlicht.",
+      "paragraph2": "Wir ermutigen Sie, diese Seite regelmäßig zu besuchen, um über unsere Datenschutzpraktiken informiert zu bleiben.",
+      "lastUpdate": "Zuletzt aktualisiert:",
+      "date": "5. September 2024"
+    }
+  },
   "mentionsLegales": {
     "badge": "Rechtliche Informationen",
     "title": "Impressum",

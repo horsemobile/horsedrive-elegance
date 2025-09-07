@@ -932,6 +932,164 @@
       "paragraph3": "HORSEMOBIL se réserve le droit de modifier à tout moment les présentes CGU. Les modifications prennent effet dès leur publication sur le site."
     }
   },
+  "confidentialite": {
+    "badge": "Confidentialité",
+    "title": "Politique de Confidentialité",
+    "subtitle": "Nous prenons la protection de vos données personnelles au sérieux. Découvrez comment nous collectons, utilisons et protégeons vos informations.",
+    "introduction": {
+      "title": "Introduction",
+      "paragraph1": "La présente politique de confidentialité décrit comment HORSEMOBIL SARL collecte, utilise, partage et protège vos données personnelles lorsque vous visitez notre site web ou utilisez nos services.",
+      "paragraph2": "En utilisant notre site web, vous acceptez les pratiques décrites dans cette politique de confidentialité.",
+      "paragraph3": "Si vous avez des questions concernant cette politique, n'hésitez pas à nous contacter."
+    },
+    "dataController": {
+      "title": "Responsable du traitement",
+      "content": "Le responsable du traitement des données personnelles est :",
+      "company": "HORSEMOBIL SARL",
+      "address": "123 Avenue des Chevaux",
+      "city": "69000 Lyon, France",
+      "email": "Email : contact@horsemobil.fr",
+      "phone": "Téléphone : +33 4 78 XX XX XX"
+    },
+    "dataCollection": {
+      "title": "Collecte des données",
+      "automaticData": {
+        "title": "Données collectées automatiquement",
+        "items": [
+          "Adresse IP",
+          "Type de navigateur et version",
+          "Système d'exploitation",
+          "Pages visitées et temps passé",
+          "Date et heure des visites",
+          "Site web de référence"
+        ]
+      },
+      "voluntaryData": {
+        "title": "Données fournies volontairement",
+        "items": [
+          "Nom et prénom",
+          "Adresse email",
+          "Numéro de téléphone",
+          "Adresse postale",
+          "Informations sur votre projet",
+          "Messages et commentaires"
+        ]
+      }
+    },
+    "purposes": {
+      "title": "Finalités du traitement",
+      "intro": "Nous utilisons vos données personnelles pour :",
+      "items": [
+        "Répondre à vos demandes de devis et d'information",
+        "Vous contacter concernant nos services",
+        "Gérer votre relation client",
+        "Améliorer nos services et notre site web",
+        "Vous envoyer des informations commerciales (avec votre consentement)",
+        "Respecter nos obligations légales",
+        "Analyser l'utilisation de notre site web"
+      ]
+    },
+    "legalBasis": {
+      "title": "Base légale du traitement",
+      "consent": {
+        "title": "Consentement",
+        "description": "Pour l'envoi de communications marketing et l'utilisation de cookies non essentiels."
+      },
+      "contract": {
+        "title": "Exécution d'un contrat",
+        "description": "Pour traiter vos commandes et gérer la relation contractuelle."
+      },
+      "legitimateInterest": {
+        "title": "Intérêt légitime",
+        "description": "Pour améliorer nos services, analyser l'utilisation du site et assurer la sécurité."
+      },
+      "legalObligation": {
+        "title": "Obligation légale",
+        "description": "Pour respecter nos obligations comptables, fiscales et réglementaires."
+      }
+    },
+    "retention": {
+      "title": "Durée de conservation",
+      "items": [
+        "Données clients : 5 ans après la fin de la relation commerciale",
+        "Demandes de devis : 3 ans à compter de la demande",
+        "Données de navigation : 13 mois maximum",
+        "Données marketing : 3 ans à compter du dernier contact",
+        "Données comptables : 10 ans conformément aux obligations légales"
+      ]
+    },
+    "sharing": {
+      "title": "Partage des données",
+      "intro": "Nous ne vendons, ne louons, ni ne partageons vos données personnelles avec des tiers, sauf dans les cas suivants :",
+      "items": [
+        "Avec votre consentement explicite",
+        "Avec nos prestataires de services (hébergement, maintenance, support client)",
+        "Pour respecter une obligation légale",
+        "Pour protéger nos droits et notre sécurité",
+        "En cas de fusion, acquisition ou cession d'activité"
+      ]
+    },
+    "security": {
+      "title": "Sécurité des données",
+      "intro": "Nous mettons en place des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre :",
+      "items": [
+        "L'accès non autorisé",
+        "La modification, la divulgation ou la destruction",
+        "La perte accidentelle"
+      ],
+      "measures": "Ces mesures incluent le chiffrement des données, l'authentification, les pare-feu, les sauvegardes régulières et la formation de notre personnel."
+    },
+    "rights": {
+      "title": "Vos droits",
+      "intro": "Conformément au RGPD, vous disposez des droits suivants :",
+      "access": {
+        "title": "Droit d'accès",
+        "description": "Obtenir une copie de vos données personnelles"
+      },
+      "rectification": {
+        "title": "Droit de rectification",
+        "description": "Corriger des données inexactes ou incomplètes"
+      },
+      "erasure": {
+        "title": "Droit d'effacement",
+        "description": "Demander la suppression de vos données"
+      },
+      "portability": {
+        "title": "Droit à la portabilité",
+        "description": "Récupérer vos données dans un format structuré"
+      },
+      "objection": {
+        "title": "Droit d'opposition",
+        "description": "Vous opposer au traitement de vos données"
+      },
+      "restriction": {
+        "title": "Droit de limitation",
+        "description": "Limiter le traitement de vos données"
+      }
+    },
+    "exerciseRights": {
+      "title": "Exercer vos droits",
+      "intro": "Pour exercer vos droits, contactez-nous :",
+      "items": [
+        "Par email : contact@horsemobil.fr",
+        "Par courrier : HORSEMOBIL SARL, 123 Avenue des Chevaux, 69000 Lyon"
+      ],
+      "response": "Nous vous répondrons dans un délai maximum d'un mois. Une pièce d'identité pourra vous être demandée pour vérifier votre identité.",
+      "complaint": "Vous avez également le droit d'introduire une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés)."
+    },
+    "cookies": {
+      "title": "Cookies et technologies similaires",
+      "content": "Notre site utilise des cookies et technologies similaires. Pour plus d'informations, consultez notre",
+      "link": "politique de cookies"
+    },
+    "updates": {
+      "title": "Modifications de cette politique",
+      "paragraph1": "Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Les modifications seront publiées sur cette page avec une nouvelle date de mise à jour.",
+      "paragraph2": "Nous vous encourageons à consulter régulièrement cette page pour rester informé de nos pratiques en matière de confidentialité.",
+      "lastUpdate": "Dernière mise à jour :",
+      "date": "5 septembre 2024"
+    }
+  },
   "mentionsLegales": {
     "badge": "Informations légales",
     "title": "Mentions Légales",

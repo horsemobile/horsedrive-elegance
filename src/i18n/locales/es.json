@@ -816,6 +816,164 @@
       "paragraph3": "HORSEMOBIL se reserva el derecho de modificar estas CGU en cualquier momento. Las modificaciones entran en vigor tan pronto como se publican en el sitio."
     }
   },
+  "confidentialite": {
+    "badge": "Privacidad",
+    "title": "Política de Privacidad",
+    "subtitle": "Nos tomamos en serio la protección de sus datos personales. Descubra cómo recopilamos, utilizamos y protegemos su información.",
+    "introduction": {
+      "title": "Introducción",
+      "paragraph1": "Esta política de privacidad describe cómo HORSEMOBIL SARL recopila, utiliza, comparte y protege sus datos personales cuando visita nuestro sitio web o utiliza nuestros servicios.",
+      "paragraph2": "Al utilizar nuestro sitio web, acepta las prácticas descritas en esta política de privacidad.",
+      "paragraph3": "Si tiene alguna pregunta sobre esta política, no dude en contactarnos."
+    },
+    "dataController": {
+      "title": "Responsable del tratamiento",
+      "content": "El responsable del tratamiento de datos personales es:",
+      "company": "HORSEMOBIL SARL",
+      "address": "123 Avenue des Chevaux",
+      "city": "69000 Lyon, Francia",
+      "email": "Email: contact@horsemobil.fr",
+      "phone": "Teléfono: +33 4 78 XX XX XX"
+    },
+    "dataCollection": {
+      "title": "Recopilación de datos",
+      "automaticData": {
+        "title": "Datos recopilados automáticamente",
+        "items": [
+          "Dirección IP",
+          "Tipo y versión del navegador",
+          "Sistema operativo",
+          "Páginas visitadas y tiempo transcurrido",
+          "Fecha y hora de las visitas",
+          "Sitio web de referencia"
+        ]
+      },
+      "voluntaryData": {
+        "title": "Datos proporcionados voluntariamente",
+        "items": [
+          "Nombre y apellidos",
+          "Dirección de correo electrónico",
+          "Número de teléfono",
+          "Dirección postal",
+          "Información sobre su proyecto",
+          "Mensajes y comentarios"
+        ]
+      }
+    },
+    "purposes": {
+      "title": "Finalidades del tratamiento",
+      "intro": "Utilizamos sus datos personales para:",
+      "items": [
+        "Responder a sus solicitudes de presupuesto e información",
+        "Contactarle sobre nuestros servicios",
+        "Gestionar su relación como cliente",
+        "Mejorar nuestros servicios y sitio web",
+        "Enviarle información comercial (con su consentimiento)",
+        "Cumplir con nuestras obligaciones legales",
+        "Analizar el uso de nuestro sitio web"
+      ]
+    },
+    "legalBasis": {
+      "title": "Base legal del tratamiento",
+      "consent": {
+        "title": "Consentimiento",
+        "description": "Para el envío de comunicaciones de marketing y el uso de cookies no esenciales."
+      },
+      "contract": {
+        "title": "Ejecución de un contrato",
+        "description": "Para procesar sus pedidos y gestionar la relación contractual."
+      },
+      "legitimateInterest": {
+        "title": "Interés legítimo",
+        "description": "Para mejorar nuestros servicios, analizar el uso del sitio y garantizar la seguridad."
+      },
+      "legalObligation": {
+        "title": "Obligación legal",
+        "description": "Para cumplir con nuestras obligaciones contables, fiscales y reglamentarias."
+      }
+    },
+    "retention": {
+      "title": "Duración de conservación",
+      "items": [
+        "Datos de clientes: 5 años después del fin de la relación comercial",
+        "Solicitudes de presupuesto: 3 años desde la solicitud",
+        "Datos de navegación: 13 meses máximo",
+        "Datos de marketing: 3 años desde el último contacto",
+        "Datos contables: 10 años de acuerdo con las obligaciones legales"
+      ]
+    },
+    "sharing": {
+      "title": "Compartir datos",
+      "intro": "No vendemos, alquilamos ni compartimos sus datos personales con terceros, excepto en los siguientes casos:",
+      "items": [
+        "Con su consentimiento explícito",
+        "Con nuestros proveedores de servicios (alojamiento, mantenimiento, soporte al cliente)",
+        "Para cumplir con una obligación legal",
+        "Para proteger nuestros derechos y seguridad",
+        "En caso de fusión, adquisición o transferencia de negocio"
+      ]
+    },
+    "security": {
+      "title": "Seguridad de los datos",
+      "intro": "Implementamos medidas técnicas y organizativas apropiadas para proteger sus datos personales contra:",
+      "items": [
+        "Acceso no autorizado",
+        "Modificación, divulgación o destrucción",
+        "Pérdida accidental"
+      ],
+      "measures": "Estas medidas incluyen cifrado de datos, autenticación, cortafuegos, copias de seguridad regulares y formación del personal."
+    },
+    "rights": {
+      "title": "Sus derechos",
+      "intro": "De acuerdo con el RGPD, usted tiene los siguientes derechos:",
+      "access": {
+        "title": "Derecho de acceso",
+        "description": "Obtener una copia de sus datos personales"
+      },
+      "rectification": {
+        "title": "Derecho de rectificación",
+        "description": "Corregir datos inexactos o incompletos"
+      },
+      "erasure": {
+        "title": "Derecho al borrado",
+        "description": "Solicitar la eliminación de sus datos"
+      },
+      "portability": {
+        "title": "Derecho a la portabilidad",
+        "description": "Recuperar sus datos en un formato estructurado"
+      },
+      "objection": {
+        "title": "Derecho de oposición",
+        "description": "Oponerse al tratamiento de sus datos"
+      },
+      "restriction": {
+        "title": "Derecho de limitación",
+        "description": "Limitar el tratamiento de sus datos"
+      }
+    },
+    "exerciseRights": {
+      "title": "Ejercer sus derechos",
+      "intro": "Para ejercer sus derechos, contáctenos:",
+      "items": [
+        "Por email: contact@horsemobil.fr",
+        "Por correo: HORSEMOBIL SARL, 123 Avenue des Chevaux, 69000 Lyon"
+      ],
+      "response": "Le responderemos en un plazo máximo de un mes. Se le podrá solicitar una prueba de identidad para verificar su identidad.",
+      "complaint": "También tiene derecho a presentar una reclamación ante la CNIL (Comisión Nacional de Informática y Libertades)."
+    },
+    "cookies": {
+      "title": "Cookies y tecnologías similares",
+      "content": "Nuestro sitio utiliza cookies y tecnologías similares. Para más información, consulte nuestra",
+      "link": "política de cookies"
+    },
+    "updates": {
+      "title": "Modificaciones de esta política",
+      "paragraph1": "Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Los cambios se publicarán en esta página con una nueva fecha de actualización.",
+      "paragraph2": "Le recomendamos que consulte regularmente esta página para mantenerse informado sobre nuestras prácticas de privacidad.",
+      "lastUpdate": "Última actualización:",
+      "date": "5 de septiembre de 2024"
+    }
+  },
   "mentionsLegales": {
     "badge": "Información Legal",
     "title": "Aviso Legal",

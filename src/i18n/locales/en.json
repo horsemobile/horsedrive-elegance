@@ -781,6 +781,164 @@
       "paragraph3": "HORSEMOBIL reserves the right to modify these GTU at any time. Modifications take effect as soon as they are published on the site."
     }
   },
+  "confidentialite": {
+    "badge": "Privacy",
+    "title": "Privacy Policy",
+    "subtitle": "We take the protection of your personal data seriously. Learn how we collect, use and protect your information.",
+    "introduction": {
+      "title": "Introduction",
+      "paragraph1": "This privacy policy describes how HORSEMOBIL SARL collects, uses, shares and protects your personal data when you visit our website or use our services.",
+      "paragraph2": "By using our website, you accept the practices described in this privacy policy.",
+      "paragraph3": "If you have any questions about this policy, please do not hesitate to contact us."
+    },
+    "dataController": {
+      "title": "Data Controller",
+      "content": "The data controller for personal data is:",
+      "company": "HORSEMOBIL SARL",
+      "address": "123 Avenue des Chevaux",
+      "city": "69000 Lyon, France",
+      "email": "Email: contact@horsemobil.fr",
+      "phone": "Phone: +33 4 78 XX XX XX"
+    },
+    "dataCollection": {
+      "title": "Data Collection",
+      "automaticData": {
+        "title": "Automatically collected data",
+        "items": [
+          "IP address",
+          "Browser type and version",
+          "Operating system",
+          "Pages visited and time spent",
+          "Date and time of visits",
+          "Referring website"
+        ]
+      },
+      "voluntaryData": {
+        "title": "Voluntarily provided data",
+        "items": [
+          "First and last name",
+          "Email address",
+          "Phone number",
+          "Postal address",
+          "Information about your project",
+          "Messages and comments"
+        ]
+      }
+    },
+    "purposes": {
+      "title": "Processing Purposes",
+      "intro": "We use your personal data to:",
+      "items": [
+        "Respond to your quote and information requests",
+        "Contact you regarding our services",
+        "Manage your customer relationship",
+        "Improve our services and website",
+        "Send you commercial information (with your consent)",
+        "Comply with our legal obligations",
+        "Analyze the use of our website"
+      ]
+    },
+    "legalBasis": {
+      "title": "Legal Basis for Processing",
+      "consent": {
+        "title": "Consent",
+        "description": "For sending marketing communications and using non-essential cookies."
+      },
+      "contract": {
+        "title": "Contract execution",
+        "description": "To process your orders and manage the contractual relationship."
+      },
+      "legitimateInterest": {
+        "title": "Legitimate interest",
+        "description": "To improve our services, analyze site usage and ensure security."
+      },
+      "legalObligation": {
+        "title": "Legal obligation",
+        "description": "To comply with our accounting, tax and regulatory obligations."
+      }
+    },
+    "retention": {
+      "title": "Data Retention",
+      "items": [
+        "Customer data: 5 years after the end of the commercial relationship",
+        "Quote requests: 3 years from the request",
+        "Navigation data: 13 months maximum",
+        "Marketing data: 3 years from the last contact",
+        "Accounting data: 10 years in accordance with legal obligations"
+      ]
+    },
+    "sharing": {
+      "title": "Data Sharing",
+      "intro": "We do not sell, rent, or share your personal data with third parties, except in the following cases:",
+      "items": [
+        "With your explicit consent",
+        "With our service providers (hosting, maintenance, customer support)",
+        "To comply with a legal obligation",
+        "To protect our rights and security",
+        "In case of merger, acquisition or business transfer"
+      ]
+    },
+    "security": {
+      "title": "Data Security",
+      "intro": "We implement appropriate technical and organizational measures to protect your personal data against:",
+      "items": [
+        "Unauthorized access",
+        "Modification, disclosure or destruction",
+        "Accidental loss"
+      ],
+      "measures": "These measures include data encryption, authentication, firewalls, regular backups and staff training."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "intro": "In accordance with GDPR, you have the following rights:",
+      "access": {
+        "title": "Right of access",
+        "description": "Obtain a copy of your personal data"
+      },
+      "rectification": {
+        "title": "Right of rectification",
+        "description": "Correct inaccurate or incomplete data"
+      },
+      "erasure": {
+        "title": "Right to erasure",
+        "description": "Request deletion of your data"
+      },
+      "portability": {
+        "title": "Right to portability",
+        "description": "Retrieve your data in a structured format"
+      },
+      "objection": {
+        "title": "Right to object",
+        "description": "Object to the processing of your data"
+      },
+      "restriction": {
+        "title": "Right to restriction",
+        "description": "Restrict the processing of your data"
+      }
+    },
+    "exerciseRights": {
+      "title": "Exercise Your Rights",
+      "intro": "To exercise your rights, contact us:",
+      "items": [
+        "By email: contact@horsemobil.fr",
+        "By mail: HORSEMOBIL SARL, 123 Avenue des Chevaux, 69000 Lyon"
+      ],
+      "response": "We will respond to you within a maximum period of one month. You may be asked for proof of identity to verify your identity.",
+      "complaint": "You also have the right to file a complaint with the CNIL (National Commission for Data Protection and Liberties)."
+    },
+    "cookies": {
+      "title": "Cookies and similar technologies",
+      "content": "Our site uses cookies and similar technologies. For more information, see our",
+      "link": "cookie policy"
+    },
+    "updates": {
+      "title": "Changes to this policy",
+      "paragraph1": "We reserve the right to modify this privacy policy at any time. Changes will be posted on this page with a new update date.",
+      "paragraph2": "We encourage you to regularly consult this page to stay informed about our privacy practices.",
+      "lastUpdate": "Last updated:",
+      "date": "September 5, 2024"
+    }
+  },
   "mentionsLegales": {
     "badge": "Legal Information",
     "title": "Legal Notice",

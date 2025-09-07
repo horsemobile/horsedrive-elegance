@@ -287,6 +287,164 @@
       "paragraph3": "HORSEMOBIL forbeholder seg retten til å endre disse GBV når som helst. Endringer trer i kraft så snart de er publisert på nettstedet."
     }
   },
+  "confidentialite": {
+    "badge": "Personvern",
+    "title": "Personvernerklæring",
+    "subtitle": "Vi tar beskyttelsen av dine personopplysninger på alvor. Lær hvordan vi samler inn, bruker og beskytter din informasjon.",
+    "introduction": {
+      "title": "Innledning",
+      "paragraph1": "Denne personvernerklæringen beskriver hvordan HORSEMOBIL SARL samler inn, bruker, deler og beskytter dine personopplysninger når du besøker vårt nettsted eller bruker våre tjenester.",
+      "paragraph2": "Ved å bruke vårt nettsted aksepterer du praksisene som er beskrevet i denne personvernerklæringen.",
+      "paragraph3": "Hvis du har spørsmål om denne policyen, ikke nøl med å kontakte oss."
+    },
+    "dataController": {
+      "title": "Databehandlingsansvarlig",
+      "content": "Den databehandlingsansvarlige for personopplysninger er:",
+      "company": "HORSEMOBIL SARL",
+      "address": "123 Avenue des Chevaux",
+      "city": "69000 Lyon, Frankrike",
+      "email": "E-post: contact@horsemobil.fr",
+      "phone": "Telefon: +33 4 78 XX XX XX"
+    },
+    "dataCollection": {
+      "title": "Datainnsamling",
+      "automaticData": {
+        "title": "Automatisk innsamlede data",
+        "items": [
+          "IP-adresse",
+          "Nettlesertype og versjon",
+          "Operativsystem",
+          "Besøkte sider og tid brukt",
+          "Dato og tid for besøk",
+          "Refererende nettsted"
+        ]
+      },
+      "voluntaryData": {
+        "title": "Frivillig oppgitte data",
+        "items": [
+          "For- og etternavn",
+          "E-postadresse",
+          "Telefonnummer",
+          "Postadresse",
+          "Informasjon om prosjektet ditt",
+          "Meldinger og kommentarer"
+        ]
+      }
+    },
+    "purposes": {
+      "title": "Behandlingsformål",
+      "intro": "Vi bruker dine personopplysninger til å:",
+      "items": [
+        "Svare på dine tilbuds- og informasjonsforespørsler",
+        "Kontakte deg angående våre tjenester",
+        "Administrere kundeforholdet ditt",
+        "Forbedre våre tjenester og nettsted",
+        "Sende deg kommersiell informasjon (med ditt samtykke)",
+        "Overholde våre juridiske forpliktelser",
+        "Analysere bruken av vårt nettsted"
+      ]
+    },
+    "legalBasis": {
+      "title": "Rettslig grunnlag for behandling",
+      "consent": {
+        "title": "Samtykke",
+        "description": "For sending av markedsføringskommunikasjon og bruk av ikke-essensielle cookies."
+      },
+      "contract": {
+        "title": "Kontraktsgjennomføring",
+        "description": "For å behandle dine bestillinger og administrere kontraktsforholdet."
+      },
+      "legitimateInterest": {
+        "title": "Berettiget interesse",
+        "description": "For å forbedre våre tjenester, analysere nettstedsbruk og sikre sikkerhet."
+      },
+      "legalObligation": {
+        "title": "Juridisk forpliktelse",
+        "description": "For å overholde våre regnskaps-, skatte- og regulatoriske forpliktelser."
+      }
+    },
+    "retention": {
+      "title": "Dataoppbevaring",
+      "items": [
+        "Kundedata: 5 år etter slutten av det kommersielle forholdet",
+        "Tilbudsforespørsler: 3 år fra forespørselen",
+        "Navigasjonsdata: maksimalt 13 måneder",
+        "Markedsføringsdata: 3 år fra siste kontakt",
+        "Regnskapsdata: 10 år i samsvar med juridiske forpliktelser"
+      ]
+    },
+    "sharing": {
+      "title": "Datadeling",
+      "intro": "Vi selger, leier eller deler ikke dine personopplysninger med tredjeparter, unntatt i følgende tilfeller:",
+      "items": [
+        "Med ditt eksplisitte samtykke",
+        "Med våre tjenesteleverandører (hosting, vedlikehold, kundestøtte)",
+        "For å overholde en juridisk forpliktelse",
+        "For å beskytte våre rettigheter og sikkerhet",
+        "I tilfelle fusjon, oppkjøp eller virksomhetsoverføring"
+      ]
+    },
+    "security": {
+      "title": "Datasikkerhet",
+      "intro": "Vi implementerer passende tekniske og organisatoriske tiltak for å beskytte dine personopplysninger mot:",
+      "items": [
+        "Uautorisert tilgang",
+        "Endring, avsløring eller ødeleggelse",
+        "Utilsiktet tap"
+      ],
+      "measures": "Disse tiltakene inkluderer datakryptering, autentisering, brannmurer, regelmessige sikkerhetskopier og personalopplæring."
+    },
+    "rights": {
+      "title": "Dine rettigheter",
+      "intro": "I samsvar med GDPR har du følgende rettigheter:",
+      "access": {
+        "title": "Rett til tilgang",
+        "description": "Få en kopi av dine personopplysninger"
+      },
+      "rectification": {
+        "title": "Rett til retting",
+        "description": "Korrigere unøyaktige eller ufullstendige data"
+      },
+      "erasure": {
+        "title": "Rett til sletting",
+        "description": "Be om sletting av dine data"
+      },
+      "portability": {
+        "title": "Rett til dataportabilitet",
+        "description": "Hente dine data i et strukturert format"
+      },
+      "objection": {
+        "title": "Rett til innsigelse",
+        "description": "Protestere mot behandling av dine data"
+      },
+      "restriction": {
+        "title": "Rett til begrensning",
+        "description": "Begrense behandlingen av dine data"
+      }
+    },
+    "exerciseRights": {
+      "title": "Utøv dine rettigheter",
+      "intro": "For å utøve dine rettigheter, kontakt oss:",
+      "items": [
+        "Via e-post: contact@horsemobil.fr",
+        "Via post: HORSEMOBIL SARL, 123 Avenue des Chevaux, 69000 Lyon"
+      ],
+      "response": "Vi vil svare deg innen maksimalt en måned. Du kan bli bedt om identitetsbevis for å verifisere din identitet.",
+      "complaint": "Du har også rett til å sende inn en klage til CNIL (National Commission for Data Protection and Liberties)."
+    },
+    "cookies": {
+      "title": "Cookies og lignende teknologier",
+      "content": "Vårt nettsted bruker cookies og lignende teknologier. For mer informasjon, se vår",
+      "link": "cookie-policy"
+    },
+    "updates": {
+      "title": "Endringer i denne policyen",
+      "paragraph1": "Vi forbeholder oss retten til å endre denne personvernerklæringen når som helst. Endringer vil bli publisert på denne siden med en ny oppdateringsdato.",
+      "paragraph2": "Vi oppfordrer deg til å regelmessig konsultere denne siden for å holde deg informert om våre personvernpraksis.",
+      "lastUpdate": "Sist oppdatert:",
+      "date": "5. september 2024"
+    }
+  },
   "mentionsLegales": {
     "badge": "Juridisk informasjon",
     "title": "Juridisk merknad",

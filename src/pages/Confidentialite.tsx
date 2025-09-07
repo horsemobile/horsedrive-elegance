@@ -61,17 +61,17 @@ const Confidentialite = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Users className="w-5 h-5 text-primary" />
-                    Responsable du traitement
+                    {t('confidentialite.dataController.title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Le responsable du traitement des données personnelles est :<br /><br />
-                    <strong>HORSEMOBIL SARL</strong><br />
-                    123 Avenue des Chevaux<br />
-                    69000 Lyon, France<br />
-                    Email : contact@horsemobil.fr<br />
-                    Téléphone : +33 4 78 XX XX XX
+                    {t('confidentialite.dataController.content')}<br /><br />
+                    <strong>{t('confidentialite.dataController.company')}</strong><br />
+                    {t('confidentialite.dataController.address')}<br />
+                    {t('confidentialite.dataController.city')}<br />
+                    {t('confidentialite.dataController.email')}<br />
+                    {t('confidentialite.dataController.phone')}
                   </p>
                 </CardContent>
               </Card>
@@ -81,31 +81,25 @@ const Confidentialite = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Database className="w-5 h-5 text-primary" />
-                    Collecte des données
+                    {t('confidentialite.dataCollection.title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold mb-2">Données collectées automatiquement</h4>
+                    <h4 className="font-semibold mb-2">{t('confidentialite.dataCollection.automaticData.title')}</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Adresse IP</li>
-                      <li>Type de navigateur et version</li>
-                      <li>Système d'exploitation</li>
-                      <li>Pages visitées et temps passé</li>
-                      <li>Date et heure des visites</li>
-                      <li>Site web de référence</li>
+                      {(t('confidentialite.dataCollection.automaticData.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-2">Données fournies volontairement</h4>
+                    <h4 className="font-semibold mb-2">{t('confidentialite.dataCollection.voluntaryData.title')}</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Nom et prénom</li>
-                      <li>Adresse email</li>
-                      <li>Numéro de téléphone</li>
-                      <li>Adresse postale</li>
-                      <li>Informations sur votre projet</li>
-                      <li>Messages et commentaires</li>
+                      {(t('confidentialite.dataCollection.voluntaryData.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
                   </div>
                 </CardContent>
@@ -114,18 +108,14 @@ const Confidentialite = () => {
               {/* Purpose of Processing */}
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <CardTitle>Finalités du traitement</CardTitle>
+                  <CardTitle>{t('confidentialite.purposes.title')}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-muted-foreground">Nous utilisons vos données personnelles pour :</p>
+                  <p className="text-muted-foreground">{t('confidentialite.purposes.intro')}</p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                    <li>Répondre à vos demandes de devis et d'information</li>
-                    <li>Vous contacter concernant nos services</li>
-                    <li>Gérer votre relation client</li>
-                    <li>Améliorer nos services et notre site web</li>
-                    <li>Vous envoyer des informations commerciales (avec votre consentement)</li>
-                    <li>Respecter nos obligations légales</li>
-                    <li>Analyser l'utilisation de notre site web</li>
+                    {(t('confidentialite.purposes.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                      <li key={index}>{item}</li>
+                    ))}
                   </ul>
                 </CardContent>
               </Card>
@@ -133,27 +123,27 @@ const Confidentialite = () => {
               {/* Legal Basis */}
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <CardTitle>Base légale du traitement</CardTitle>
+                  <CardTitle>{t('confidentialite.legalBasis.title')}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold mb-2">Consentement</h4>
-                    <p className="text-muted-foreground">Pour l'envoi de communications marketing et l'utilisation de cookies non essentiels.</p>
+                    <h4 className="font-semibold mb-2">{t('confidentialite.legalBasis.consent.title')}</h4>
+                    <p className="text-muted-foreground">{t('confidentialite.legalBasis.consent.description')}</p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-2">Exécution d'un contrat</h4>
-                    <p className="text-muted-foreground">Pour traiter vos commandes et gérer la relation contractuelle.</p>
+                    <h4 className="font-semibold mb-2">{t('confidentialite.legalBasis.contract.title')}</h4>
+                    <p className="text-muted-foreground">{t('confidentialite.legalBasis.contract.description')}</p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-2">Intérêt légitime</h4>
-                    <p className="text-muted-foreground">Pour améliorer nos services, analyser l'utilisation du site et assurer la sécurité.</p>
+                    <h4 className="font-semibold mb-2">{t('confidentialite.legalBasis.legitimateInterest.title')}</h4>
+                    <p className="text-muted-foreground">{t('confidentialite.legalBasis.legitimateInterest.description')}</p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-2">Obligation légale</h4>
-                    <p className="text-muted-foreground">Pour respecter nos obligations comptables, fiscales et réglementaires.</p>
+                    <h4 className="font-semibold mb-2">{t('confidentialite.legalBasis.legalObligation.title')}</h4>
+                    <p className="text-muted-foreground">{t('confidentialite.legalBasis.legalObligation.description')}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -161,15 +151,13 @@ const Confidentialite = () => {
               {/* Data Retention */}
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <CardTitle>Durée de conservation</CardTitle>
+                  <CardTitle>{t('confidentialite.retention.title')}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                    <li><strong>Données clients :</strong> 5 ans après la fin de la relation commerciale</li>
-                    <li><strong>Demandes de devis :</strong> 3 ans à compter de la demande</li>
-                    <li><strong>Données de navigation :</strong> 13 mois maximum</li>
-                    <li><strong>Données marketing :</strong> 3 ans à compter du dernier contact</li>
-                    <li><strong>Données comptables :</strong> 10 ans conformément aux obligations légales</li>
+                    {(t('confidentialite.retention.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                      <li key={index}><strong>{item.split(':')[0]}:</strong> {item.split(':')[1]}</li>
+                    ))}
                   </ul>
                 </CardContent>
               </Card>
@@ -177,18 +165,16 @@ const Confidentialite = () => {
               {/* Data Sharing */}
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <CardTitle>Partage des données</CardTitle>
+                  <CardTitle>{t('confidentialite.sharing.title')}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    Nous ne vendons, ne louons, ni ne partageons vos données personnelles avec des tiers, sauf dans les cas suivants :
+                    {t('confidentialite.sharing.intro')}
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                    <li>Avec votre consentement explicite</li>
-                    <li>Avec nos prestataires de services (hébergement, maintenance, support client)</li>
-                    <li>Pour respecter une obligation légale</li>
-                    <li>Pour protéger nos droits et notre sécurité</li>
-                    <li>En cas de fusion, acquisition ou cession d'activité</li>
+                    {(t('confidentialite.sharing.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                      <li key={index}>{item}</li>
+                    ))}
                   </ul>
                 </CardContent>
               </Card>
@@ -198,20 +184,20 @@ const Confidentialite = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Lock className="w-5 h-5 text-primary" />
-                    Sécurité des données
+                    {t('confidentialite.security.title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    Nous mettons en place des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre :
+                    {t('confidentialite.security.intro')}
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                    <li>L'accès non autorisé</li>
-                    <li>La modification, la divulgation ou la destruction</li>
-                    <li>La perte accidentelle</li>
+                    {(t('confidentialite.security.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                      <li key={index}>{item}</li>
+                    ))}
                   </ul>
                   <p className="text-muted-foreground">
-                    Ces mesures incluent le chiffrement des données, l'authentification, les pare-feu, les sauvegardes régulières et la formation de notre personnel.
+                    {t('confidentialite.security.measures')}
                   </p>
                 </CardContent>
               </Card>
@@ -219,34 +205,34 @@ const Confidentialite = () => {
               {/* Rights */}
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <CardTitle>Vos droits</CardTitle>
+                  <CardTitle>{t('confidentialite.rights.title')}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-muted-foreground">Conformément au RGPD, vous disposez des droits suivants :</p>
+                  <p className="text-muted-foreground">{t('confidentialite.rights.intro')}</p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <h4 className="font-semibold mb-1">Droit d'accès</h4>
-                      <p className="text-sm text-muted-foreground">Obtenir une copie de vos données personnelles</p>
+                      <h4 className="font-semibold mb-1">{t('confidentialite.rights.access.title')}</h4>
+                      <p className="text-sm text-muted-foreground">{t('confidentialite.rights.access.description')}</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">Droit de rectification</h4>
-                      <p className="text-sm text-muted-foreground">Corriger des données inexactes ou incomplètes</p>
+                      <h4 className="font-semibold mb-1">{t('confidentialite.rights.rectification.title')}</h4>
+                      <p className="text-sm text-muted-foreground">{t('confidentialite.rights.rectification.description')}</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">Droit d'effacement</h4>
-                      <p className="text-sm text-muted-foreground">Demander la suppression de vos données</p>
+                      <h4 className="font-semibold mb-1">{t('confidentialite.rights.erasure.title')}</h4>
+                      <p className="text-sm text-muted-foreground">{t('confidentialite.rights.erasure.description')}</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">Droit à la portabilité</h4>
-                      <p className="text-sm text-muted-foreground">Récupérer vos données dans un format structuré</p>
+                      <h4 className="font-semibold mb-1">{t('confidentialite.rights.portability.title')}</h4>
+                      <p className="text-sm text-muted-foreground">{t('confidentialite.rights.portability.description')}</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">Droit d'opposition</h4>
-                      <p className="text-sm text-muted-foreground">Vous opposer au traitement de vos données</p>
+                      <h4 className="font-semibold mb-1">{t('confidentialite.rights.objection.title')}</h4>
+                      <p className="text-sm text-muted-foreground">{t('confidentialite.rights.objection.description')}</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">Droit de limitation</h4>
-                      <p className="text-sm text-muted-foreground">Limiter le traitement de vos données</p>
+                      <h4 className="font-semibold mb-1">{t('confidentialite.rights.restriction.title')}</h4>
+                      <p className="text-sm text-muted-foreground">{t('confidentialite.rights.restriction.description')}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -257,22 +243,23 @@ const Confidentialite = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Mail className="w-5 h-5 text-primary" />
-                    Exercer vos droits
+                    {t('confidentialite.exerciseRights.title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    Pour exercer vos droits, contactez-nous :
+                    {t('confidentialite.exerciseRights.intro')}
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                    <li>Par email : contact@horsemobil.fr</li>
-                    <li>Par courrier : HORSEMOBIL SARL, 123 Avenue des Chevaux, 69000 Lyon</li>
+                    {(t('confidentialite.exerciseRights.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                      <li key={index}>{item}</li>
+                    ))}
                   </ul>
                   <p className="text-muted-foreground">
-                    Nous vous répondrons dans un délai maximum d'un mois. Une pièce d'identité pourra vous être demandée pour vérifier votre identité.
+                    {t('confidentialite.exerciseRights.response')}
                   </p>
                   <p className="text-muted-foreground">
-                    Vous avez également le droit d'introduire une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés).
+                    {t('confidentialite.exerciseRights.complaint')}
                   </p>
                 </CardContent>
               </Card>
@@ -280,11 +267,11 @@ const Confidentialite = () => {
               {/* Cookies */}
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <CardTitle>Cookies et technologies similaires</CardTitle>
+                  <CardTitle>{t('confidentialite.cookies.title')}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    Notre site utilise des cookies et technologies similaires. Pour plus d'informations, consultez notre <a href="/cookies" className="text-primary hover:underline">politique de cookies</a>.
+                    {t('confidentialite.cookies.content')} <a href="/cookies" className="text-primary hover:underline">{t('confidentialite.cookies.link')}</a>.
                   </p>
                 </CardContent>
               </Card>
@@ -292,17 +279,17 @@ const Confidentialite = () => {
               {/* Updates */}
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <CardTitle>Modifications de cette politique</CardTitle>
+                  <CardTitle>{t('confidentialite.updates.title')}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Les modifications seront publiées sur cette page avec une nouvelle date de mise à jour.
+                    {t('confidentialite.updates.paragraph1')}
                   </p>
                   <p className="text-muted-foreground">
-                    Nous vous encourageons à consulter régulièrement cette page pour rester informé de nos pratiques en matière de confidentialité.
+                    {t('confidentialite.updates.paragraph2')}
                   </p>
                   <p className="text-muted-foreground mt-4">
-                    <strong>Dernière mise à jour :</strong> 5 septembre 2024
+                    <strong>{t('confidentialite.updates.lastUpdate')}</strong> {t('confidentialite.updates.date')}
                   </p>
                 </CardContent>
               </Card>
