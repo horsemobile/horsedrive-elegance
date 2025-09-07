@@ -21,6 +21,7 @@ const Devis = () => {
   const { toast } = useToast();
   const { vehicles, loading, error } = useVehicles();
   
+  const [selectedCategory, setSelectedCategory] = useState<string>('');
   const [selectedVehicle, setSelectedVehicle] = useState<string>('');
   const [customerName, setCustomerName] = useState('');
   const [customerEmail, setCustomerEmail] = useState('');
@@ -34,13 +35,17 @@ const Devis = () => {
   console.log('Vehicles loading:', loading);
   console.log('Vehicles error:', error);
 
-  // Pre-select vehicle from URL parameter
+  // Pre-select vehicle from URL parameter and set category accordingly
   useEffect(() => {
     const vehicleId = searchParams.get('vehicle');
-    if (vehicleId) {
-      setSelectedVehicle(vehicleId);
+    if (vehicleId && vehicles.length > 0) {
+      const vehicle = vehicles.find(v => v.id === vehicleId);
+      if (vehicle) {
+        setSelectedCategory(vehicle.category);
+        setSelectedVehicle(vehicleId);
+      }
     }
-  }, [searchParams]);
+  }, [searchParams, vehicles]);
 
   const getSelectedVehicleInfo = (): Vehicle | null => {
     return vehicles.find(v => v.id === selectedVehicle) || null;
@@ -92,6 +97,7 @@ const Devis = () => {
       setDeliveryDate('');
       setMessage('');
       if (!searchParams.get('vehicle')) {
+        setSelectedCategory('');
         setSelectedVehicle('');
       }
 
@@ -168,26 +174,50 @@ const Devis = () => {
                 {/* Vehicle Selection */}
                 <div>
                   <h3 className="text-lg font-semibold mb-4">{t('order.form.vehicle.title')}</h3>
-                  <div className="space-y-2">
-                    <Label htmlFor="vehicle">{t('order.form.vehicle.select')}</Label>
-                    <Select value={selectedVehicle} onValueChange={setSelectedVehicle}>
-                      <SelectTrigger>
-                        <SelectValue placeholder={t('order.form.vehicle.placeholder')} />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {vehicles.length === 0 ? (
-                          <SelectItem value="no-vehicles" disabled>
-                            {loading ? "Chargement..." : "Aucun véhicule disponible"}
-                          </SelectItem>
-                        ) : (
-                          vehicles.map((vehicle) => (
-                            <SelectItem key={vehicle.id} value={vehicle.id}>
-                              {vehicle.name} - {vehicle.sale_price}€
-                            </SelectItem>
-                          ))
-                        )}
-                      </SelectContent>
-                    </Select>
+                  
+                  {/* Category Selection */}
+                  <div className="space-y-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="category">Catégorie de véhicule *</Label>
+                      <Select value={selectedCategory} onValueChange={(value) => {
+                        setSelectedCategory(value);
+                        setSelectedVehicle(''); // Reset vehicle when category changes
+                      }}>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Choisissez une catégorie" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="vans">Vans</SelectItem>
+                          <SelectItem value="camions">Camions</SelectItem>
+                          <SelectItem value="vans_amenage">Vans Aménagés</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    {/* Vehicle Selection - only show when category is selected */}
+                    {selectedCategory && (
+                      <div className="space-y-2">
+                        <Label htmlFor="vehicle">{t('order.form.vehicle.select')}</Label>
+                        <Select value={selectedVehicle} onValueChange={setSelectedVehicle}>
+                          <SelectTrigger>
+                            <SelectValue placeholder={t('order.form.vehicle.placeholder')} />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {vehicles.length === 0 ? (
+                              <SelectItem value="no-vehicles" disabled>
+                                {loading ? "Chargement..." : "Aucun véhicule disponible"}
+                              </SelectItem>
+                            ) : (
+                              vehicles.map((vehicle) => (
+                                <SelectItem key={vehicle.id} value={vehicle.id}>
+                                  {vehicle.name} - {vehicle.sale_price}€
+                                </SelectItem>
+                              ))
+                            )}
+                          </SelectContent>
+                        </Select>
+                      </div>
+                    )}
                   </div>
                   
                   {getSelectedVehicleInfo() && (
