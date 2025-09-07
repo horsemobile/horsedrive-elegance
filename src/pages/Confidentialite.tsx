@@ -3,8 +3,10 @@ import Footer from '@/components/ui/footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Shield, Eye, Lock, Database, Users, Mail } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Confidentialite = () => {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -16,13 +18,13 @@ const Confidentialite = () => {
             <div className="text-center max-w-4xl mx-auto">
               <Badge variant="outline" className="mb-4">
                 <Shield className="w-4 h-4 mr-2" />
-                Protection des données
+                {t('confidentialite.badge')}
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Politique de Confidentialité
+                {t('confidentialite.title')}
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                HORSEMOBIL s'engage à protéger votre vie privée et vos données personnelles
+                {t('confidentialite.subtitle')}
               </p>
             </div>
           </div>
@@ -38,18 +40,18 @@ const Confidentialite = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Eye className="w-5 h-5 text-primary" />
-                    Introduction
+                    {t('confidentialite.introduction.title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    La présente politique de confidentialité décrit comment HORSEMOBIL collecte, utilise et protège vos informations personnelles lorsque vous utilisez notre site web ou nos services.
+                    {t('confidentialite.introduction.paragraph1')}
                   </p>
                   <p className="text-muted-foreground">
-                    En utilisant notre site web, vous acceptez les pratiques décrites dans cette politique de confidentialité. Si vous n'acceptez pas ces pratiques, veuillez ne pas utiliser notre site.
+                    {t('confidentialite.introduction.paragraph2')}
                   </p>
                   <p className="text-muted-foreground">
-                    Cette politique est conforme au Règlement Général sur la Protection des Données (RGPD) et à la loi française Informatique et Libertés.
+                    {t('confidentialite.introduction.paragraph3')}
                   </p>
                 </CardContent>
               </Card>

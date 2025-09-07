@@ -886,5 +886,16 @@
       "appointmentButton": "Termin vereinbaren",
       "quoteButton": "Angebot anfordern"
     }
+  },
+  "confidentialite": {
+    "badge": "Datenschutz",
+    "title": "Datenschutzerklärung",
+    "subtitle": "HORSEMOBIL verpflichtet sich, Ihre Privatsphäre und persönlichen Daten zu schützen",
+    "introduction": {
+      "title": "Einführung",
+      "paragraph1": "Diese Datenschutzerklärung beschreibt, wie HORSEMOBIL Ihre persönlichen Informationen sammelt, verwendet und schützt, wenn Sie unsere Website oder Dienstleistungen nutzen.",
+      "paragraph2": "Durch die Nutzung unserer Website stimmen Sie den in dieser Datenschutzerklärung beschriebenen Praktiken zu. Wenn Sie diese Praktiken nicht akzeptieren, nutzen Sie bitte nicht unsere Website.",
+      "paragraph3": "Diese Richtlinie entspricht der Datenschutz-Grundverordnung (DSGVO) und dem französischen Datenschutzgesetz."
+    }
   }
 }
