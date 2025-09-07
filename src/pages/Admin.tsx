@@ -3,11 +3,17 @@ import { useAuth } from '@/contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/hooks/use-toast';
-import { Plus, Edit, Trash2, Eye } from 'lucide-react';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '@/components/ui/alert-dialog';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+
+import VehiclesList from '@/components/admin/VehiclesList';
+import VehicleForm from '@/components/admin/VehicleForm';
+import VehicleDetails from '@/components/admin/VehicleDetails';
+import BookingDetails from '@/components/admin/BookingDetails';
 
 interface Vehicle {
   id: string;
@@ -19,6 +25,9 @@ interface Vehicle {
   price_per_month: number;
   available: boolean;
   specifications: any;
+  images: string[];
+  created_at: string;
+  updated_at: string;
 }
 
 interface Booking {
@@ -43,6 +52,14 @@ const Admin = () => {
   const [vehicles, setVehicles] = useState<Vehicle[]>([]);
   const [bookings, setBookings] = useState<Booking[]>([]);
   const [loading, setLoading] = useState(true);
+
+  // Modal states
+  const [showVehicleForm, setShowVehicleForm] = useState(false);
+  const [showVehicleDetails, setShowVehicleDetails] = useState(false);
+  const [showBookingDetails, setShowBookingDetails] = useState(false);
+  const [selectedVehicleId, setSelectedVehicleId] = useState<string | undefined>();
+  const [selectedBookingId, setSelectedBookingId] = useState<string | undefined>();
+  const [vehicleToDelete, setVehicleToDelete] = useState<string | null>(null);
 
   useEffect(() => {
     if (!authLoading && (!user || !isAdmin)) {
@@ -118,25 +135,57 @@ const Admin = () => {
     }
   };
 
-  const toggleVehicleAvailability = async (vehicleId: string, available: boolean) => {
+  const handleAddVehicle = () => {
+    setSelectedVehicleId(undefined);
+    setShowVehicleForm(true);
+  };
+
+  const handleEditVehicle = (vehicleId: string) => {
+    setSelectedVehicleId(vehicleId);
+    setShowVehicleForm(true);
+  };
+
+  const handleViewVehicle = (vehicleId: string) => {
+    setSelectedVehicleId(vehicleId);
+    setShowVehicleDetails(true);
+  };
+
+  const handleDeleteVehicle = async () => {
+    if (!vehicleToDelete) return;
+
     const { error } = await supabase
       .from('vehicles')
-      .update({ available: !available })
-      .eq('id', vehicleId);
+      .delete()
+      .eq('id', vehicleToDelete);
 
     if (error) {
       toast({
         title: "Erreur",
-        description: "Impossible de modifier la disponibilité",
+        description: "Impossible de supprimer le véhicule",
         variant: "destructive",
       });
     } else {
       toast({
         title: "Succès",
-        description: "Disponibilité du véhicule mise à jour",
+        description: "Véhicule supprimé avec succès",
       });
       fetchData();
     }
+
+    setVehicleToDelete(null);
+  };
+
+  const handleViewBooking = (bookingId: string) => {
+    setSelectedBookingId(bookingId);
+    setShowBookingDetails(true);
+  };
+
+  const closeModals = () => {
+    setShowVehicleForm(false);
+    setShowVehicleDetails(false);
+    setShowBookingDetails(false);
+    setSelectedVehicleId(undefined);
+    setSelectedBookingId(undefined);
   };
 
   const getCategoryLabel = (category: string) => {
@@ -200,145 +249,148 @@ const Admin = () => {
           </TabsList>
 
           <TabsContent value="vehicles" className="space-y-6">
-            <div className="flex justify-between items-center">
-              <h2 className="text-xl font-semibold">Gestion des véhicules</h2>
-              <Button>
-                <Plus className="w-4 h-4 mr-2" />
-                Ajouter un véhicule
-              </Button>
-            </div>
+            <VehiclesList
+              vehicles={vehicles}
+              onAdd={handleAddVehicle}
+              onEdit={handleEditVehicle}
+              onView={handleViewVehicle}
+              onDelete={(id) => setVehicleToDelete(id)}
+            />
+          </TabsContent>
 
-            <div className="grid gap-4">
-              {vehicles.map((vehicle) => (
-                <Card key={vehicle.id}>
-                  <CardHeader>
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <CardTitle className="flex items-center gap-2">
-                          {vehicle.name}
-                          <Badge variant={vehicle.available ? "default" : "secondary"}>
-                            {vehicle.available ? 'Disponible' : 'Indisponible'}
-                          </Badge>
-                        </CardTitle>
-                        <CardDescription>
-                          {getCategoryLabel(vehicle.category)}
-                        </CardDescription>
+          <TabsContent value="bookings" className="space-y-6">
+            <div className="space-y-4">
+              <h2 className="text-xl font-semibold">Gestion des réservations</h2>
+              
+              <div className="grid gap-4">
+                {bookings.map((booking) => (
+                  <Card key={booking.id} className="hover:shadow-md transition-shadow cursor-pointer">
+                    <CardHeader onClick={() => handleViewBooking(booking.id)}>
+                      <div className="flex justify-between items-start">
+                        <div>
+                          <CardTitle className="flex items-center gap-2">
+                            {booking.customer_name}
+                            <Badge className={getStatusColor(booking.status)}>
+                              {booking.status}
+                            </Badge>
+                          </CardTitle>
+                          <CardDescription>
+                            {booking.vehicles?.name} • {booking.customer_email}
+                          </CardDescription>
+                        </div>
+                        <div className="text-right text-sm text-muted-foreground">
+                          {new Date(booking.created_at).toLocaleDateString('fr-FR')}
+                        </div>
                       </div>
-                      <div className="flex gap-2">
-                        <Button size="sm" variant="outline">
-                          <Edit className="w-4 h-4" />
+                    </CardHeader>
+                    <CardContent onClick={() => handleViewBooking(booking.id)}>
+                      <div className="grid grid-cols-2 gap-4 mb-4">
+                        <div>
+                          <span className="font-medium">Période:</span> {' '}
+                          {new Date(booking.start_date).toLocaleDateString('fr-FR')} - {' '}
+                          {new Date(booking.end_date).toLocaleDateString('fr-FR')}
+                        </div>
+                        <div>
+                          <span className="font-medium">Prix total:</span> {booking.total_price}€
+                        </div>
+                      </div>
+                      
+                      <div className="flex gap-2" onClick={(e) => e.stopPropagation()}>
+                        <Button 
+                          size="sm" 
+                          onClick={() => updateBookingStatus(booking.id, 'confirmed')}
+                          disabled={booking.status === 'confirmed'}
+                        >
+                          Confirmer
                         </Button>
                         <Button 
                           size="sm" 
                           variant="outline"
-                          onClick={() => toggleVehicleAvailability(vehicle.id, vehicle.available)}
+                          onClick={() => updateBookingStatus(booking.id, 'cancelled')}
+                          disabled={booking.status === 'cancelled'}
                         >
-                          <Eye className="w-4 h-4" />
+                          Annuler
                         </Button>
-                        <Button size="sm" variant="outline">
-                          <Trash2 className="w-4 h-4" />
+                        <Button 
+                          size="sm" 
+                          variant="outline"
+                          onClick={() => updateBookingStatus(booking.id, 'completed')}
+                          disabled={booking.status === 'completed'}
+                        >
+                          Terminer
                         </Button>
                       </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground mb-4">{vehicle.description}</p>
-                    <div className="grid grid-cols-3 gap-4 text-sm">
-                      <div>
-                        <span className="font-medium">Jour:</span> {vehicle.price_per_day}€
-                      </div>
-                      <div>
-                        <span className="font-medium">Semaine:</span> {vehicle.price_per_week}€
-                      </div>
-                      <div>
-                        <span className="font-medium">Mois:</span> {vehicle.price_per_month}€
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </TabsContent>
-
-          <TabsContent value="bookings" className="space-y-6">
-            <h2 className="text-xl font-semibold">Gestion des réservations</h2>
-
-            <div className="grid gap-4">
-              {bookings.map((booking) => (
-                <Card key={booking.id}>
-                  <CardHeader>
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <CardTitle className="flex items-center gap-2">
-                          {booking.customer_name}
-                          <Badge className={getStatusColor(booking.status)}>
-                            {booking.status}
-                          </Badge>
-                        </CardTitle>
-                        <CardDescription>
-                          {booking.vehicles?.name} • {booking.customer_email}
-                        </CardDescription>
-                      </div>
-                      <div className="text-right text-sm text-muted-foreground">
-                        {new Date(booking.created_at).toLocaleDateString('fr-FR')}
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid grid-cols-2 gap-4 mb-4">
-                      <div>
-                        <span className="font-medium">Période:</span> {' '}
-                        {new Date(booking.start_date).toLocaleDateString('fr-FR')} - {' '}
-                        {new Date(booking.end_date).toLocaleDateString('fr-FR')}
-                      </div>
-                      <div>
-                        <span className="font-medium">Prix total:</span> {booking.total_price}€
-                      </div>
-                      {booking.customer_phone && (
-                        <div>
-                          <span className="font-medium">Téléphone:</span> {booking.customer_phone}
-                        </div>
-                      )}
-                    </div>
-                    
-                    {booking.message && (
-                      <div className="mb-4">
-                        <span className="font-medium">Message:</span>
-                        <p className="text-sm text-muted-foreground mt-1">{booking.message}</p>
-                      </div>
-                    )}
-
-                    <div className="flex gap-2">
-                      <Button 
-                        size="sm" 
-                        onClick={() => updateBookingStatus(booking.id, 'confirmed')}
-                        disabled={booking.status === 'confirmed'}
-                      >
-                        Confirmer
-                      </Button>
-                      <Button 
-                        size="sm" 
-                        variant="outline"
-                        onClick={() => updateBookingStatus(booking.id, 'cancelled')}
-                        disabled={booking.status === 'cancelled'}
-                      >
-                        Annuler
-                      </Button>
-                      <Button 
-                        size="sm" 
-                        variant="outline"
-                        onClick={() => updateBookingStatus(booking.id, 'completed')}
-                        disabled={booking.status === 'completed'}
-                      >
-                        Terminer
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </TabsContent>
         </Tabs>
+
+        {/* Vehicle Form Dialog */}
+        <Dialog open={showVehicleForm} onOpenChange={setShowVehicleForm}>
+          <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+            <VehicleForm
+              vehicleId={selectedVehicleId}
+              onClose={closeModals}
+              onSave={() => {
+                fetchData();
+                closeModals();
+              }}
+            />
+          </DialogContent>
+        </Dialog>
+
+        {/* Vehicle Details Dialog */}
+        <Dialog open={showVehicleDetails} onOpenChange={setShowVehicleDetails}>
+          <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+            {selectedVehicleId && (
+              <VehicleDetails
+                vehicleId={selectedVehicleId}
+                onBack={closeModals}
+                onEdit={(id) => {
+                  setShowVehicleDetails(false);
+                  handleEditVehicle(id);
+                }}
+                onDelete={(id) => {
+                  setShowVehicleDetails(false);
+                  setVehicleToDelete(id);
+                }}
+              />
+            )}
+          </DialogContent>
+        </Dialog>
+
+        {/* Booking Details Dialog */}
+        <Dialog open={showBookingDetails} onOpenChange={setShowBookingDetails}>
+          <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+            {selectedBookingId && (
+              <BookingDetails
+                bookingId={selectedBookingId}
+                onBack={closeModals}
+              />
+            )}
+          </DialogContent>
+        </Dialog>
+
+        {/* Delete Confirmation Dialog */}
+        <AlertDialog open={!!vehicleToDelete} onOpenChange={() => setVehicleToDelete(null)}>
+          <AlertDialogContent>
+            <AlertDialogHeader>
+              <AlertDialogTitle>Confirmer la suppression</AlertDialogTitle>
+              <AlertDialogDescription>
+                Êtes-vous sûr de vouloir supprimer ce véhicule ? Cette action est irréversible.
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <AlertDialogFooter>
+              <AlertDialogCancel>Annuler</AlertDialogCancel>
+              <AlertDialogAction onClick={handleDeleteVehicle}>
+                Supprimer
+              </AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
       </main>
     </div>
   );
