@@ -164,16 +164,16 @@ const Footer = () => {
               © {currentYear} HorseMobil GmbH. {t('footer.rights')}
             </div>
             <nav className="flex space-x-6 text-sm">
-              <Link to="/legal" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/mentions-legales" className="text-muted-foreground hover:text-primary transition-colors">
                 {t('footer.legal_notices')}
               </Link>
-              <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/confidentialite" className="text-muted-foreground hover:text-primary transition-colors">
                 {t('footer.privacy')}
               </Link>
               <Link to="/cookies" className="text-muted-foreground hover:text-primary transition-colors">
                 {t('footer.cookies')}
               </Link>
-              <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/cgu" className="text-muted-foreground hover:text-primary transition-colors">
                 {t('footer.terms')}
               </Link>
             </nav>
