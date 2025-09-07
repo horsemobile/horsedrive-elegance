@@ -24,7 +24,7 @@ i18n
   .init({
     resources,
     fallbackLng: 'fr',
-    debug: true, // Temporarily enable debug for troubleshooting
+    debug: false, // Debug disabled
     
     detection: {
       order: ['querystring', 'localStorage', 'navigator', 'htmlTag'],
