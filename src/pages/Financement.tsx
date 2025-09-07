@@ -56,7 +56,7 @@ const Financement = () => {
     },
     {
       title: t('financing.options.leasing.title') || 'Leasing',
-      description: t('financing.options.leasing.description') || 'Location avec option d\'achat',
+      description: t('financing.options.leasing.description') || "Location avec option d'achat",
       rate: t('financing.options.leasing.rate') || '0% sans intérêt',
       duration: t('financing.options.leasing.duration') || '24 à 60 mois',
       advantages: (() => {
