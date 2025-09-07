@@ -7,14 +7,125 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Checkbox } from '@/components/ui/checkbox';
 import { Calculator, FileText, Clock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
+import { useVehicles, Vehicle } from '@/hooks/useVehicles';
 
 const Devis = () => {
   const { t } = useTranslation();
-  const [vehicleType, setVehicleType] = useState('');
+  const [searchParams] = useSearchParams();
+  const { toast } = useToast();
+  const { vehicles } = useVehicles();
+  
+  const [selectedVehicle, setSelectedVehicle] = useState<string>('');
+  const [customerName, setCustomerName] = useState('');
+  const [customerEmail, setCustomerEmail] = useState('');
+  const [customerPhone, setCustomerPhone] = useState('');
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
+  const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  // Pre-select vehicle from URL parameter
+  useEffect(() => {
+    const vehicleId = searchParams.get('vehicle');
+    if (vehicleId) {
+      setSelectedVehicle(vehicleId);
+    }
+  }, [searchParams]);
+
+  const getSelectedVehicleInfo = (): Vehicle | null => {
+    return vehicles.find(v => v.id === selectedVehicle) || null;
+  };
+
+  const calculatePrice = (): number => {
+    const vehicle = getSelectedVehicleInfo();
+    if (!vehicle || !startDate || !endDate) return 0;
+
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    const days = Math.ceil((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+
+    if (days <= 0) return 0;
+
+    // Calculate best price
+    if (days >= 30) {
+      const months = Math.floor(days / 30);
+      const remainingDays = days % 30;
+      return (months * vehicle.price_per_month) + (remainingDays * vehicle.price_per_day);
+    } else if (days >= 7) {
+      const weeks = Math.floor(days / 7);
+      const remainingDays = days % 7;
+      return (weeks * vehicle.price_per_week) + (remainingDays * vehicle.price_per_day);
+    } else {
+      return days * vehicle.price_per_day;
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      if (!selectedVehicle || !customerName || !customerEmail || !startDate || !endDate) {
+        toast({
+          title: "Erreur",
+          description: "Veuillez remplir tous les champs obligatoires",
+          variant: "destructive",
+        });
+        return;
+      }
+
+      const totalPrice = calculatePrice();
+
+      const { error } = await supabase
+        .from('bookings')
+        .insert({
+          vehicle_id: selectedVehicle,
+          customer_name: customerName,
+          customer_email: customerEmail,
+          customer_phone: customerPhone,
+          start_date: startDate,
+          end_date: endDate,
+          total_price: totalPrice,
+          message: message,
+          status: 'pending'
+        });
+
+      if (error) {
+        throw error;
+      }
+
+      toast({
+        title: "Demande envoyée",
+        description: "Votre demande de devis a été envoyée avec succès. Nous vous recontacterons rapidement.",
+      });
+
+      // Reset form
+      setCustomerName('');
+      setCustomerEmail('');
+      setCustomerPhone('');
+      setStartDate('');
+      setEndDate('');
+      setMessage('');
+      if (!searchParams.get('vehicle')) {
+        setSelectedVehicle('');
+      }
+
+    } catch (error) {
+      toast({
+        title: "Erreur",
+        description: "Une erreur est survenue lors de l'envoi de votre demande",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
   
   return (
     <div className="min-h-screen bg-background">
@@ -66,155 +177,146 @@ const Devis = () => {
             </Card>
           </div>
 
-          <Card className="max-w-4xl mx-auto">
-            <CardHeader>
-              <CardTitle>{t('pages.quote.formTitle')}</CardTitle>
-              <CardDescription>
-                {t('pages.quote.formDescription')}
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-8">
-              {/* Contact Information */}
-              <div>
-                <h3 className="text-lg font-semibold mb-4">{t('pages.quote.contactInfo')}</h3>
-                <div className="grid md:grid-cols-2 gap-4">
+          <form onSubmit={handleSubmit}>
+            <Card className="max-w-4xl mx-auto">
+              <CardHeader>
+                <CardTitle>Demande de réservation</CardTitle>
+                <CardDescription>
+                  Remplissez ce formulaire pour réserver un véhicule
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-8">
+                {/* Vehicle Selection */}
+                <div>
+                  <h3 className="text-lg font-semibold mb-4">Véhicule</h3>
                   <div className="space-y-2">
-                    <Label htmlFor="firstName">{t('pages.quote.firstName')} *</Label>
-                    <Input id="firstName" placeholder={t('pages.quote.firstNamePlaceholder')} required />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="lastName">{t('pages.quote.lastName')} *</Label>
-                    <Input id="lastName" placeholder={t('pages.quote.lastNamePlaceholder')} required />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">{t('pages.quote.email')} *</Label>
-                    <Input id="email" type="email" placeholder={t('pages.quote.emailPlaceholder')} required />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="phone">{t('pages.quote.phone')} *</Label>
-                    <Input id="phone" type="tel" placeholder={t('pages.quote.phonePlaceholder')} required />
-                  </div>
-                </div>
-              </div>
-
-              {/* Vehicle Type */}
-              <div>
-                <h3 className="text-lg font-semibold mb-4">{t('pages.quote.vehicleType')}</h3>
-                <div className="space-y-2">
-                  <Label htmlFor="vehicleType">{t('pages.quote.category')} *</Label>
-                  <Select onValueChange={setVehicleType}>
-                    <SelectTrigger>
-                      <SelectValue placeholder={t('pages.quote.selectVehicleType')} />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="camion-equestre">{t('pages.quote.equestrianTruck')}</SelectItem>
-                      <SelectItem value="van-equestre">{t('pages.quote.equestrianVan')}</SelectItem>
-                      <SelectItem value="van-amenage">{t('pages.quote.convertedVan')}</SelectItem>
-                      <SelectItem value="remorque">{t('pages.quote.trailer')}</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
-
-              {/* Specifications */}
-              <div>
-                <h3 className="text-lg font-semibold mb-4">{t('pages.quote.specifications')}</h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="horsesNumber">{t('pages.quote.horsesNumber')}</Label>
-                    <Select>
+                    <Label htmlFor="vehicle">Sélectionnez un véhicule *</Label>
+                    <Select value={selectedVehicle} onValueChange={setSelectedVehicle}>
                       <SelectTrigger>
-                        <SelectValue placeholder={t('pages.quote.selectNumber')} />
+                        <SelectValue placeholder="Choisissez un véhicule" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="1">{t('pages.quote.oneHorse')}</SelectItem>
-                        <SelectItem value="2">{t('pages.quote.twoHorses')}</SelectItem>
-                        <SelectItem value="3">{t('pages.quote.threeHorses')}</SelectItem>
-                        <SelectItem value="4">{t('pages.quote.fourHorses')}</SelectItem>
-                        <SelectItem value="5+">{t('pages.quote.fiveOrMoreHorses')}</SelectItem>
+                        {vehicles.map((vehicle) => (
+                          <SelectItem key={vehicle.id} value={vehicle.id}>
+                            {vehicle.name} - {vehicle.price_per_day}€/jour
+                          </SelectItem>
+                        ))}
                       </SelectContent>
                     </Select>
                   </div>
                   
+                  {getSelectedVehicleInfo() && (
+                    <div className="mt-4 p-4 bg-muted rounded-lg">
+                      <h4 className="font-semibold">{getSelectedVehicleInfo()?.name}</h4>
+                      <p className="text-sm text-muted-foreground">{getSelectedVehicleInfo()?.description}</p>
+                      <div className="grid grid-cols-3 gap-4 mt-2 text-sm">
+                        <div>Jour: {getSelectedVehicleInfo()?.price_per_day}€</div>
+                        <div>Semaine: {getSelectedVehicleInfo()?.price_per_week}€</div>
+                        <div>Mois: {getSelectedVehicleInfo()?.price_per_month}€</div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* Contact Information */}
+                <div>
+                  <h3 className="text-lg font-semibold mb-4">Informations de contact</h3>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="customerName">Nom complet *</Label>
+                      <Input 
+                        id="customerName" 
+                        value={customerName}
+                        onChange={(e) => setCustomerName(e.target.value)}
+                        placeholder="Votre nom complet" 
+                        required 
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="email">Email *</Label>
+                      <Input 
+                        id="email" 
+                        type="email" 
+                        value={customerEmail}
+                        onChange={(e) => setCustomerEmail(e.target.value)}
+                        placeholder="votre@email.com" 
+                        required 
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="phone">Téléphone</Label>
+                      <Input 
+                        id="phone" 
+                        type="tel" 
+                        value={customerPhone}
+                        onChange={(e) => setCustomerPhone(e.target.value)}
+                        placeholder="+33 1 23 45 67 89" 
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Rental Period */}
+                <div>
+                  <h3 className="text-lg font-semibold mb-4">Période de location</h3>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="startDate">Date de début *</Label>
+                      <Input 
+                        id="startDate" 
+                        type="date" 
+                        value={startDate}
+                        onChange={(e) => setStartDate(e.target.value)}
+                        required 
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="endDate">Date de fin *</Label>
+                      <Input 
+                        id="endDate" 
+                        type="date" 
+                        value={endDate}
+                        onChange={(e) => setEndDate(e.target.value)}
+                        required 
+                      />
+                    </div>
+                  </div>
+                  
+                  {startDate && endDate && getSelectedVehicleInfo() && (
+                    <div className="mt-4 p-4 bg-primary/10 rounded-lg">
+                      <div className="flex justify-between items-center">
+                        <span className="font-semibold">Prix total estimé:</span>
+                        <span className="text-xl font-bold text-primary">
+                          {calculatePrice().toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* Message */}
+                <div>
+                  <h3 className="text-lg font-semibold mb-4">Message</h3>
                   <div className="space-y-2">
-                    <Label htmlFor="budget">{t('pages.quote.approximateBudget')}</Label>
-                    <Select>
-                      <SelectTrigger>
-                        <SelectValue placeholder={t('pages.quote.selectBudget')} />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {vehicleType === 'remorque' ? (
-                          <>
-                            <SelectItem value="4k-15k">{t('pages.quote.budget4k15k')}</SelectItem>
-                            <SelectItem value="15k-25k">{t('pages.quote.budget15k25k')}</SelectItem>
-                            <SelectItem value="25k-35k">{t('pages.quote.budget25k35k')}</SelectItem>
-                            <SelectItem value="35k+">{t('pages.quote.budget35kPlus')}</SelectItem>
-                          </>
-                        ) : (
-                          <>
-                            <SelectItem value="35k-50k">{t('pages.quote.budget35k50k')}</SelectItem>
-                            <SelectItem value="50k-75k">{t('pages.quote.budget50k75k')}</SelectItem>
-                            <SelectItem value="75k-100k">{t('pages.quote.budget75k100k')}</SelectItem>
-                            <SelectItem value="100k+">{t('pages.quote.budget100kPlus')}</SelectItem>
-                          </>
-                        )}
-                      </SelectContent>
-                    </Select>
+                    <Label htmlFor="message">
+                      Informations complémentaires
+                    </Label>
+                    <Textarea 
+                      id="message" 
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      placeholder="Décrivez vos besoins spécifiques..."
+                      className="min-h-32"
+                    />
                   </div>
                 </div>
-              </div>
 
-              {/* Options */}
-              <div>
-                <h3 className="text-lg font-semibold mb-4">{t('pages.quote.desiredOptions')}</h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="flex items-center space-x-2">
-                    <Checkbox id="tack-compartment" />
-                    <Label htmlFor="tack-compartment">{t('pages.quote.tackCompartment')}</Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Checkbox id="water-tank" />
-                    <Label htmlFor="water-tank">{t('pages.quote.waterTank')}</Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Checkbox id="sleeping-area" />
-                    <Label htmlFor="sleeping-area">{t('pages.quote.sleepingArea')}</Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Checkbox id="kitchen-area" />
-                    <Label htmlFor="kitchen-area">{t('pages.quote.kitchenArea')}</Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Checkbox id="air-conditioning" />
-                    <Label htmlFor="air-conditioning">{t('pages.quote.airConditioning')}</Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Checkbox id="led-lighting" />
-                    <Label htmlFor="led-lighting">{t('pages.quote.ledLighting')}</Label>
-                  </div>
-                </div>
-              </div>
-
-              {/* Project Description */}
-              <div>
-                <h3 className="text-lg font-semibold mb-4">{t('pages.quote.projectDescription')}</h3>
-                <div className="space-y-2">
-                  <Label htmlFor="projectDescription">
-                    {t('pages.quote.projectDescriptionLabel')}
-                  </Label>
-                  <Textarea 
-                    id="projectDescription" 
-                    placeholder={t('pages.quote.projectDescriptionPlaceholder')}
-                    className="min-h-32"
-                  />
-                </div>
-              </div>
-
-                <Button className="w-full" size="lg">
-                  {t('pages.quote.submitQuote')}
+                <Button type="submit" className="w-full" size="lg" disabled={loading}>
+                  {loading ? 'Envoi en cours...' : 'Envoyer la demande'}
                 </Button>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </form>
         </div>
       </main>
       <Footer />
