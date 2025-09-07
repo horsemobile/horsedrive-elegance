@@ -28,7 +28,10 @@ const Financement = () => {
       description: t('financing.options.classicCredit.description'),
       rate: t('financing.options.classicCredit.rate'),
       duration: t('financing.options.classicCredit.duration'),
-      advantages: t('financing.options.classicCredit.advantages', { returnObjects: true }) as string[],
+      advantages: (() => {
+        const advData = t('financing.options.classicCredit.advantages', { returnObjects: true });
+        return Array.isArray(advData) ? advData : ["Taux 0%", "Remboursement flexible", "Assurance optionnelle"];
+      })(),
       icon: CreditCard
     },
     {
@@ -36,7 +39,10 @@ const Financement = () => {
       description: t('financing.options.leasing.description'),
       rate: t('financing.options.leasing.rate'),
       duration: t('financing.options.leasing.duration'),
-      advantages: t('financing.options.leasing.advantages', { returnObjects: true }) as string[],
+      advantages: (() => {
+        const advData = t('financing.options.leasing.advantages', { returnObjects: true });
+        return Array.isArray(advData) ? advData : ["Pas d'apport", "Mensualités réduites", "Option rachat"];
+      })(),
       icon: FileText
     },
     {
@@ -44,17 +50,26 @@ const Financement = () => {
       description: t('financing.options.balloonCredit.description'),
       rate: t('financing.options.balloonCredit.rate'),
       duration: t('financing.options.balloonCredit.duration'),
-      advantages: t('financing.options.balloonCredit.advantages', { returnObjects: true }) as string[],
+      advantages: (() => {
+        const advData = t('financing.options.balloonCredit.advantages', { returnObjects: true });
+        return Array.isArray(advData) ? advData : ["Mensualités allégées", "Flexibilité finale", "Taux 0%"];
+      })(),
       icon: TrendingUp
     }
   ];
 
-  const stepsData = t('financing.process.steps', { returnObjects: true }) as Array<{title: string, description: string}>;
-  const steps = stepsData.map((step, index) => ({
+  // Safely get steps data with fallback
+  const stepsData = t('financing.process.steps', { returnObjects: true });
+  const steps = Array.isArray(stepsData) ? stepsData.map((step: any, index: number) => ({
     number: String(index + 1).padStart(2, '0'),
-    title: step.title,
-    description: step.description
-  }));
+    title: step.title || '',
+    description: step.description || ''
+  })) : [
+    { number: "01", title: "Simulation", description: "Calculez votre capacité de financement en ligne" },
+    { number: "02", title: "Dossier", description: "Constituez votre dossier avec nos conseillers" },
+    { number: "03", title: "Validation", description: "Obtenez une réponse rapide de nos partenaires" },
+    { number: "04", title: "Signature", description: "Finalisez votre financement et récupérez votre véhicule" }
+  ];
 
   const partners = [
     "BNP Paribas",
@@ -65,7 +80,16 @@ const Financement = () => {
     "Sofinco"
   ];
 
-  const documents = t('financing.documents.list', { returnObjects: true }) as string[];
+  // Safely get documents data with fallback
+  const documentsData = t('financing.documents.list', { returnObjects: true });
+  const documents = Array.isArray(documentsData) ? documentsData : [
+    "Justificatifs d'identité",
+    "Justificatifs de revenus (3 derniers bulletins)",
+    "Justificatifs de domicile",
+    "Relevés bancaires (3 derniers mois)",
+    "Avis d'imposition",
+    "Justificatifs d'apport personnel"
+  ];
 
   return (
     <div className="min-h-screen bg-background">
