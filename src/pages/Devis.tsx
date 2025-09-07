@@ -104,6 +104,7 @@ const Devis = () => {
     } finally {
       setSubmitting(false);
     }
+  };
   
   return (
     <div className="min-h-screen bg-background">
