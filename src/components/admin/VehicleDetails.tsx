@@ -12,9 +12,7 @@ interface Vehicle {
   name: string;
   category: string;
   description: string;
-  price_per_day: number;
-  price_per_week: number;
-  price_per_month: number;
+  sale_price: number;
   available: boolean;
   specifications: any;
   images: string[];
@@ -197,32 +195,12 @@ export default function VehicleDetails({ vehicleId, onBack, onEdit, onDelete }: 
           )}
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Tarification</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="text-2xl font-bold text-primary">
-                    {vehicle.price_per_day}€
-                  </div>
-                  <p className="text-sm text-muted-foreground">par jour</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="text-2xl font-bold text-primary">
-                    {vehicle.price_per_week}€
-                  </div>
-                  <p className="text-sm text-muted-foreground">par semaine</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="text-2xl font-bold text-primary">
-                    {vehicle.price_per_month}€
-                  </div>
-                  <p className="text-sm text-muted-foreground">par mois</p>
-                </CardContent>
-              </Card>
+            <h3 className="text-lg font-semibold mb-4">Prix de vente</h3>
+            <div className="text-center p-6 border rounded-lg bg-primary/5">
+              <div className="text-3xl font-bold text-primary">
+                {vehicle.sale_price}€
+              </div>
+              <p className="text-sm text-muted-foreground">Prix de vente</p>
             </div>
           </div>
 

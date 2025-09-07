@@ -6,9 +6,7 @@ export interface Vehicle {
   name: string;
   category: string;
   description: string;
-  price_per_day: number;
-  price_per_week: number;
-  price_per_month: number;
+  sale_price: number;
   specifications: any;
   images: string[];
   available: boolean;

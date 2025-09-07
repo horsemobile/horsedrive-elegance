@@ -13,32 +13,19 @@ import { Badge } from '@/components/ui/badge';
 import VehiclesList from '@/components/admin/VehiclesList';
 import VehicleForm from '@/components/admin/VehicleForm';
 import VehicleDetails from '@/components/admin/VehicleDetails';
-import BookingDetails from '@/components/admin/BookingDetails';
+import OrderDetails from '@/components/admin/OrderDetails';
+import { Vehicle } from '@/hooks/useVehicles';
 
-interface Vehicle {
-  id: string;
-  name: string;
-  category: string;
-  description: string;
-  price_per_day: number;
-  price_per_week: number;
-  price_per_month: number;
-  available: boolean;
-  specifications: any;
-  images: string[];
-  created_at: string;
-  updated_at: string;
-}
+// Import Vehicle type from hook instead of defining locally
 
-interface Booking {
+interface Order {
   id: string;
   vehicle_id: string;
   customer_name: string;
   customer_email: string;
   customer_phone: string;
-  start_date: string;
-  end_date: string;
-  total_price: number;
+  delivery_date: string;
+  purchase_price: number;
   status: string;
   message: string;
   created_at: string;
@@ -49,16 +36,16 @@ const Admin = () => {
   const { user, isAdmin, loading: authLoading } = useAuth();
   const navigate = useNavigate();
   const { toast } = useToast();
-  const [vehicles, setVehicles] = useState<Vehicle[]>([]);
-  const [bookings, setBookings] = useState<Booking[]>([]);
+  const [vehicles, setVehicles] = useState<any[]>([]);
+  const [orders, setOrders] = useState<Order[]>([]);
   const [loading, setLoading] = useState(true);
 
   // Modal states
   const [showVehicleForm, setShowVehicleForm] = useState(false);
   const [showVehicleDetails, setShowVehicleDetails] = useState(false);
-  const [showBookingDetails, setShowBookingDetails] = useState(false);
+  const [showOrderDetails, setShowOrderDetails] = useState(false);
   const [selectedVehicleId, setSelectedVehicleId] = useState<string | undefined>();
-  const [selectedBookingId, setSelectedBookingId] = useState<string | undefined>();
+  const [selectedOrderId, setSelectedOrderId] = useState<string | undefined>();
   const [vehicleToDelete, setVehicleToDelete] = useState<string | null>(null);
 
   useEffect(() => {
@@ -92,44 +79,44 @@ const Admin = () => {
       setVehicles(vehiclesData || []);
     }
 
-    // Fetch bookings
-    const { data: bookingsData, error: bookingsError } = await supabase
-      .from('bookings')
+    // Fetch orders
+    const { data: ordersData, error: ordersError } = await supabase
+      .from('orders')
       .select(`
         *,
         vehicles (name)
       `)
       .order('created_at', { ascending: false });
 
-    if (bookingsError) {
+    if (ordersError) {
       toast({
         title: "Erreur",
-        description: "Impossible de charger les réservations",
+        description: "Impossible de charger les commandes",
         variant: "destructive",
       });
     } else {
-      setBookings(bookingsData || []);
+      setOrders(ordersData || []);
     }
 
     setLoading(false);
   };
 
-  const updateBookingStatus = async (bookingId: string, newStatus: string) => {
+  const updateOrderStatus = async (orderId: string, newStatus: string) => {
     const { error } = await supabase
-      .from('bookings')
+      .from('orders')
       .update({ status: newStatus })
-      .eq('id', bookingId);
+      .eq('id', orderId);
 
     if (error) {
       toast({
         title: "Erreur",
-        description: "Impossible de mettre à jour la réservation",
+        description: "Impossible de mettre à jour la commande",
         variant: "destructive",
       });
     } else {
       toast({
         title: "Succès",
-        description: "Statut de la réservation mis à jour",
+        description: "Statut de la commande mis à jour",
       });
       fetchData();
     }
@@ -175,17 +162,17 @@ const Admin = () => {
     setVehicleToDelete(null);
   };
 
-  const handleViewBooking = (bookingId: string) => {
-    setSelectedBookingId(bookingId);
-    setShowBookingDetails(true);
+  const handleViewOrder = (orderId: string) => {
+    setSelectedOrderId(orderId);
+    setShowOrderDetails(true);
   };
 
   const closeModals = () => {
     setShowVehicleForm(false);
     setShowVehicleDetails(false);
-    setShowBookingDetails(false);
+    setShowOrderDetails(false);
     setSelectedVehicleId(undefined);
-    setSelectedBookingId(undefined);
+    setSelectedOrderId(undefined);
   };
 
   const getCategoryLabel = (category: string) => {
@@ -245,7 +232,7 @@ const Admin = () => {
         <Tabs defaultValue="vehicles" className="w-full">
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="vehicles">Véhicules ({vehicles.length})</TabsTrigger>
-            <TabsTrigger value="bookings">Réservations ({bookings.length})</TabsTrigger>
+            <TabsTrigger value="orders">Commandes ({orders.length})</TabsTrigger>
           </TabsList>
 
           <TabsContent value="vehicles" className="space-y-6">
@@ -258,66 +245,73 @@ const Admin = () => {
             />
           </TabsContent>
 
-          <TabsContent value="bookings" className="space-y-6">
+          <TabsContent value="orders" className="space-y-6">
             <div className="space-y-4">
-              <h2 className="text-xl font-semibold">Gestion des réservations</h2>
+              <h2 className="text-xl font-semibold">Gestion des commandes</h2>
               
               <div className="grid gap-4">
-                {bookings.map((booking) => (
-                  <Card key={booking.id} className="hover:shadow-md transition-shadow cursor-pointer">
-                    <CardHeader onClick={() => handleViewBooking(booking.id)}>
+                {orders.map((order) => (
+                  <Card key={order.id} className="hover:shadow-md transition-shadow cursor-pointer">
+                    <CardHeader onClick={() => handleViewOrder(order.id)}>
                       <div className="flex justify-between items-start">
                         <div>
                           <CardTitle className="flex items-center gap-2">
-                            {booking.customer_name}
-                            <Badge className={getStatusColor(booking.status)}>
-                              {booking.status}
+                            {order.customer_name}
+                            <Badge className={getStatusColor(order.status)}>
+                              {order.status}
                             </Badge>
                           </CardTitle>
                           <CardDescription>
-                            {booking.vehicles?.name} • {booking.customer_email}
+                            {order.vehicles?.name} • {order.customer_email}
                           </CardDescription>
                         </div>
                         <div className="text-right text-sm text-muted-foreground">
-                          {new Date(booking.created_at).toLocaleDateString('fr-FR')}
+                          {new Date(order.created_at).toLocaleDateString('fr-FR')}
                         </div>
                       </div>
                     </CardHeader>
-                    <CardContent onClick={() => handleViewBooking(booking.id)}>
+                    <CardContent onClick={() => handleViewOrder(order.id)}>
                       <div className="grid grid-cols-2 gap-4 mb-4">
                         <div>
-                          <span className="font-medium">Période:</span> {' '}
-                          {new Date(booking.start_date).toLocaleDateString('fr-FR')} - {' '}
-                          {new Date(booking.end_date).toLocaleDateString('fr-FR')}
+                          <span className="font-medium">Livraison souhaitée:</span> {' '}
+                          {order.delivery_date ? new Date(order.delivery_date).toLocaleDateString('fr-FR') : 'Non spécifiée'}
                         </div>
                         <div>
-                          <span className="font-medium">Prix total:</span> {booking.total_price}€
+                          <span className="font-medium">Prix de vente:</span> {order.purchase_price}€
                         </div>
                       </div>
                       
                       <div className="flex gap-2" onClick={(e) => e.stopPropagation()}>
                         <Button 
                           size="sm" 
-                          onClick={() => updateBookingStatus(booking.id, 'confirmed')}
-                          disabled={booking.status === 'confirmed'}
+                          onClick={() => updateOrderStatus(order.id, 'confirmed')}
+                          disabled={order.status === 'confirmed'}
                         >
                           Confirmer
                         </Button>
                         <Button 
                           size="sm" 
                           variant="outline"
-                          onClick={() => updateBookingStatus(booking.id, 'cancelled')}
-                          disabled={booking.status === 'cancelled'}
+                          onClick={() => updateOrderStatus(order.id, 'processing')}
+                          disabled={order.status === 'processing'}
                         >
-                          Annuler
+                          En préparation
                         </Button>
                         <Button 
                           size="sm" 
                           variant="outline"
-                          onClick={() => updateBookingStatus(booking.id, 'completed')}
-                          disabled={booking.status === 'completed'}
+                          onClick={() => updateOrderStatus(order.id, 'shipped')}
+                          disabled={order.status === 'shipped'}
                         >
-                          Terminer
+                          Expédié
+                        </Button>
+                        <Button 
+                          size="sm" 
+                          variant="outline"
+                          onClick={() => updateOrderStatus(order.id, 'delivered')}
+                          disabled={order.status === 'delivered'}
+                        >
+                          Livré
                         </Button>
                       </div>
                     </CardContent>
@@ -362,12 +356,12 @@ const Admin = () => {
           </DialogContent>
         </Dialog>
 
-        {/* Booking Details Dialog */}
-        <Dialog open={showBookingDetails} onOpenChange={setShowBookingDetails}>
+        {/* Order Details Dialog */}
+        <Dialog open={showOrderDetails} onOpenChange={setShowOrderDetails}>
           <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
-            {selectedBookingId && (
-              <BookingDetails
-                bookingId={selectedBookingId}
+            {selectedOrderId && (
+              <OrderDetails
+                orderId={selectedOrderId}
                 onBack={closeModals}
               />
             )}

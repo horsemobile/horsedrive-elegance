@@ -14,16 +14,16 @@ export type Database = {
   }
   public: {
     Tables: {
-      bookings: {
+      orders: {
         Row: {
           created_at: string
           customer_email: string
           customer_name: string
           customer_phone: string | null
-          end_date: string
+          delivery_date: string | null
           id: string
           message: string | null
-          start_date: string
+          purchase_price: number | null
           status: string
           total_price: number | null
           updated_at: string
@@ -34,10 +34,10 @@ export type Database = {
           customer_email: string
           customer_name: string
           customer_phone?: string | null
-          end_date: string
+          delivery_date?: string | null
           id?: string
           message?: string | null
-          start_date: string
+          purchase_price?: number | null
           status?: string
           total_price?: number | null
           updated_at?: string
@@ -48,10 +48,10 @@ export type Database = {
           customer_email?: string
           customer_name?: string
           customer_phone?: string | null
-          end_date?: string
+          delivery_date?: string | null
           id?: string
           message?: string | null
-          start_date?: string
+          purchase_price?: number | null
           status?: string
           total_price?: number | null
           updated_at?: string
@@ -106,9 +106,7 @@ export type Database = {
           id: string
           images: string[] | null
           name: string
-          price_per_day: number | null
-          price_per_month: number | null
-          price_per_week: number | null
+          sale_price: number | null
           specifications: Json | null
           updated_at: string
         }
@@ -120,9 +118,7 @@ export type Database = {
           id?: string
           images?: string[] | null
           name: string
-          price_per_day?: number | null
-          price_per_month?: number | null
-          price_per_week?: number | null
+          sale_price?: number | null
           specifications?: Json | null
           updated_at?: string
         }
@@ -134,9 +130,7 @@ export type Database = {
           id?: string
           images?: string[] | null
           name?: string
-          price_per_day?: number | null
-          price_per_month?: number | null
-          price_per_week?: number | null
+          sale_price?: number | null
           specifications?: Json | null
           updated_at?: string
         }

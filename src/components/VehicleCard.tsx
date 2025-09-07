@@ -1,14 +1,26 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Link } from 'react-router-dom';
-import { Vehicle } from '@/hooks/useVehicles';
+import { useNavigate } from 'react-router-dom';
+
+interface Vehicle {
+  id: string;
+  name: string;
+  category: string;
+  description: string;
+  sale_price: number;
+  available: boolean;
+  specifications: any;
+  images: string[];
+}
 
 interface VehicleCardProps {
   vehicle: Vehicle;
 }
 
 export const VehicleCard = ({ vehicle }: VehicleCardProps) => {
+  const navigate = useNavigate();
+  
   const getCategoryLabel = (category: string) => {
     const labels = {
       'vans': 'Van',
@@ -96,33 +108,13 @@ export const VehicleCard = ({ vehicle }: VehicleCardProps) => {
         )}
 
         {/* Pricing */}
-        <div className="space-y-2 mb-4">
-          <div className="grid grid-cols-3 gap-2 text-sm">
-            <div className="text-center">
-              <div className="text-xs text-muted-foreground">Jour</div>
-              <div className="font-semibold text-primary">
-                {formatPrice(vehicle.price_per_day)}
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-xs text-muted-foreground">Semaine</div>
-              <div className="font-semibold text-primary">
-                {formatPrice(vehicle.price_per_week)}
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-xs text-muted-foreground">Mois</div>
-              <div className="font-semibold text-primary">
-                {formatPrice(vehicle.price_per_month)}
-              </div>
-            </div>
-          </div>
+        <div className="text-center p-4 bg-primary/10 rounded-lg mb-4">
+          <div className="text-sm text-muted-foreground mb-1">Prix de vente</div>
+          <div className="text-2xl font-bold text-primary">{formatPrice(vehicle.sale_price)}</div>
         </div>
 
-        <Button asChild className="w-full">
-          <Link to={`/devis?vehicle=${vehicle.id}`}>
-            Demander un devis
-          </Link>
+        <Button className="w-full" onClick={() => navigate('/devis')}>
+          Commander maintenant
         </Button>
       </CardContent>
     </Card>

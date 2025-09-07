@@ -25,8 +25,7 @@ const Devis = () => {
   const [customerName, setCustomerName] = useState('');
   const [customerEmail, setCustomerEmail] = useState('');
   const [customerPhone, setCustomerPhone] = useState('');
-  const [startDate, setStartDate] = useState('');
-  const [endDate, setEndDate] = useState('');
+  const [deliveryDate, setDeliveryDate] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -42,36 +41,12 @@ const Devis = () => {
     return vehicles.find(v => v.id === selectedVehicle) || null;
   };
 
-  const calculatePrice = (): number => {
-    const vehicle = getSelectedVehicleInfo();
-    if (!vehicle || !startDate || !endDate) return 0;
-
-    const start = new Date(startDate);
-    const end = new Date(endDate);
-    const days = Math.ceil((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
-
-    if (days <= 0) return 0;
-
-    // Calculate best price
-    if (days >= 30) {
-      const months = Math.floor(days / 30);
-      const remainingDays = days % 30;
-      return (months * vehicle.price_per_month) + (remainingDays * vehicle.price_per_day);
-    } else if (days >= 7) {
-      const weeks = Math.floor(days / 7);
-      const remainingDays = days % 7;
-      return (weeks * vehicle.price_per_week) + (remainingDays * vehicle.price_per_day);
-    } else {
-      return days * vehicle.price_per_day;
-    }
-  };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-      if (!selectedVehicle || !customerName || !customerEmail || !startDate || !endDate) {
+      if (!selectedVehicle || !customerName || !customerEmail) {
         toast({
           title: "Erreur",
           description: "Veuillez remplir tous les champs obligatoires",
@@ -80,18 +55,18 @@ const Devis = () => {
         return;
       }
 
-      const totalPrice = calculatePrice();
+      const selectedVehicleInfo = getSelectedVehicleInfo();
+      const purchasePrice = selectedVehicleInfo?.sale_price || 0;
 
       const { error } = await supabase
-        .from('bookings')
+        .from('orders')
         .insert({
           vehicle_id: selectedVehicle,
           customer_name: customerName,
           customer_email: customerEmail,
           customer_phone: customerPhone,
-          start_date: startDate,
-          end_date: endDate,
-          total_price: totalPrice,
+          delivery_date: deliveryDate || null,
+          purchase_price: purchasePrice,
           message: message,
           status: 'pending'
         });
@@ -101,16 +76,15 @@ const Devis = () => {
       }
 
       toast({
-        title: "Demande envoyée",
-        description: "Votre demande de devis a été envoyée avec succès. Nous vous recontacterons rapidement.",
+        title: "Commande envoyée",
+        description: "Votre commande a été envoyée avec succès. Nous vous recontacterons rapidement.",
       });
 
       // Reset form
       setCustomerName('');
       setCustomerEmail('');
       setCustomerPhone('');
-      setStartDate('');
-      setEndDate('');
+      setDeliveryDate('');
       setMessage('');
       if (!searchParams.get('vehicle')) {
         setSelectedVehicle('');
@@ -119,7 +93,7 @@ const Devis = () => {
     } catch (error) {
       toast({
         title: "Erreur",
-        description: "Une erreur est survenue lors de l'envoi de votre demande",
+        description: "Une erreur est survenue lors de l'envoi de votre commande",
         variant: "destructive",
       });
     } finally {
@@ -133,9 +107,9 @@ const Devis = () => {
       <main className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('pages.quote.title')}</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Commander un véhicule</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              {t('pages.quote.description')}
+              Commandez directement votre véhicule professionnel. Nous vous accompagnons dans votre achat.
             </p>
           </div>
 
@@ -143,11 +117,11 @@ const Devis = () => {
             <Card className="text-center">
               <CardHeader>
                 <Calculator className="h-8 w-8 mx-auto text-primary mb-4" />
-                <CardTitle>{t('pages.quote.freeQuote')}</CardTitle>
+                <CardTitle>Prix transparents</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  {t('pages.quote.freeDesc')}
+                  Tous nos prix sont affichés clairement, sans frais cachés
                 </p>
               </CardContent>
             </Card>
@@ -155,11 +129,11 @@ const Devis = () => {
             <Card className="text-center">
               <CardHeader>
                 <Clock className="h-8 w-8 mx-auto text-primary mb-4" />
-                <CardTitle>{t('pages.quote.fastResponse')}</CardTitle>
+                <CardTitle>Livraison rapide</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  {t('pages.quote.fastDesc')}
+                  Livraison dans les meilleurs délais partout en Europe
                 </p>
               </CardContent>
             </Card>
@@ -167,11 +141,11 @@ const Devis = () => {
             <Card className="text-center">
               <CardHeader>
                 <FileText className="h-8 w-8 mx-auto text-primary mb-4" />
-                <CardTitle>{t('pages.quote.detailedQuote')}</CardTitle>
+                <CardTitle>Service complet</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  {t('pages.quote.detailedDesc')}
+                  Accompagnement complet de l'achat à la livraison
                 </p>
               </CardContent>
             </Card>
@@ -180,9 +154,9 @@ const Devis = () => {
           <form onSubmit={handleSubmit}>
             <Card className="max-w-4xl mx-auto">
               <CardHeader>
-                <CardTitle>Demande de réservation</CardTitle>
+                <CardTitle>Commande de véhicule</CardTitle>
                 <CardDescription>
-                  Remplissez ce formulaire pour réserver un véhicule
+                  Remplissez ce formulaire pour commander votre véhicule
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-8">
@@ -198,7 +172,7 @@ const Devis = () => {
                       <SelectContent>
                         {vehicles.map((vehicle) => (
                           <SelectItem key={vehicle.id} value={vehicle.id}>
-                            {vehicle.name} - {vehicle.price_per_day}€/jour
+                            {vehicle.name} - {vehicle.sale_price}€
                           </SelectItem>
                         ))}
                       </SelectContent>
@@ -209,10 +183,8 @@ const Devis = () => {
                     <div className="mt-4 p-4 bg-muted rounded-lg">
                       <h4 className="font-semibold">{getSelectedVehicleInfo()?.name}</h4>
                       <p className="text-sm text-muted-foreground">{getSelectedVehicleInfo()?.description}</p>
-                      <div className="grid grid-cols-3 gap-4 mt-2 text-sm">
-                        <div>Jour: {getSelectedVehicleInfo()?.price_per_day}€</div>
-                        <div>Semaine: {getSelectedVehicleInfo()?.price_per_week}€</div>
-                        <div>Mois: {getSelectedVehicleInfo()?.price_per_month}€</div>
+                      <div className="mt-2 text-lg font-bold text-primary">
+                        Prix: {getSelectedVehicleInfo()?.sale_price}€
                       </div>
                     </div>
                   )}
@@ -256,42 +228,21 @@ const Devis = () => {
                   </div>
                 </div>
 
-                {/* Rental Period */}
+                {/* Delivery Information */}
                 <div>
-                  <h3 className="text-lg font-semibold mb-4">Période de location</h3>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="startDate">Date de début *</Label>
-                      <Input 
-                        id="startDate" 
-                        type="date" 
-                        value={startDate}
-                        onChange={(e) => setStartDate(e.target.value)}
-                        required 
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="endDate">Date de fin *</Label>
-                      <Input 
-                        id="endDate" 
-                        type="date" 
-                        value={endDate}
-                        onChange={(e) => setEndDate(e.target.value)}
-                        required 
-                      />
-                    </div>
+                  <h3 className="text-lg font-semibold mb-4">Livraison</h3>
+                  <div className="space-y-2">
+                    <Label htmlFor="deliveryDate">Date de livraison souhaitée</Label>
+                    <Input 
+                      id="deliveryDate" 
+                      type="date" 
+                      value={deliveryDate}
+                      onChange={(e) => setDeliveryDate(e.target.value)}
+                    />
+                    <p className="text-sm text-muted-foreground">
+                      Cette date est indicative, nous vous confirmerons la date exacte
+                    </p>
                   </div>
-                  
-                  {startDate && endDate && getSelectedVehicleInfo() && (
-                    <div className="mt-4 p-4 bg-primary/10 rounded-lg">
-                      <div className="flex justify-between items-center">
-                        <span className="font-semibold">Prix total estimé:</span>
-                        <span className="text-xl font-bold text-primary">
-                          {calculatePrice().toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })}
-                        </span>
-                      </div>
-                    </div>
-                  )}
                 </div>
 
                 {/* Message */}
@@ -312,7 +263,7 @@ const Devis = () => {
                 </div>
 
                 <Button type="submit" className="w-full" size="lg" disabled={loading}>
-                  {loading ? 'Envoi en cours...' : 'Envoyer la demande'}
+                  {loading ? 'Envoi en cours...' : 'Envoyer la commande'}
                 </Button>
               </CardContent>
             </Card>

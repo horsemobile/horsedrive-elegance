@@ -17,9 +17,7 @@ const vehicleSchema = z.object({
   name: z.string().min(1, 'Le nom est requis'),
   category: z.string().min(1, 'La catégorie est requise'),
   description: z.string().optional(),
-  price_per_day: z.number().min(0, 'Le prix par jour doit être positif'),
-  price_per_week: z.number().min(0, 'Le prix par semaine doit être positif'),
-  price_per_month: z.number().min(0, 'Le prix par mois doit être positif'),
+  sale_price: z.number().min(0, 'Le prix de vente doit être positif'),
   available: z.boolean(),
   specifications: z.object({
     dimensions: z.string().optional(),
@@ -49,9 +47,7 @@ export default function VehicleForm({ vehicleId, onClose, onSave }: VehicleFormP
       name: '',
       category: '',
       description: '',
-      price_per_day: 0,
-      price_per_week: 0,
-      price_per_month: 0,
+      sale_price: 0,
       available: true,
       specifications: {
         dimensions: '',
@@ -89,9 +85,7 @@ export default function VehicleForm({ vehicleId, onClose, onSave }: VehicleFormP
         name: data.name,
         category: data.category,
         description: data.description || '',
-        price_per_day: Number(data.price_per_day) || 0,
-        price_per_week: Number(data.price_per_week) || 0,
-        price_per_month: Number(data.price_per_month) || 0,
+        sale_price: Number(data.sale_price) || 0,
         available: data.available,
         specifications: (data.specifications as any) || {},
       });
@@ -148,9 +142,7 @@ export default function VehicleForm({ vehicleId, onClose, onSave }: VehicleFormP
       name: data.name,
       category: data.category,
       description: data.description || '',
-      price_per_day: data.price_per_day,
-      price_per_week: data.price_per_week,
-      price_per_month: data.price_per_month,
+      sale_price: data.sale_price,
       available: data.available,
       images: uploadedImages,
       specifications: data.specifications || {},
@@ -202,7 +194,7 @@ export default function VehicleForm({ vehicleId, onClose, onSave }: VehicleFormP
           {vehicleId ? 'Modifier le véhicule' : 'Ajouter un véhicule'}
         </CardTitle>
         <CardDescription>
-          Remplissez les informations du véhicule
+          Remplissez les informations du véhicule à vendre
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -266,67 +258,25 @@ export default function VehicleForm({ vehicleId, onClose, onSave }: VehicleFormP
               )}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <FormField
-                control={form.control}
-                name="price_per_day"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Prix par jour (€)</FormLabel>
-                    <FormControl>
-                      <Input 
-                        type="number" 
-                        min="0"
-                        step="0.01"
-                        {...field}
-                        onChange={(e) => field.onChange(parseFloat(e.target.value) || 0)}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="price_per_week"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Prix par semaine (€)</FormLabel>
-                    <FormControl>
-                      <Input 
-                        type="number" 
-                        min="0"
-                        step="0.01"
-                        {...field}
-                        onChange={(e) => field.onChange(parseFloat(e.target.value) || 0)}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="price_per_month"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Prix par mois (€)</FormLabel>
-                    <FormControl>
-                      <Input 
-                        type="number" 
-                        min="0"
-                        step="0.01"
-                        {...field}
-                        onChange={(e) => field.onChange(parseFloat(e.target.value) || 0)}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
+            <FormField
+              control={form.control}
+              name="sale_price"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Prix de vente (€)</FormLabel>
+                  <FormControl>
+                    <Input 
+                      type="number" 
+                      min="0"
+                      step="0.01"
+                      {...field}
+                      onChange={(e) => field.onChange(parseFloat(e.target.value) || 0)}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <FormField
@@ -394,7 +344,7 @@ export default function VehicleForm({ vehicleId, onClose, onSave }: VehicleFormP
                   <div className="space-y-0.5">
                     <FormLabel className="text-base">Disponible</FormLabel>
                     <FormDescription>
-                      Ce véhicule est-il disponible à la location ?
+                      Ce véhicule est-il disponible à la vente ?
                     </FormDescription>
                   </div>
                   <FormControl>
