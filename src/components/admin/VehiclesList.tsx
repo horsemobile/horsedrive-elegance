@@ -36,8 +36,7 @@ export default function VehiclesList({ vehicles, onAdd, onEdit, onView, onDelete
     const labels = {
       'vans': 'Vans',
       'camions': 'Camions',
-      'vans_amenage': 'Vans Aménagés',
-      'remorques': 'Remorques'
+      'vans_amenage': 'Vans Aménagés'
     };
     return labels[category as keyof typeof labels] || category;
   };
@@ -83,7 +82,6 @@ export default function VehiclesList({ vehicles, onAdd, onEdit, onView, onDelete
             <SelectItem value="vans">Vans</SelectItem>
             <SelectItem value="camions">Camions</SelectItem>
             <SelectItem value="vans_amenage">Vans Aménagés</SelectItem>
-            <SelectItem value="remorques">Remorques</SelectItem>
           </SelectContent>
         </Select>
 

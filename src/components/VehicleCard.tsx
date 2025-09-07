@@ -25,8 +25,7 @@ export const VehicleCard = ({ vehicle }: VehicleCardProps) => {
     const labels = {
       'vans': 'Van',
       'camions': 'Camion',
-      'vans_amenage': 'Van Aménagé',
-      'remorques': 'Remorque'
+      'vans_amenage': 'Van Aménagé'
     };
     return labels[category as keyof typeof labels] || category;
   };
@@ -49,8 +48,7 @@ export const VehicleCard = ({ vehicle }: VehicleCardProps) => {
     const defaultImages = {
       'vans': '/src/assets/category-vans.jpg',
       'camions': '/src/assets/category-trucks.jpg',
-      'vans_amenage': '/src/assets/category-van-amenage.jpg',
-      'remorques': '/src/assets/category-trailers.jpg'
+      'vans_amenage': '/src/assets/category-van-amenage.jpg'
     };
     
     return defaultImages[vehicle.category as keyof typeof defaultImages] || '/src/assets/category-vans.jpg';

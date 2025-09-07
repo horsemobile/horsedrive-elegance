@@ -179,8 +179,7 @@ const Admin = () => {
     const labels = {
       'vans': 'Vans',
       'camions': 'Camions',
-      'vans_amenage': 'Vans Aménagés',
-      'remorques': 'Remorques'
+      'vans_amenage': 'Vans Aménagés'
     };
     return labels[category as keyof typeof labels] || category;
   };

@@ -231,7 +231,6 @@ export default function VehicleForm({ vehicleId, onClose, onSave }: VehicleFormP
                         <SelectItem value="vans">Vans</SelectItem>
                         <SelectItem value="camions">Camions</SelectItem>
                         <SelectItem value="vans_amenage">Vans Aménagés</SelectItem>
-                        <SelectItem value="remorques">Remorques</SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage />

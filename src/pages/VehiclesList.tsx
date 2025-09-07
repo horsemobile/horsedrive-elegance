@@ -29,11 +29,6 @@ const VehiclesList = () => {
         description: 'Vans aménagés pour vos voyages et aventures',
         badge: 'Vans Aménagés'
       },
-      'remorques': {
-        title: 'Nos Remorques',
-        description: 'Remorques adaptées à tous types de transport',
-        badge: 'Remorques'
-      }
     };
     
     return info[cat as keyof typeof info] || {

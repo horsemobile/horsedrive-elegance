@@ -19,7 +19,7 @@
       "premium": {
         "title": "Véhicules Équestres Premium",
         "subtitle": "Transport de Chevaux Haut de Gamme",
-        "description": "Découvrez notre gamme complète de véhicules équestres : camions, vans et remorques conçus pour le confort et la sécurité de vos chevaux.",
+        "description": "Découvrez notre gamme complète de véhicules équestres : camions et vans conçus pour le confort et la sécurité de vos chevaux.",
         "cta": "Voir nos Véhicules"
       },
       "customVans": {
@@ -56,10 +56,6 @@
       "title": "Vans aménagés",
       "description": "Véhicules tout-en-un avec espace de vie intégré",
       "badge": "Nouveau"
-    },
-    "trailers": {
-      "title": "Remorques",
-      "description": "Remorques haute qualité pour tous types de chevaux"
     }
   },
   "stats": {
