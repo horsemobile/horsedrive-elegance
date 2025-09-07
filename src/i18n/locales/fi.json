@@ -265,6 +265,16 @@
       "paragraph2": "Käyttämällä verkkosivustoamme hyväksyt tässä tietosuojakäytännössä kuvatut käytännöt. Jos et hyväksy näitä käytäntöjä, älä käytä sivustoamme.",
       "paragraph3": "Tämä käytäntö noudattaa yleistä tietosuoja-asetusta (GDPR) ja Ranskan tietosuojalakia."
     }
+  },
+  "cookies": {
+    "badge": "Evästeiden hallinta",
+    "title": "Evästekäytäntö",
+    "subtitle": "Tietoa evästeiden ja vastaavien teknologioiden käytöstä sivustollamme",
+    "whatIsCookie": {
+      "title": "Mikä on eväste?",
+      "paragraph1": "Eväste on pieni tekstitiedosto, joka tallennetaan laitteellesi (tietokone, tabletti, älypuhelin), kun vierailet verkkosivustollamme. Se antaa meille mahdollisuuden tunnistaa selaimesi ja muistaa tiettyjä tietoja sinusta tai mieltymyksistäsi.",
+      "paragraph2": "Evästeet helpottavat navigointiasi, auttavat turvaamaan yhteytesi ja auttavat meitä ymmärtämään paremmin, miten sivustoamme käytetään sen parantamiseksi."
+    }
   }
 }
   },

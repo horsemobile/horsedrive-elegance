@@ -910,5 +910,15 @@
       "paragraph2": "En utilisant notre site web, vous acceptez les pratiques décrites dans cette politique de confidentialité. Si vous n'acceptez pas ces pratiques, veuillez ne pas utiliser notre site.",
       "paragraph3": "Cette politique est conforme au Règlement Général sur la Protection des Données (RGPD) et à la loi française Informatique et Libertés."
     }
+  },
+  "cookies": {
+    "badge": "Gestion des cookies",
+    "title": "Politique de Cookies",
+    "subtitle": "Informations sur l'utilisation des cookies et technologies similaires sur notre site",
+    "whatIsCookie": {
+      "title": "Qu'est-ce qu'un cookie ?",
+      "paragraph1": "Un cookie est un petit fichier texte déposé sur votre appareil (ordinateur, tablette, smartphone) lors de votre visite sur notre site web. Il permet de reconnaître votre navigateur et de mémoriser certaines informations vous concernant ou concernant vos préférences.",
+      "paragraph2": "Les cookies facilitent votre navigation, permettent de sécuriser votre connexion et nous aident à mieux comprendre l'utilisation de notre site pour l'améliorer."
+    }
   }
 }

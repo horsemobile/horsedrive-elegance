@@ -265,6 +265,16 @@
       "paragraph2": "Ved å bruke vårt nettsted, aksepterer du praksisene beskrevet i denne personvernerklæringen. Hvis du ikke aksepterer disse praksisene, vennligst ikke bruk vårt nettsted.",
       "paragraph3": "Denne policyen overholder General Data Protection Regulation (GDPR) og fransk databeskyttelseslov."
     }
+  },
+  "cookies": {
+    "badge": "Cookie-administrasjon",
+    "title": "Cookie-policy",
+    "subtitle": "Informasjon om bruk av cookies og lignende teknologier på vårt nettsted",
+    "whatIsCookie": {
+      "title": "Hva er en cookie?",
+      "paragraph1": "En cookie er en liten tekstfil som lagres på enheten din (datamaskin, nettbrett, smarttelefon) når du besøker nettstedet vårt. Den lar oss gjenkjenne nettleseren din og huske visse opplysninger om deg eller preferansene dine.",
+      "paragraph2": "Cookies letter navigasjonen din, bidrar til å sikre tilkoblingen din og hjelper oss å forstå hvordan nettstedet vårt brukes for å forbedre det."
+    }
   }
 }
   },

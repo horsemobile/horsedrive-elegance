@@ -897,5 +897,15 @@
       "paragraph2": "Durch die Nutzung unserer Website stimmen Sie den in dieser Datenschutzerklärung beschriebenen Praktiken zu. Wenn Sie diese Praktiken nicht akzeptieren, nutzen Sie bitte nicht unsere Website.",
       "paragraph3": "Diese Richtlinie entspricht der Datenschutz-Grundverordnung (DSGVO) und dem französischen Datenschutzgesetz."
     }
+  },
+  "cookies": {
+    "badge": "Cookie-Verwaltung",
+    "title": "Cookie-Richtlinie",
+    "subtitle": "Informationen über die Verwendung von Cookies und ähnlichen Technologien auf unserer Website",
+    "whatIsCookie": {
+      "title": "Was ist ein Cookie?",
+      "paragraph1": "Ein Cookie ist eine kleine Textdatei, die auf Ihrem Gerät (Computer, Tablet, Smartphone) gespeichert wird, wenn Sie unsere Website besuchen. Es ermöglicht uns, Ihren Browser zu erkennen und bestimmte Informationen über Sie oder Ihre Präferenzen zu speichern.",
+      "paragraph2": "Cookies erleichtern Ihre Navigation, helfen dabei, Ihre Verbindung zu sichern und helfen uns, besser zu verstehen, wie unsere Website genutzt wird, um sie zu verbessern."
+    }
   }
 }

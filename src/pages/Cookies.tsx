@@ -4,8 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Cookie, Settings, BarChart, Target, Shield, Clock } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Cookies = () => {
+  const { t } = useTranslation();
   const cookieCategories = [
     {
       icon: Shield,
@@ -90,13 +92,13 @@ const Cookies = () => {
             <div className="text-center max-w-4xl mx-auto">
               <Badge variant="outline" className="mb-4">
                 <Cookie className="w-4 h-4 mr-2" />
-                Gestion des cookies
+                {t('cookies.badge')}
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Politique de Cookies
+                {t('cookies.title')}
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Informations sur l'utilisation des cookies et technologies similaires sur notre site
+                {t('cookies.subtitle')}
               </p>
             </div>
           </div>
@@ -109,15 +111,15 @@ const Cookies = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Cookie className="w-5 h-5 text-primary" />
-                  Qu'est-ce qu'un cookie ?
+                  {t('cookies.whatIsCookie.title')}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">
-                  Un cookie est un petit fichier texte déposé sur votre appareil (ordinateur, tablette, smartphone) lors de votre visite sur notre site web. Il permet de reconnaître votre navigateur et de mémoriser certaines informations vous concernant ou concernant vos préférences.
+                  {t('cookies.whatIsCookie.paragraph1')}
                 </p>
                 <p className="text-muted-foreground">
-                  Les cookies facilitent votre navigation, permettent de sécuriser votre connexion et nous aident à mieux comprendre l'utilisation de notre site pour l'améliorer.
+                  {t('cookies.whatIsCookie.paragraph2')}
                 </p>
               </CardContent>
             </Card>

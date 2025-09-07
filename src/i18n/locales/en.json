@@ -759,5 +759,15 @@
       "paragraph2": "By using our website, you accept the practices described in this privacy policy. If you do not accept these practices, please do not use our site.",
       "paragraph3": "This policy complies with the General Data Protection Regulation (GDPR) and French Data Protection Act."
     }
+  },
+  "cookies": {
+    "badge": "Cookie Management",
+    "title": "Cookie Policy",
+    "subtitle": "Information about the use of cookies and similar technologies on our site",
+    "whatIsCookie": {
+      "title": "What is a cookie?",
+      "paragraph1": "A cookie is a small text file stored on your device (computer, tablet, smartphone) when you visit our website. It allows us to recognize your browser and remember certain information about you or your preferences.",
+      "paragraph2": "Cookies facilitate your navigation, help secure your connection and help us better understand how our site is used to improve it."
+    }
   }
 }

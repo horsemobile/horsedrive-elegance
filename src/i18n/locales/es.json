@@ -794,5 +794,15 @@
       "paragraph2": "Al utilizar nuestro sitio web, acepta las prácticas descritas en esta política de privacidad. Si no acepta estas prácticas, no utilice nuestro sitio.",
       "paragraph3": "Esta política cumple con el Reglamento General de Protección de Datos (RGPD) y la ley francesa de Protección de Datos."
     }
+  },
+  "cookies": {
+    "badge": "Gestión de Cookies",
+    "title": "Política de Cookies",
+    "subtitle": "Información sobre el uso de cookies y tecnologías similares en nuestro sitio",
+    "whatIsCookie": {
+      "title": "¿Qué es una cookie?",
+      "paragraph1": "Una cookie es un pequeño archivo de texto almacenado en su dispositivo (ordenador, tablet, smartphone) cuando visita nuestro sitio web. Permite reconocer su navegador y recordar cierta información sobre usted o sus preferencias.",
+      "paragraph2": "Las cookies facilitan su navegación, ayudan a asegurar su conexión y nos ayudan a entender mejor cómo se utiliza nuestro sitio para mejorarlo."
+    }
   }
 }
