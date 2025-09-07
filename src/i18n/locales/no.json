@@ -62,6 +62,66 @@
       "description": "Høykvalitets tilhengere for alle hestetyper"
     }
   },
+  "order": {
+    "title": "Bestill et Kjøretøy",
+    "subtitle": "Bestill ditt profesjonelle kjøretøy direkte. Vi følger deg gjennom kjøpet.",
+    "features": {
+      "transparent": {
+        "title": "Transparente Priser",
+        "description": "Alle våre priser vises tydelig, uten skjulte avgifter"
+      },
+      "delivery": {
+        "title": "Rask Levering",
+        "description": "Levering i beste tidsrammer over hele Europa"
+      },
+      "service": {
+        "title": "Komplett Service",
+        "description": "Full oppfølging fra kjøp til levering"
+      }
+    },
+    "form": {
+      "title": "Kjøretøybestilling",
+      "description": "Fyll ut dette skjemaet for å bestille kjøretøyet ditt",
+      "vehicle": {
+        "title": "Kjøretøy",
+        "select": "Velg et kjøretøy *",
+        "placeholder": "Velg et kjøretøy",
+        "price": "Pris"
+      },
+      "contact": {
+        "title": "Kontaktinformasjon",
+        "name": "Fullt Navn *",
+        "namePlaceholder": "Ditt fulle navn",
+        "email": "E-post *",
+        "emailPlaceholder": "din@epost.no",
+        "phone": "Telefon",
+        "phonePlaceholder": "+47 1 23 45 67 89"
+      },
+      "delivery": {
+        "title": "Levering",
+        "date": "Ønsket leveringsdato",
+        "dateNote": "Denne datoen er veiledende, vi bekrefter den nøyaktige datoen"
+      },
+      "message": {
+        "title": "Melding",
+        "label": "Tilleggsinformasjon",
+        "placeholder": "Beskriv dine spesifikke behov..."
+      },
+      "submit": "Send Bestilling",
+      "submitting": "Sender...",
+      "validation": {
+        "required": "Vennligst fyll ut alle obligatoriske felt"
+      },
+      "success": {
+        "title": "Bestilling Sendt",
+        "description": "Din bestilling ble sendt med suksess. Vi kontakter deg snart."
+      },
+      "error": {
+        "title": "Feil",
+        "description": "En feil oppstod under sending av bestillingen"
+      }
+    }
+  },
   "stats": {
     "title": "HorseMobil i tall",
     "subtitle": "År med ekspertise innen hestetransport, med kundetilfredshet som vitner om vårt engasjement.",

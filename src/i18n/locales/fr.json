@@ -58,6 +58,66 @@
       "badge": "Nouveau"
     }
   },
+  "order": {
+    "title": "Commander un véhicule",
+    "subtitle": "Commandez directement votre véhicule professionnel. Nous vous accompagnons dans votre achat.",
+    "features": {
+      "transparent": {
+        "title": "Prix transparents",
+        "description": "Tous nos prix sont affichés clairement, sans frais cachés"
+      },
+      "delivery": {
+        "title": "Livraison rapide",
+        "description": "Livraison dans les meilleurs délais partout en Europe"
+      },
+      "service": {
+        "title": "Service complet",
+        "description": "Accompagnement complet de l'achat à la livraison"
+      }
+    },
+    "form": {
+      "title": "Commande de véhicule",
+      "description": "Remplissez ce formulaire pour commander votre véhicule",
+      "vehicle": {
+        "title": "Véhicule",
+        "select": "Sélectionnez un véhicule *",
+        "placeholder": "Choisissez un véhicule",
+        "price": "Prix"
+      },
+      "contact": {
+        "title": "Informations de contact",
+        "name": "Nom complet *",
+        "namePlaceholder": "Votre nom complet",
+        "email": "Email *",
+        "emailPlaceholder": "votre@email.com",
+        "phone": "Téléphone",
+        "phonePlaceholder": "+33 1 23 45 67 89"
+      },
+      "delivery": {
+        "title": "Livraison",
+        "date": "Date de livraison souhaitée",
+        "dateNote": "Cette date est indicative, nous vous confirmerons la date exacte"
+      },
+      "message": {
+        "title": "Message",
+        "label": "Informations complémentaires",
+        "placeholder": "Décrivez vos besoins spécifiques..."
+      },
+      "submit": "Envoyer la commande",
+      "submitting": "Envoi en cours...",
+      "validation": {
+        "required": "Veuillez remplir tous les champs obligatoires"
+      },
+      "success": {
+        "title": "Commande envoyée",
+        "description": "Votre commande a été envoyée avec succès. Nous vous recontacterons rapidement."
+      },
+      "error": {
+        "title": "Erreur",
+        "description": "Une erreur est survenue lors de l'envoi de votre commande"
+      }
+    }
+  },
   "stats": {
     "title": "HorseMobil en Chiffres",
     "subtitle": "Des années d'excellence dans le domaine du transport équestre, avec une satisfaction client qui témoigne de notre engagement.",

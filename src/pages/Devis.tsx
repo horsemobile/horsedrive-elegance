@@ -48,8 +48,8 @@ const Devis = () => {
     try {
       if (!selectedVehicle || !customerName || !customerEmail) {
         toast({
-          title: "Erreur",
-          description: "Veuillez remplir tous les champs obligatoires",
+          title: t('order.form.error.title'),
+          description: t('order.form.validation.required'),
           variant: "destructive",
         });
         return;
@@ -76,8 +76,8 @@ const Devis = () => {
       }
 
       toast({
-        title: "Commande envoyée",
-        description: "Votre commande a été envoyée avec succès. Nous vous recontacterons rapidement.",
+        title: t('order.form.success.title'),
+        description: t('order.form.success.description'),
       });
 
       // Reset form
@@ -92,8 +92,8 @@ const Devis = () => {
 
     } catch (error) {
       toast({
-        title: "Erreur",
-        description: "Une erreur est survenue lors de l'envoi de votre commande",
+        title: t('order.form.error.title'),
+        description: t('order.form.error.description'),
         variant: "destructive",
       });
     } finally {
@@ -107,9 +107,9 @@ const Devis = () => {
       <main className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Commander un véhicule</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('order.title')}</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Commandez directement votre véhicule professionnel. Nous vous accompagnons dans votre achat.
+              {t('order.subtitle')}
             </p>
           </div>
 
@@ -117,11 +117,11 @@ const Devis = () => {
             <Card className="text-center">
               <CardHeader>
                 <Calculator className="h-8 w-8 mx-auto text-primary mb-4" />
-                <CardTitle>Prix transparents</CardTitle>
+                <CardTitle>{t('order.features.transparent.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Tous nos prix sont affichés clairement, sans frais cachés
+                  {t('order.features.transparent.description')}
                 </p>
               </CardContent>
             </Card>
@@ -129,11 +129,11 @@ const Devis = () => {
             <Card className="text-center">
               <CardHeader>
                 <Clock className="h-8 w-8 mx-auto text-primary mb-4" />
-                <CardTitle>Livraison rapide</CardTitle>
+                <CardTitle>{t('order.features.delivery.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Livraison dans les meilleurs délais partout en Europe
+                  {t('order.features.delivery.description')}
                 </p>
               </CardContent>
             </Card>
@@ -141,11 +141,11 @@ const Devis = () => {
             <Card className="text-center">
               <CardHeader>
                 <FileText className="h-8 w-8 mx-auto text-primary mb-4" />
-                <CardTitle>Service complet</CardTitle>
+                <CardTitle>{t('order.features.service.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Accompagnement complet de l'achat à la livraison
+                  {t('order.features.service.description')}
                 </p>
               </CardContent>
             </Card>
@@ -154,20 +154,20 @@ const Devis = () => {
           <form onSubmit={handleSubmit}>
             <Card className="max-w-4xl mx-auto">
               <CardHeader>
-                <CardTitle>Commande de véhicule</CardTitle>
+                <CardTitle>{t('order.form.title')}</CardTitle>
                 <CardDescription>
-                  Remplissez ce formulaire pour commander votre véhicule
+                  {t('order.form.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-8">
                 {/* Vehicle Selection */}
                 <div>
-                  <h3 className="text-lg font-semibold mb-4">Véhicule</h3>
+                  <h3 className="text-lg font-semibold mb-4">{t('order.form.vehicle.title')}</h3>
                   <div className="space-y-2">
-                    <Label htmlFor="vehicle">Sélectionnez un véhicule *</Label>
+                    <Label htmlFor="vehicle">{t('order.form.vehicle.select')}</Label>
                     <Select value={selectedVehicle} onValueChange={setSelectedVehicle}>
                       <SelectTrigger>
-                        <SelectValue placeholder="Choisissez un véhicule" />
+                        <SelectValue placeholder={t('order.form.vehicle.placeholder')} />
                       </SelectTrigger>
                       <SelectContent>
                         {vehicles.map((vehicle) => (
@@ -184,7 +184,7 @@ const Devis = () => {
                       <h4 className="font-semibold">{getSelectedVehicleInfo()?.name}</h4>
                       <p className="text-sm text-muted-foreground">{getSelectedVehicleInfo()?.description}</p>
                       <div className="mt-2 text-lg font-bold text-primary">
-                        Prix: {getSelectedVehicleInfo()?.sale_price}€
+                        {t('order.form.vehicle.price')}: {getSelectedVehicleInfo()?.sale_price}€
                       </div>
                     </div>
                   )}
@@ -192,37 +192,37 @@ const Devis = () => {
 
                 {/* Contact Information */}
                 <div>
-                  <h3 className="text-lg font-semibold mb-4">Informations de contact</h3>
+                  <h3 className="text-lg font-semibold mb-4">{t('order.form.contact.title')}</h3>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="customerName">Nom complet *</Label>
+                      <Label htmlFor="customerName">{t('order.form.contact.name')}</Label>
                       <Input 
                         id="customerName" 
                         value={customerName}
                         onChange={(e) => setCustomerName(e.target.value)}
-                        placeholder="Votre nom complet" 
+                        placeholder={t('order.form.contact.namePlaceholder')} 
                         required 
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email *</Label>
+                      <Label htmlFor="email">{t('order.form.contact.email')}</Label>
                       <Input 
                         id="email" 
                         type="email" 
                         value={customerEmail}
                         onChange={(e) => setCustomerEmail(e.target.value)}
-                        placeholder="votre@email.com" 
+                        placeholder={t('order.form.contact.emailPlaceholder')} 
                         required 
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Téléphone</Label>
+                      <Label htmlFor="phone">{t('order.form.contact.phone')}</Label>
                       <Input 
                         id="phone" 
                         type="tel" 
                         value={customerPhone}
                         onChange={(e) => setCustomerPhone(e.target.value)}
-                        placeholder="+33 1 23 45 67 89" 
+                        placeholder={t('order.form.contact.phonePlaceholder')} 
                       />
                     </div>
                   </div>
@@ -230,9 +230,9 @@ const Devis = () => {
 
                 {/* Delivery Information */}
                 <div>
-                  <h3 className="text-lg font-semibold mb-4">Livraison</h3>
+                  <h3 className="text-lg font-semibold mb-4">{t('order.form.delivery.title')}</h3>
                   <div className="space-y-2">
-                    <Label htmlFor="deliveryDate">Date de livraison souhaitée</Label>
+                    <Label htmlFor="deliveryDate">{t('order.form.delivery.date')}</Label>
                     <Input 
                       id="deliveryDate" 
                       type="date" 
@@ -240,30 +240,30 @@ const Devis = () => {
                       onChange={(e) => setDeliveryDate(e.target.value)}
                     />
                     <p className="text-sm text-muted-foreground">
-                      Cette date est indicative, nous vous confirmerons la date exacte
+                      {t('order.form.delivery.dateNote')}
                     </p>
                   </div>
                 </div>
 
                 {/* Message */}
                 <div>
-                  <h3 className="text-lg font-semibold mb-4">Message</h3>
+                  <h3 className="text-lg font-semibold mb-4">{t('order.form.message.title')}</h3>
                   <div className="space-y-2">
                     <Label htmlFor="message">
-                      Informations complémentaires
+                      {t('order.form.message.label')}
                     </Label>
                     <Textarea 
                       id="message" 
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      placeholder="Décrivez vos besoins spécifiques..."
+                      placeholder={t('order.form.message.placeholder')}
                       className="min-h-32"
                     />
                   </div>
                 </div>
 
                 <Button type="submit" className="w-full" size="lg" disabled={loading}>
-                  {loading ? 'Envoi en cours...' : 'Envoyer la commande'}
+                  {loading ? t('order.form.submitting') : t('order.form.submit')}
                 </Button>
               </CardContent>
             </Card>

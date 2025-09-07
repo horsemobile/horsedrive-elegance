@@ -62,6 +62,66 @@
       "description": "High quality trailers for all types of horses"
     }
   },
+  "order": {
+    "title": "Order a Vehicle",
+    "subtitle": "Order your professional vehicle directly. We support you throughout your purchase.",
+    "features": {
+      "transparent": {
+        "title": "Transparent Pricing",
+        "description": "All our prices are clearly displayed, with no hidden fees"
+      },
+      "delivery": {
+        "title": "Fast Delivery",
+        "description": "Delivery in the best timeframes throughout Europe"
+      },
+      "service": {
+        "title": "Complete Service",
+        "description": "Full support from purchase to delivery"
+      }
+    },
+    "form": {
+      "title": "Vehicle Order",
+      "description": "Fill out this form to order your vehicle",
+      "vehicle": {
+        "title": "Vehicle",
+        "select": "Select a vehicle *",
+        "placeholder": "Choose a vehicle",
+        "price": "Price"
+      },
+      "contact": {
+        "title": "Contact Information",
+        "name": "Full Name *",
+        "namePlaceholder": "Your full name",
+        "email": "Email *",
+        "emailPlaceholder": "your@email.com",
+        "phone": "Phone",
+        "phonePlaceholder": "+33 1 23 45 67 89"
+      },
+      "delivery": {
+        "title": "Delivery",
+        "date": "Desired delivery date",
+        "dateNote": "This date is indicative, we will confirm the exact date with you"
+      },
+      "message": {
+        "title": "Message",
+        "label": "Additional information",
+        "placeholder": "Describe your specific needs..."
+      },
+      "submit": "Send Order",
+      "submitting": "Sending...",
+      "validation": {
+        "required": "Please fill in all required fields"
+      },
+      "success": {
+        "title": "Order Sent",
+        "description": "Your order has been sent successfully. We will contact you shortly."
+      },
+      "error": {
+        "title": "Error",
+        "description": "An error occurred while sending your order"
+      }
+    }
+  },
   "stats": {
     "title": "HorseMobil in Numbers",
     "subtitle": "Years of excellence in equestrian transport, with customer satisfaction that testifies to our commitment.",

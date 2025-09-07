@@ -62,6 +62,66 @@
       "description": "Hochwertige Anhänger für alle Pferdetypen"
     }
   },
+  "order": {
+    "title": "Fahrzeug Bestellen",
+    "subtitle": "Bestellen Sie Ihr professionelles Fahrzeug direkt. Wir begleiten Sie bei Ihrem Kauf.",
+    "features": {
+      "transparent": {
+        "title": "Transparente Preise",
+        "description": "Alle unsere Preise werden klar angezeigt, ohne versteckte Gebühren"
+      },
+      "delivery": {
+        "title": "Schnelle Lieferung",
+        "description": "Lieferung in besten Zeitrahmen in ganz Europa"
+      },
+      "service": {
+        "title": "Kompletter Service",
+        "description": "Vollständige Betreuung vom Kauf bis zur Lieferung"
+      }
+    },
+    "form": {
+      "title": "Fahrzeugbestellung",
+      "description": "Füllen Sie dieses Formular aus, um Ihr Fahrzeug zu bestellen",
+      "vehicle": {
+        "title": "Fahrzeug",
+        "select": "Fahrzeug auswählen *",
+        "placeholder": "Fahrzeug wählen",
+        "price": "Preis"
+      },
+      "contact": {
+        "title": "Kontaktinformationen",
+        "name": "Vollständiger Name *",
+        "namePlaceholder": "Ihr vollständiger Name",
+        "email": "E-Mail *",
+        "emailPlaceholder": "ihre@email.at",
+        "phone": "Telefon",
+        "phonePlaceholder": "+43 1 23 45 67 89"
+      },
+      "delivery": {
+        "title": "Lieferung",
+        "date": "Gewünschtes Lieferdatum",
+        "dateNote": "Dieses Datum ist unverbindlich, wir bestätigen das genaue Datum"
+      },
+      "message": {
+        "title": "Nachricht",
+        "label": "Zusätzliche Informationen",
+        "placeholder": "Beschreiben Sie Ihre spezifischen Bedürfnisse..."
+      },
+      "submit": "Bestellung Senden",
+      "submitting": "Wird gesendet...",
+      "validation": {
+        "required": "Bitte füllen Sie alle Pflichtfelder aus"
+      },
+      "success": {
+        "title": "Bestellung Gesendet",
+        "description": "Ihre Bestellung wurde erfolgreich gesendet. Wir kontaktieren Sie bald."
+      },
+      "error": {
+        "title": "Fehler",
+        "description": "Ein Fehler ist beim Senden Ihrer Bestellung aufgetreten"
+      }
+    }
+  },
   "stats": {
     "title": "HorseMobil in Zahlen",
     "subtitle": "Jahre der Exzellenz im Pferdetransport, mit Kundenzufriedenheit, die unser Engagement bezeugt.",

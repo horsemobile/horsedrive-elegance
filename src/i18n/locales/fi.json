@@ -62,6 +62,66 @@
       "description": "Korkealaatuiset perävaunut kaikille hevostyypeille"
     }
   },
+  "order": {
+    "title": "Tilaa Ajoneuvo",
+    "subtitle": "Tilaa ammattiajoneuvo suoraan. Autamme sinua ostoksessasi.",
+    "features": {
+      "transparent": {
+        "title": "Läpinäkyvät Hinnat",
+        "description": "Kaikki hintamme näytetään selkeästi, ei piilotettuja maksuja"
+      },
+      "delivery": {
+        "title": "Nopea Toimitus",
+        "description": "Toimitus parhaina aikoina koko Euroopassa"
+      },
+      "service": {
+        "title": "Täydellinen Palvelu",
+        "description": "Täydellinen tuki ostoksesta toimitukseen"
+      }
+    },
+    "form": {
+      "title": "Ajoneuvotilaus",
+      "description": "Täytä tämä lomake tilataksesi ajoneuvosi",
+      "vehicle": {
+        "title": "Ajoneuvo",
+        "select": "Valitse ajoneuvo *",
+        "placeholder": "Valitse ajoneuvo",
+        "price": "Hinta"
+      },
+      "contact": {
+        "title": "Yhteystiedot",
+        "name": "Koko Nimi *",
+        "namePlaceholder": "Koko nimesi",
+        "email": "Sähköposti *",
+        "emailPlaceholder": "sähköposti@example.fi",
+        "phone": "Puhelin",
+        "phonePlaceholder": "+358 1 23 45 67 89"
+      },
+      "delivery": {
+        "title": "Toimitus",
+        "date": "Haluttu toimituspäivä",
+        "dateNote": "Tämä päivämäärä on ohjeellinen, vahvistamme tarkan päivämäärän"
+      },
+      "message": {
+        "title": "Viesti",
+        "label": "Lisätiedot",
+        "placeholder": "Kuvaile erityistarpeesi..."
+      },
+      "submit": "Lähetä Tilaus",
+      "submitting": "Lähetetään...",
+      "validation": {
+        "required": "Täytä kaikki pakolliset kentät"
+      },
+      "success": {
+        "title": "Tilaus Lähetetty",
+        "description": "Tilauksesi lähetettiin onnistuneesti. Otamme yhteyttä pian."
+      },
+      "error": {
+        "title": "Virhe",
+        "description": "Virhe tapahtui tilauksen lähettämisessä"
+      }
+    }
+  },
   "stats": {
     "title": "HorseMobil numeroina",
     "subtitle": "Vuosia huippuosaamista hevoskuljetuksessa, asiakastyytyväisyys todistaa sitoutumisestamme.",

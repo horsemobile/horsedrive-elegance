@@ -62,6 +62,66 @@
       "description": "Remolques de alta calidad para todos los tipos de caballos"
     }
   },
+  "order": {
+    "title": "Pedir un Vehículo",
+    "subtitle": "Pida su vehículo profesional directamente. Te acompañamos en tu compra.",
+    "features": {
+      "transparent": {
+        "title": "Precios Transparentes",
+        "description": "Todos nuestros precios se muestran claramente, sin tarifas ocultas"
+      },
+      "delivery": {
+        "title": "Entrega Rápida",
+        "description": "Entrega en los mejores plazos en toda Europa"
+      },
+      "service": {
+        "title": "Servicio Completo",
+        "description": "Acompañamiento completo desde la compra hasta la entrega"
+      }
+    },
+    "form": {
+      "title": "Pedido de Vehículo",
+      "description": "Rellena este formulario para pedir tu vehículo",
+      "vehicle": {
+        "title": "Vehículo",
+        "select": "Selecciona un vehículo *",
+        "placeholder": "Elige un vehículo",
+        "price": "Precio"
+      },
+      "contact": {
+        "title": "Información de Contacto",
+        "name": "Nombre Completo *",
+        "namePlaceholder": "Tu nombre completo",
+        "email": "Email *",
+        "emailPlaceholder": "tu@email.com",
+        "phone": "Teléfono",
+        "phonePlaceholder": "+34 1 23 45 67 89"
+      },
+      "delivery": {
+        "title": "Entrega",
+        "date": "Fecha de entrega deseada",
+        "dateNote": "Esta fecha es indicativa, te confirmaremos la fecha exacta"
+      },
+      "message": {
+        "title": "Mensaje",
+        "label": "Información adicional",
+        "placeholder": "Describe tus necesidades específicas..."
+      },
+      "submit": "Enviar Pedido",
+      "submitting": "Enviando...",
+      "validation": {
+        "required": "Por favor, rellena todos los campos obligatorios"
+      },
+      "success": {
+        "title": "Pedido Enviado",
+        "description": "Tu pedido ha sido enviado con éxito. Te contactaremos pronto."
+      },
+      "error": {
+        "title": "Error",
+        "description": "Ocurrió un error al enviar tu pedido"
+      }
+    }
+  },
   "stats": {
     "title": "HorseMobil en Cifras",
     "subtitle": "Años de excelencia en transporte ecuestre, con satisfacción del cliente que testimonia nuestro compromiso.",
