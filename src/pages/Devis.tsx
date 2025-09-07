@@ -192,22 +192,20 @@ const Devis = () => {
                       </Select>
                     </div>
 
-                    {/* Vehicle Name Input - only show when category is selected */}
-                    {selectedCategory && (
-                      <div className="space-y-2">
-                        <Label htmlFor="vehicleName">Nom du véhicule souhaité *</Label>
-                        <Input 
-                          id="vehicleName"
-                          value={vehicleName}
-                          onChange={(e) => setVehicleName(e.target.value)}
-                          placeholder="Ex: Mercedes Sprinter 2024, DAF CF 440, etc."
-                          required
-                        />
-                        <p className="text-sm text-muted-foreground">
-                          Décrivez le véhicule que vous souhaitez (marque, modèle, année...)
-                        </p>
-                      </div>
-                    )}
+                    {/* Vehicle Name Input */}
+                    <div className="space-y-2">
+                      <Label htmlFor="vehicleName">Nom du véhicule souhaité *</Label>
+                      <Input 
+                        id="vehicleName"
+                        value={vehicleName}
+                        onChange={(e) => setVehicleName(e.target.value)}
+                        placeholder="Ex: Mercedes Sprinter 2024, DAF CF 440, etc."
+                        required
+                      />
+                      <p className="text-sm text-muted-foreground">
+                        Décrivez le véhicule que vous souhaitez (marque, modèle, année...)
+                      </p>
+                    </div>
                   </div>
                   
                   {getVehicleInfo() && (
