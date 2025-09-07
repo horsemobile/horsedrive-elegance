@@ -305,8 +305,57 @@
       "rcsValue": "Lyon B XXX XXX XXX",
       "vat": "EU MVA-nummer",
       "vatValue": "FR XX XXX XXX XXX",
+      "vat": "EU MVA-nummer",
+      "vatValue": "FR XX XXX XXX XXX",
       "address": "Registrert kontoadresse",
-      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, Frankrike"
+      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, Frankrike",
+      "ape": "APE-kode",
+      "apeValue": "4511Z - Handel med biler og lette motorvogner"
+    },
+    "contact": {
+      "title": "Kontaktinformasjon",
+      "address": "Adresse",
+      "addressValue": "HORSEMOBIL SARL\n123 Avenue des Chevaux\n69000 Lyon\nFrankrike",
+      "phone": "Telefon",
+      "phoneValue": "+33 4 78 XX XX XX",
+      "email": "E-post",
+      "emailValue": "contact@horsemobil.fr"
+    },
+    "director": {
+      "title": "Publikasjonsdirektør",
+      "content": "Hr. Jean DUPONT\nManager for HORSEMOBIL SARL\nE-post: direction@horsemobil.fr"
+    },
+    "hosting": {
+      "title": "Hosting",
+      "content": "Dette nettstedet er hostet av:\n\nLovable Ltd\nAdresse: [Vertens adresse]\nTelefon: [Telefonnummer]\nNettsted: https://lovable.dev"
+    },
+    "intellectualProperty": {
+      "title": "Intellektuell eiendom",
+      "paragraph1": "Hele dette nettstedet er underlagt fransk og internasjonal lovgivning om opphavsrett og intellektuell eiendom. Alle reproduksjonsrettigheter er reservert, inkludert for nedlastbare dokumenter og ikonografiske og fotografiske representasjoner.",
+      "paragraph2": "Reproduksjon av hele eller deler av dette nettstedet på ethvert elektronisk medium er formelt forbudt uten uttrykkelig autorisasjon fra publikasjonsdirektøren.",
+      "paragraph3": "Varemerker og logoer som vises på nettstedet er registrert av HORSEMOBIL eller muligens av partnere. Enhver total eller delvis reproduksjon av disse varemerkene eller logoene, laget fra nettstedselementer uten uttrykkelig autorisasjon fra HORSEMOBIL er derfor forbudt."
+    },
+    "responsibility": {
+      "title": "Ansvar",
+      "paragraph1": "Informasjonen på dette nettstedet er så nøyaktig som mulig og nettstedet oppdateres på forskjellige tidspunkter av året, men kan likevel inneholde unøyaktigheter eller utelatelser.",
+      "paragraph2": "Hvis du legger merke til et gap, feil eller det som ser ut til å være en funksjonsfeil, vennligst rapporter det via e-post til contact@horsemobil.fr, og beskriv problemet så presist som mulig.",
+      "paragraph3": "HORSEMOBIL kan ikke holdes ansvarlig for direkte og indirekte skader forårsaket på brukerens utstyr ved tilgang til nettstedet, som følge av bruk av utstyr som ikke oppfyller de spesifiserte spesifikasjonene, eller fra utseendet til en feil eller inkompatibilitet."
+    },
+    "links": {
+      "title": "Hyperkoblinger",
+      "paragraph1": "Hyperkoblinger kan være tilstede på nettstedet. Brukeren informeres om at ved å klikke på disse koblingene vil de forlate nettstedet horsemobil.fr. Sistnevnte har ingen kontroll over nettsidene som disse koblingene fører til og kan under ingen omstendigheter være ansvarlig for innholdet deres.",
+      "paragraph2": "Etablering av en kobling til nettstedet horsemobil.fr må være gjenstand for en forhåndsautorisasjonsforespørsel. Denne autorisasjonen kan forespørres ved å kontakte følgende e-postadresse: contact@horsemobil.fr.",
+      "paragraph3": "HORSEMOBIL forbeholder seg retten til å be om fjerning av en kobling som den anser ikke å være i samsvar med formålet med nettstedet."
+    },
+    "law": {
+      "title": "Gjeldende lov og kompetent jurisdiksjon",
+      "content": "Fransk lovgivning gjelder for denne kontrakten. I fravær av en minnelig løsning av en tvist som oppstår mellom partene, vil franske domstoler ha enerett til jurisdiksjon. For spørsmål relatert til anvendelsen av disse bruksvilkårene, kan du kontakte utgiveren på kontaktdetaljene som er oppført i \"Kontakt\"-seksjonen."
+    },
+    "update": {
+      "title": "Oppdatering",
+      "paragraph1": "Disse juridiske merknadene kan være gjenstand for endringer, spesielt for å overholde eventuelle nye forskrifter som er i kraft.",
+      "lastUpdate": "Siste oppdatering:",
+      "lastUpdateValue": "5. september 2024"
     }
   }
 }

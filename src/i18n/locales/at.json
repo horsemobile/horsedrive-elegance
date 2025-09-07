@@ -937,8 +937,57 @@
       "rcsValue": "Lyon B XXX XXX XXX",
       "vat": "EU-Umsatzsteuer-ID",
       "vatValue": "FR XX XXX XXX XXX",
+      "vat": "EU-Umsatzsteuer-ID",
+      "vatValue": "FR XX XXX XXX XXX",
       "address": "Geschäftssitz",
-      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, Frankreich"
+      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, Frankreich",
+      "ape": "APE-Code",
+      "apeValue": "4511Z - Handel mit Pkw und leichten Kraftfahrzeugen"
+    },
+    "contact": {
+      "title": "Kontaktinformationen",
+      "address": "Adresse",
+      "addressValue": "HORSEMOBIL SARL\n123 Avenue des Chevaux\n69000 Lyon\nFrankreich",
+      "phone": "Telefon",
+      "phoneValue": "+33 4 78 XX XX XX",
+      "email": "E-Mail",
+      "emailValue": "contact@horsemobil.fr"
+    },
+    "director": {
+      "title": "Veröffentlichungsleiter",
+      "content": "Herr Jean DUPONT\nGeschäftsführer von HORSEMOBIL SARL\nE-Mail: direction@horsemobil.fr"
+    },
+    "hosting": {
+      "title": "Hosting",
+      "content": "Diese Website wird gehostet von:\n\nLovable Ltd\nAdresse: [Host-Adresse]\nTelefon: [Telefonnummer]\nWebsite: https://lovable.dev"
+    },
+    "intellectualProperty": {
+      "title": "Geistiges Eigentum",
+      "paragraph1": "Diese gesamte Website unterliegt der französischen und internationalen Gesetzgebung zu Urheberrecht und geistigem Eigentum. Alle Vervielfältigungsrechte sind vorbehalten, einschließlich für herunterladbare Dokumente und ikonografische und fotografische Darstellungen.",
+      "paragraph2": "Die Vervielfältigung der gesamten Website oder von Teilen davon auf einem elektronischen Medium ist ohne ausdrückliche Genehmigung des Veröffentlichungsleiters strengstens untersagt.",
+      "paragraph3": "Die auf der Website erscheinenden Marken und Logos sind von HORSEMOBIL oder möglicherweise von Partnern registriert. Jede vollständige oder teilweise Vervielfältigung dieser Marken oder Logos, die aus Website-Elementen ohne ausdrückliche Genehmigung von HORSEMOBIL erstellt wird, ist daher verboten."
+    },
+    "responsibility": {
+      "title": "Verantwortung",
+      "paragraph1": "Die auf dieser Website enthaltenen Informationen sind so genau wie möglich und die Website wird zu verschiedenen Zeiten des Jahres aktualisiert, kann jedoch Ungenauigkeiten oder Auslassungen enthalten.",
+      "paragraph2": "Wenn Sie eine Lücke, einen Fehler oder eine scheinbare Fehlfunktion bemerken, melden Sie dies bitte per E-Mail an contact@horsemobil.fr und beschreiben Sie das Problem so genau wie möglich.",
+      "paragraph3": "HORSEMOBIL kann nicht für direkte und indirekte Schäden an der Ausrüstung des Benutzers beim Zugriff auf die Website verantwortlich gemacht werden, die entweder durch die Verwendung von Ausrüstung entstehen, die nicht den angegebenen Spezifikationen entspricht, oder durch das Auftreten eines Bugs oder einer Inkompatibilität."
+    },
+    "links": {
+      "title": "Hyperlinks",
+      "paragraph1": "Hyperlinks können auf der Website vorhanden sein. Der Benutzer wird darüber informiert, dass er durch Klicken auf diese Links die Website horsemobil.fr verlässt. Letztere hat keine Kontrolle über die Webseiten, zu denen diese Links führen, und kann unter keinen Umständen für deren Inhalt verantwortlich gemacht werden.",
+      "paragraph2": "Die Einrichtung eines Links zur Website horsemobil.fr muss Gegenstand einer vorherigen Genehmigungsanfrage sein. Diese Genehmigung kann durch Kontaktaufnahme unter folgender E-Mail-Adresse angefordert werden: contact@horsemobil.fr.",
+      "paragraph3": "HORSEMOBIL behält sich das Recht vor, die Entfernung eines Links zu verlangen, den sie als nicht dem Zweck der Website entsprechend erachtet."
+    },
+    "law": {
+      "title": "Anwendbares Recht und zuständige Gerichtsbarkeit",
+      "content": "Französisches Recht gilt für diesen Vertrag. In Ermangelung einer gütlichen Beilegung einer zwischen den Parteien entstehenden Streitigkeit haben französische Gerichte die alleinige Zuständigkeit. Für Fragen zur Anwendung dieser Nutzungsbedingungen können Sie den Herausgeber unter den in der Rubrik \"Kontakt\" aufgeführten Kontaktdaten erreichen."
+    },
+    "update": {
+      "title": "Aktualisierung",
+      "paragraph1": "Diese rechtlichen Hinweise können Änderungen unterliegen, insbesondere um neuen geltenden Vorschriften zu entsprechen.",
+      "lastUpdate": "Letzte Aktualisierung:",
+      "lastUpdateValue": "5. September 2024"
     }
   }
 }

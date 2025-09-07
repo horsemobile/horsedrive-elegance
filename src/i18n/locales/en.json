@@ -799,8 +799,57 @@
       "rcsValue": "Lyon B XXX XXX XXX",
       "vat": "EU VAT Number",
       "vatValue": "FR XX XXX XXX XXX",
+      "vat": "EU VAT Number",
+      "vatValue": "FR XX XXX XXX XXX",
       "address": "Registered Office Address",
-      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, France"
+      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, France",
+      "ape": "APE Code",
+      "apeValue": "4511Z - Trade in cars and light motor vehicles"
+    },
+    "contact": {
+      "title": "Contact Information",
+      "address": "Address",
+      "addressValue": "HORSEMOBIL SARL\n123 Avenue des Chevaux\n69000 Lyon\nFrance",
+      "phone": "Phone",
+      "phoneValue": "+33 4 78 XX XX XX",
+      "email": "Email",
+      "emailValue": "contact@horsemobil.fr"
+    },
+    "director": {
+      "title": "Publication Director",
+      "content": "Mr. Jean DUPONT\nManager of HORSEMOBIL SARL\nEmail: direction@horsemobil.fr"
+    },
+    "hosting": {
+      "title": "Hosting",
+      "content": "This site is hosted by:\n\nLovable Ltd\nAddress: [Host address]\nPhone: [Phone number]\nWebsite: https://lovable.dev"
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "paragraph1": "This entire site is subject to French and international legislation on copyright and intellectual property. All reproduction rights are reserved, including for downloadable documents and iconographic and photographic representations.",
+      "paragraph2": "The reproduction of all or part of this site on any electronic medium is formally prohibited except with express authorization from the publication director.",
+      "paragraph3": "The trademarks and logos appearing on the site are registered by HORSEMOBIL or possibly by partners. Any total or partial reproduction of these trademarks or logos, made from site elements without express authorization from HORSEMOBIL is therefore prohibited."
+    },
+    "responsibility": {
+      "title": "Responsibility",
+      "paragraph1": "The information contained on this site is as accurate as possible and the site is updated at different periods of the year, but may nevertheless contain inaccuracies or omissions.",
+      "paragraph2": "If you notice a gap, error or what appears to be a malfunction, please report it by email to contact@horsemobil.fr, describing the problem as precisely as possible.",
+      "paragraph3": "HORSEMOBIL cannot be held responsible for direct and indirect damage caused to the user's equipment when accessing the website, resulting either from the use of equipment that does not meet the specified specifications, or from the appearance of a bug or incompatibility."
+    },
+    "links": {
+      "title": "Hyperlinks",
+      "paragraph1": "Hyperlinks may be present on the site. The user is informed that by clicking on these links, they will leave the horsemobil.fr site. The latter has no control over the web pages to which these links lead and cannot, under any circumstances, be responsible for their content.",
+      "paragraph2": "Establishing a link to the horsemobil.fr site must be subject to a prior authorization request. This authorization can be requested by contacting the following email address: contact@horsemobil.fr.",
+      "paragraph3": "HORSEMOBIL reserves the right to request the removal of a link that it considers not to comply with the purpose of the site."
+    },
+    "law": {
+      "title": "Applicable Law and Competent Jurisdiction",
+      "content": "French legislation applies to this contract. In the absence of an amicable resolution of a dispute arising between the parties, French courts will have sole jurisdiction. For any questions relating to the application of these Terms of Use, you can contact the publisher at the contact details listed in the \"Contact\" section."
+    },
+    "update": {
+      "title": "Update",
+      "paragraph1": "These legal notices may be subject to change, particularly to comply with any new regulations in force.",
+      "lastUpdate": "Last update:",
+      "lastUpdateValue": "September 5, 2024"
     }
   }
 }

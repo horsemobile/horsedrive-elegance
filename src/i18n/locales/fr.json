@@ -950,8 +950,57 @@
       "rcsValue": "Lyon B XXX XXX XXX",
       "vat": "Numéro de TVA intracommunautaire",
       "vatValue": "FR XX XXX XXX XXX",
+      "vat": "Numéro de TVA intracommunautaire",
+      "vatValue": "FR XX XXX XXX XXX",
       "address": "Adresse du siège social",
-      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, France"
+      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, France",
+      "ape": "Code APE",
+      "apeValue": "4511Z - Commerce de voitures et véhicules automobiles légers"
+    },
+    "contact": {
+      "title": "Coordonnées",
+      "address": "Adresse",
+      "addressValue": "HORSEMOBIL SARL\n123 Avenue des Chevaux\n69000 Lyon\nFrance",
+      "phone": "Téléphone",
+      "phoneValue": "+33 4 78 XX XX XX",
+      "email": "Email",
+      "emailValue": "contact@horsemobil.fr"
+    },
+    "director": {
+      "title": "Directeur de la publication",
+      "content": "Monsieur Jean DUPONT\nGérant de HORSEMOBIL SARL\nEmail : direction@horsemobil.fr"
+    },
+    "hosting": {
+      "title": "Hébergement",
+      "content": "Ce site est hébergé par :\n\nLovable Ltd\nAdresse : [Adresse de l'hébergeur]\nTéléphone : [Numéro de téléphone]\nSite web : https://lovable.dev"
+    },
+    "intellectualProperty": {
+      "title": "Propriété intellectuelle",
+      "paragraph1": "L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.",
+      "paragraph2": "La reproduction de tout ou partie de ce site sur un support électronique quel qu'il soit est formellement interdite sauf autorisation expresse du directeur de la publication.",
+      "paragraph3": "Les marques et logos figurant sur le site sont déposés par HORSEMOBIL ou éventuellement par des partenaires. Toute reproduction totale ou partielle de ces marques ou de ces logos, effectuée à partir des éléments du site sans l'autorisation expresse de HORSEMOBIL est donc prohibée."
+    },
+    "responsibility": {
+      "title": "Responsabilité",
+      "paragraph1": "Les informations contenues sur ce site sont aussi précises que possible et le site remis à jour à différentes périodes de l'année, mais peut toutefois contenir des inexactitudes ou des omissions.",
+      "paragraph2": "Si vous constatez une lacune, erreur ou ce qui parait être un dysfonctionnement, merci de bien vouloir le signaler par email, à l'adresse contact@horsemobil.fr, en décrivant le problème de la façon la plus précise possible.",
+      "paragraph3": "HORSEMOBIL ne pourra être tenue responsable des dommages directs et indirects causés au matériel de l'utilisateur, lors de l'accès au site internet, et résultant soit de l'utilisation d'un matériel ne répondant pas aux spécifications indiquées, soit de l'apparition d'un bug ou d'une incompatibilité."
+    },
+    "links": {
+      "title": "Liens hypertextes",
+      "paragraph1": "Des liens hypertextes peuvent être présents sur le site. L'utilisateur est informé qu'en cliquant sur ces liens, il sortira du site horsemobil.fr. Ce dernier n'a pas de contrôle sur les pages web sur lesquelles aboutissent ces liens et ne saurait, en aucun cas, être responsable de leur contenu.",
+      "paragraph2": "L'établissement d'un lien vers le site horsemobil.fr doit faire l'objet d'une demande d'autorisation préalable. Cette autorisation peut être demandée en contactant l'adresse email suivante : contact@horsemobil.fr.",
+      "paragraph3": "HORSEMOBIL se réserve le droit de demander la suppression d'un lien qu'elle estimerait non conforme à l'objet du site."
+    },
+    "law": {
+      "title": "Droit applicable et juridiction compétente",
+      "content": "La législation française s'applique au présent contrat. En cas d'absence de résolution amiable d'un litige né entre les parties, les tribunaux français seront seuls compétents pour en connaître. Pour toute question relative à l'application des présentes CGU, vous pouvez joindre l'éditeur aux coordonnées inscrites à la rubrique « Contact »."
+    },
+    "update": {
+      "title": "Mise à jour",
+      "paragraph1": "Les présentes mentions légales peuvent être amenées à évoluer, notamment pour se conformer à toute nouvelle réglementation en vigueur.",
+      "lastUpdate": "Dernière mise à jour :",
+      "lastUpdateValue": "5 septembre 2024"
     }
   }
 }

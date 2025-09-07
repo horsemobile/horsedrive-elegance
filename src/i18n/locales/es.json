@@ -834,8 +834,57 @@
       "rcsValue": "Lyon B XXX XXX XXX",
       "vat": "Número de IVA Intracomunitario",
       "vatValue": "FR XX XXX XXX XXX",
+      "vat": "Número de IVA Intracomunitario",
+      "vatValue": "FR XX XXX XXX XXX",
       "address": "Dirección de la Sede Social",
-      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, Francia"
+      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, Francia",
+      "ape": "Código APE",
+      "apeValue": "4511Z - Comercio de automóviles y vehículos de motor ligeros"
+    },
+    "contact": {
+      "title": "Información de Contacto",
+      "address": "Dirección",
+      "addressValue": "HORSEMOBIL SARL\n123 Avenue des Chevaux\n69000 Lyon\nFrancia",
+      "phone": "Teléfono",
+      "phoneValue": "+33 4 78 XX XX XX",
+      "email": "Email",
+      "emailValue": "contact@horsemobil.fr"
+    },
+    "director": {
+      "title": "Director de Publicación",
+      "content": "Sr. Jean DUPONT\nGerente de HORSEMOBIL SARL\nEmail: direction@horsemobil.fr"
+    },
+    "hosting": {
+      "title": "Alojamiento",
+      "content": "Este sitio está alojado por:\n\nLovable Ltd\nDirección: [Dirección del host]\nTeléfono: [Número de teléfono]\nSitio web: https://lovable.dev"
+    },
+    "intellectualProperty": {
+      "title": "Propiedad Intelectual",
+      "paragraph1": "Todo este sitio está sujeto a la legislación francesa e internacional sobre derechos de autor y propiedad intelectual. Todos los derechos de reproducción están reservados, incluidos los documentos descargables y las representaciones iconográficas y fotográficas.",
+      "paragraph2": "La reproducción total o parcial de este sitio en cualquier medio electrónico está formalmente prohibida excepto con autorización expresa del director de publicación.",
+      "paragraph3": "Las marcas y logotipos que aparecen en el sitio están registrados por HORSEMOBIL o posiblemente por socios. Por lo tanto, está prohibida cualquier reproducción total o parcial de estas marcas o logotipos, realizada a partir de elementos del sitio sin autorización expresa de HORSEMOBIL."
+    },
+    "responsibility": {
+      "title": "Responsabilidad",
+      "paragraph1": "La información contenida en este sitio es lo más precisa posible y el sitio se actualiza en diferentes períodos del año, pero puede contener inexactitudes u omisiones.",
+      "paragraph2": "Si nota una laguna, error o lo que parece ser un mal funcionamiento, infórmelo por email a contact@horsemobil.fr, describiendo el problema de la manera más precisa posible.",
+      "paragraph3": "HORSEMOBIL no puede ser responsable de daños directos e indirectos causados al equipo del usuario al acceder al sitio web, resultantes del uso de equipos que no cumplen las especificaciones indicadas, o de la aparición de un error o incompatibilidad."
+    },
+    "links": {
+      "title": "Enlaces",
+      "paragraph1": "Pueden estar presentes hipervínculos en el sitio. Se informa al usuario que al hacer clic en estos enlaces, saldrá del sitio horsemobil.fr. Este último no tiene control sobre las páginas web a las que conducen estos enlaces y no puede, bajo ninguna circunstancia, ser responsable de su contenido.",
+      "paragraph2": "El establecimiento de un enlace al sitio horsemobil.fr debe estar sujeto a una solicitud de autorización previa. Esta autorización se puede solicitar contactando la siguiente dirección de email: contact@horsemobil.fr.",
+      "paragraph3": "HORSEMOBIL se reserva el derecho de solicitar la eliminación de un enlace que considere que no cumple con el propósito del sitio."
+    },
+    "law": {
+      "title": "Ley Aplicable y Jurisdicción Competente",
+      "content": "La legislación francesa se aplica a este contrato. En ausencia de una resolución amistosa de una disputa que surja entre las partes, los tribunales franceses tendrán jurisdicción exclusiva. Para cualquier pregunta relacionada con la aplicación de estos Términos de Uso, puede contactar al editor en los datos de contacto listados en la sección \"Contacto\"."
+    },
+    "update": {
+      "title": "Actualización",
+      "paragraph1": "Estos avisos legales pueden estar sujetos a cambios, particularmente para cumplir con cualquier nueva regulación en vigor.",
+      "lastUpdate": "Última actualización:",
+      "lastUpdateValue": "5 de septiembre de 2024"
     }
   }
 }

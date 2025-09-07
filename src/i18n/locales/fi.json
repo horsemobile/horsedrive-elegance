@@ -305,8 +305,57 @@
       "rcsValue": "Lyon B XXX XXX XXX",
       "vat": "EU ALV-numero",
       "vatValue": "FR XX XXX XXX XXX",
+      "vat": "EU ALV-numero",
+      "vatValue": "FR XX XXX XXX XXX",
       "address": "Rekisteröity toimisto-osoite",
-      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, Ranska"
+      "addressValue": "123 Avenue des Chevaux, 69000 Lyon, Ranska",
+      "ape": "APE-koodi",
+      "apeValue": "4511Z - Autojen ja kevyiden moottoriajoneuvojen kauppa"
+    },
+    "contact": {
+      "title": "Yhteystiedot",
+      "address": "Osoite",
+      "addressValue": "HORSEMOBIL SARL\n123 Avenue des Chevaux\n69000 Lyon\nRanska",
+      "phone": "Puhelin",
+      "phoneValue": "+33 4 78 XX XX XX",
+      "email": "Sähköposti",
+      "emailValue": "contact@horsemobil.fr"
+    },
+    "director": {
+      "title": "Julkaisujohtaja",
+      "content": "Herra Jean DUPONT\nHORSEMOBIL SARL:n johtaja\nSähköposti: direction@horsemobil.fr"
+    },
+    "hosting": {
+      "title": "Hosting",
+      "content": "Tämä sivusto on isännöity:\n\nLovable Ltd\nOsoite: [Isännän osoite]\nPuhelin: [Puhelinnumero]\nVerkkosivusto: https://lovable.dev"
+    },
+    "intellectualProperty": {
+      "title": "Henkinen omaisuus",
+      "paragraph1": "Koko tämä sivusto on Ranskan ja kansainvälisen tekijänoikeus- ja henkisen omaisuuden lainsäädännön alainen. Kaikki jäljentämisoikeudet on varattu, mukaan lukien ladattavat asiakirjat ja ikonografiset ja valokuvalliset esitykset.",
+      "paragraph2": "Koko sivuston tai sen osien jäljentäminen millä tahansa sähköisellä välineellä on ehdottomasti kielletty ilman julkaisujohtajan nimenomaista lupaa.",
+      "paragraph3": "Sivustolla esiintyvät tavaramerkit ja logot on rekisteröinyt HORSEMOBIL tai mahdollisesti kumppanit. Siksi kaikki näiden tavaramerkkien tai logojen täydellinen tai osittainen jäljentäminen, joka on tehty sivuston elementeistä ilman HORSEMOBILin nimenomaista lupaa, on kielletty."
+    },
+    "responsibility": {
+      "title": "Vastuu",
+      "paragraph1": "Tämän sivuston sisältämät tiedot ovat mahdollisimman tarkkoja ja sivustoa päivitetään vuoden eri aikoina, mutta se voi silti sisältää epätarkkuuksia tai puutteita.",
+      "paragraph2": "Jos huomaat aukon, virheen tai sen, mikä näyttää olevan toimintahäiriö, ilmoita siitä sähköpostitse osoitteeseen contact@horsemobil.fr ja kuvaile ongelma mahdollisimman tarkasti.",
+      "paragraph3": "HORSEMOBILia ei voida pitää vastuussa suorista ja epäsuorista vahingoista, jotka aiheutuvat käyttäjän laitteistolle sivustolle pääsyn yhteydessä ja jotka johtuvat joko sellaisen laitteiston käytöstä, joka ei täytä määriteltyjä vaatimuksia, tai virheen tai yhteensopimattomuuden ilmaantumisesta."
+    },
+    "links": {
+      "title": "Hyperlinkit",
+      "paragraph1": "Sivustolla voi olla hyperlinkkejä. Käyttäjälle ilmoitetaan, että napsauttamalla näitä linkkejä he poistuvat horsemobil.fr-sivustolta. Tällä ei ole hallintaa verkkosivuihin, joihin nämä linkit johtavat, eikä se missään olosuhteissa voi olla vastuussa niiden sisällöstä.",
+      "paragraph2": "Linkin luominen horsemobil.fr-sivustolle on oltava ennakkolupapyynnön kohteena. Tätä lupaa voidaan pyytää ottamalla yhteyttä seuraavaan sähköpostiosoitteeseen: contact@horsemobil.fr.",
+      "paragraph3": "HORSEMOBIL pidättää oikeuden pyytää sellaisen linkin poistamista, jonka se katsoo olevan sivuston tarkoituksen vastainen."
+    },
+    "law": {
+      "title": "Sovellettava laki ja toimivaltainen tuomioistuin",
+      "content": "Ranskan lainsäädäntö koskee tätä sopimusta. Jos osapuolten välille syntyvää riitaa ei saada ratkaistua sovinnollisesti, Ranskan tuomioistuimilla on yksinomainen toimivalta. Jos sinulla on kysymyksiä näiden käyttöehtojen soveltamisesta, voit ottaa yhteyttä julkaisijaan \"Yhteystiedot\"-osiossa lueteltujen yhteystietojen kautta."
+    },
+    "update": {
+      "title": "Päivitys",
+      "paragraph1": "Nämä lakisääteiset ilmoitukset voivat muuttua, erityisesti uusien voimassa olevien määräysten noudattamiseksi.",
+      "lastUpdate": "Viimeisin päivitys:",
+      "lastUpdateValue": "5. syyskuuta 2024"
     }
   }
 }
