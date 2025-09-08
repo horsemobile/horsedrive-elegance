@@ -18,7 +18,8 @@ import {
   Star,
   MapPin,
   Users,
-  Calendar
+  Calendar,
+  ArrowRight
 } from 'lucide-react';
 
 const VansAmenage = () => {
@@ -160,7 +161,7 @@ const VansAmenage = () => {
           </div>
         </section>
 
-        {/* Models Section */}
+        {/* Real Vehicles */}
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
@@ -170,68 +171,13 @@ const VansAmenage = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {vanModels.map((van) => (
-                <Card key={van.id} className="overflow-hidden hover:shadow-xl transition-all duration-300">
-                  <div className="aspect-video relative overflow-hidden">
-                    <img 
-                      src={van.image} 
-                      alt={van.name}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <Badge className="bg-primary text-primary-foreground">
-                        {van.price}
-                      </Badge>
-                    </div>
-                  </div>
-                  
-                  <CardHeader>
-                    <CardTitle className="flex items-center justify-between">
-                      {van.name}
-                      <div className="flex items-center gap-1">
-                        <Users className="w-4 h-4 text-muted-foreground" />
-                        <span className="text-sm text-muted-foreground">{van.specs.couchages}</span>
-                      </div>
-                    </CardTitle>
-                  </CardHeader>
-
-                  <CardContent className="space-y-4">
-                    <div className="grid grid-cols-2 gap-4 text-sm">
-                      <div className="flex items-center gap-2">
-                        <Car className="w-4 h-4 text-muted-foreground" />
-                        <span>{van.specs.longueur}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <MapPin className="w-4 h-4 text-muted-foreground" />
-                        <span>{van.specs.hauteur}</span>
-                      </div>
-                    </div>
-
-                    <div className="space-y-2">
-                      <h4 className="font-semibold">{t('vansAmenage.models.equipment_label')}:</h4>
-                      <div className="flex flex-wrap gap-1">
-                        {van.features.map((feature, index) => (
-                          <Badge key={index} variant="secondary" className="text-xs">
-                            {feature}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="flex gap-2 pt-4">
-                      <Button className="flex-1" asChild>
-                        <Link to="/devis">{t('vansAmenage.quote_cta')}</Link>
-                      </Button>
-                      <Button variant="outline" size="icon" asChild>
-                        <Link to="/contact">
-                          <Calendar className="w-4 h-4" />
-                        </Link>
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="text-center">
+              <Button asChild size="lg">
+                <Link to="/vehicles/van-amenage">
+                  {t('vansAmenage.models.view_all')}
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
             </div>
           </div>
         </section>

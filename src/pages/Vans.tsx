@@ -117,7 +117,7 @@ const Vans = () => {
         </div>
       </section>
 
-      {/* Models */}
+      {/* Real Vehicles */}
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -129,76 +129,13 @@ const Vans = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>{t('vans.models.1_horse.title')}</CardTitle>
-                <CardDescription>{t('vans.models.1_horse.description')}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground mb-6">
-                  {(t('vans.models.1_horse.features', { returnObjects: true }) as string[]).map((feature: string, index: number) => (
-                    <li key={index}>• {feature}</li>
-                  ))}
-                </ul>
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-2xl font-bold">{t('vans.models.1_horse.price')}</span>
-                </div>
-                <Button asChild className="w-full">
-                  <Link to="/devis">
-                    {t('vans.quote_cta')}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="ring-2 ring-primary">
-              <CardHeader>
-                <Badge className="w-fit mb-2">{t('vans.models.2_horses.badge')}</Badge>
-                <CardTitle>{t('vans.models.2_horses.title')}</CardTitle>
-                <CardDescription>{t('vans.models.2_horses.description')}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground mb-6">
-                  {(t('vans.models.2_horses.features', { returnObjects: true }) as string[]).map((feature: string, index: number) => (
-                    <li key={index}>• {feature}</li>
-                  ))}
-                </ul>
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-2xl font-bold">{t('vans.models.2_horses.price')}</span>
-                </div>
-                <Button asChild className="w-full">
-                  <Link to="/devis">
-                    {t('vans.quote_cta')}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>{t('vans.models.3_horses.title')}</CardTitle>
-                <CardDescription>{t('vans.models.3_horses.description')}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground mb-6">
-                  {(t('vans.models.3_horses.features', { returnObjects: true }) as string[]).map((feature: string, index: number) => (
-                    <li key={index}>• {feature}</li>
-                  ))}
-                </ul>
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-2xl font-bold">{t('vans.models.3_horses.price')}</span>
-                </div>
-                <Button asChild className="w-full">
-                  <Link to="/devis">
-                    {t('vans.quote_cta')}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+          <div className="text-center">
+            <Button asChild size="lg">
+              <Link to="/vehicles/vans">
+                {t('vans.models.view_all')}
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

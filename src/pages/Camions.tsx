@@ -117,7 +117,7 @@ const Camions = () => {
         </div>
       </section>
 
-      {/* Models */}
+      {/* Real Vehicles */}
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -129,66 +129,13 @@ const Camions = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>{t('trucks.models.2_horses.title')}</CardTitle>
-                <CardDescription>{t('trucks.models.2_horses.description')}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground mb-6">
-                  {(t('trucks.models.2_horses.features', { returnObjects: true }) as string[]).map((feature: string, index: number) => (
-                    <li key={index}>• {feature}</li>
-                  ))}
-                </ul>
-                <Button asChild className="w-full">
-                  <Link to="/devis">
-                    {t('trucks.quote_cta')}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>{t('trucks.models.4_horses.title')}</CardTitle>
-                <CardDescription>{t('trucks.models.4_horses.description')}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground mb-6">
-                  {(t('trucks.models.4_horses.features', { returnObjects: true }) as string[]).map((feature: string, index: number) => (
-                    <li key={index}>• {feature}</li>
-                  ))}
-                </ul>
-                <Button asChild className="w-full">
-                  <Link to="/devis">
-                    {t('trucks.quote_cta')}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>{t('trucks.models.6_horses.title')}</CardTitle>
-                <CardDescription>{t('trucks.models.6_horses.description')}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground mb-6">
-                  {(t('trucks.models.6_horses.features', { returnObjects: true }) as string[]).map((feature: string, index: number) => (
-                    <li key={index}>• {feature}</li>
-                  ))}
-                </ul>
-                <Button asChild className="w-full">
-                  <Link to="/devis">
-                    {t('trucks.quote_cta')}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+          <div className="text-center">
+            <Button asChild size="lg">
+              <Link to="/vehicles/camions">
+                {t('trucks.models.view_all')}
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
