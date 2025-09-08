@@ -5,12 +5,15 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
-import { Truck, Zap, Shield, Heart, Star, ArrowRight } from 'lucide-react';
+import { Truck, Zap, Shield, Heart, Star } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useVehicles } from '@/hooks/useVehicles';
+import { VehicleCard } from '@/components/VehicleCard';
 import categoryVans from '@/assets/category-vans.jpg';
 
 const Vans = () => {
   const { t } = useTranslation();
+  const { vehicles, loading, error } = useVehicles('vans');
 
   return (
     <div className="min-h-screen bg-background">
@@ -117,7 +120,7 @@ const Vans = () => {
         </div>
       </section>
 
-      {/* Real Vehicles */}
+      {/* Vehicles Section */}
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -129,14 +132,26 @@ const Vans = () => {
             </p>
           </div>
 
-          <div className="text-center">
-            <Button asChild size="lg">
-              <Link to="/vehicles/vans">
-                {t('vans.models.view_all')}
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
+          {loading ? (
+            <div className="text-center py-12">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+              <p className="mt-4 text-muted-foreground">Chargement des véhicules...</p>
+            </div>
+          ) : error ? (
+            <div className="text-center py-12">
+              <p className="text-red-500">Erreur: {error}</p>
+            </div>
+          ) : vehicles.length === 0 ? (
+            <div className="text-center py-12">
+              <p className="text-muted-foreground">Aucun van disponible pour le moment.</p>
+            </div>
+          ) : (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {vehicles.map((vehicle) => (
+                <VehicleCard key={vehicle.id} vehicle={vehicle} />
+              ))}
+            </div>
+          )}
         </div>
       </section>
 

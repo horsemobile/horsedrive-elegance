@@ -6,6 +6,8 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useVehicles } from '@/hooks/useVehicles';
+import { VehicleCard } from '@/components/VehicleCard';
 import { 
   Bed, 
   Car, 
@@ -24,48 +26,7 @@ import {
 
 const VansAmenage = () => {
   const { t } = useTranslation();
-
-  const vanModels = [
-    {
-      id: 1,
-      name: t('vansAmenage.models.comfort.title'),
-      price: t('vansAmenage.models.comfort.price'),
-      image: "/src/assets/category-van-amenage.jpg",
-      features: t('vansAmenage.models.comfort.features', { returnObjects: true }) as string[],
-      specs: {
-        longueur: "5.4m",
-        largeur: "2.05m",
-        hauteur: "2.7m",
-        couchages: t('vansAmenage.models.comfort.specs.couchages')
-      }
-    },
-    {
-      id: 2,
-      name: t('vansAmenage.models.family.title'),
-      price: t('vansAmenage.models.family.price'),
-      image: "/src/assets/hero-van-interior.jpg",
-      features: t('vansAmenage.models.family.features', { returnObjects: true }) as string[],
-      specs: {
-        longueur: "6.4m",
-        largeur: "2.05m",
-        hauteur: "2.8m",
-        couchages: t('vansAmenage.models.family.specs.couchages')
-      }
-    },
-    {
-      id: 3,
-      name: t('vansAmenage.models.premium.title'),
-      price: t('vansAmenage.models.premium.price'),
-      image: "/src/assets/hero-van-sunset.jpg",
-      features: t('vansAmenage.models.premium.features', { returnObjects: true }) as string[],
-      specs: {
-        longueur: "7.2m",
-        largeur: "2.3m",
-        hauteur: "2.9m",
-        couchages: t('vansAmenage.models.premium.specs.couchages')
-      }
-    }
-  ];
+  const { vehicles, loading, error } = useVehicles('van-amenage');
 
   const amenagementFeatures = [
     {
@@ -161,7 +122,7 @@ const VansAmenage = () => {
           </div>
         </section>
 
-        {/* Real Vehicles */}
+        {/* Vehicles Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
@@ -171,14 +132,26 @@ const VansAmenage = () => {
               </p>
             </div>
 
-            <div className="text-center">
-              <Button asChild size="lg">
-                <Link to="/vehicles/van-amenage">
-                  {t('vansAmenage.models.view_all')}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </div>
+            {loading ? (
+              <div className="text-center py-12">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+                <p className="mt-4 text-muted-foreground">Chargement des véhicules...</p>
+              </div>
+            ) : error ? (
+              <div className="text-center py-12">
+                <p className="text-red-500">Erreur: {error}</p>
+              </div>
+            ) : vehicles.length === 0 ? (
+              <div className="text-center py-12">
+                <p className="text-muted-foreground">Aucun van aménagé disponible pour le moment.</p>
+              </div>
+            ) : (
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {vehicles.map((vehicle) => (
+                  <VehicleCard key={vehicle.id} vehicle={vehicle} />
+                ))}
+              </div>
+            )}
           </div>
         </section>
 
